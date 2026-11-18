@@ -14,3 +14,11 @@
 - Seeded **46 real Central and Maharashtra government schemes** as individual versioned JSON files under `/data/schemes/*.json` spanning farmers, students, women, senior citizens, workers/entrepreneurs, health/housing, and persons with disabilities (21 schemes transparently flagged `needsVerification: true` for periodically revised rates/cycles).
 - Implemented `/scripts/validate-data.ts` (wired into `npm run build`) enforcing Zod validation, EN/HI/MR parity, filename-ID integrity, duplicate detection, and >180-day staleness warnings.
 - Verified: `npm run validate:data` (46/46 passed, 0 warnings), `npm run typecheck`, `npm run lint`, and `npm run build` all pass.
+
+## Stage 3: File-Based RAG Engine & Streaming SSE (No DB) ✅
+- Implemented provider-agnostic LLM adapter (`/lib/llm/types.ts`, `/lib/llm/adapter.ts`) supporting Gemini (default), OpenAI-compatible, Anthropic, and deterministic degraded no-LLM mode with timeouts, exponential-backoff retries, and secondary model fallback.
+- Built multilingual language detector & Devanagari-digit normalizer (`/lib/i18n/detect.ts`) supporting EN, HI, MR, Hinglish, and Marathi-English code-mixed text.
+- Implemented section chunker (`/lib/rag/chunker.ts`), multilingual embedder (`/lib/rag/embedder.ts`), BM25 scorer + Reciprocal Rank Fusion (`/lib/rag/bm25.ts`), structured user profile extractor (`/lib/rag/profile-extractor.ts`), singleton hybrid search engine (`/lib/rag/index.ts`), and strict grounded citation prompts (`/lib/rag/prompt.ts`).
+- Built `/scripts/build-index.ts` generating `/data/embeddings/index.json` (230 section chunks across 46 schemes, content hash `7695cffd6c2d7b23`).
+- Built streaming SSE endpoint `/app/api/chat/route.ts` emitting structured `profile`, `schemes`, `citations`, `token`, `followups`, and `done` events.
+- Verified: `npm run build-index`, `npm run typecheck`, `npm run lint`, and `npm run build` all pass.
