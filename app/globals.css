@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+:root {
+  --bg-canvas: #FAF8F4;
+  --bg-surface: #FFFFFF;
+  --bg-surface-muted: #F3EFE7;
+  --fg-primary: #1C242B;
+  --fg-secondary: #4A5560;
+  --fg-muted: #64707C;
+  --border-subtle: #E5DFD3;
+  --accent-saffron: #C84B14;
+  --accent-saffron-hover: #A93D0E;
+  --accent-saffron-soft: #FDF0E8;
+  --accent-teal: #0F6B6E;
+  --accent-teal-hover: #0B5254;
+  --accent-teal-soft: #E6F4F4;
+  --status-eligible-bg: #E6F6EC;
+  --status-eligible-fg: #14532D;
+  --status-likely-bg: #FEF3C7;
+  --status-likely-fg: #78350F;
+  --status-ineligible-bg: #FEE2E2;
+  --status-ineligible-fg: #7F1D1D;
+}
+
+.dark {
+  --bg-canvas: #0F1418;
+  --bg-surface: #171E24;
+  --bg-surface-muted: #1F2830;
+  --fg-primary: #F3F5F7;
+  --fg-secondary: #C5CED6;
+  --fg-muted: #9AA6B2;
+  --border-subtle: #2A3540;
+  --accent-saffron: #F07A42;
+  --accent-saffron-hover: #F59262;
+  --accent-saffron-soft: #311C12;
+  --accent-teal: #2DB6B9;
+  --accent-teal-hover: #49CBCE;
+  --accent-teal-soft: #102B2C;
+  --status-eligible-bg: #113322;
+  --status-eligible-fg: #86EFAC;
+  --status-likely-bg: #36280B;
+  --status-likely-fg: #FDE68A;
+  --status-ineligible-bg: #3B1416;
+  --status-ineligible-fg: #FCA5A5;
+}
+
+.high-contrast {
+  --bg-canvas: #FFFFFF;
+  --bg-surface: #FFFFFF;
+  --bg-surface-muted: #F0F0F0;
+  --fg-primary: #000000;
+  --fg-secondary: #111111;
+  --fg-muted: #222222;
+  --border-subtle: #000000;
+  --accent-saffron: #9A3400;
+  --accent-teal: #004D4F;
+}
+
+.dark.high-contrast {
+  --bg-canvas: #000000;
+  --bg-surface: #0A0A0A;
+  --bg-surface-muted: #1A1A1A;
+  --fg-primary: #FFFFFF;
+  --fg-secondary: #F0F0F0;
+  --fg-muted: #E0E0E0;
+  --border-subtle: #FFFFFF;
+  --accent-saffron: #FF945E;
+  --accent-teal: #5CE6E8;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-canvas);
+  color: var(--fg-primary);
+  font-family: var(--font-noto-sans), var(--font-noto-devanagari), system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Accessible focus outlines */
+:focus-visible {
+  outline: 3px solid var(--accent-teal);
+  outline-offset: 2px;
+}
+
+/* Minimum 48px touch target helper for first-time smartphone users */
+.touch-target {
+  min-height: 48px;
+  min-width: 48px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+}
