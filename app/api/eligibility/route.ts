@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
 import { evaluateAllSchemes } from '@/lib/eligibility/engine';
 import { getMissingWizardQuestions } from '@/lib/eligibility/wizard';
+import { logStructured } from '@/lib/logging/logger';
+import { extractClientIp, getRateLimiter } from '@/lib/ratelimit/token-bucket';
 import { getSchemeRepository } from '@/lib/schemes/repository';
 import { SupportedLangSchema, UserProfileSchema } from '@/lib/schemes/schema';
 
@@ -14,6 +16,18 @@ const EligibilityRequestSchema = z.object({
 });
 
 export async function POST(req: NextRequest) {
+  const startTime = Date.now();
+  const rateDecision = getRateLimiter().consume(extractClientIp(req.headers));
+  if (!rateDecision.allowed) {
+    return NextResponse.json(
+      { error: 'Too many requests. Please try again shortly.' },
+      {
+        status: 429,
+        headers: { 'Retry-After': String(Math.ceil(rateDecision.retryAfterMs / 1000)) },
+      }
+    );
+  }
+
   let body: unknown;
   try {
     body = await req.json();
@@ -29,7 +43,7 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  const { profile, schemeIds } = parsed.data;
+  const { profile, schemeIds, lang } = parsed.data;
   const repo = getSchemeRepository();
 
   let targetSchemes = repo.getAll();
@@ -48,10 +62,25 @@ export async function POST(req: NextRequest) {
     not_eligible: evaluated.filter((e) => e.evaluation.status === 'not_eligible').length,
   };
 
-  return NextResponse.json({
-    summary,
-    results: evaluated,
-    nextQuestions: missingQuestions,
-    lastVerified: repo.getLatestVerificationDate(),
+  logStructured('info', 'eligibility_evaluated', {
+    lang,
+    eligibleCount: summary.eligible,
+    likelyCount: summary.likely,
+    latencyMs: Date.now() - startTime,
   });
+
+  return NextResponse.json(
+    {
+      summary,
+      results: evaluated,
+      nextQuestions: missingQuestions,
+      lastVerified: repo.getLatestVerificationDate(),
+    },
+    {
+      headers: {
+        'Cache-Control': 'no-store',
+        'X-RateLimit-Remaining': String(rateDecision.remaining),
+      },
+    }
+  );
 }

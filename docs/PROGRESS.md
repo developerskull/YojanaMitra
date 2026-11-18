@@ -44,3 +44,11 @@
 - Built Guided Eligibility Wizard (`/wizard`), instant client-side Scheme Explorer (`/explorer`), Saved Schemes + Aggregated Printable Documents Checklist + Side-by-Side Compare Table (`/saved`), local-only My Profile editor with "Delete All My Data" (`/profile`), and multilingual Privacy page (`/privacy`).
 - Added installable PWA Web App Manifest (`/app/manifest.ts`), SVG app icon (`/public/icons/icon.svg`), and offline-capable Service Worker (`/public/sw.js`).
 - Verified: `npm run typecheck`, `npm run lint`, and `npm run build` (13/13 static & dynamic routes) all pass cleanly.
+
+## Stage 7: Scale, Security & Reliability (Stateless, No DB) ✅
+- Implemented interface-based in-memory LRU response cache (`/lib/cache/lru.ts`) keyed by SHA-256 query+profile+lang hash (Redis-ready).
+- Implemented interface-based per-IP token-bucket rate limiter (`/lib/ratelimit/token-bucket.ts`) and 16 KB request body size guard (`413` / `429` with `Retry-After`).
+- Added prompt-injection, harmful-request, and off-topic guard (`/lib/security/guard.ts`) plus retrieved-context sanitization (`/lib/rag/prompt.ts`) that politely refuses adversarial inputs in EN/HI/MR without leaking system prompts.
+- Added PII-redacting structured JSON logger (`/lib/logging/logger.ts`) blocking raw messages/profiles and redacting Aadhaar-like 12-digit numbers, phone numbers, PANs, and emails.
+- Added stateless health endpoint (`/app/api/health/route.ts`) reporting scheme count, RAG index hash, LLM mode, and cache stats, plus React Error Boundaries (`/app/error.tsx`, `/app/global-error.tsx`).
+- Verified: `npm run typecheck`, `npm run lint`, and `npm run build` pass cleanly.
