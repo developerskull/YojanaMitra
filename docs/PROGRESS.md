@@ -22,3 +22,10 @@
 - Built `/scripts/build-index.ts` generating `/data/embeddings/index.json` (230 section chunks across 46 schemes, content hash `7695cffd6c2d7b23`).
 - Built streaming SSE endpoint `/app/api/chat/route.ts` emitting structured `profile`, `schemes`, `citations`, `token`, `followups`, and `done` events.
 - Verified: `npm run build-index`, `npm run typecheck`, `npm run lint`, and `npm run build` all pass.
+
+## Stage 4: Deterministic Eligibility Engine & Guided Wizard Core ✅
+- Implemented pure zero-LLM rule evaluator (`/lib/eligibility/engine.ts`) checking state, age range, gender, occupation, land ownership & holding acres, annual income ceiling, social/caste category, disability & %, residence type, education level, BPL status, marital status, and taxpayer/govt-employee exclusions — returning `eligible | likely | not_eligible | missing_info` with auditable reasons in English, Hindi, and Marathi.
+- Built smart missing-field wizard generator (`/lib/eligibility/wizard.ts`) asking only relevant missing questions one at a time in EN/HI/MR.
+- Integrated deterministic eligibility evaluation and eligibility-aware reranking directly into `/app/api/chat/route.ts` so the LLM never decides eligibility alone.
+- Added `/app/api/eligibility/route.ts` and edge-cached `/app/api/schemes/route.ts`.
+- Verified: `npm run typecheck`, `npm run lint`, and live smoke test on Marathi Nashik farmer query (`मी नाशिकचा ४५ वर्षांचा शेतकरी आहे, माझ्याकडे २ एकर जमीन आहे`) accurately extracted all 7 profile attributes and returned verified eligible schemes (`pm-kisan`, `namo-shetkari-mahasanman-nidhi`, `pm-fasal-bima-yojana`, `kisan-credit-card`, `pm-kusum`, `maharashtra-magel-tyala-shet-tale`).

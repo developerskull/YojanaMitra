@@ -1,5 +1,6 @@
 import { NextRequest } from 'next/server';
 import { z } from 'zod';
+import { evaluateSchemeEligibility, type EligibilityEvaluation } from '@/lib/eligibility/engine';
 import { detectLanguage } from '@/lib/i18n/detect';
 import { getLLMProvider } from '@/lib/llm/adapter';
 import { buildCitations, hybridSearchSchemes } from '@/lib/rag';
@@ -11,6 +12,7 @@ import {
   getSuggestedFollowups,
   type EvaluatedSchemeSummary,
 } from '@/lib/rag/prompt';
+import { getSchemeRepository } from '@/lib/schemes/repository';
 import {
   SchemeCategorySchema,
   SupportedLangSchema,
@@ -32,6 +34,13 @@ function encodeSSE(event: string, data: unknown): Uint8Array {
   const payload = `event: ${event}\ndata: ${JSON.stringify(data)}\n\n`;
   return new TextEncoder().encode(payload);
 }
+
+const STATUS_BONUS: Record<EligibilityEvaluation['status'], number> = {
+  eligible: 0.045,
+  likely: 0.025,
+  missing_info: 0.005,
+  not_eligible: -0.05,
+};
 
 export async function POST(req: NextRequest) {
   let body: unknown;
@@ -79,38 +88,78 @@ export async function POST(req: NextRequest) {
             category: categoryFilter,
           },
           profile: mergedProfile,
-          topK: 6,
+          topK: 10,
         });
 
-        const citations = buildCitations(retrieved, responseLang);
+        // 3. Deterministic eligibility evaluation + rerank (NEVER let LLM decide eligibility)
+        const scoredCandidates = retrieved.map((r) => {
+          const evaluation = evaluateSchemeEligibility(mergedProfile, r.scheme);
+          const combinedRank = r.rrfScore + STATUS_BONUS[evaluation.status];
+          return { retrieved: r, evaluation, combinedRank };
+        });
 
-        const evaluated: EvaluatedSchemeSummary[] = retrieved.map((r, idx) => ({
-          scheme: r.scheme,
-          status: 'likely',
-          matchedReasons: [],
-          failedReasons: [],
-          missingFields: [],
+        // Also ensure directly eligible state/central schemes for the profile aren't missed
+        if (Object.keys(mergedProfile).length >= 2) {
+          const existingIds = new Set(scoredCandidates.map((c) => c.retrieved.scheme.id));
+          const repoSchemes = getSchemeRepository().filter({
+            state: effectiveState,
+            category: categoryFilter,
+          });
+          for (const scheme of repoSchemes) {
+            if (existingIds.has(scheme.id)) continue;
+            const evaluation = evaluateSchemeEligibility(mergedProfile, scheme);
+            if (evaluation.status === 'eligible' && evaluation.matchedRules.length >= 2) {
+              scoredCandidates.push({
+                retrieved: {
+                  scheme,
+                  rrfScore: 0.012,
+                  vectorScore: 0,
+                  bm25Score: 0,
+                  topChunks: [],
+                },
+                evaluation,
+                combinedRank: 0.012 + STATUS_BONUS.eligible,
+              });
+            }
+          }
+        }
+
+        scoredCandidates.sort((a, b) => b.combinedRank - a.combinedRank);
+
+        // Prefer eligible/likely/missing_info schemes unless user asked directly about an ineligible one
+        const nonFailed = scoredCandidates.filter((c) => c.evaluation.status !== 'not_eligible');
+        const finalTop = (nonFailed.length > 0 ? nonFailed : scoredCandidates).slice(0, 6);
+
+        const citations = buildCitations(
+          finalTop.map((f) => ({
+            scheme: f.retrieved.scheme,
+            topChunks: f.retrieved.topChunks,
+          })),
+          responseLang
+        );
+
+        const evaluated: EvaluatedSchemeSummary[] = finalTop.map((item, idx) => ({
+          scheme: item.retrieved.scheme,
+          status: item.evaluation.status,
+          matchedReasons: item.evaluation.localized.matchedReasons[responseLang],
+          failedReasons: item.evaluation.localized.failedReasons[responseLang],
+          missingFields: item.evaluation.missingFields,
           citationId: citations[idx]?.id ?? `S${idx + 1}`,
         }));
 
         controller.enqueue(
           encodeSSE('schemes', {
-            schemes: evaluated.map((e) => ({
-              scheme: e.scheme,
-              citationId: e.citationId,
-              eligibility: {
-                status: e.status,
-                matchedRules: e.matchedReasons,
-                failedRules: e.failedReasons,
-                missingFields: e.missingFields,
-              },
+            schemes: finalTop.map((item, idx) => ({
+              scheme: item.retrieved.scheme,
+              citationId: citations[idx]?.id ?? `S${idx + 1}`,
+              eligibility: item.evaluation,
             })),
           })
         );
 
         controller.enqueue(encodeSSE('citations', { citations }));
 
-        // 3. Stream grounded answer (LLM when configured, else deterministic degraded mode)
+        // 4. Stream grounded answer (LLM explains deterministic verdict; degraded fallback if no LLM)
         const provider = getLLMProvider();
         let usedDegradedMode = false;
 
