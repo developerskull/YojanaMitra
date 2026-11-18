@@ -1,8 +1,15 @@
 import type { Metadata, Viewport } from 'next';
-import { Noto_Sans, Noto_Sans_Devanagari } from 'next/font/google';
+import { Noto_Sans, Noto_Sans_Devanagari, Plus_Jakarta_Sans } from 'next/font/google';
 import { AppProviders } from '@/components/layout/AppProviders';
 import { AppShell } from '@/components/layout/AppShell';
 import './globals.css';
+
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  weight: ['500', '600', '700', '800'],
+  variable: '--font-display',
+  display: 'swap',
+});
 
 const notoSans = Noto_Sans({
   subsets: ['latin'],
@@ -19,7 +26,7 @@ const notoDevanagari = Noto_Sans_Devanagari({
 });
 
 export const metadata: Metadata = {
-  title: 'YojanaMitra — Find Government Schemes You Qualify For',
+  title: 'YojanaMitra — Trusted Multilingual Government Scheme Assistant',
   description:
     'Speak or type in Marathi, Hindi, or English to discover verified Indian government welfare schemes, eligibility reasons, required documents, and official application steps.',
   applicationName: 'YojanaMitra',
@@ -27,7 +34,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#0F6B6E',
+  themeColor: '#0D5C63',
   width: 'device-width',
   initialScale: 1,
 };
@@ -40,7 +47,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${notoSans.variable} ${notoDevanagari.variable}`}
+      className={`${plusJakarta.variable} ${notoSans.variable} ${notoDevanagari.variable}`}
       suppressHydrationWarning
     >
       <body className="min-h-screen antialiased">

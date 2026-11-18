@@ -20,6 +20,9 @@ const envSchema = z.object({
   RATE_LIMIT_WINDOW_MS: z.coerce.number().int().min(1000).max(3600000).default(60000),
   CACHE_MAX_ENTRIES: z.coerce.number().int().min(10).max(10000).default(250),
   CACHE_TTL_MS: z.coerce.number().int().min(1000).max(86400000).default(300000),
+  AUTH_SECRET: z.string().min(16).default('yojanamitra-dev-session-secret-change-in-prod'),
+  ADMIN_EMAIL: z.string().email().default('admin@yojanamitra.in'),
+  ADMIN_PASSWORD: z.string().min(6).default('Admin@1234'),
   NEXT_PUBLIC_APP_URL: z.string().url().default('http://localhost:3000'),
 });
 

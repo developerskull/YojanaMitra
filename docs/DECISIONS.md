@@ -38,5 +38,13 @@ This document records key engineering, product, and data-integrity decisions mad
 
 ## ADR-007: Accessible Civic Design Palette & Devanagari Typography
 - **Context**: Target audience includes first-time smartphone users on low-end Android phones reading English, Hindi, and Marathi.
-- **Decision**: Load `Noto Sans` and `Noto Sans Devanagari` via `next/font/google`, enforce `>= 16px` body size, `>= 48px` touch targets, WCAG 2.2 AA contrast ratios on a warm off-white (`#FAF8F4`) / deep saffron (`#C84B14`) / civic teal (`#0F6B6E`) palette with true dark mode and a high-contrast toggle, and respect `prefers-reduced-motion`.
-- **Consequences**: Comfortable legibility for Devanagari scripts and effortless tap accuracy on small screens.
+- **Decision**: Load `Plus Jakarta Sans`, `Noto Sans`, and `Noto Sans Devanagari` via `next/font/google`, enforce `>= 16px` body size, `>= 48px` touch targets, WCAG 2.2 AA contrast ratios on a warm off-white (`#FBF9F5`) / deep saffron (`#D45015`) / civic teal (`#0D5C63`) palette with glassmorphic depth, true dark mode, and a high-contrast toggle, and respect `prefers-reduced-motion`.
+- **Consequences**: Premium visual hierarchy paired with comfortable Devanagari legibility and effortless tap accuracy on small screens.
+
+## ADR-008: Stateless Signed-Cookie Auth & Database-Free Admin Request Dashboard
+- **Context**: Operators requested optional Citizen Login/Sign-Up and a protected Admin Login with a live dashboard to inspect all citizen scheme requests — while retaining the zero-database architectural constraint.
+- **Decision**:
+  1. Authenticate Citizens and Admins via `scryptSync` salted password hashes and HMAC-SHA256 signed HTTP-only cookies (`/lib/auth/session.ts`) — keeping guest access 100% open for first-time citizens.
+  2. Persist accounts and PII-redacted citizen request audit records behind swappable TypeScript interfaces (`UserStore`, `RequestLogStore`) backed by memory + gitignored JSON files (`/data/runtime/`) with safe read-only serverless fallback.
+  3. Restrict `/api/admin/requests` strictly to authenticated `role === 'admin'` sessions, exposing live KPIs, language & scheme analytics, filtering, and CSV export on `/admin`.
+- **Consequences**: Zero external database dependencies, clean drop-in path to Postgres/Auth0 later, and full operational visibility for administrators.

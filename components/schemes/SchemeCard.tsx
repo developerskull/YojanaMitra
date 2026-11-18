@@ -12,12 +12,13 @@ import {
   ExternalLink,
   FileCheck2,
   GitCompareArrows,
+  HelpCircle,
+  IndianRupee,
   Phone,
   Share2,
   Volume2,
   VolumeX,
   XCircle,
-  HelpCircle,
 } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -33,6 +34,7 @@ import {
   toggleCompareSchemeId,
   toggleSavedSchemeId,
 } from '@/lib/storage/local';
+import { cn } from '@/lib/utils';
 import { getTTSAdapter } from '@/lib/voice';
 
 export interface SchemeCardProps {
@@ -77,6 +79,15 @@ export function SchemeCard({
         : status
           ? 'likely'
           : 'teal';
+
+  const topStripe =
+    status === 'eligible'
+      ? 'from-emerald-500 to-teal-500'
+      : status === 'not_eligible'
+        ? 'from-rose-500 to-red-600'
+        : status
+          ? 'from-amber-400 to-orange-500'
+          : 'from-[#0D5C63] to-[#D45015]';
 
   const statusLabel =
     status === 'eligible'
@@ -140,12 +151,15 @@ export function SchemeCard({
   const failedReasons = evaluation?.localized.failedReasons[lang] ?? [];
 
   return (
-    <Card className="overflow-hidden transition-shadow hover:shadow-md">
-      <CardHeader className="gap-2.5 pb-3">
+    <Card className="overflow-hidden hover:-translate-y-0.5 hover:shadow-lg">
+      {/* Status Accent Top Rail */}
+      <div className={cn('h-1.5 w-full bg-gradient-to-r', topStripe)} />
+
+      <CardHeader className="gap-3 pb-3">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <div className="flex flex-wrap items-center gap-1.5">
             {statusLabel && (
-              <Badge variant={badgeVariant}>
+              <Badge variant={badgeVariant} className="px-3 py-1">
                 {status === 'eligible' && <CheckCircle2 className="h-3.5 w-3.5" />}
                 {status === 'not_eligible' && <XCircle className="h-3.5 w-3.5" />}
                 {(status === 'likely' || status === 'missing_info') && (
@@ -163,18 +177,21 @@ export function SchemeCard({
               </Badge>
             )}
           </div>
-          <span className="text-xs text-[var(--fg-muted)]">
+          <span className="text-xs font-medium text-[var(--fg-muted)]">
             {t.trustBannerVerified} {scheme.lastVerified}
           </span>
         </div>
 
-        <h3 className="text-lg font-bold leading-snug text-[var(--fg-primary)] sm:text-xl">
+        <h3 className="font-display text-lg font-extrabold leading-snug tracking-tight text-[var(--fg-primary)] sm:text-xl">
           {scheme.name[lang]}
         </h3>
 
         {/* Highlighted Benefit Pill */}
-        <div className="rounded-xl border border-[var(--accent-teal)]/20 bg-[var(--accent-teal-soft)] px-3.5 py-2.5 text-sm font-semibold text-[var(--accent-teal)] sm:text-base">
-          {scheme.benefitHighlight[lang]}
+        <div className="flex items-center gap-2.5 rounded-xl border border-[var(--accent-teal)]/20 bg-gradient-to-r from-[var(--accent-teal-soft)] to-transparent px-4 py-3 text-sm font-bold text-[var(--accent-teal)] sm:text-base">
+          <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-[var(--accent-teal)] text-white dark:text-[#041B19]">
+            <IndianRupee className="h-4 w-4" />
+          </span>
+          <span>{scheme.benefitHighlight[lang]}</span>
         </div>
 
         <p className="text-sm leading-relaxed text-[var(--fg-secondary)] sm:text-base">
@@ -183,17 +200,16 @@ export function SchemeCard({
       </CardHeader>
 
       <CardContent className="space-y-4">
-        {/* Deterministic Eligibility Reasons */}
         {matchedReasons.length > 0 && (
-          <div className="rounded-xl border border-emerald-600/20 bg-[var(--status-eligible-bg)]/60 p-3.5">
-            <div className="mb-1.5 flex items-center gap-1.5 text-sm font-semibold text-[var(--status-eligible-fg)]">
+          <div className="rounded-xl border border-emerald-500/25 bg-[var(--status-eligible-bg)] p-4">
+            <div className="mb-1.5 flex items-center gap-1.5 text-sm font-bold text-[var(--status-eligible-fg)]">
               <CheckCircle2 className="h-4 w-4 shrink-0" />
               <span>{c.whyQualify}</span>
             </div>
             <ul className="space-y-1 text-sm text-[var(--fg-primary)]">
               {matchedReasons.map((reason, idx) => (
                 <li key={idx} className="flex items-start gap-2">
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-600" />
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-600" />
                   <span>{reason}</span>
                 </li>
               ))}
@@ -202,15 +218,15 @@ export function SchemeCard({
         )}
 
         {failedReasons.length > 0 && (
-          <div className="rounded-xl border border-red-600/20 bg-[var(--status-ineligible-bg)]/60 p-3.5">
-            <div className="mb-1.5 flex items-center gap-1.5 text-sm font-semibold text-[var(--status-ineligible-fg)]">
+          <div className="rounded-xl border border-red-500/25 bg-[var(--status-ineligible-bg)] p-4">
+            <div className="mb-1.5 flex items-center gap-1.5 text-sm font-bold text-[var(--status-ineligible-fg)]">
               <XCircle className="h-4 w-4 shrink-0" />
               <span>{c.whyNot}</span>
             </div>
             <ul className="space-y-1 text-sm text-[var(--fg-primary)]">
               {failedReasons.map((reason, idx) => (
                 <li key={idx} className="flex items-start gap-2">
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-red-600" />
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-red-600" />
                   <span>{reason}</span>
                 </li>
               ))}
@@ -219,19 +235,18 @@ export function SchemeCard({
         )}
 
         {scheme.needsVerification && (
-          <div className="flex items-start gap-2 rounded-xl border border-amber-500/30 bg-[var(--status-likely-bg)]/70 p-3 text-xs font-medium text-[var(--status-likely-fg)] sm:text-sm">
+          <div className="flex items-start gap-2 rounded-xl border border-amber-500/30 bg-[var(--status-likely-bg)] p-3 text-xs font-medium text-[var(--status-likely-fg)] sm:text-sm">
             <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" />
             <span>{c.needsVerificationNote}</span>
           </div>
         )}
 
-        {/* Expandable Documents & Steps */}
         <div>
           <button
             type="button"
             onClick={() => setExpanded((prev) => !prev)}
             aria-expanded={expanded}
-            className="flex min-h-[48px] w-full cursor-pointer items-center justify-between rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-surface-muted)] px-4 py-2.5 text-left text-sm font-semibold text-[var(--fg-primary)] transition-colors hover:bg-[var(--border-subtle)]/40"
+            className="flex min-h-[48px] w-full cursor-pointer items-center justify-between rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-surface-muted)]/70 px-4 py-2.5 text-left text-sm font-bold text-[var(--fg-primary)] transition-colors hover:border-[var(--accent-teal)]/40 hover:bg-[var(--bg-surface-muted)]"
           >
             <span className="flex items-center gap-2">
               <FileCheck2 className="h-4 w-4 text-[var(--accent-teal)]" />
@@ -244,33 +259,33 @@ export function SchemeCard({
           </button>
 
           {expanded && (
-            <div className="mt-3 space-y-4 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-canvas)] p-4">
-              {/* Full Benefits */}
+            <div className="mt-3 space-y-5 rounded-2xl border border-[var(--border-subtle)] bg-[var(--bg-canvas)]/90 p-4 sm:p-5">
               <div>
                 <h4 className="text-xs font-bold uppercase tracking-wider text-[var(--fg-muted)]">
                   {t.saved.compareFields.benefit}
                 </h4>
-                <p className="mt-1 text-sm text-[var(--fg-primary)]">{scheme.benefits[lang]}</p>
+                <p className="mt-1.5 text-sm leading-relaxed text-[var(--fg-primary)]">
+                  {scheme.benefits[lang]}
+                </p>
               </div>
 
-              {/* Interactive Documents Checklist */}
               <div>
                 <h4 className="mb-2 text-xs font-bold uppercase tracking-wider text-[var(--fg-muted)]">
                   {c.documents}
                 </h4>
-                <ul className="space-y-2">
+                <ul className="space-y-1.5">
                   {scheme.documents.map((doc) => {
                     const isChecked = checkedDocs.includes(doc.id);
                     return (
                       <li key={doc.id}>
-                        <label className="flex min-h-[40px] cursor-pointer items-start gap-2.5 rounded-lg p-1.5 text-sm hover:bg-[var(--bg-surface-muted)]">
+                        <label className="flex min-h-[40px] cursor-pointer items-start gap-2.5 rounded-xl p-1.5 text-sm transition-colors hover:bg-[var(--bg-surface)]">
                           <input
                             type="checkbox"
                             checked={isChecked}
                             onChange={() => handleToggleDoc(doc.id)}
                             className="mt-0.5 h-5 w-5 shrink-0 accent-[var(--accent-teal)]"
                           />
-                          <span className={isChecked ? 'line-through opacity-70' : ''}>
+                          <span className={isChecked ? 'line-through opacity-65' : 'font-medium'}>
                             {doc.name[lang]}
                           </span>
                         </label>
@@ -280,38 +295,36 @@ export function SchemeCard({
                 </ul>
               </div>
 
-              {/* Application Steps Timeline */}
               <div>
-                <h4 className="mb-2 text-xs font-bold uppercase tracking-wider text-[var(--fg-muted)]">
+                <h4 className="mb-3 text-xs font-bold uppercase tracking-wider text-[var(--fg-muted)]">
                   {c.howToApply}
                 </h4>
-                <ol className="space-y-2.5">
+                <ol className="relative space-y-3 border-l-2 border-[var(--accent-teal)]/25 pl-5">
                   {scheme.applicationSteps[lang].map((step, i) => (
-                    <li key={i} className="flex items-start gap-3 text-sm text-[var(--fg-primary)]">
-                      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--accent-teal)] text-xs font-bold text-white">
+                    <li key={i} className="relative text-sm text-[var(--fg-primary)]">
+                      <span className="absolute -left-[31px] flex h-6 w-6 items-center justify-center rounded-full bg-[var(--accent-teal)] text-xs font-bold text-white dark:text-[#041B19]">
                         {i + 1}
                       </span>
-                      <span className="pt-0.5">{step}</span>
+                      <span className="block pt-0.5 leading-relaxed">{step}</span>
                     </li>
                   ))}
                 </ol>
               </div>
 
-              {/* Deadlines & Helpline */}
               <div className="grid gap-3 pt-1 sm:grid-cols-2">
-                <div className="rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-surface)] p-3 text-sm">
-                  <div className="flex items-center gap-1.5 text-xs font-bold text-[var(--fg-muted)]">
-                    <Calendar className="h-3.5 w-3.5" />
+                <div className="rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-surface)] p-3.5 text-sm">
+                  <div className="flex items-center gap-1.5 text-xs font-bold uppercase text-[var(--fg-muted)]">
+                    <Calendar className="h-3.5 w-3.5 text-[var(--accent-teal)]" />
                     <span>{c.deadlines}</span>
                   </div>
                   <p className="mt-1 text-[var(--fg-primary)]">{scheme.deadlines[lang]}</p>
                 </div>
-                <div className="rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-surface)] p-3 text-sm">
-                  <div className="flex items-center gap-1.5 text-xs font-bold text-[var(--fg-muted)]">
-                    <Phone className="h-3.5 w-3.5" />
+                <div className="rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-surface)] p-3.5 text-sm">
+                  <div className="flex items-center gap-1.5 text-xs font-bold uppercase text-[var(--fg-muted)]">
+                    <Phone className="h-3.5 w-3.5 text-[var(--accent-saffron)]" />
                     <span>{c.helpline}</span>
                   </div>
-                  <p className="mt-1 font-semibold text-[var(--fg-primary)]">{scheme.helpline}</p>
+                  <p className="mt-1 font-bold text-[var(--fg-primary)]">{scheme.helpline}</p>
                 </div>
               </div>
             </div>
@@ -319,8 +332,7 @@ export function SchemeCard({
         </div>
       </CardContent>
 
-      {/* Action Buttons (>= 48px touch targets) */}
-      <CardFooter className="no-print flex flex-wrap gap-2 border-t border-[var(--border-subtle)] bg-[var(--bg-surface-muted)]/40 pt-4">
+      <CardFooter className="no-print flex flex-wrap gap-2 border-t border-[var(--border-subtle)] bg-[var(--bg-surface-muted)]/35 pt-4">
         <Button asChild variant="primary" size="sm" className="flex-1 sm:flex-none">
           <a href={scheme.officialUrl} target="_blank" rel="noopener noreferrer">
             <span>{c.applyOfficial}</span>

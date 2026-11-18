@@ -90,7 +90,7 @@ export function extractProfileDeterministic(rawText: string): UserProfile {
 
   // 1. Age extraction (EN / HI / MR / Hinglish) — skip scheme rule phrases like "after age 60" / "60 साल के बाद" / "६० वर्षांनंतर"
   const agePatterns = [
-    /\b(\d{1,2})\s*(?:-\s*)?(?:years?\s*old|yr\s*old|yrs?\s*old|y\/o)\b/i,
+    /\b(\d{1,2})[\s-]*(?:years?[\s-]+old|yrs?[\s-]+old|y\/o)\b/i,
     /\b(?:my\s+age|age\s+is)\s*:?\s*(\d{1,2})\b/i,
     /(\d{1,2})\s*(?:साल\s*(?:का|की|के)|वर्ष\s*(?:का|की|के)|वर्षांचा|वर्षांची|वर्षाचा|वर्षाची|वर्षांच्या|saal\s*(?:ka|ki|ke)|varshacha|varshachi|varshache)/i,
     /(?:उम्र|वय|आयु)\s*(?:है|आहे)?\s*(\d{1,2})/i,

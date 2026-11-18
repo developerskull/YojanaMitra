@@ -8,6 +8,7 @@ import { hybridSearchSchemes } from '@/lib/rag';
 import { extractProfileDeterministic } from '@/lib/rag/profile-extractor';
 import { InMemoryTokenBucketLimiter } from '@/lib/ratelimit/token-bucket';
 import { evaluateInputSafety } from '@/lib/security/guard';
+import { createSessionToken, verifySessionToken } from '@/lib/auth/session';
 
 describe('Multilingual Detection & Profile Extraction', () => {
   it('converts Devanagari numerals to ASCII digits', () => {
@@ -101,5 +102,18 @@ describe('Security, PII Redaction, Cache & Rate Limit', () => {
     expect(limiter.consume('1.2.3.4').allowed).toBe(true);
     expect(limiter.consume('1.2.3.4').allowed).toBe(false);
     expect(limiter.consume('5.6.7.8').allowed).toBe(true);
+  });
+
+  it('signs and verifies HMAC session tokens and rejects tampered tokens', () => {
+    const token = createSessionToken({
+      id: 'admin-1',
+      name: 'Admin',
+      email: 'admin@yojanamitra.in',
+      role: 'admin',
+    });
+    const verified = verifySessionToken(token);
+    expect(verified?.role).toBe('admin');
+    expect(verified?.email).toBe('admin@yojanamitra.in');
+    expect(verifySessionToken(`${token}tampered`)).toBeNull();
   });
 });

@@ -56,4 +56,34 @@ test.describe('YojanaMitra Main Flows', () => {
     await search.fill('Ladki Bahin');
     await expect(page.getByText(/Ladki Bahin/i).first()).toBeVisible();
   });
+
+  test('citizen login, admin login, and admin dashboard showing all user requests', async ({
+    page,
+  }) => {
+    // 1. Unauthenticated /admin shows access guard
+    await page.goto('/admin');
+    await expect(page.getByText(/Administrator Access Required/i)).toBeVisible();
+
+    // 2. Sign in as Demo Citizen and submit a scheme query
+    await page.goto('/login');
+    await page.getByRole('button', { name: /Demo Citizen/i }).click();
+    await page.getByRole('button', { name: /Sign In as Citizen/i }).click();
+    await page.waitForURL('**/');
+
+    const input = page.locator('#yojana-query-input');
+    await input.fill('I am a 72-year-old senior citizen looking for health insurance');
+    await page.getByRole('button', { name: /Find Schemes/i }).click();
+    await expect(page.getByText(/Ayushman Vaya Vandana/i).first()).toBeVisible({ timeout: 15000 });
+
+    // 3. Sign out and sign in as Admin -> verify citizen request appears in Admin Dashboard
+    await page.getByRole('button', { name: /Sign out/i }).click();
+    await page.goto('/login?tab=admin');
+    await page.getByRole('button', { name: /Demo Admin/i }).click();
+    await page.getByRole('button', { name: /Sign In to Admin Dashboard/i }).click();
+    await page.waitForURL('**/admin');
+
+    await expect(page.getByRole('heading', { name: /Admin Command Center/i })).toBeVisible();
+    await expect(page.getByText(/Ramesh Patil/i).first()).toBeVisible({ timeout: 10000 });
+    await expect(page.getByText(/72-year-old senior citizen/i).first()).toBeVisible();
+  });
 });

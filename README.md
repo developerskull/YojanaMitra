@@ -6,7 +6,7 @@
 [![Next.js](https://img.shields.io/badge/Next.js-15%20App%20Router-000000)](https://nextjs.org/)
 [![Database](https://img.shields.io/badge/Database-None%20(Stateless)-0F6B6E)](./docs/ARCHITECTURE.md)
 [![Schemes](https://img.shields.io/badge/Verified%20Schemes-46-C84B14)](./data/schemes)
-[![Recall@5](https://img.shields.io/badge/Eval%20Recall%405-98.3%25-15803D)](./docs/EVAL_REPORT.md)
+[![Recall@5](https://img.shields.io/badge/Eval%20Recall%405-99.2%25-15803D)](./docs/EVAL_REPORT.md)
 
 ---
 
@@ -69,7 +69,7 @@ Measured by `npm run eval` across **120 multilingual questions** (EN, HI, MR, Hi
 
 | Metric | Score | Notes |
 | --- | --- | --- |
-| **Retrieval Recall@5** | **98.3%** (118 / 120) | Hybrid BM25 + Vector + RRF + Eligibility Rerank |
+| **Retrieval Recall@5** | **99.2%** (119 / 120) | Hybrid BM25 + Vector + RRF + Eligibility Rerank |
 | **Eligibility Engine Accuracy** | **100.0%** (25 / 25) | Zero misclassifications on hand-labeled profiles |
 | **Citation Correctness** | **100.0%** (120 / 120) | Every `[Sn]` tag maps to a verified retrieved scheme |
 | **Fact Groundedness** | **99.2%** (119 / 120) | Verified facts present in retrieved official scheme data |

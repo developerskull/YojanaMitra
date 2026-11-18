@@ -1,6 +1,7 @@
 import crypto from 'node:crypto';
 import { NextRequest } from 'next/server';
 import { z } from 'zod';
+import { getCurrentSession } from '@/lib/auth/session';
 import { getChatResponseCache, type CachedChatResponse } from '@/lib/cache/lru';
 import { evaluateSchemeEligibility, type EligibilityEvaluation } from '@/lib/eligibility/engine';
 import { detectLanguage } from '@/lib/i18n/detect';
@@ -16,6 +17,7 @@ import {
   type EvaluatedSchemeSummary,
 } from '@/lib/rag/prompt';
 import { extractClientIp, getRateLimiter } from '@/lib/ratelimit/token-bucket';
+import { getRequestLogStore } from '@/lib/requests/store';
 import { getSchemeRepository } from '@/lib/schemes/repository';
 import {
   SchemeCategorySchema,
@@ -142,10 +144,27 @@ export async function POST(req: NextRequest) {
 
   const detected = detectLanguage(message, preferredLang ?? 'en');
   const responseLang: SupportedLang = detected.lang;
+  const session = await getCurrentSession();
+  const actor = {
+    userRole: session?.role ?? ('guest' as const),
+    userName: session?.name ?? 'Guest Citizen',
+    userEmail: session?.email ?? 'guest@anonymous',
+  };
 
   // 3. Prompt-Injection, Harm & Off-Topic Guard
   const safety = evaluateInputSafety(message, responseLang);
   if (!safety.allowed) {
+    getRequestLogStore().record({
+      type: 'chat',
+      ...actor,
+      lang: responseLang,
+      queryPreview: message,
+      matchedSchemes: [],
+      eligibleCount: 0,
+      latencyMs: Date.now() - startTime,
+      mode: 'blocked',
+      status: 'blocked',
+    });
     logStructured('warn', 'chat_guard_refusal', {
       reason: safety.reason,
       lang: responseLang,
@@ -184,6 +203,25 @@ export async function POST(req: NextRequest) {
   const cached = cache.get(cacheKey);
 
   if (cached) {
+    const cachedSchemes = (cached.schemes as Array<{ scheme: { id: string; name: { en: string } }; eligibility?: { status?: string } }>) ?? [];
+    getRequestLogStore().record({
+      type: 'chat',
+      ...actor,
+      lang: responseLang,
+      queryPreview: message,
+      detectedState: typeof cached.profile.state === 'string' ? cached.profile.state : undefined,
+      detectedOccupation:
+        typeof cached.profile.occupation === 'string' ? cached.profile.occupation : undefined,
+      matchedSchemes: cachedSchemes.map((s) => ({
+        id: s.scheme.id,
+        name: s.scheme.name.en,
+        status: s.eligibility?.status ?? 'likely',
+      })),
+      eligibleCount: cachedSchemes.filter((s) => s.eligibility?.status === 'eligible').length,
+      latencyMs: Date.now() - startTime,
+      mode: 'cached',
+      status: 'completed',
+    });
     logStructured('info', 'chat_cache_hit', {
       lang: responseLang,
       latencyMs: Date.now() - startTime,
@@ -375,6 +413,24 @@ export async function POST(req: NextRequest) {
           degradedMode: usedDegradedMode,
         };
         cache.set(cacheKey, entry);
+
+        getRequestLogStore().record({
+          type: 'chat',
+          ...actor,
+          lang: responseLang,
+          queryPreview: message,
+          detectedState: mergedProfile.state,
+          detectedOccupation: mergedProfile.occupation,
+          matchedSchemes: finalTop.map((item) => ({
+            id: item.retrieved.scheme.id,
+            name: item.retrieved.scheme.name.en,
+            status: item.evaluation.status,
+          })),
+          eligibleCount: finalTop.filter((i) => i.evaluation.status === 'eligible').length,
+          latencyMs: Date.now() - startTime,
+          mode: usedDegradedMode ? 'degraded' : 'live',
+          status: 'completed',
+        });
 
         logStructured('info', 'chat_completed', {
           lang: responseLang,
