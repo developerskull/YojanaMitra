@@ -66,3 +66,8 @@
 - Fixed 3 real bugs surfaced by our tests & eval: preserved Unicode combining marks (`\p{M}`) for Devanagari matras in tokenization, hardened Marathi vs. Hindi whole-word detection, and prevented benefit amounts / post-60 pension phrases from being misparsed as user age/income.
 - Added **19 Vitest unit tests** (`/tests/unit/eligibility.test.ts`, `/tests/unit/rag-and-i18n.test.ts`) — 19/19 passed.
 - Added **3 Playwright E2E tests** (`/tests/e2e/main-flows.spec.ts`) covering Marathi language switch, Nashik farmer chat + cited scheme cards, save scheme + documents checklist, eligibility wizard, and scheme explorer — 3/3 passed in Chromium.
+
+## Stage 9: Documentation, Docker & Final Verification ✅
+- Wrote comprehensive `README.md` with problem statement, demo GIF placeholders, feature overview, Mermaid architecture diagram, real evaluation metrics from `/docs/EVAL_REPORT.md`, quickstart, how-to-add-a-scheme guide, roadmap, and responsible-AI notes.
+- Added production multi-stage `Dockerfile` (non-root runner, bundled `/data`, `/api/health` healthcheck), `.dockerignore`, and `CONTRIBUTING.md`.
+- Verified one-command `npm run setup` scripts, `.env.example`, zero database anywhere, and full green pass across `validate:data`, `build-index`, `typecheck`, `lint`, `test` (19/19), `eval` (120 questions + 25 eligibility cases), `build`, and `test:e2e` (3/3 Chromium flows).
