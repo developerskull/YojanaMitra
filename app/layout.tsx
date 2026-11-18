@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import { Noto_Sans, Noto_Sans_Devanagari } from 'next/font/google';
+import { AppProviders } from '@/components/layout/AppProviders';
+import { AppShell } from '@/components/layout/AppShell';
 import './globals.css';
 
 const notoSans = Noto_Sans({
@@ -41,7 +43,11 @@ export default function RootLayout({
       className={`${notoSans.variable} ${notoDevanagari.variable}`}
       suppressHydrationWarning
     >
-      <body className="min-h-screen antialiased">{children}</body>
+      <body className="min-h-screen antialiased">
+        <AppProviders>
+          <AppShell>{children}</AppShell>
+        </AppProviders>
+      </body>
     </html>
   );
 }

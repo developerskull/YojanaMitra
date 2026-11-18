@@ -36,3 +36,11 @@
 - Implemented Web Speech API STT (`en-IN`, `hi-IN`, `mr-IN`, interim transcripts, graceful unsupported-browser & permission-denied states) and `speechSynthesis` TTS with citation/markdown scrubbing (`/lib/voice/web-speech.ts`).
 - Built local-only browser persistence module (`/lib/storage/local.ts`) for user profile, saved schemes, comparison list, checked documents, theme, and high-contrast preference with one-click `clearAllUserData()`.
 - Verified: `npm run typecheck` and `npm run lint` pass cleanly.
+
+## Stage 6: Mobile-First UI / UX, Accessibility & PWA ✅
+- Crafted warm Indian civic design system (deep saffron `#C84B14`, civic teal `#0F6B6E`, warm off-white `#FAF8F4`, true dark mode, high-contrast mode toggle, `Noto Sans` + `Noto Sans Devanagari`, `>= 16px` body, `>= 48px` touch targets, `prefers-reduced-motion`, WCAG 2.2 AA skip link & ARIA live regions).
+- Added persistent official-source trust banner (`Last verified: 2026-11-18`) and offline status indicator in `/components/layout/AppShell.tsx`.
+- Built Landing + SSE Streaming Chat experience (`/components/chat/ChatExperience.tsx`) with large accessible Mic button + graceful unsupported fallback, 6 quick-start category cards, 3-step How It Works strip, detected profile pills, Read Aloud on every answer, expandable `[S1]` citation chips, follow-up chips, and rich interactive `/components/schemes/SchemeCard.tsx` (Green/Amber/Red eligibility badges, "Why you qualify", checkable documents, steps timeline, official apply link, WhatsApp share, Save, Compare).
+- Built Guided Eligibility Wizard (`/wizard`), instant client-side Scheme Explorer (`/explorer`), Saved Schemes + Aggregated Printable Documents Checklist + Side-by-Side Compare Table (`/saved`), local-only My Profile editor with "Delete All My Data" (`/profile`), and multilingual Privacy page (`/privacy`).
+- Added installable PWA Web App Manifest (`/app/manifest.ts`), SVG app icon (`/public/icons/icon.svg`), and offline-capable Service Worker (`/public/sw.js`).
+- Verified: `npm run typecheck`, `npm run lint`, and `npm run build` (13/13 static & dynamic routes) all pass cleanly.
