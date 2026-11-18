@@ -88,12 +88,12 @@ export function extractProfileDeterministic(rawText: string): UserProfile {
   const lower = normalized.toLowerCase();
   const profile: UserProfile = {};
 
-  // 1. Age extraction (EN / HI / MR / Hinglish)
+  // 1. Age extraction (EN / HI / MR / Hinglish) — skip scheme rule phrases like "after age 60" / "60 साल के बाद" / "६० वर्षांनंतर"
   const agePatterns = [
-    /\b(\d{1,2})\s*(?:-\s*)?(?:years?\s*old|yr\s*old|yrs?\s*old|y\/o|age)\b/i,
-    /\bage\s*(?:is|:|of)?\s*(\d{1,2})\b/i,
-    /(\d{1,2})\s*(?:साल|वर्ष|वर्षांचा|वर्षांची|वर्षाचा|वर्षाची|saal|varsh|varshacha|varshachi)/i,
-    /(?:उम्र|वय|आयु)\s*(\d{1,2})/i,
+    /\b(\d{1,2})\s*(?:-\s*)?(?:years?\s*old|yr\s*old|yrs?\s*old|y\/o)\b/i,
+    /\b(?:my\s+age|age\s+is)\s*:?\s*(\d{1,2})\b/i,
+    /(\d{1,2})\s*(?:साल\s*(?:का|की|के)|वर्ष\s*(?:का|की|के)|वर्षांचा|वर्षांची|वर्षाचा|वर्षाची|वर्षांच्या|saal\s*(?:ka|ki|ke)|varshacha|varshachi|varshache)/i,
+    /(?:उम्र|वय|आयु)\s*(?:है|आहे)?\s*(\d{1,2})/i,
   ];
   for (const pat of agePatterns) {
     const m = normalized.match(pat);
@@ -141,15 +141,17 @@ export function extractProfileDeterministic(rawText: string): UserProfile {
     }
   }
 
-  // 4. Annual Income (lakh / thousand / monthly -> annual)
+  // 4. Annual Income (require an income keyword nearby so benefit amounts like "₹5 lakh cover" aren't misread as income)
   const lakhMatch = normalized.match(
-    /(?:income|earning|salary|उत्पन्न|आय|कमाई|utpanna|aay)?[^\d]{0,20}(?:₹|rs\.?|inr)?\s*(\d+(?:\.\d+)?)\s*(?:lakh|lakhs|lac|लाख)/i
+    /(?:income|earning|salary|उत्पन्न|आय|कमाई|utpanna|aay)[^\d]{0,25}(?:₹|rs\.?|inr)?\s*(\d+(?:\.\d+)?)\s*(?:lakh|lakhs|lac|लाख)/i
+  ) ?? normalized.match(
+    /(?:₹|rs\.?|inr)\s*(\d+(?:\.\d+)?)\s*(?:lakh|lakhs|lac|लाख)\s*(?:annual\s+)?(?:family\s+)?(?:income|earning|salary|उत्पन्न|आय)/i
   );
   const monthlyThousandMatch = normalized.match(
-    /(?:₹|rs\.?)?\s*(\d+(?:,\d+)*)\s*(?:per\s*month|\/month|monthly|दरमहा|प्रति\s*माह|महिना|mahina)/i
+    /(?:earning|income|salary|उत्पन्न|आय|कमाई)[^\d]{0,18}(?:₹|rs\.?)?\s*(\d+(?:,\d+)*)\s*(?:per\s*month|\/month|monthly|दरमहा|प्रति\s*माह|महिना|mahina)/i
   );
   const annualRupeeMatch = normalized.match(
-    /(?:income|उत्पन्न|आय|utpanna|aay)[^\d]{0,20}(?:₹|rs\.?)?\s*(\d{4,7})(?!\s*(?:per\s*month|\/month|monthly|दरमहा|प्रति\s*माह))/i
+    /(?:income|उत्पन्न|आय|utpanna|aay)[^\d]{0,20}(?:₹|rs\.?)?\s*(\d[\d,]{3,8})(?!\s*(?:per\s*month|\/month|monthly|दरमहा|प्रति\s*माह))/i
   );
 
   if (lakhMatch?.[1]) {
@@ -163,7 +165,7 @@ export function extractProfileDeterministic(rawText: string): UserProfile {
       profile.annualIncome = monthly * 12;
     }
   } else if (annualRupeeMatch?.[1]) {
-    const annual = Number.parseInt(annualRupeeMatch[1], 10);
+    const annual = Number.parseInt(annualRupeeMatch[1].replace(/,/g, ''), 10);
     if (annual >= 5000 && annual <= 5000000) {
       profile.annualIncome = annual;
     }

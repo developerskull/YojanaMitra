@@ -8,9 +8,8 @@ export interface LanguageDetectionResult {
 
 const DEVANAGARI_REGEX = /[\u0900-\u097F]/g;
 
-// Strong Marathi-specific Devanagari words & characters (ळ is almost uniquely Marathi vs Hindi)
-const MARATHI_DEVANAGARI_MARKERS = [
-  'ळ',
+// Strong Marathi Devanagari words / suffixes (distinct from Hindi)
+const MARATHI_DEVANAGARI_WORDS = [
   'आहे',
   'आहेत',
   'माझ्याकडे',
@@ -19,33 +18,93 @@ const MARATHI_DEVANAGARI_MARKERS = [
   'माझे',
   'मी',
   'शेतकरी',
+  'शेतकऱ्यांना',
+  'शेतकऱ्यांसाठी',
   'वर्षांचा',
   'वर्षांची',
+  'वर्षाचा',
+  'वर्षाची',
+  'वर्षांनंतर',
   'नाशिक',
+  'नाशिकचा',
   'पुणे',
+  'पुण्याची',
+  'महाराष्ट्रातील',
+  'महाराष्ट्रात',
   'जमीन',
   'एकर',
   'लाडकी',
   'बहीण',
+  'लेक',
   'योजनेसाठी',
+  'योजनेत',
+  'योजनेतून',
   'कोणत्या',
   'मिळेल',
+  'मिळतात',
+  'मिळते',
+  'मिळतील',
+  'मिळवावी',
   'करायचा',
+  'करावी',
+  'करावा',
   'अर्ज',
   'तुम्ही',
-  'कृपया',
   'सांगा',
-  'कुटुंब',
+  'द्या',
+  'माहिती',
+  'कशी',
+  'कसे',
+  'किती',
   'उत्पन्न',
   'विद्यार्थी',
+  'विद्यार्थ्यांसाठी',
   'ज्येष्ठ',
+  'ज्येष्ठांसाठी',
   'महिलांसाठी',
+  'महिला',
+  'कामगारांसाठी',
+  'फेरीवाल्यांसाठी',
+  'उद्योजकांसाठी',
+  'नागरिकांसाठी',
   'नाही',
   'होय',
   'साठी',
+  'मध्ये',
+  'पेन्शन',
+  'विमा',
+  'पीक',
+  'कर्ज',
+  'अनुदान',
+  'शिष्यवृत्ती',
+  'शेततळे',
+  'बांधण्यासाठी',
+  'बसवण्यासाठी',
+  'उघडावी',
+  'काढायचे',
+  'काढावे',
+  'भरावी',
+  'दरमहा',
+  'हप्त्यात',
+  'गरोदर',
+  'मुलीसाठी',
+  'मुलीच्या',
+  'बचत',
+  'गटासाठी',
+  'वसतिगृह',
+  'दिव्यांग',
+  'निराधार',
+  'श्रावणबाळ',
+  'जोतिराव',
+  'असलेल्या',
+  'इयत्ता',
+  'मोफत',
+  'सुरू',
+  'करण्यासाठी',
 ];
 
-const HINDI_DEVANAGARI_MARKERS = [
+// Strong Hindi Devanagari whole-word markers (matched on whitespace-delimited tokens)
+const HINDI_DEVANAGARI_EXACT_WORDS = new Set([
   'हूँ',
   'हूं',
   'है',
@@ -54,43 +113,73 @@ const HINDI_DEVANAGARI_MARKERS = [
   'मेरा',
   'मेरी',
   'मेरे',
+  'मुझे',
   'किसान',
+  'किसानों',
   'साल',
   'का',
   'की',
   'के',
-  'मुझे',
+  'को',
+  'में',
+  'से',
+  'पर',
   'कौन',
   'सी',
-  'योजना',
   'मिलेगी',
+  'मिलेगा',
+  'मिलते',
+  'मिलता',
   'चाहिए',
   'आवेदन',
   'कैसे',
   'करें',
-  'कृपया',
   'बताइए',
   'बताओ',
+  'बताएं',
+  'दें',
   'आय',
   'छात्र',
+  'छात्रों',
+  'छात्रवृत्ति',
   'वरिष्ठ',
+  'बुजुर्ग',
+  'बुजुर्गों',
   'महिलाओं',
   'नहीं',
-];
+  'कितने',
+  'कितनी',
+  'कितना',
+  'जानकारी',
+  'बीमा',
+  'ऋण',
+  'फसल',
+  'पेंशन',
+  'मुफ्त',
+  'खोलें',
+  'बनवाएं',
+  'कराएं',
+  'भरें',
+  'क्या',
+  'और',
+  'लिए',
+]);
 
 // Romanized Marathi (Marathi-English code-mixed) markers
 const MARATHI_ROMAN_MARKERS = [
   'shetkari',
   'aahe',
+  'aahet',
   'ahe',
   'majha',
   'majhi',
+  'majhe',
   'mazya',
   'majhyakade',
   'varshacha',
   'varshachi',
+  'varshache',
   'kontya',
-  'yojana',
   'sathi',
   'milel',
   'kasa',
@@ -106,7 +195,14 @@ const MARATHI_ROMAN_MARKERS = [
   'jamin',
   'ekra',
   'ekar',
-  'mi ',
+  'madhe',
+  'kagadpatre',
+  'lagtat',
+  'karaycha',
+  'ajoba',
+  'aai',
+  'rahate',
+  'mi',
 ];
 
 // Romanized Hindi (Hinglish) markers
@@ -118,6 +214,7 @@ const HINDI_ROMAN_MARKERS = [
   'hain',
   'mera',
   'meri',
+  'mere',
   'mujhe',
   'kaun',
   'kaunsi',
@@ -128,7 +225,6 @@ const HINDI_ROMAN_MARKERS = [
   'batao',
   'bataiye',
   'saal',
-  'varsh',
   'mahila',
   'vidyarthi',
   'vridh',
@@ -139,8 +235,21 @@ const HINDI_ROMAN_MARKERS = [
   'kheti',
   'bima',
   'sarkari',
-  'main ',
-  'mein ',
+  'main',
+  'mein',
+  'jankari',
+  'milega',
+  'milegi',
+  'pita',
+  'beti',
+  'khata',
+  'khole',
+  'gaon',
+  'kitna',
+  'paisa',
+  'milta',
+  'banega',
+  'dukan',
 ];
 
 /**
@@ -179,19 +288,33 @@ export function detectLanguage(
     let mrScore = 0;
     let hiScore = 0;
 
-    if (text.includes('ळ')) mrScore += 4;
-    for (const marker of MARATHI_DEVANAGARI_MARKERS) {
-      if (text.includes(marker)) mrScore += marker === 'ळ' ? 3 : 2;
-    }
-    for (const marker of HINDI_DEVANAGARI_MARKERS) {
-      if (text.includes(marker)) hiScore += 2;
+    // 'ळ' is practically unique to Marathi vs Hindi
+    if (text.includes('ळ')) mrScore += 6;
+
+    const words = text
+      .replace(/[^\p{L}\p{M}\p{N}]+/gu, ' ')
+      .trim()
+      .split(/\s+/)
+      .filter(Boolean);
+
+    const marathiWordSet = new Set(MARATHI_DEVANAGARI_WORDS);
+
+    for (const w of words) {
+      if (marathiWordSet.has(w)) {
+        mrScore += 3;
+      } else if (w.endsWith('साठी') || w.endsWith('मधील') || w.endsWith('मध्ये') || w.endsWith('च्या')) {
+        mrScore += 3;
+      }
+      if (HINDI_DEVANAGARI_EXACT_WORDS.has(w)) {
+        hiScore += 3;
+      }
     }
 
     if (mrScore > hiScore) {
-      return { lang: 'mr', isCodeMixed, confidence: Math.min(0.98, 0.7 + mrScore * 0.05) };
+      return { lang: 'mr', isCodeMixed, confidence: Math.min(0.98, 0.72 + mrScore * 0.04) };
     }
     if (hiScore > mrScore) {
-      return { lang: 'hi', isCodeMixed, confidence: Math.min(0.98, 0.7 + hiScore * 0.05) };
+      return { lang: 'hi', isCodeMixed, confidence: Math.min(0.98, 0.72 + hiScore * 0.04) };
     }
     return {
       lang: fallbackLang === 'mr' ? 'mr' : 'hi',
@@ -200,32 +323,31 @@ export function detectLanguage(
     };
   }
 
-  // Latin script: check romanized Marathi / Hinglish code-mixing
-  const lower = ` ${text.toLowerCase()} `;
+  // Latin script: check romanized Marathi / Hinglish code-mixing using whole-word tokens
+  const tokens = text
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean);
+
+  const mrSet = new Set(MARATHI_ROMAN_MARKERS);
+  const hiSet = new Set(HINDI_ROMAN_MARKERS);
+
   let mrRoman = 0;
   let hiRoman = 0;
 
-  for (const m of MARATHI_ROMAN_MARKERS) {
-    if (m.endsWith(' ')) {
-      if (lower.includes(` ${m}`)) mrRoman += 2;
-    } else if (new RegExp(`\\b${m}\\b`, 'i').test(lower)) {
-      mrRoman += 2;
-    }
-  }
-  for (const h of HINDI_ROMAN_MARKERS) {
-    if (h.endsWith(' ')) {
-      if (lower.includes(` ${h}`)) hiRoman += 2;
-    } else if (new RegExp(`\\b${h}\\b`, 'i').test(lower)) {
-      hiRoman += 2;
-    }
+  for (const tok of tokens) {
+    if (mrSet.has(tok)) mrRoman += 2;
+    if (hiSet.has(tok)) hiRoman += 2;
   }
 
   // Only override English when there are strong vernacular markers (>= 4 score, i.e. 2+ words)
   if (mrRoman >= 4 && mrRoman > hiRoman) {
-    return { lang: 'mr', isCodeMixed: true, confidence: 0.8 };
+    return { lang: 'mr', isCodeMixed: true, confidence: 0.85 };
   }
   if (hiRoman >= 4 && hiRoman >= mrRoman) {
-    return { lang: 'hi', isCodeMixed: true, confidence: 0.8 };
+    return { lang: 'hi', isCodeMixed: true, confidence: 0.85 };
   }
 
   return { lang: 'en', isCodeMixed: mrRoman > 0 || hiRoman > 0, confidence: 0.9 };

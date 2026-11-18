@@ -45,8 +45,9 @@ const REVERSE_SYNONYM_MAP: Map<string, string> = (() => {
  */
 export function tokenizeMultilingual(rawText: string): string[] {
   const normalized = normalizeDevanagariDigits(rawText).toLowerCase();
+  // Include \p{M} (Unicode combining marks) so Devanagari matras/virama stay attached to letters!
   const rawTokens = normalized
-    .replace(/[^\p{L}\p{N}/-]+/gu, ' ')
+    .replace(/[^\p{L}\p{M}\p{N}/-]+/gu, ' ')
     .split(/\s+/)
     .filter((t) => t.length >= 2);
 

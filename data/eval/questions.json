@@ -1,0 +1,1762 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-11-18",
+  "totalQuestions": 120,
+  "totalEligibilityCases": 25,
+  "questions": [
+    {
+      "id": "F01",
+      "lang": "en",
+      "category": "farmer",
+      "query": "I am a 45-year-old farmer from Nashik, Maharashtra with 2 acres of land. What schemes can I get?",
+      "expectedSchemeIds": [
+        "pm-kisan",
+        "namo-shetkari-mahasanman-nidhi",
+        "pm-fasal-bima-yojana"
+      ],
+      "expectedKeyFacts": [
+        "6,000"
+      ]
+    },
+    {
+      "id": "F02",
+      "lang": "en",
+      "category": "farmer",
+      "query": "Which government crop insurance scheme protects farmers against drought and hailstorm?",
+      "expectedSchemeIds": [
+        "pm-fasal-bima-yojana"
+      ],
+      "expectedKeyFacts": [
+        "2%",
+        "1.5%"
+      ]
+    },
+    {
+      "id": "F03",
+      "lang": "en",
+      "category": "farmer",
+      "query": "How can a farmer get a low interest crop loan via Kisan Credit Card?",
+      "expectedSchemeIds": [
+        "kisan-credit-card"
+      ],
+      "expectedKeyFacts": [
+        "3 lakh",
+        "4%"
+      ]
+    },
+    {
+      "id": "F04",
+      "lang": "en",
+      "category": "farmer",
+      "query": "Solar agricultural irrigation pump subsidy scheme for farmers in India",
+      "expectedSchemeIds": [
+        "pm-kusum"
+      ],
+      "expectedKeyFacts": [
+        "60%"
+      ]
+    },
+    {
+      "id": "F05",
+      "lang": "en",
+      "category": "farmer",
+      "query": "Free farm soil testing and fertilizer recommendation card for farmers",
+      "expectedSchemeIds": [
+        "soil-health-card"
+      ],
+      "expectedKeyFacts": [
+        "soil"
+      ]
+    },
+    {
+      "id": "F06",
+      "lang": "en",
+      "category": "farmer",
+      "query": "I am a Scheduled Tribe ST farmer in Maharashtra with 2 acres land and ₹1 lakh income looking for irrigation well subsidy",
+      "expectedSchemeIds": [
+        "maharashtra-birsa-munda-krishi-kranti",
+        "pm-kisan"
+      ],
+      "expectedKeyFacts": [
+        "Maharashtra"
+      ]
+    },
+    {
+      "id": "F07",
+      "lang": "hi",
+      "category": "farmer",
+      "query": "मैं महाराष्ट्र का 45 साल का किसान हूँ, मेरे पास 2 एकड़ जमीन है। मुझे कौन सी योजनाएं मिलेंगी?",
+      "expectedSchemeIds": [
+        "pm-kisan",
+        "namo-shetkari-mahasanman-nidhi"
+      ],
+      "expectedKeyFacts": [
+        "6,000"
+      ]
+    },
+    {
+      "id": "F08",
+      "lang": "hi",
+      "category": "farmer",
+      "query": "पीएम किसान सम्मान निधि में साल में कितने पैसे मिलते हैं और आवेदन कैसे करें?",
+      "expectedSchemeIds": [
+        "pm-kisan"
+      ],
+      "expectedKeyFacts": [
+        "6,000"
+      ]
+    },
+    {
+      "id": "F09",
+      "lang": "hi",
+      "category": "farmer",
+      "query": "खरीफ और रबी फसल बीमा योजना के लिए प्रीमियम कितना देना होता है?",
+      "expectedSchemeIds": [
+        "pm-fasal-bima-yojana"
+      ],
+      "expectedKeyFacts": [
+        "2%"
+      ]
+    },
+    {
+      "id": "F10",
+      "lang": "hi",
+      "category": "farmer",
+      "query": "किसानों को सस्ता कृषि ऋण और किसान क्रेडिट कार्ड कैसे मिलेगा?",
+      "expectedSchemeIds": [
+        "kisan-credit-card"
+      ],
+      "expectedKeyFacts": [
+        "3 लाख"
+      ]
+    },
+    {
+      "id": "F11",
+      "lang": "hi",
+      "category": "farmer",
+      "query": "सौर कृषि पंप सब्सिडी पीएम कुसुम योजना की जानकारी दें",
+      "expectedSchemeIds": [
+        "pm-kusum"
+      ],
+      "expectedKeyFacts": [
+        "60%"
+      ]
+    },
+    {
+      "id": "F12",
+      "lang": "hi",
+      "category": "farmer",
+      "query": "खेत की मिट्टी की मुफ्त जांच कराने के लिए मृदा स्वास्थ्य कार्ड योजना बताएं",
+      "expectedSchemeIds": [
+        "soil-health-card"
+      ],
+      "expectedKeyFacts": [
+        "मिट्टी"
+      ]
+    },
+    {
+      "id": "F13",
+      "lang": "mr",
+      "category": "farmer",
+      "query": "मी नाशिकचा ४५ वर्षांचा शेतकरी आहे, माझ्याकडे २ एकर जमीन आहे",
+      "expectedSchemeIds": [
+        "pm-kisan",
+        "namo-shetkari-mahasanman-nidhi",
+        "maharashtra-magel-tyala-shet-tale"
+      ],
+      "expectedKeyFacts": [
+        "6,000"
+      ]
+    },
+    {
+      "id": "F14",
+      "lang": "mr",
+      "category": "farmer",
+      "query": "नमो शेतकरी महासन्मान निधी योजनेत महाराष्ट्रातील शेतकऱ्यांना किती पैसे मिळतात?",
+      "expectedSchemeIds": [
+        "namo-shetkari-mahasanman-nidhi"
+      ],
+      "expectedKeyFacts": [
+        "6,000"
+      ]
+    },
+    {
+      "id": "F15",
+      "lang": "mr",
+      "category": "farmer",
+      "query": "महाराष्ट्रात शेततळे बांधण्यासाठी मागेल त्याला शेततळे अनुदान कसे मिळेल?",
+      "expectedSchemeIds": [
+        "maharashtra-magel-tyala-shet-tale"
+      ],
+      "expectedKeyFacts": [
+        "75,000"
+      ]
+    },
+    {
+      "id": "F16",
+      "lang": "mr",
+      "category": "farmer",
+      "query": "दुष्काळ व गारपिटीपासून पिकांच्या नुकसानीसाठी प्रधानमंत्री पीक विमा योजना सांगा",
+      "expectedSchemeIds": [
+        "pm-fasal-bima-yojana"
+      ],
+      "expectedKeyFacts": [
+        "पीक विमा"
+      ]
+    },
+    {
+      "id": "F17",
+      "lang": "mr",
+      "category": "farmer",
+      "query": "मी महाराष्ट्रातील आदिवासी ST शेतकरी आहे, विहीर आणि पंप अनुदानासाठी बिरसा मुंडा योजना सांगा",
+      "expectedSchemeIds": [
+        "maharashtra-birsa-munda-krishi-kranti"
+      ],
+      "expectedKeyFacts": [
+        "बिरसा मुंडा"
+      ]
+    },
+    {
+      "id": "F18",
+      "lang": "mr",
+      "category": "farmer",
+      "query": "शेतकऱ्यांसाठी सौर कृषी पंप पीएम कुसुम अनुदान योजना माहिती द्या",
+      "expectedSchemeIds": [
+        "pm-kusum"
+      ],
+      "expectedKeyFacts": [
+        "सौर"
+      ]
+    },
+    {
+      "id": "W01",
+      "lang": "en",
+      "category": "woman",
+      "query": "I am a 30-year-old woman from Pune, Maharashtra with family income ₹1.8 lakh. Am I eligible for Ladki Bahin?",
+      "expectedSchemeIds": [
+        "maharashtra-ladki-bahin"
+      ],
+      "expectedKeyFacts": [
+        "1,500"
+      ]
+    },
+    {
+      "id": "W02",
+      "lang": "en",
+      "category": "woman",
+      "query": "Free LPG cooking gas cylinder connection scheme for poor women Ujjwala",
+      "expectedSchemeIds": [
+        "pm-ujjwala-yojana"
+      ],
+      "expectedKeyFacts": [
+        "LPG"
+      ]
+    },
+    {
+      "id": "W03",
+      "lang": "en",
+      "category": "woman",
+      "query": "High interest savings scheme for my 5-year-old daughter education Sukanya Samriddhi",
+      "expectedSchemeIds": [
+        "sukanya-samriddhi-yojana"
+      ],
+      "expectedKeyFacts": [
+        "8.2%"
+      ]
+    },
+    {
+      "id": "W04",
+      "lang": "en",
+      "category": "woman",
+      "query": "Cash maternity benefit for pregnant woman first child PMMVY",
+      "expectedSchemeIds": [
+        "pm-matru-vandana-yojana"
+      ],
+      "expectedKeyFacts": [
+        "5,000"
+      ]
+    },
+    {
+      "id": "W05",
+      "lang": "en",
+      "category": "woman",
+      "query": "I am a woman entrepreneur wanting a ₹25 lakh bank loan for a new business Stand Up India",
+      "expectedSchemeIds": [
+        "stand-up-india",
+        "pm-mudra-yojana"
+      ],
+      "expectedKeyFacts": [
+        "10 lakh"
+      ]
+    },
+    {
+      "id": "W06",
+      "lang": "en",
+      "category": "woman",
+      "query": "Monthly pension scheme for a 50-year-old BPL widow woman in India",
+      "expectedSchemeIds": [
+        "ignwps-widow-pension"
+      ],
+      "expectedKeyFacts": [
+        "300"
+      ]
+    },
+    {
+      "id": "W07",
+      "lang": "hi",
+      "category": "woman",
+      "query": "मैं महाराष्ट्र की 32 साल की महिला हूँ, पारिवारिक आय ₹2 लाख है। लाडकी बहीण योजना बताएं",
+      "expectedSchemeIds": [
+        "maharashtra-ladki-bahin"
+      ],
+      "expectedKeyFacts": [
+        "1,500"
+      ]
+    },
+    {
+      "id": "W08",
+      "lang": "hi",
+      "category": "woman",
+      "query": "गरीब महिलाओं को मुफ्त रसोई गैस कनेक्शन उज्ज्वला योजना की पात्रता क्या है?",
+      "expectedSchemeIds": [
+        "pm-ujjwala-yojana"
+      ],
+      "expectedKeyFacts": [
+        "एलपीजी"
+      ]
+    },
+    {
+      "id": "W09",
+      "lang": "hi",
+      "category": "woman",
+      "query": "बेटी की पढ़ाई के लिए सुकन्या समृद्धि योजना में खाता कैसे खोलें?",
+      "expectedSchemeIds": [
+        "sukanya-samriddhi-yojana"
+      ],
+      "expectedKeyFacts": [
+        "सुकन्या"
+      ]
+    },
+    {
+      "id": "W10",
+      "lang": "hi",
+      "category": "woman",
+      "query": "गर्भवती महिलाओं के लिए प्रधानमंत्री मातृ वंदना योजना में कितने पैसे मिलते हैं?",
+      "expectedSchemeIds": [
+        "pm-matru-vandana-yojana"
+      ],
+      "expectedKeyFacts": [
+        "5,000"
+      ]
+    },
+    {
+      "id": "W11",
+      "lang": "hi",
+      "category": "woman",
+      "query": "ग्रामीण महिला स्वयं सहायता समूह के लिए लखपति दीदी योजना की जानकारी दें",
+      "expectedSchemeIds": [
+        "lakhpati-didi-day-nrlm"
+      ],
+      "expectedKeyFacts": [
+        "लखपति दीदी"
+      ]
+    },
+    {
+      "id": "W12",
+      "lang": "hi",
+      "category": "woman",
+      "query": "मैं 48 साल की बीपीएल विधवा महिला हूँ, मुझे विधवा पेंशन योजना बताइए",
+      "expectedSchemeIds": [
+        "ignwps-widow-pension"
+      ],
+      "expectedKeyFacts": [
+        "विधवा"
+      ]
+    },
+    {
+      "id": "W13",
+      "lang": "mr",
+      "category": "woman",
+      "query": "मी पुण्याची ३५ वर्षांची महिला आहे, वार्षिक उत्पन्न ₹2 लाख आहे. लाडकी बहीण योजनेसाठी मी पात्र आहे का?",
+      "expectedSchemeIds": [
+        "maharashtra-ladki-bahin"
+      ],
+      "expectedKeyFacts": [
+        "1,500"
+      ]
+    },
+    {
+      "id": "W14",
+      "lang": "mr",
+      "category": "woman",
+      "query": "महाराष्ट्रात पिवळे किंवा केशरी रेशन कार्ड असलेल्या मुलीसाठी लेक लाडकी योजना सांगा",
+      "expectedSchemeIds": [
+        "maharashtra-lek-ladki-yojana"
+      ],
+      "expectedKeyFacts": [
+        "1,01,000"
+      ]
+    },
+    {
+      "id": "W15",
+      "lang": "mr",
+      "category": "woman",
+      "query": "महिला बचत गटासाठी उमेद आणि लखपती दीदी योजना कशी मिळते?",
+      "expectedSchemeIds": [
+        "lakhpati-didi-day-nrlm"
+      ],
+      "expectedKeyFacts": [
+        "लखपती दीदी"
+      ]
+    },
+    {
+      "id": "W16",
+      "lang": "mr",
+      "category": "woman",
+      "query": "गरोदर महिलांसाठी प्रधानमंत्री मातृ वंदना योजनेत किती रुपये मिळतात?",
+      "expectedSchemeIds": [
+        "pm-matru-vandana-yojana"
+      ],
+      "expectedKeyFacts": [
+        "5,000"
+      ]
+    },
+    {
+      "id": "W17",
+      "lang": "mr",
+      "category": "woman",
+      "query": "मुलीच्या भविष्यासाठी सुकन्या समृद्धी योजना पोस्ट ऑफिस मध्ये कशी उघडावी?",
+      "expectedSchemeIds": [
+        "sukanya-samriddhi-yojana"
+      ],
+      "expectedKeyFacts": [
+        "सुकन्या"
+      ]
+    },
+    {
+      "id": "W18",
+      "lang": "mr",
+      "category": "woman",
+      "query": "महिला उद्योजकांसाठी स्टँड-अप इंडिया कर्ज योजना माहिती द्या",
+      "expectedSchemeIds": [
+        "stand-up-india"
+      ],
+      "expectedKeyFacts": [
+        "10 लाख"
+      ]
+    },
+    {
+      "id": "S01",
+      "lang": "en",
+      "category": "student",
+      "query": "I am an undergraduate college student above 80th percentile in Class 12 with ₹3 lakh family income looking for NSP Central Sector scholarship",
+      "expectedSchemeIds": [
+        "nsp-central-sector-scholarship"
+      ],
+      "expectedKeyFacts": [
+        "12,000"
+      ]
+    },
+    {
+      "id": "S02",
+      "lang": "en",
+      "category": "student",
+      "query": "I am an SC college student with ₹2 lakh family income. Which post-matric scholarship covers tuition fees?",
+      "expectedSchemeIds": [
+        "nsp-post-matric-sc"
+      ],
+      "expectedKeyFacts": [
+        "SC"
+      ]
+    },
+    {
+      "id": "S03",
+      "lang": "en",
+      "category": "student",
+      "query": "Post-matric scholarship for Scheduled Tribe ST students with family income under ₹2.5 lakh",
+      "expectedSchemeIds": [
+        "nsp-post-matric-st"
+      ],
+      "expectedKeyFacts": [
+        "ST"
+      ]
+    },
+    {
+      "id": "S04",
+      "lang": "en",
+      "category": "student",
+      "query": "OBC post matric scholarship PM-YASASVI for college student with ₹2 lakh income",
+      "expectedSchemeIds": [
+        "pm-yasasvi-obc-ebc-dnt"
+      ],
+      "expectedKeyFacts": [
+        "OBC"
+      ]
+    },
+    {
+      "id": "S05",
+      "lang": "en",
+      "category": "student",
+      "query": "NMMS scholarship for Class 9 government school student with family income ₹2.5 lakh",
+      "expectedSchemeIds": [
+        "nsp-nmms-scholarship"
+      ],
+      "expectedKeyFacts": [
+        "12,000"
+      ]
+    },
+    {
+      "id": "S06",
+      "lang": "en",
+      "category": "student",
+      "query": "I am a Maharashtra engineering student from Open EWS category with ₹5 lakh income looking for MahaDBT fee reimbursement and hostel allowance",
+      "expectedSchemeIds": [
+        "maharashtra-rajarshi-shahu-maharaj-ebc",
+        "maharashtra-panjabrao-deshmukh-hostel"
+      ],
+      "expectedKeyFacts": [
+        "50%"
+      ]
+    },
+    {
+      "id": "S07",
+      "lang": "hi",
+      "category": "student",
+      "query": "मैं अनुसूचित जाति SC का कॉलेज छात्र हूँ और पारिवारिक आय ₹2 लाख है। पोस्ट मैट्रिक छात्रवृत्ति बताएं",
+      "expectedSchemeIds": [
+        "nsp-post-matric-sc"
+      ],
+      "expectedKeyFacts": [
+        "SC"
+      ]
+    },
+    {
+      "id": "S08",
+      "lang": "hi",
+      "category": "student",
+      "query": "कक्षा 9 के सरकारी स्कूल के छात्र के लिए NMMS छात्रवृत्ति में कितने रुपये मिलते हैं?",
+      "expectedSchemeIds": [
+        "nsp-nmms-scholarship"
+      ],
+      "expectedKeyFacts": [
+        "12,000"
+      ]
+    },
+    {
+      "id": "S09",
+      "lang": "hi",
+      "category": "student",
+      "query": "ओबीसी छात्रों के लिए पीएम यशस्वी पोस्ट मैट्रिक छात्रवृत्ति की जानकारी दें",
+      "expectedSchemeIds": [
+        "pm-yasasvi-obc-ebc-dnt"
+      ],
+      "expectedKeyFacts": [
+        "OBC"
+      ]
+    },
+    {
+      "id": "S10",
+      "lang": "hi",
+      "category": "student",
+      "query": "12वीं में अच्छे अंक लाने वाले कॉलेज छात्रों के लिए NSP केंद्रीय क्षेत्र छात्रवृत्ति बताएं",
+      "expectedSchemeIds": [
+        "nsp-central-sector-scholarship"
+      ],
+      "expectedKeyFacts": [
+        "12,000"
+      ]
+    },
+    {
+      "id": "S11",
+      "lang": "hi",
+      "category": "student",
+      "query": "अनुसूचित जनजाति ST कॉलेज छात्रों के लिए पोस्ट मैट्रिक छात्रवृत्ति कैसे भरें?",
+      "expectedSchemeIds": [
+        "nsp-post-matric-st"
+      ],
+      "expectedKeyFacts": [
+        "ST"
+      ]
+    },
+    {
+      "id": "S12",
+      "lang": "hi",
+      "category": "student",
+      "query": "दिव्यांग कॉलेज छात्र के लिए NSP पोस्ट मैट्रिक छात्रवृत्ति की जानकारी दें",
+      "expectedSchemeIds": [
+        "nsp-post-matric-disability"
+      ],
+      "expectedKeyFacts": [
+        "दिव्यांग"
+      ]
+    },
+    {
+      "id": "S13",
+      "lang": "mr",
+      "category": "student",
+      "query": "मी महाराष्ट्रातील खुला प्रवर्ग EWS अभियांत्रिकी विद्यार्थी आहे, उत्पन्न ₹5 लाख आहे. राजर्षी शाहू महाराज शिष्यवृत्ती सांगा",
+      "expectedSchemeIds": [
+        "maharashtra-rajarshi-shahu-maharaj-ebc"
+      ],
+      "expectedKeyFacts": [
+        "शाहू महाराज"
+      ]
+    },
+    {
+      "id": "S14",
+      "lang": "mr",
+      "category": "student",
+      "query": "शेतकऱ्यांच्या मुलांसाठी वसतिगृह निर्वाह भत्ता पंजाबराव देशमुख योजना महाडीबीटी वर कशी भरावी?",
+      "expectedSchemeIds": [
+        "maharashtra-panjabrao-deshmukh-hostel"
+      ],
+      "expectedKeyFacts": [
+        "30,000"
+      ]
+    },
+    {
+      "id": "S15",
+      "lang": "mr",
+      "category": "student",
+      "query": "इयत्ता ८ वी व ९ वीतील सरकारी शाळेच्या विद्यार्थ्यांसाठी NMMS शिष्यवृत्ती सांगा",
+      "expectedSchemeIds": [
+        "nsp-nmms-scholarship"
+      ],
+      "expectedKeyFacts": [
+        "12,000"
+      ]
+    },
+    {
+      "id": "S16",
+      "lang": "mr",
+      "category": "student",
+      "query": "अनुसूचित जाती SC विद्यार्थ्यांसाठी मॅट्रिकोत्तर शिष्यवृत्ती योजना माहिती द्या",
+      "expectedSchemeIds": [
+        "nsp-post-matric-sc"
+      ],
+      "expectedKeyFacts": [
+        "SC"
+      ]
+    },
+    {
+      "id": "S17",
+      "lang": "mr",
+      "category": "student",
+      "query": "आदिवासी ST विद्यार्थ्यांसाठी मॅट्रिकोत्तर शिष्यवृत्ती सांगा",
+      "expectedSchemeIds": [
+        "nsp-post-matric-st"
+      ],
+      "expectedKeyFacts": [
+        "ST"
+      ]
+    },
+    {
+      "id": "S18",
+      "lang": "mr",
+      "category": "student",
+      "query": "OBC विद्यार्थ्यांसाठी पीएम यशस्वी मॅट्रिकोत्तर शिष्यवृत्ती माहिती सांगा",
+      "expectedSchemeIds": [
+        "pm-yasasvi-obc-ebc-dnt"
+      ],
+      "expectedKeyFacts": [
+        "OBC"
+      ]
+    },
+    {
+      "id": "SR01",
+      "lang": "en",
+      "category": "senior",
+      "query": "I am a 72-year-old senior citizen. How do I get the free ₹5 lakh Ayushman Vaya Vandana health card?",
+      "expectedSchemeIds": [
+        "ayushman-vaya-vandana"
+      ],
+      "expectedKeyFacts": [
+        "5 lakh"
+      ]
+    },
+    {
+      "id": "SR02",
+      "lang": "en",
+      "category": "senior",
+      "query": "Government backed savings scheme with quarterly interest for 62-year-old retired senior citizen",
+      "expectedSchemeIds": [
+        "senior-citizen-savings-scheme"
+      ],
+      "expectedKeyFacts": [
+        "30 lakh"
+      ]
+    },
+    {
+      "id": "SR03",
+      "lang": "en",
+      "category": "senior",
+      "query": "I am 30 years old and want guaranteed ₹5,000 monthly pension after age 60 Atal Pension Yojana",
+      "expectedSchemeIds": [
+        "atal-pension-yojana"
+      ],
+      "expectedKeyFacts": [
+        "5,000"
+      ]
+    },
+    {
+      "id": "SR04",
+      "lang": "en",
+      "category": "senior",
+      "query": "Monthly old age pension for a 68-year-old BPL senior citizen in Maharashtra Shravanbal",
+      "expectedSchemeIds": [
+        "maharashtra-shravanbal-seva",
+        "ignoaps-old-age-pension"
+      ],
+      "expectedKeyFacts": [
+        "1,500"
+      ]
+    },
+    {
+      "id": "SR05",
+      "lang": "en",
+      "category": "senior",
+      "query": "Free hearing aid, spectacles, and walking stick for low-income 65-year-old senior citizen Rashtriya Vayoshri",
+      "expectedSchemeIds": [
+        "rashtriya-vayoshri-yojana"
+      ],
+      "expectedKeyFacts": [
+        "hearing"
+      ]
+    },
+    {
+      "id": "SR06",
+      "lang": "hi",
+      "category": "senior",
+      "query": "मेरी उम्र 74 साल है, क्या मुझे बिना आय सीमा के आयुष्मान वय वंदना कार्ड मिलेगा?",
+      "expectedSchemeIds": [
+        "ayushman-vaya-vandana"
+      ],
+      "expectedKeyFacts": [
+        "5 लाख"
+      ]
+    },
+    {
+      "id": "SR07",
+      "lang": "hi",
+      "category": "senior",
+      "query": "अटल पेंशन योजना में 60 साल के बाद कितनी पेंशन मिलती है और पात्रता उम्र क्या है?",
+      "expectedSchemeIds": [
+        "atal-pension-yojana"
+      ],
+      "expectedKeyFacts": [
+        "5,000"
+      ]
+    },
+    {
+      "id": "SR08",
+      "lang": "hi",
+      "category": "senior",
+      "query": "वरिष्ठ नागरिक बचत योजना SCSS में अधिकतम कितने रुपये जमा कर सकते हैं?",
+      "expectedSchemeIds": [
+        "senior-citizen-savings-scheme"
+      ],
+      "expectedKeyFacts": [
+        "30 लाख"
+      ]
+    },
+    {
+      "id": "SR09",
+      "lang": "hi",
+      "category": "senior",
+      "query": "65 साल के बीपीएल बुजुर्ग के लिए राष्ट्रीय वृद्धावस्था पेंशन योजना IGNOAPS बताएं",
+      "expectedSchemeIds": [
+        "ignoaps-old-age-pension"
+      ],
+      "expectedKeyFacts": [
+        "200"
+      ]
+    },
+    {
+      "id": "SR10",
+      "lang": "hi",
+      "category": "senior",
+      "query": "कम आय वाले बुजुर्गों को मुफ्त श्रवण यंत्र और चश्मा देने वाली राष्ट्रीय वयोश्री योजना बताएं",
+      "expectedSchemeIds": [
+        "rashtriya-vayoshri-yojana"
+      ],
+      "expectedKeyFacts": [
+        "वयोश्री"
+      ]
+    },
+    {
+      "id": "SR11",
+      "lang": "mr",
+      "category": "senior",
+      "query": "मी ७२ वर्षांचा ज्येष्ठ नागरिक आहे, आयुष्मान वय वंदना मोफत आरोग्य कार्ड कसे काढायचे?",
+      "expectedSchemeIds": [
+        "ayushman-vaya-vandana"
+      ],
+      "expectedKeyFacts": [
+        "5 लाख"
+      ]
+    },
+    {
+      "id": "SR12",
+      "lang": "mr",
+      "category": "senior",
+      "query": "महाराष्ट्रातील ६७ वर्षांच्या गरजू ज्येष्ठांसाठी श्रावणबाळ सेवा निवृत्तीवेतन योजना सांगा",
+      "expectedSchemeIds": [
+        "maharashtra-shravanbal-seva"
+      ],
+      "expectedKeyFacts": [
+        "1,500"
+      ]
+    },
+    {
+      "id": "SR13",
+      "lang": "mr",
+      "category": "senior",
+      "query": "अटल पेन्शन योजनेत ६० वर्षांनंतर किती पेन्शन मिळते?",
+      "expectedSchemeIds": [
+        "atal-pension-yojana"
+      ],
+      "expectedKeyFacts": [
+        "5,000"
+      ]
+    },
+    {
+      "id": "SR14",
+      "lang": "mr",
+      "category": "senior",
+      "query": "ज्येष्ठ नागरिक बचत योजना SCSS पोस्ट ऑफिस मध्ये कशी सुरू करावी?",
+      "expectedSchemeIds": [
+        "senior-citizen-savings-scheme"
+      ],
+      "expectedKeyFacts": [
+        "30 लाख"
+      ]
+    },
+    {
+      "id": "SR15",
+      "lang": "mr",
+      "category": "senior",
+      "query": "ज्येष्ठ नागरिकांना मोफत श्रवणयंत्र व व्हीलचेअर देणारी राष्ट्रीय वयोश्री योजना सांगा",
+      "expectedSchemeIds": [
+        "rashtriya-vayoshri-yojana"
+      ],
+      "expectedKeyFacts": [
+        "वयोश्री"
+      ]
+    },
+    {
+      "id": "WK01",
+      "lang": "en",
+      "category": "worker",
+      "query": "I want a collateral-free small business loan of ₹5 lakh under PM Mudra Yojana",
+      "expectedSchemeIds": [
+        "pm-mudra-yojana"
+      ],
+      "expectedKeyFacts": [
+        "10"
+      ]
+    },
+    {
+      "id": "WK02",
+      "lang": "en",
+      "category": "worker",
+      "query": "I am a 34-year-old traditional carpenter artisan looking for toolkit voucher and 5% loan PM Vishwakarma",
+      "expectedSchemeIds": [
+        "pm-vishwakarma"
+      ],
+      "expectedKeyFacts": [
+        "15,000"
+      ]
+    },
+    {
+      "id": "WK03",
+      "lang": "en",
+      "category": "worker",
+      "query": "Urban street vendor working capital loan PM SVANidhi ₹10,000",
+      "expectedSchemeIds": [
+        "pm-svanidhi"
+      ],
+      "expectedKeyFacts": [
+        "7%"
+      ]
+    },
+    {
+      "id": "WK04",
+      "lang": "en",
+      "category": "worker",
+      "query": "I am a 28-year-old unorganized worker earning ₹12,000 per month wanting ₹3,000 pension after 60 PM-SYM",
+      "expectedSchemeIds": [
+        "pm-shram-yogi-maandhan",
+        "atal-pension-yojana"
+      ],
+      "expectedKeyFacts": [
+        "3,000"
+      ]
+    },
+    {
+      "id": "WK05",
+      "lang": "en",
+      "category": "worker",
+      "query": "Maharashtra youth entrepreneur business loan interest reimbursement Annasaheb Patil Corporation",
+      "expectedSchemeIds": [
+        "maharashtra-annasaheb-patil-loan"
+      ],
+      "expectedKeyFacts": [
+        "15"
+      ]
+    },
+    {
+      "id": "WK06",
+      "lang": "hi",
+      "category": "worker",
+      "query": "बिना गारंटी छोटा व्यापार शुरू करने के लिए पीएम मुद्रा लोन योजना की जानकारी दें",
+      "expectedSchemeIds": [
+        "pm-mudra-yojana"
+      ],
+      "expectedKeyFacts": [
+        "मुद्रा"
+      ]
+    },
+    {
+      "id": "WK07",
+      "lang": "hi",
+      "category": "worker",
+      "query": "मैं दर्जी और कारीगर हूँ, पीएम विश्वकर्मा योजना में टूलकिट और ऋण कैसे मिलेगा?",
+      "expectedSchemeIds": [
+        "pm-vishwakarma"
+      ],
+      "expectedKeyFacts": [
+        "15,000"
+      ]
+    },
+    {
+      "id": "WK08",
+      "lang": "hi",
+      "category": "worker",
+      "query": "शहरी फेरीवालों और ठेला विक्रेताओं के लिए पीएम स्वनिधि लोन योजना बताएं",
+      "expectedSchemeIds": [
+        "pm-svanidhi"
+      ],
+      "expectedKeyFacts": [
+        "स्वनिधि"
+      ]
+    },
+    {
+      "id": "WK09",
+      "lang": "hi",
+      "category": "worker",
+      "query": "असंगठित श्रमिक ई-श्रम कामगारों के लिए प्रधानमंत्री श्रम योगी मानधन पेंशन योजना बताएं",
+      "expectedSchemeIds": [
+        "pm-shram-yogi-maandhan"
+      ],
+      "expectedKeyFacts": [
+        "3,000"
+      ]
+    },
+    {
+      "id": "WK10",
+      "lang": "hi",
+      "category": "worker",
+      "query": "महाराष्ट्र में युवाओं के व्यवसाय ऋण पर ब्याज प्रतिपूर्ति अण्णासाहेब पाटील योजना बताएं",
+      "expectedSchemeIds": [
+        "maharashtra-annasaheb-patil-loan"
+      ],
+      "expectedKeyFacts": [
+        "15"
+      ]
+    },
+    {
+      "id": "WK11",
+      "lang": "mr",
+      "category": "worker",
+      "query": "लघु उद्योग सुरू करण्यासाठी विनातारण प्रधानमंत्री मुद्रा कर्ज योजना माहिती द्या",
+      "expectedSchemeIds": [
+        "pm-mudra-yojana"
+      ],
+      "expectedKeyFacts": [
+        "मुद्रा"
+      ]
+    },
+    {
+      "id": "WK12",
+      "lang": "mr",
+      "category": "worker",
+      "query": "मी सुतार कारागीर आहे, पीएम विश्वकर्मा योजनेतून टूलकिट व ५% व्याजाचे कर्ज कसे मिळेल?",
+      "expectedSchemeIds": [
+        "pm-vishwakarma"
+      ],
+      "expectedKeyFacts": [
+        "15,000"
+      ]
+    },
+    {
+      "id": "WK13",
+      "lang": "mr",
+      "category": "worker",
+      "query": "शहरी फेरीवाल्यांसाठी पीएम स्वनिधी कर्ज योजना कशी मिळवावी?",
+      "expectedSchemeIds": [
+        "pm-svanidhi"
+      ],
+      "expectedKeyFacts": [
+        "स्वनिधी"
+      ]
+    },
+    {
+      "id": "WK14",
+      "lang": "mr",
+      "category": "worker",
+      "query": "असंघटित कामगारांसाठी प्रधानमंत्री श्रम योगी मानधन पेन्शन योजना सांगा",
+      "expectedSchemeIds": [
+        "pm-shram-yogi-maandhan"
+      ],
+      "expectedKeyFacts": [
+        "3,000"
+      ]
+    },
+    {
+      "id": "WK15",
+      "lang": "mr",
+      "category": "worker",
+      "query": "महाराष्ट्रातील तरुण उद्योजकांसाठी अण्णासाहेब पाटील महामंडळ व्याज परतावा कर्ज योजना सांगा",
+      "expectedSchemeIds": [
+        "maharashtra-annasaheb-patil-loan"
+      ],
+      "expectedKeyFacts": [
+        "15"
+      ]
+    },
+    {
+      "id": "D01",
+      "lang": "en",
+      "category": "disabled",
+      "query": "How to apply for a national Unique Disability ID UDID card for a disabled person?",
+      "expectedSchemeIds": [
+        "udid-card-scheme"
+      ],
+      "expectedKeyFacts": [
+        "UDID"
+      ]
+    },
+    {
+      "id": "D02",
+      "lang": "en",
+      "category": "disabled",
+      "query": "I have 50% disability and low income. How do I get a free motorized tricycle or wheelchair under ADIP?",
+      "expectedSchemeIds": [
+        "adip-assistive-devices"
+      ],
+      "expectedKeyFacts": [
+        "22,500"
+      ]
+    },
+    {
+      "id": "D03",
+      "lang": "en",
+      "category": "disabled",
+      "query": "Monthly pension for 85% severely disabled BPL citizen IGNDPS",
+      "expectedSchemeIds": [
+        "igndps-disability-pension"
+      ],
+      "expectedKeyFacts": [
+        "300"
+      ]
+    },
+    {
+      "id": "D04",
+      "lang": "en",
+      "category": "disabled",
+      "query": "I am a 35-year-old disabled person from Maharashtra with ₹30,000 annual income. Am I eligible for Sanjay Gandhi Niradhar?",
+      "expectedSchemeIds": [
+        "maharashtra-sanjay-gandhi-niradhar"
+      ],
+      "expectedKeyFacts": [
+        "2,500"
+      ]
+    },
+    {
+      "id": "D05",
+      "lang": "hi",
+      "category": "disabled",
+      "query": "दिव्यांगजनों के लिए राष्ट्रीय UDID स्वावलंबन कार्ड कैसे बनवाएं?",
+      "expectedSchemeIds": [
+        "udid-card-scheme"
+      ],
+      "expectedKeyFacts": [
+        "UDID"
+      ]
+    },
+    {
+      "id": "D06",
+      "lang": "hi",
+      "category": "disabled",
+      "query": "दिव्यांग व्यक्ति को मुफ्त व्हीलचेयर या मोटराइज्ड ट्राईसाइकिल ADIP योजना से कैसे मिलेगी?",
+      "expectedSchemeIds": [
+        "adip-assistive-devices"
+      ],
+      "expectedKeyFacts": [
+        "ADIP"
+      ]
+    },
+    {
+      "id": "D07",
+      "lang": "hi",
+      "category": "disabled",
+      "query": "80% गंभीर दिव्यांग बीपीएल नागरिक को मासिक पेंशन IGNDPS योजना बताएं",
+      "expectedSchemeIds": [
+        "igndps-disability-pension"
+      ],
+      "expectedKeyFacts": [
+        "IGNDPS"
+      ]
+    },
+    {
+      "id": "D08",
+      "lang": "hi",
+      "category": "disabled",
+      "query": "महाराष्ट्र में दिव्यांग व निराश्रित व्यक्तियों के लिए संजय गांधी निराधार अनुदान योजना बताएं",
+      "expectedSchemeIds": [
+        "maharashtra-sanjay-gandhi-niradhar"
+      ],
+      "expectedKeyFacts": [
+        "2,500"
+      ]
+    },
+    {
+      "id": "D09",
+      "lang": "mr",
+      "category": "disabled",
+      "query": "दिव्यांग नागरिकांसाठी राष्ट्रीय UDID कार्ड स्वावलंबन पोर्टलवर कसे काढावे?",
+      "expectedSchemeIds": [
+        "udid-card-scheme"
+      ],
+      "expectedKeyFacts": [
+        "UDID"
+      ]
+    },
+    {
+      "id": "D10",
+      "lang": "mr",
+      "category": "disabled",
+      "query": "४०% दिव्यांग नागरिकांसाठी मोफत व्हीलचेअर व मोटराइज्ड ट्रायसिकल ADIP योजना सांगा",
+      "expectedSchemeIds": [
+        "adip-assistive-devices"
+      ],
+      "expectedKeyFacts": [
+        "ADIP"
+      ]
+    },
+    {
+      "id": "D11",
+      "lang": "mr",
+      "category": "disabled",
+      "query": "महाराष्ट्रातील दिव्यांग नागरिकांना दरमहा २,५०० रुपये देणारी संजय गांधी निराधार योजना सांगा",
+      "expectedSchemeIds": [
+        "maharashtra-sanjay-gandhi-niradhar"
+      ],
+      "expectedKeyFacts": [
+        "2,500"
+      ]
+    },
+    {
+      "id": "D12",
+      "lang": "mr",
+      "category": "disabled",
+      "query": "दिव्यांग महाविद्यालयीन विद्यार्थ्यांसाठी NSP मॅट्रिकोत्तर शिष्यवृत्ती योजना माहिती द्या",
+      "expectedSchemeIds": [
+        "nsp-post-matric-disability"
+      ],
+      "expectedKeyFacts": [
+        "दिव्यांग"
+      ]
+    },
+    {
+      "id": "H01",
+      "lang": "en",
+      "category": "health",
+      "query": "Cashless ₹5 lakh hospital treatment insurance for BPL families Ayushman Bharat PM-JAY",
+      "expectedSchemeIds": [
+        "ayushman-bharat-pm-jay"
+      ],
+      "expectedKeyFacts": [
+        "5 lakh"
+      ]
+    },
+    {
+      "id": "H02",
+      "lang": "en",
+      "category": "health",
+      "query": "Maharashtra cashless surgery health insurance Mahatma Jyotirao Phule Jan Arogya Yojana MJPJAY",
+      "expectedSchemeIds": [
+        "mahatma-jyotirao-phule-jan-arogya"
+      ],
+      "expectedKeyFacts": [
+        "5 lakh"
+      ]
+    },
+    {
+      "id": "H03",
+      "lang": "en",
+      "category": "housing",
+      "query": "Rural pucca house construction grant for BPL family in village PMAY Gramin",
+      "expectedSchemeIds": [
+        "pm-awas-yojana-gramin"
+      ],
+      "expectedKeyFacts": [
+        "1.20"
+      ]
+    },
+    {
+      "id": "H04",
+      "lang": "en",
+      "category": "housing",
+      "query": "Rooftop solar panel subsidy up to ₹78,000 for home electricity PM Surya Ghar",
+      "expectedSchemeIds": [
+        "pm-surya-ghar-muft-bijli"
+      ],
+      "expectedKeyFacts": [
+        "78,000"
+      ]
+    },
+    {
+      "id": "H05",
+      "lang": "hi",
+      "category": "health",
+      "query": "आयुष्मान भारत पीएम-जेएवाई योजना में ₹5 लाख का मुफ्त इलाज कैसे कराएं?",
+      "expectedSchemeIds": [
+        "ayushman-bharat-pm-jay"
+      ],
+      "expectedKeyFacts": [
+        "5 लाख"
+      ]
+    },
+    {
+      "id": "H06",
+      "lang": "hi",
+      "category": "housing",
+      "query": "गांव में पक्का मकान बनाने के लिए प्रधानमंत्री आवास योजना ग्रामीण की सहायता कितनी है?",
+      "expectedSchemeIds": [
+        "pm-awas-yojana-gramin"
+      ],
+      "expectedKeyFacts": [
+        "1.20"
+      ]
+    },
+    {
+      "id": "H07",
+      "lang": "hi",
+      "category": "housing",
+      "query": "घर की छत पर सोलर पैनल लगाने के लिए पीएम सूर्य घर मुफ्त बिजली योजना सब्सिडी बताएं",
+      "expectedSchemeIds": [
+        "pm-surya-ghar-muft-bijli"
+      ],
+      "expectedKeyFacts": [
+        "78,000"
+      ]
+    },
+    {
+      "id": "H08",
+      "lang": "hi",
+      "category": "health",
+      "query": "मात्र ₹20 प्रति वर्ष में ₹2 लाख दुर्घटना बीमा पीएम सुरक्षा बीमा योजना बताएं",
+      "expectedSchemeIds": [
+        "pm-suraksha-bima"
+      ],
+      "expectedKeyFacts": [
+        "20"
+      ]
+    },
+    {
+      "id": "H09",
+      "lang": "mr",
+      "category": "health",
+      "query": "महाराष्ट्रातील महात्मा जोतिराव फुले जन आरोग्य योजनेत मोफत शस्त्रक्रिया कशी मिळते?",
+      "expectedSchemeIds": [
+        "mahatma-jyotirao-phule-jan-arogya"
+      ],
+      "expectedKeyFacts": [
+        "5 लाख"
+      ]
+    },
+    {
+      "id": "H10",
+      "lang": "mr",
+      "category": "housing",
+      "query": "शहरी भागात घर बांधण्यासाठी प्रधानमंत्री आवास योजना शहरी PMAY-U 2.0 सांगा",
+      "expectedSchemeIds": [
+        "pm-awas-yojana-urban"
+      ],
+      "expectedKeyFacts": [
+        "PMAY-U"
+      ]
+    },
+    {
+      "id": "H11",
+      "lang": "mr",
+      "category": "housing",
+      "query": "घराच्या छतावर सौर पॅनेल बसवण्यासाठी पीएम सूर्य घर मोफत वीज अनुदान किती मिळते?",
+      "expectedSchemeIds": [
+        "pm-surya-ghar-muft-bijli"
+      ],
+      "expectedKeyFacts": [
+        "78,000"
+      ]
+    },
+    {
+      "id": "H12",
+      "lang": "mr",
+      "category": "health",
+      "query": "₹436 वार्षिक हप्त्यात ₹2 लाखांचा जीवन विमा प्रधानमंत्री जीवन ज्योती विमा योजना सांगा",
+      "expectedSchemeIds": [
+        "pm-jeevan-jyoti-bima"
+      ],
+      "expectedKeyFacts": [
+        "436"
+      ]
+    },
+    {
+      "id": "CM01",
+      "lang": "mr",
+      "category": "farmer",
+      "query": "Mi Nashik cha 45 varshacha shetkari aahe, majhyakade 2 ekar jamin aahe. Kontya yojana milel?",
+      "expectedSchemeIds": [
+        "pm-kisan",
+        "namo-shetkari-mahasanman-nidhi"
+      ],
+      "expectedKeyFacts": [
+        "6,000"
+      ]
+    },
+    {
+      "id": "CM02",
+      "lang": "mr",
+      "category": "woman",
+      "query": "Majhi aai 35 varshachi aahe aani Maharashtra madhe rahate, ladki bahin yojana sathi kasa arj karaycha?",
+      "expectedSchemeIds": [
+        "maharashtra-ladki-bahin"
+      ],
+      "expectedKeyFacts": [
+        "1,500"
+      ]
+    },
+    {
+      "id": "CM03",
+      "lang": "hi",
+      "category": "farmer",
+      "query": "Main kisan hoon aur mujhe fasal bima aur pm kisan yojana ki jankari chahiye",
+      "expectedSchemeIds": [
+        "pm-kisan",
+        "pm-fasal-bima-yojana"
+      ],
+      "expectedKeyFacts": [
+        "6,000"
+      ]
+    },
+    {
+      "id": "CM04",
+      "lang": "hi",
+      "category": "worker",
+      "query": "Mera chhota dukan hai mujhe mudra loan kaise milega batao",
+      "expectedSchemeIds": [
+        "pm-mudra-yojana"
+      ],
+      "expectedKeyFacts": [
+        "मुद्रा"
+      ]
+    },
+    {
+      "id": "CM05",
+      "lang": "hi",
+      "category": "senior",
+      "query": "Mere pita ji 72 saal ke hain unke liye ayushman vaya vandana health card kaise banega",
+      "expectedSchemeIds": [
+        "ayushman-vaya-vandana"
+      ],
+      "expectedKeyFacts": [
+        "5 लाख"
+      ]
+    },
+    {
+      "id": "CM06",
+      "lang": "hi",
+      "category": "woman",
+      "query": "Meri beti 4 saal ki hai sukanya samriddhi yojana khata kaise khole bataiye",
+      "expectedSchemeIds": [
+        "sukanya-samriddhi-yojana"
+      ],
+      "expectedKeyFacts": [
+        "सुकन्या"
+      ]
+    },
+    {
+      "id": "CM07",
+      "lang": "mr",
+      "category": "student",
+      "query": "Mi Pune madhe engineering student aahe, mahadbt shahu maharaj scholarship sathi kontya kagadpatre lagtat?",
+      "expectedSchemeIds": [
+        "maharashtra-rajarshi-shahu-maharaj-ebc"
+      ],
+      "expectedKeyFacts": [
+        "शाहू महाराज"
+      ]
+    },
+    {
+      "id": "CM08",
+      "lang": "mr",
+      "category": "senior",
+      "query": "Majhe ajoba 68 varshache aahet Maharashtra madhe, shravanbal pension yojana sanga",
+      "expectedSchemeIds": [
+        "maharashtra-shravanbal-seva"
+      ],
+      "expectedKeyFacts": [
+        "1,500"
+      ]
+    },
+    {
+      "id": "CM09",
+      "lang": "hi",
+      "category": "housing",
+      "query": "Gaon mein ghar banane ke liye pm awas yojana gramin mein kitna paisa milta hai",
+      "expectedSchemeIds": [
+        "pm-awas-yojana-gramin"
+      ],
+      "expectedKeyFacts": [
+        "1.20"
+      ]
+    },
+    {
+      "id": "CM10",
+      "lang": "hi",
+      "category": "disabled",
+      "query": "Main divyang hoon mujhe udid card aur wheelchair adip yojana kaise milegi",
+      "expectedSchemeIds": [
+        "udid-card-scheme",
+        "adip-assistive-devices"
+      ],
+      "expectedKeyFacts": [
+        "UDID"
+      ]
+    },
+    {
+      "id": "CM11",
+      "lang": "en",
+      "category": "health",
+      "query": "Affordable ₹20 accident insurance and ₹436 life insurance government scheme",
+      "expectedSchemeIds": [
+        "pm-suraksha-bima",
+        "pm-jeevan-jyoti-bima"
+      ],
+      "expectedKeyFacts": [
+        "2 lakh"
+      ]
+    },
+    {
+      "id": "CM12",
+      "lang": "en",
+      "category": "housing",
+      "query": "Urban EWS home loan interest subsidy PMAY Urban 2.0 for ₹4 lakh income family",
+      "expectedSchemeIds": [
+        "pm-awas-yojana-urban"
+      ],
+      "expectedKeyFacts": [
+        "PMAY-U"
+      ]
+    }
+  ],
+  "eligibilityCases": [
+    {
+      "id": "E01",
+      "description": "45yo Nashik farmer with 2 acres -> PM-KISAN eligible",
+      "profile": {
+        "age": 45,
+        "state": "Maharashtra",
+        "occupation": "farmer",
+        "ownsLand": true,
+        "landHoldingAcres": 2
+      },
+      "schemeId": "pm-kisan",
+      "expectedStatus": "eligible"
+    },
+    {
+      "id": "E02",
+      "description": "45yo Nashik farmer with 2 acres -> Namo Shetkari eligible",
+      "profile": {
+        "age": 45,
+        "state": "Maharashtra",
+        "occupation": "farmer",
+        "ownsLand": true,
+        "landHoldingAcres": 2
+      },
+      "schemeId": "namo-shetkari-mahasanman-nidhi",
+      "expectedStatus": "eligible"
+    },
+    {
+      "id": "E03",
+      "description": "45yo UP farmer -> Namo Shetkari (Maharashtra only) NOT eligible",
+      "profile": {
+        "age": 45,
+        "state": "Uttar Pradesh",
+        "occupation": "farmer",
+        "ownsLand": true,
+        "landHoldingAcres": 2
+      },
+      "schemeId": "namo-shetkari-mahasanman-nidhi",
+      "expectedStatus": "not_eligible"
+    },
+    {
+      "id": "E04",
+      "description": "45yo Nashik farmer with 2 acres -> Magel Tyala Shet Tale (>=1.5 acre) eligible",
+      "profile": {
+        "age": 45,
+        "state": "Maharashtra",
+        "occupation": "farmer",
+        "ownsLand": true,
+        "landHoldingAcres": 2
+      },
+      "schemeId": "maharashtra-magel-tyala-shet-tale",
+      "expectedStatus": "eligible"
+    },
+    {
+      "id": "E05",
+      "description": "45yo Nashik farmer with 0.5 acres -> Magel Tyala Shet Tale NOT eligible (<1.5 acre)",
+      "profile": {
+        "age": 45,
+        "state": "Maharashtra",
+        "occupation": "farmer",
+        "ownsLand": true,
+        "landHoldingAcres": 0.5
+      },
+      "schemeId": "maharashtra-magel-tyala-shet-tale",
+      "expectedStatus": "not_eligible"
+    },
+    {
+      "id": "E06",
+      "description": "32yo Maharashtra woman with ₹1.8L income -> Ladki Bahin eligible",
+      "profile": {
+        "age": 32,
+        "gender": "female",
+        "state": "Maharashtra",
+        "annualIncome": 180000
+      },
+      "schemeId": "maharashtra-ladki-bahin",
+      "expectedStatus": "eligible"
+    },
+    {
+      "id": "E07",
+      "description": "32yo Maharashtra woman with ₹4L income -> Ladki Bahin NOT eligible (>₹2.5L)",
+      "profile": {
+        "age": 32,
+        "gender": "female",
+        "state": "Maharashtra",
+        "annualIncome": 400000
+      },
+      "schemeId": "maharashtra-ladki-bahin",
+      "expectedStatus": "not_eligible"
+    },
+    {
+      "id": "E08",
+      "description": "32yo Maharashtra man with ₹1L income -> Ladki Bahin NOT eligible (gender)",
+      "profile": {
+        "age": 32,
+        "gender": "male",
+        "state": "Maharashtra",
+        "annualIncome": 100000
+      },
+      "schemeId": "maharashtra-ladki-bahin",
+      "expectedStatus": "not_eligible"
+    },
+    {
+      "id": "E09",
+      "description": "72yo senior citizen (any income) -> Ayushman Vaya Vandana eligible",
+      "profile": {
+        "age": 72,
+        "annualIncome": 1500000,
+        "state": "Maharashtra"
+      },
+      "schemeId": "ayushman-vaya-vandana",
+      "expectedStatus": "eligible"
+    },
+    {
+      "id": "E10",
+      "description": "65yo senior citizen -> Ayushman Vaya Vandana NOT eligible (<70)",
+      "profile": {
+        "age": 65,
+        "state": "Maharashtra"
+      },
+      "schemeId": "ayushman-vaya-vandana",
+      "expectedStatus": "not_eligible"
+    },
+    {
+      "id": "E11",
+      "description": "20yo SC undergraduate student with ₹1.5L income -> Post-Matric SC eligible",
+      "profile": {
+        "age": 20,
+        "occupation": "student",
+        "casteCategory": "sc",
+        "educationLevel": "undergraduate",
+        "annualIncome": 150000
+      },
+      "schemeId": "nsp-post-matric-sc",
+      "expectedStatus": "eligible"
+    },
+    {
+      "id": "E12",
+      "description": "20yo General student -> Post-Matric SC NOT eligible",
+      "profile": {
+        "age": 20,
+        "occupation": "student",
+        "casteCategory": "general",
+        "educationLevel": "undergraduate",
+        "annualIncome": 150000
+      },
+      "schemeId": "nsp-post-matric-sc",
+      "expectedStatus": "not_eligible"
+    },
+    {
+      "id": "E13",
+      "description": "20yo Maharashtra Open student with ₹5L income -> Shahu Maharaj EBC eligible",
+      "profile": {
+        "age": 20,
+        "state": "Maharashtra",
+        "occupation": "student",
+        "casteCategory": "general",
+        "educationLevel": "undergraduate",
+        "annualIncome": 500000
+      },
+      "schemeId": "maharashtra-rajarshi-shahu-maharaj-ebc",
+      "expectedStatus": "eligible"
+    },
+    {
+      "id": "E14",
+      "description": "30yo unorganized worker earning ₹1.2L/yr -> PM-SYM eligible",
+      "profile": {
+        "age": 30,
+        "occupation": "unorganized_worker",
+        "annualIncome": 120000
+      },
+      "schemeId": "pm-shram-yogi-maandhan",
+      "expectedStatus": "eligible"
+    },
+    {
+      "id": "E15",
+      "description": "48yo unorganized worker -> PM-SYM NOT eligible (maxAge 40)",
+      "profile": {
+        "age": 48,
+        "occupation": "unorganized_worker",
+        "annualIncome": 120000
+      },
+      "schemeId": "pm-shram-yogi-maandhan",
+      "expectedStatus": "not_eligible"
+    },
+    {
+      "id": "E16",
+      "description": "35yo artisan -> PM Vishwakarma eligible",
+      "profile": {
+        "age": 35,
+        "occupation": "artisan"
+      },
+      "schemeId": "pm-vishwakarma",
+      "expectedStatus": "eligible"
+    },
+    {
+      "id": "E17",
+      "description": "35yo urban street vendor -> PM SVANidhi eligible",
+      "profile": {
+        "age": 35,
+        "occupation": "street_vendor",
+        "residenceType": "urban"
+      },
+      "schemeId": "pm-svanidhi",
+      "expectedStatus": "eligible"
+    },
+    {
+      "id": "E18",
+      "description": "35yo rural street vendor -> PM SVANidhi NOT eligible (urban only)",
+      "profile": {
+        "age": 35,
+        "occupation": "street_vendor",
+        "residenceType": "rural"
+      },
+      "schemeId": "pm-svanidhi",
+      "expectedStatus": "not_eligible"
+    },
+    {
+      "id": "E19",
+      "description": "30yo citizen with 50% disability & ₹1.8L income -> ADIP eligible",
+      "profile": {
+        "age": 30,
+        "hasDisability": true,
+        "disabilityPercent": 50,
+        "annualIncome": 180000
+      },
+      "schemeId": "adip-assistive-devices",
+      "expectedStatus": "eligible"
+    },
+    {
+      "id": "E20",
+      "description": "30yo citizen with 25% disability -> ADIP NOT eligible (<40%)",
+      "profile": {
+        "age": 30,
+        "hasDisability": true,
+        "disabilityPercent": 25,
+        "annualIncome": 180000
+      },
+      "schemeId": "adip-assistive-devices",
+      "expectedStatus": "not_eligible"
+    },
+    {
+      "id": "E21",
+      "description": "68yo Maharashtra destitute senior with ₹18,000 income -> Shravanbal eligible",
+      "profile": {
+        "age": 68,
+        "state": "Maharashtra",
+        "annualIncome": 18000
+      },
+      "schemeId": "maharashtra-shravanbal-seva",
+      "expectedStatus": "eligible"
+    },
+    {
+      "id": "E22",
+      "description": "62yo Maharashtra senior -> Shravanbal NOT eligible (minAge 65)",
+      "profile": {
+        "age": 62,
+        "state": "Maharashtra",
+        "annualIncome": 18000
+      },
+      "schemeId": "maharashtra-shravanbal-seva",
+      "expectedStatus": "not_eligible"
+    },
+    {
+      "id": "E23",
+      "description": "45yo BPL widow -> IGNWPS eligible",
+      "profile": {
+        "age": 45,
+        "gender": "female",
+        "maritalStatus": "widowed",
+        "isBpl": true
+      },
+      "schemeId": "ignwps-widow-pension",
+      "expectedStatus": "eligible"
+    },
+    {
+      "id": "E24",
+      "description": "Rural BPL citizen -> PMAY-G eligible",
+      "profile": {
+        "residenceType": "rural",
+        "isBpl": true
+      },
+      "schemeId": "pm-awas-yojana-gramin",
+      "expectedStatus": "eligible"
+    },
+    {
+      "id": "E25",
+      "description": "Taxpayer farmer -> PM-KISAN NOT eligible",
+      "profile": {
+        "age": 45,
+        "occupation": "farmer",
+        "ownsLand": true,
+        "isIncomeTaxPayer": true
+      },
+      "schemeId": "pm-kisan",
+      "expectedStatus": "not_eligible"
+    }
+  ]
+}

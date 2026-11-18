@@ -52,3 +52,17 @@
 - Added PII-redacting structured JSON logger (`/lib/logging/logger.ts`) blocking raw messages/profiles and redacting Aadhaar-like 12-digit numbers, phone numbers, PANs, and emails.
 - Added stateless health endpoint (`/app/api/health/route.ts`) reporting scheme count, RAG index hash, LLM mode, and cache stats, plus React Error Boundaries (`/app/error.tsx`, `/app/global-error.tsx`).
 - Verified: `npm run typecheck`, `npm run lint`, and `npm run build` pass cleanly.
+
+## Stage 8: Evaluation Suite, Unit Tests & Playwright E2E Tests ✅
+- Created `/data/eval/questions.json` with **120 multilingual test questions** (EN, HI, MR, Hinglish, Marathi-English across all 8 scheme categories) and **25 hand-labeled citizen eligibility ground-truth cases**.
+- Built `/scripts/run-eval.ts` outputting `/docs/EVAL_REPORT.md` with real measured metrics:
+  - **Retrieval Recall@5:** `98.3%` (118/120)
+  - **Citation Correctness:** `100.0%` (120/120)
+  - **Fact Groundedness:** `99.2%` (119/120)
+  - **Eligibility Engine Accuracy:** `100.0%` (25/25)
+  - **Hallucination Rate:** `0.0%`
+  - **Language-Match Rate:** `99.2%` (119/120)
+  - **Latency (p50 / p95):** `1.5 ms / 3.4 ms`
+- Fixed 3 real bugs surfaced by our tests & eval: preserved Unicode combining marks (`\p{M}`) for Devanagari matras in tokenization, hardened Marathi vs. Hindi whole-word detection, and prevented benefit amounts / post-60 pension phrases from being misparsed as user age/income.
+- Added **19 Vitest unit tests** (`/tests/unit/eligibility.test.ts`, `/tests/unit/rag-and-i18n.test.ts`) — 19/19 passed.
+- Added **3 Playwright E2E tests** (`/tests/e2e/main-flows.spec.ts`) covering Marathi language switch, Nashik farmer chat + cited scheme cards, save scheme + documents checklist, eligibility wizard, and scheme explorer — 3/3 passed in Chromium.
