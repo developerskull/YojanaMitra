@@ -29,3 +29,10 @@
 - Integrated deterministic eligibility evaluation and eligibility-aware reranking directly into `/app/api/chat/route.ts` so the LLM never decides eligibility alone.
 - Added `/app/api/eligibility/route.ts` and edge-cached `/app/api/schemes/route.ts`.
 - Verified: `npm run typecheck`, `npm run lint`, and live smoke test on Marathi Nashik farmer query (`मी नाशिकचा ४५ वर्षांचा शेतकरी आहे, माझ्याकडे २ एकर जमीन आहे`) accurately extracted all 7 profile attributes and returned verified eligible schemes (`pm-kisan`, `namo-shetkari-mahasanman-nidhi`, `pm-fasal-bima-yojana`, `kisan-credit-card`, `pm-kusum`, `maharashtra-magel-tyala-shet-tale`).
+
+## Stage 5: Voice & Multilingual (EN / HI / MR + Code-Mixed) ✅
+- Authored full English, Hindi, and Marathi UI translation dictionaries (`/lib/i18n/translations.ts`) and persisted `I18nProvider` React context (`/lib/i18n/context.tsx`).
+- Built provider-agnostic Voice STT & TTS adapter interfaces (`/lib/voice/types.ts`, `/lib/voice/index.ts`) ready to plug in Whisper or Google Cloud STT/TTS later.
+- Implemented Web Speech API STT (`en-IN`, `hi-IN`, `mr-IN`, interim transcripts, graceful unsupported-browser & permission-denied states) and `speechSynthesis` TTS with citation/markdown scrubbing (`/lib/voice/web-speech.ts`).
+- Built local-only browser persistence module (`/lib/storage/local.ts`) for user profile, saved schemes, comparison list, checked documents, theme, and high-contrast preference with one-click `clearAllUserData()`.
+- Verified: `npm run typecheck` and `npm run lint` pass cleanly.
