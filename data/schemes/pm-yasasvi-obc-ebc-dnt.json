@@ -1,0 +1,141 @@
+{
+  "id": "pm-yasasvi-obc-ebc-dnt",
+  "name": {
+    "en": "PM-YASASVI Post-Matric Scholarship for OBC, EBC & DNT Students",
+    "hi": "पीएम-यशस्वी ओबीसी, ईबीसी एवं डीएनटी पोस्ट-मैट्रिक छात्रवृत्ति",
+    "mr": "पीएम-यशस्वी OBC, EBC व DNT मॅट्रिकोत्तर शिष्यवृत्ती योजना"
+  },
+  "category": "student",
+  "secondaryCategories": [],
+  "benefitType": "scholarship",
+  "benefitHighlight": {
+    "en": "₹5,000 – ₹20,000 / year academic allowance (OBC/EBC/DNT)*",
+    "hi": "₹5,000 – ₹20,000 / वर्ष शैक्षणिक भत्ता (OBC/EBC/DNT)*",
+    "mr": "₹5,000 – ₹20,000 / वर्ष शैक्षणिक भत्ता (OBC/EBC/DNT)*"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Social Justice & Empowerment",
+  "summary": {
+    "en": "Provides annual academic allowance to Other Backward Class (OBC), Economically Backward Class (EBC), and De-notified Tribes (DNT) students pursuing post-matriculation studies.",
+    "hi": "कक्षा 10वीं के बाद पढ़ाई करने वाले OBC, EBC और DNT वर्ग के छात्रों को वार्षिक शैक्षणिक सहायता प्रदान करने वाली योजना।",
+    "mr": "इयत्ता १० वी नंतर शिक्षण घेणाऱ्या OBC, EBC आणि भटक्या-विमुक्त (DNT) प्रवर्गातील विद्यार्थ्यांसाठी वार्षिक शैक्षणिक भत्ता देणारी योजना."
+  },
+  "benefits": {
+    "en": "Consolidated academic allowance of ₹5,000/year (Class 11–12), ₹8,000/year (non-professional degree), ₹10,000/year (professional courses), up to ₹20,000/year (top-tier professional/PG courses). Confirm state-level tuition fee top-up on state portal.",
+    "hi": "कोर्स समूह के अनुसार ₹5,000 से ₹20,000 प्रति वर्ष समेकित शैक्षणिक भत्ता (राज्य पोर्टल पर अतिरिक्त शिक्षण शुल्क सहायता की जांच करें)।",
+    "mr": "अभ्यासक्रम गटानुसार दरवर्षी ₹5,000 ते ₹20,000 एकत्रित शैक्षणिक भत्ता (राज्य स्तरावरील शिक्षण शुल्क प्रतिपूर्तीसाठी महाडीबीटी तपासा)."
+  },
+  "eligibility": {
+    "occupations": [
+      "student"
+    ],
+    "casteCategories": [
+      "obc",
+      "ews",
+      "vjnt",
+      "sbc"
+    ],
+    "maxAnnualIncome": 250000,
+    "educationLevels": [
+      "higher_secondary",
+      "diploma_iti",
+      "undergraduate",
+      "postgraduate"
+    ],
+    "customConditions": [
+      {
+        "en": "OBC, EBC, or DNT/VJNT students pursuing post-matriculation studies with annual parental income ≤ ₹2.5 lakh.",
+        "hi": "OBC, EBC या DNT वर्ग के छात्र जिनकी पारिवारिक वार्षिक आय ≤ ₹2.5 लाख है।",
+        "mr": "OBC, EBC किंवा VJNT/DNT प्रवर्गातील विद्यार्थी ज्यांचे वार्षिक कौटुंबिक उत्पन्न ≤ ₹2.5 लाख आहे."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "caste-certificate",
+      "name": {
+        "en": "Caste Certificate (issued by Competent Authority)",
+        "hi": "जाति प्रमाण पत्र (सक्षम अधिकारी द्वारा जारी)",
+        "mr": "जातीचा दाखला (सक्षम प्राधिकारी)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "income-certificate",
+      "name": {
+        "en": "Income Certificate (issued by Tehsildar / Competent Authority)",
+        "hi": "आय प्रमाण पत्र (तहसीलदार / सक्षम अधिकारी द्वारा जारी)",
+        "mr": "उत्पन्नाचा दाखला (तहसीलदार / सक्षम प्राधिकारी)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "marksheet",
+      "name": {
+        "en": "Previous Exam Marksheet / Bonafide Student Certificate",
+        "hi": "पिछली परीक्षा की मार्कशीट / बोनाफाइड प्रमाण पत्र",
+        "mr": "मागील परीक्षेची गुणपत्रिका / बोनाफाईड प्रमाणपत्र"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Apply via your State Scholarship Portal (e.g., MahaDBT in Maharashtra) or National Scholarship Portal (scholarships.gov.in).",
+      "Upload OBC/EBC/DNT certificate, income certificate (≤ ₹2.5 lakh), and previous marksheet.",
+      "Submit for college/institute verification and DBT credit."
+    ],
+    "hi": [
+      "अपने राज्य छात्रवृत्ति पोर्टल या NSP (scholarships.gov.in) पर ऑनलाइन आवेदन करें।",
+      "OBC/EBC/DNT प्रमाण पत्र, आय प्रमाण पत्र और मार्कशीट अपलोड करें।",
+      "संस्थान सत्यापन के बाद छात्रवृत्ति सीधे बैंक खाते में जमा होती है।"
+    ],
+    "mr": [
+      "राज्य शिष्यवृत्ती पोर्टल (महाडीबीटी) किंवा NSP (scholarships.gov.in) वर ऑनलाइन अर्ज करा.",
+      "जातीचा दाखला (OBC/VJNT), उत्पन्नाचा दाखला व गुणपत्रिका अपलोड करा.",
+      "महाविद्यालय पडताळणीनंतर शिष्यवृत्ती थेट बँक खात्यात जमा होते."
+    ]
+  },
+  "officialUrl": "https://socialjustice.gov.in/schemes/105",
+  "helpline": "0120-6619540 (NSP Helpdesk)",
+  "deadlines": {
+    "en": "Annual academic cycle; verify current application dates on state portal / NSP.",
+    "hi": "वार्षिक शैक्षणिक सत्र; राज्य पोर्टल / NSP पर वर्तमान अंतिम तिथि जांचें।",
+    "mr": "वार्षिक शैक्षणिक वेळापत्रकानुसार; राज्य पोर्टल/NSP वर अद्ययावत मुदत तपासा."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://socialjustice.gov.in/schemes/105",
+    "https://scholarships.gov.in"
+  ],
+  "needsVerification": true,
+  "tags": [
+    "student",
+    "scholarship",
+    "obc",
+    "ebc",
+    "dnt",
+    "vjnt",
+    "yasasvi",
+    "post matric"
+  ]
+}

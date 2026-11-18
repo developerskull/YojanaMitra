@@ -1,0 +1,139 @@
+{
+  "id": "maharashtra-birsa-munda-krishi-kranti",
+  "name": {
+    "en": "Birsa Munda Krishi Kranti Yojana (Maharashtra — ST Farmers)",
+    "hi": "बिरसा मुंडा कृषि क्रांति योजना (महाराष्ट्र — अनुसूचित जनजाति किसान)",
+    "mr": "बिरसा मुंडा कृषी क्रांती योजना (महाराष्ट्र — आदिवासी शेतकरी)"
+  },
+  "category": "farmer",
+  "secondaryCategories": [],
+  "benefitType": "subsidy",
+  "benefitHighlight": {
+    "en": "High subsidy for irrigation well, pump & pipeline (ST farmers)*",
+    "hi": "सिंचाई कुएं, पंप व पाइपलाइन पर उच्च अनुदान (ST किसान)*",
+    "mr": "विहीर, पंप व पाईपलाईनसाठी मोठे अनुदान (आदिवासी शेतकरी)*"
+  },
+  "level": "state",
+  "state": "Maharashtra",
+  "ministry": "Agriculture Department, Government of Maharashtra",
+  "summary": {
+    "en": "Provides substantial subsidies to Scheduled Tribe (ST) farmers in Maharashtra for new irrigation wells, well repair, electric/solar pumps, pipelines, and micro-irrigation.",
+    "hi": "महाराष्ट्र के अनुसूचित जनजाति (ST) किसानों को नए सिंचाई कुएं, पंप सेट, पाइपलाइन और सूक्ष्म सिंचाई के लिए उच्च सरकारी अनुदान।",
+    "mr": "महाराष्ट्रातील अनुसूचित जमातीच्या (ST) शेतकऱ्यांना नवीन सिंचन विहीर, जुनी विहीर दुरुस्ती, पंपसंच, पाईपलाईन व ठिबक सिंचनासाठी मोठे अनुदान."
+  },
+  "benefits": {
+    "en": "Up to ₹4 lakh for a new irrigation well, plus subsidies for well repair, electric connection, pump set, PVC pipeline, and micro-irrigation (verify latest component caps on MahaDBT).",
+    "hi": "नए सिंचाई कुएं के लिए ₹4 लाख तक, साथ ही कुआं मरम्मत, बिजली कनेक्शन, पंप सेट और पाइपलाइन के लिए अनुदान (महाडीबीटी पर नवीनतम सीमा जांचें)।",
+    "mr": "नवीन सिंचन विहिरीसाठी ₹4 लाखांपर्यंत, तसेच जुनी विहीर दुरुस्ती, वीज जोडणी, पंपसंच व पाईपलाईनसाठी अनुदान (महाडीबीटीवर अद्ययावत मर्यादा तपासा)."
+  },
+  "eligibility": {
+    "occupations": [
+      "farmer"
+    ],
+    "states": [
+      "Maharashtra"
+    ],
+    "casteCategories": [
+      "st"
+    ],
+    "requiresLandOwnership": true,
+    "maxAnnualIncome": 150000,
+    "customConditions": [
+      {
+        "en": "Must belong to Scheduled Tribe (ST) category in Maharashtra with cultivable land (generally 0.40 to 6 hectares; confirm current income limit on MahaDBT).",
+        "hi": "महाराष्ट्र का अनुसूचित जनजाति (ST) किसान जिसके पास खेती योग्य भूमि हो (नवीनतम आय सीमा महाडीबीटी पर जांचें)।",
+        "mr": "महाराष्ट्रातील अनुसूचित जमातीचा (ST) जमीनधारक शेतकरी असणे आवश्यक (नवीनतम उत्पन्न मर्यादा महाडीबीटीवर तपासा)."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "caste-certificate",
+      "name": {
+        "en": "Caste Certificate (issued by Competent Authority)",
+        "hi": "जाति प्रमाण पत्र (सक्षम अधिकारी द्वारा जारी)",
+        "mr": "जातीचा दाखला (सक्षम प्राधिकारी)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "land-7-12",
+      "name": {
+        "en": "Land Ownership Record (7/12 Utara / 8A / Khatauni)",
+        "hi": "भूमि स्वामित्व प्रमाण (खसरा-खतौनी / 7/12 उतारा)",
+        "mr": "जमीन मालकीचा पुरावा (७/१२ उतारा आणि ८-अ)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "income-certificate",
+      "name": {
+        "en": "Income Certificate (issued by Tehsildar / Competent Authority)",
+        "hi": "आय प्रमाण पत्र (तहसीलदार / सक्षम अधिकारी द्वारा जारी)",
+        "mr": "उत्पन्नाचा दाखला (तहसीलदार / सक्षम प्राधिकारी)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Apply online through MahaDBT Farmer portal (mahadbt.maharashtra.gov.in/Farmer).",
+      "Upload ST caste certificate, 7/12 & 8A extracts, income certificate, and Aadhaar-seeded bank details.",
+      "Select \"Birsa Munda Krishi Kranti Yojana\" and choose needed irrigation components.",
+      "Receive approval from Panchayat Samiti / Zilla Parishad Agriculture Department and complete works as per sanction."
+    ],
+    "hi": [
+      "महाडीबीटी किसान पोर्टल (mahadbt.maharashtra.gov.in/Farmer) पर ऑनलाइन आवेदन करें।",
+      "अनुसूचित जनजाति प्रमाण पत्र, 7/12 व 8ए उतारा, आय प्रमाण पत्र और बैंक विवरण अपलोड करें।",
+      "\"बिरसा मुंडा कृषि क्रांति योजना\" चुनें और आवश्यक सिंचाई घटक का चयन करें।",
+      "जिला परिषद/पंचायत समिति से स्वीकृति मिलने के बाद कार्य पूरा करें।"
+    ],
+    "mr": [
+      "महाडीबीटी शेतकरी पोर्टलवर (mahadbt.maharashtra.gov.in/Farmer) ऑनलाइन अर्ज करा.",
+      "अनुसूचित जमातीचा जातीचा दाखला, ७/१२ व ८-अ, उत्पन्नाचा दाखला व बँक तपशील अपलोड करा.",
+      "\"बिरसा मुंडा कृषी क्रांती योजना\" निवडून आवश्यक सिंचन घटक निवडा.",
+      "पंचायत समिती/जिल्हा परिषद कृषी विभागाच्या मंजुरीनंतर काम पूर्ण करून अनुदान मिळवा."
+    ]
+  },
+  "officialUrl": "https://mahadbt.maharashtra.gov.in/Farmer/Login/Login",
+  "helpline": "022-49150800 / 1800-120-8040",
+  "deadlines": {
+    "en": "Open periodically on MahaDBT subject to annual district tribal sub-plan budget.",
+    "hi": "महाडीबीटी पर जिला बजट के अनुसार समय-समय पर आवेदन खुले रहते हैं।",
+    "mr": "महाडीबीटी पोर्टलवर वार्षिक जिल्हा निधीनुसार अर्ज स्वीकारले जातात."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://mahadbt.maharashtra.gov.in/Farmer/Login/Login",
+    "https://krishi.maharashtra.gov.in"
+  ],
+  "needsVerification": true,
+  "tags": [
+    "maharashtra",
+    "farmer",
+    "tribal",
+    "st",
+    "well",
+    "irrigation",
+    "birsa munda",
+    "mahadbt"
+  ]
+}

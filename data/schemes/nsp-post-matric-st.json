@@ -1,0 +1,147 @@
+{
+  "id": "nsp-post-matric-st",
+  "name": {
+    "en": "Post-Matric Scholarship for ST Students (GOI / MahaDBT)",
+    "hi": "अनुसूचित जनजाति (ST) छात्रों के लिए पोस्ट-मैट्रिक छात्रवृत्ति",
+    "mr": "अनुसूचित जमाती (ST) विद्यार्थ्यांसाठी मॅट्रिकोत्तर शिष्यवृत्ती योजना"
+  },
+  "category": "student",
+  "secondaryCategories": [],
+  "benefitType": "scholarship",
+  "benefitHighlight": {
+    "en": "Compulsory tuition fee + maintenance allowance (ST)",
+    "hi": "शिक्षण शुल्क + रखरखाव भत्ता (ST छात्र)",
+    "mr": "शिक्षण शुल्क प्रतिपूर्ती व निर्वाह भत्ता (आदिवासी विद्यार्थी)"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Tribal Affairs",
+  "summary": {
+    "en": "Supports Scheduled Tribe (ST) students studying post-Class 10 (Class 11/12, ITI, Diploma, UG, PG, professional courses) with compulsory fee reimbursement and maintenance allowance.",
+    "hi": "कक्षा 10वीं के बाद पढ़ाई करने वाले अनुसूचित जनजाति (ST) छात्रों को अनिवार्य शुल्क प्रतिपूर्ति और मासिक भत्ता प्रदान करने वाली योजना।",
+    "mr": "इयत्ता १० वी नंतरचे उच्च शिक्षण घेणाऱ्या अनुसूचित जमातीच्या (ST) विद्यार्थ्यांना शिक्षण शुल्क प्रतिपूर्ती व निर्वाह भत्ता देणारी शिष्यवृत्ती योजना."
+  },
+  "benefits": {
+    "en": "Reimbursement of compulsory non-refundable tuition/exam fees plus maintenance allowance (for hostellers and day scholars), thesis/study tour allowances where applicable, credited directly via DBT.",
+    "hi": "अनिवार्य शिक्षण/परीक्षा शुल्क प्रतिपूर्ति तथा छात्रावासी और गैर-छात्रावासी छात्रों के लिए रखरखाव भत्ता सीधे बैंक खाते में।",
+    "mr": "अनिवार्य शिक्षण व परीक्षा शुल्काची प्रतिपूर्ती तसेच वसतिगृहातील व बाहेरील विद्यार्थ्यांसाठी निर्वाह भत्ता थेट बँक खात्यात."
+  },
+  "eligibility": {
+    "occupations": [
+      "student"
+    ],
+    "casteCategories": [
+      "st"
+    ],
+    "maxAnnualIncome": 250000,
+    "educationLevels": [
+      "higher_secondary",
+      "diploma_iti",
+      "undergraduate",
+      "postgraduate"
+    ],
+    "customConditions": [
+      {
+        "en": "Must belong to Scheduled Tribe (ST), enrolled in recognized post-matriculation courses, with annual family income ≤ ₹2.5 lakh.",
+        "hi": "अनुसूचित जनजाति (ST) छात्र, मान्यता प्राप्त पोस्ट-मैट्रिक कोर्स में अध्ययनरत और वार्षिक पारिवारिक आय ≤ ₹2.5 लाख।",
+        "mr": "अनुसूचित जमाती (ST) प्रवर्गातील विद्यार्थी, मान्यताप्राप्त मॅट्रिकोत्तर अभ्यासक्रमात प्रवेशित व कौटुंबिक उत्पन्न ≤ ₹2.5 लाख."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "caste-certificate",
+      "name": {
+        "en": "Caste Certificate (issued by Competent Authority)",
+        "hi": "जाति प्रमाण पत्र (सक्षम अधिकारी द्वारा जारी)",
+        "mr": "जातीचा दाखला (सक्षम प्राधिकारी)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "caste-validity",
+      "name": {
+        "en": "Caste Validity Certificate (where applicable for professional courses)",
+        "hi": "जाति वैधता प्रमाण पत्र (जहां लागू हो)",
+        "mr": "जात वैधता प्रमाणपत्र (लागू असल्यास)"
+      },
+      "mandatory": false
+    },
+    {
+      "id": "income-certificate",
+      "name": {
+        "en": "Income Certificate (issued by Tehsildar / Competent Authority)",
+        "hi": "आय प्रमाण पत्र (तहसीलदार / सक्षम अधिकारी द्वारा जारी)",
+        "mr": "उत्पन्नाचा दाखला (तहसीलदार / सक्षम प्राधिकारी)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "marksheet",
+      "name": {
+        "en": "Previous Exam Marksheet / Bonafide Student Certificate",
+        "hi": "पिछली परीक्षा की मार्कशीट / बोनाफाइड प्रमाण पत्र",
+        "mr": "मागील परीक्षेची गुणपत्रिका / बोनाफाईड प्रमाणपत्र"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Apply online via State Tribal Scholarship Portal (e.g., mahadbt.maharashtra.gov.in in Maharashtra) or scholarships.gov.in.",
+      "Upload ST caste certificate, income certificate, previous marksheet, and college admission/fee receipt.",
+      "Submit to your institution for online verification and tribal development office approval."
+    ],
+    "hi": [
+      "राज्य जनजातीय छात्रवृत्ति पोर्टल (जैसे महाराष्ट्र में महाडीबीटी) या scholarships.gov.in पर आवेदन करें।",
+      "अनुसूचित जनजाति प्रमाण पत्र, आय प्रमाण पत्र, मार्कशीट और कॉलेज रसीद अपलोड करें।",
+      "संस्थान और जनजातीय विकास विभाग के सत्यापन के बाद राशि सीधे खाते में आती है।"
+    ],
+    "mr": [
+      "महाडीबीटी पोर्टल (mahadbt.maharashtra.gov.in) किंवा scholarships.gov.in वर ऑनलाइन अर्ज करा.",
+      "अनुसूचित जमातीचा जातीचा दाखला, उत्पन्नाचा दाखला, गुणपत्रिका व फी पावती अपलोड करा.",
+      "महाविद्यालय व आदिवासी विकास विभागाच्या मंजुरीनंतर रक्कम थेट बँक खात्यात जमा होते."
+    ]
+  },
+  "officialUrl": "https://scholarships.gov.in",
+  "helpline": "0120-6619540 / 022-49150800",
+  "deadlines": {
+    "en": "Annual academic cycle notified on NSP / State DBT portal.",
+    "hi": "NSP / राज्य पोर्टल पर प्रतिवर्ष घोषित तिथियां।",
+    "mr": "NSP व महाडीबीटी पोर्टलवर दरवर्षी जाहीर होणारी मुदत."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://tribal.nic.in",
+    "https://scholarships.gov.in",
+    "https://mahadbt.maharashtra.gov.in"
+  ],
+  "needsVerification": false,
+  "tags": [
+    "student",
+    "scholarship",
+    "st",
+    "tribal",
+    "post matric",
+    "mahadbt",
+    "nsp"
+  ]
+}

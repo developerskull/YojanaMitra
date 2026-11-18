@@ -1,0 +1,115 @@
+{
+  "id": "ayushman-bharat-pm-jay",
+  "name": {
+    "en": "Ayushman Bharat – Pradhan Mantri Jan Arogya Yojana (AB PM-JAY)",
+    "hi": "आयुष्मान भारत – प्रधानमंत्री जन आरोग्य योजना (पीएम-जेएवाई)",
+    "mr": "आयुष्मान भारत – प्रधानमंत्री जन आरोग्य योजना (PM-JAY)"
+  },
+  "category": "health",
+  "secondaryCategories": [
+    "worker",
+    "farmer",
+    "woman"
+  ],
+  "benefitType": "insurance",
+  "benefitHighlight": {
+    "en": "₹5 lakh / family / year cashless hospital cover",
+    "hi": "₹5 लाख / परिवार / वर्ष कैशलेस इलाज",
+    "mr": "₹5 लाख / कुटुंब / वर्ष कॅशलेस उपचार"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Health & Family Welfare (National Health Authority)",
+  "summary": {
+    "en": "World’s largest government-funded health assurance scheme providing ₹5 lakh per family per year for cashless secondary and tertiary hospitalization across empanelled public and private hospitals.",
+    "hi": "पात्र गरीब और कमजोर परिवारों को सूचीबद्ध सरकारी व निजी अस्पतालों में ₹5 लाख प्रति परिवार प्रति वर्ष का कैशलेस इलाज प्रदान करने वाली स्वास्थ्य बीमा योजना।",
+    "mr": "पात्र गरीब व गरजू कुटुंबांना नोंदणीकृत सरकारी व खाजगी रुग्णालयांत दरवर्षी ₹5 लाखांपर्यंत मोफत कॅशलेस उपचारांचे संरक्षण देणारी आरोग्य योजना."
+  },
+  "benefits": {
+    "en": "Cashless treatment up to ₹5 lakh per family per year covering surgery, diagnostics, medicines, pre-hospitalization (3 days), post-hospitalization (15 days), and pre-existing conditions from day one with no family size or age cap.",
+    "hi": "प्रति परिवार प्रति वर्ष ₹5 लाख तक कैशलेस इलाज जिसमें सर्जरी, जांच, दवाइयां, भर्ती से 3 दिन पहले व छुट्टी के 15 दिन बाद का खर्च और पहले से मौजूद बीमारियां पहले दिन से शामिल हैं।",
+    "mr": "प्रति कुटुंब प्रति वर्ष ₹5 लाखांपर्यंत कॅशलेस उपचार; शस्त्रक्रिया, तपासण्या, औषधे, भरतीपूर्वीचे ३ व नंतरचे १५ दिवसांचे खर्च आणि आधीचे आजार पहिल्या दिवसापासून समाविष्ट."
+  },
+  "eligibility": {
+    "bplRequired": true,
+    "customConditions": [
+      {
+        "en": "Families identified under SECC 2011 deprivation/occupational criteria, Antyodaya/priority ration card holders (in states integrated with PM-JAY), or senior citizens aged 70+ under Ayushman Vaya Vandana.",
+        "hi": "SECC 2011 मानदंडों के तहत पात्र परिवार, अंत्योदय/प्राथमिकता राशन कार्ड धारक (एकीकृत राज्यों में), या 70+ वरिष्ठ नागरिक।",
+        "mr": "SECC २०११ यादीतील पात्र कुटुंबे, अंत्योदय/प्राधान्य रेशन कार्डधारक किंवा ७० वर्षांवरील सर्व ज्येष्ठ नागरिक."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "ration-card",
+      "name": {
+        "en": "Ration Card (BPL / Antyodaya / Yellow / Orange)",
+        "hi": "राशन कार्ड (बीपीएल / अंत्योदय / पीला / केसरिया)",
+        "mr": "रेशन कार्ड (पिवळे / केशरी / अंत्योदय)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "mobile-aadhaar",
+      "name": {
+        "en": "Active Mobile Number linked with Aadhaar",
+        "hi": "आधार से जुड़ा सक्रिय मोबाइल नंबर",
+        "mr": "आधारशी संलग्न सक्रिय मोबाईल क्रमांक"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Check eligibility on beneficiary.nha.gov.in or the official Ayushman App using your mobile number and Aadhaar/Ration Card.",
+      "Complete e-KYC via Aadhaar OTP, fingerprint, or face authentication (or visit an Ayushman Mitra at an empanelled hospital / CSC).",
+      "Download your Ayushman Card once approved.",
+      "Present your Ayushman Card at any empanelled hospital Ayushman desk for cashless admission."
+    ],
+    "hi": [
+      "beneficiary.nha.gov.in या आधिकारिक आयुष्मान ऐप पर मोबाइल नंबर और आधार/राशन कार्ड से पात्रता जांचें।",
+      "आधार ओटीपी या फेस ऑथेंटिकेशन से ई-केवाईसी पूरा करें (या अस्पताल/CSC के आयुष्मान मित्र से सहायता लें)।",
+      "स्वीकृति के बाद अपना आयुष्मान कार्ड डाउनलोड करें।",
+      "कैशलेस इलाज के लिए किसी भी सूचीबद्ध अस्पताल के आयुष्मान डेस्क पर कार्ड दिखाएं।"
+    ],
+    "mr": [
+      "beneficiary.nha.gov.in पोर्टलवर किंवा आयुष्मान अ‍ॅपवर मोबाईल नंबर व आधार/रेशन कार्डने पात्रता तपासा.",
+      "आधार OTP किंवा चेहरा पडताळणीने e-KYC पूर्ण करा (किंवा CSC/रुग्णालयातील आयुष्मान मित्राकडे जा).",
+      "मंजुरीनंतर तुमचे आयुष्मान कार्ड डाउनलोड करा.",
+      "नोंदणीकृत रुग्णालयात कॅशलेस उपचारासाठी आयुष्मान डेस्कवर कार्ड दाखवा."
+    ]
+  },
+  "officialUrl": "https://beneficiary.nha.gov.in",
+  "helpline": "14555",
+  "deadlines": {
+    "en": "Open year-round; no enrollment deadline.",
+    "hi": "वर्ष भर खुला; कोई अंतिम तिथि नहीं।",
+    "mr": "वर्षभर सुरू; नोंदणीसाठी अंतिम मुदत नाही."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://pmjay.gov.in",
+    "https://beneficiary.nha.gov.in"
+  ],
+  "needsVerification": false,
+  "tags": [
+    "health",
+    "insurance",
+    "hospital",
+    "ayushman",
+    "pmjay",
+    "cashless",
+    "medical",
+    "bpl"
+  ]
+}

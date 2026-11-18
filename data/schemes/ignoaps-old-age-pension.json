@@ -1,0 +1,126 @@
+{
+  "id": "ignoaps-old-age-pension",
+  "name": {
+    "en": "Indira Gandhi National Old Age Pension Scheme (IGNOAPS)",
+    "hi": "इंदिरा गांधी राष्ट्रीय वृद्धावस्था पेंशन योजना (IGNOAPS)",
+    "mr": "इंदिरा गांधी राष्ट्रीय वृद्धापकाळ निवृत्तीवेतन योजना (IGNOAPS)"
+  },
+  "category": "senior",
+  "secondaryCategories": [],
+  "benefitType": "pension",
+  "benefitHighlight": {
+    "en": "Monthly old-age pension (₹200–₹500 Central + State top-up)",
+    "hi": "मासिक वृद्धावस्था पेंशन (₹200–₹500 केंद्र + राज्य अतिरिक्त)",
+    "mr": "मासिक वृद्धापकाळ पेन्शन (₹200–₹500 केंद्र + राज्य हिस्सा)"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Rural Development (NSAP)",
+  "summary": {
+    "en": "Non-contributory monthly social assistance pension under NSAP for senior citizens aged 60 and above living Below Poverty Line (BPL), supplemented by state governments.",
+    "hi": "गरीबी रेखा से नीचे (BPL) जीवन यापन करने वाले 60 वर्ष और उससे अधिक उम्र के बुजुर्गों को केंद्र व राज्य सरकार द्वारा मासिक पेंशन।",
+    "mr": "दारिद्र्यरेषेखालील (BPL) ६० वर्षे व त्यावरील ज्येष्ठ नागरिकांसाठी केंद्र व राज्य सरकारकडून दिले जाणारे मासिक निवृत्तीवेतन."
+  },
+  "benefits": {
+    "en": "Central contribution of ₹200/month (age 60–79) and ₹500/month (age 80+), topped up by respective state governments (total varies by state; in Maharashtra eligible 65+ BPL seniors receive ₹1,500/month combined).",
+    "hi": "केंद्र का अंशदान ₹200/माह (60–79 वर्ष) और ₹500/माह (80+ वर्ष), जिसके ऊपर राज्य सरकार अतिरिक्त सहायता देती है।",
+    "mr": "केंद्राचा हिस्सा ₹200/महिना (६०–७९ वर्षे) आणि ₹500/महिना (८०+ वर्षे); त्यावर राज्य सरकार वाढीव हिस्सा देते."
+  },
+  "eligibility": {
+    "minAge": 60,
+    "bplRequired": true,
+    "customConditions": [
+      {
+        "en": "Indian citizen aged 60 years or above belonging to a household living Below Poverty Line (BPL).",
+        "hi": "60 वर्ष या अधिक आयु का भारतीय नागरिक जो बीपीएल परिवार से संबंधित हो।",
+        "mr": "६० वर्षे किंवा अधिक वयाचा आणि दारिद्र्यरेषेखालील (BPL) कुटुंबातील भारतीय नागरिक."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "age-proof",
+      "name": {
+        "en": "Age Proof (Birth Certificate / School Leaving / Aadhaar)",
+        "hi": "आयु प्रमाण (जन्म प्रमाण पत्र / स्कूल लीविंग / आधार)",
+        "mr": "वयाचा पुरावा (जन्म दाखला / शाळा सोडल्याचा दाखला / आधार)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bpl-card",
+      "name": {
+        "en": "BPL Certificate / SECC List Proof",
+        "hi": "बीपीएल प्रमाण पत्र / एसईसीसी सूची प्रमाण",
+        "mr": "दारिद्र्यरेषेखालील (BPL) प्रमाणपत्र / यादीचा पुरावा"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "passport-photo",
+      "name": {
+        "en": "Passport-size Photographs",
+        "hi": "पासपोर्ट साइज फोटो",
+        "mr": "पासपोर्ट आकाराचे फोटो"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Apply at your Gram Panchayat, Block/Tehsil Office, Municipal Office, or via UMANG / State e-District portal.",
+      "Attach age proof, BPL proof, Aadhaar, and bank/post office passbook.",
+      "After local revenue authority verification, monthly pension starts directly into your bank account."
+    ],
+    "hi": [
+      "ग्राम पंचायत, ब्लॉक/तहसील कार्यालय, नगर पालिका या उमंग/राज्य पोर्टल से आवेदन करें।",
+      "आयु प्रमाण, बीपीएल कार्ड, आधार और बैंक पासबुक संलग्न करें।",
+      "सत्यापन के बाद मासिक पेंशन सीधे बैंक खाते में आने लगती है।"
+    ],
+    "mr": [
+      "ग्रामपंचायत, तहसील कार्यालय, नगरपालिका किंवा उमंग/आपले सरकार पोर्टलवरून अर्ज करा.",
+      "वयाचा पुरावा, BPL प्रमाणपत्र, आधार व बँक पासबुक जोडा.",
+      "तहसीलदार पडताळणीनंतर दरमहा निवृत्तीवेतन थेट बँक खात्यात जमा होते."
+    ]
+  },
+  "officialUrl": "https://nsap.nic.in",
+  "helpline": "1800-11-6446",
+  "deadlines": {
+    "en": "Open year-round.",
+    "hi": "वर्ष भर खुला।",
+    "mr": "वर्षभर सुरू."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://nsap.nic.in",
+    "https://www.myscheme.gov.in/schemes/nsap-ignoaps"
+  ],
+  "needsVerification": false,
+  "tags": [
+    "senior",
+    "old age",
+    "pension",
+    "bpl",
+    "nsap",
+    "60+",
+    "elderly"
+  ]
+}

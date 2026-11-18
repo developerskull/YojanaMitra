@@ -1,0 +1,138 @@
+{
+  "id": "maharashtra-shravanbal-seva",
+  "name": {
+    "en": "Shravanbal Seva State Pension Scheme (Maharashtra)",
+    "hi": "श्रवणबाल सेवा राज्य निवृत्तिवेतन योजना (महाराष्ट्र)",
+    "mr": "श्रावणबाळ सेवा राज्य निवृत्तीवेतन योजना (महाराष्ट्र)"
+  },
+  "category": "senior",
+  "secondaryCategories": [],
+  "benefitType": "pension",
+  "benefitHighlight": {
+    "en": "₹1,500 / month pension for 65+ destitute seniors (Maharashtra)*",
+    "hi": "महाराष्ट्र के 65+ निराश्रित बुजुर्गों को ₹1,500 / माह पेंशन*",
+    "mr": "महाराष्ट्रातील ६५+ गरजू ज्येष्ठांना दरमहा ₹1,500 पेन्शन*"
+  },
+  "level": "state",
+  "state": "Maharashtra",
+  "ministry": "Social Justice & Special Assistance Department, Government of Maharashtra",
+  "summary": {
+    "en": "Maharashtra state monthly pension for destitute senior citizens aged 65 and above from BPL families or with annual family income up to ₹21,000.",
+    "hi": "महाराष्ट्र के बीपीएल या ₹21,000 तक वार्षिक आय वाले 65 वर्ष और उससे अधिक आयु के निराश्रित बुजुर्गों के लिए राज्य सरकार की मासिक पेंशन योजना।",
+    "mr": "महाराष्ट्रातील ६५ वर्षे व त्यावरील दारिद्र्यरेषेखालील किंवा ₹21,000 पर्यंत वार्षिक उत्पन्न असलेल्या गरजू ज्येष्ठ नागरिकांसाठी राज्य सरकारचे मासिक निवृत्तीवेतन."
+  },
+  "benefits": {
+    "en": "₹1,500 per month direct bank transfer (combined central + state share for BPL Group A, or full state share for Group B with income ≤ ₹21,000; confirm latest GR at Tehsil office).",
+    "hi": "₹1,500 प्रति माह सीधे बैंक खाते में (बीपीएल ग्रुप ए व ₹21,000 आय तक ग्रुप बी दोनों के लिए; तहसील कार्यालय में नवीनतम जीआर की पुष्टि करें)।",
+    "mr": "दरमहा ₹1,500 थेट बँक खात्यात (गट अ BPL तसेच गट ब ₹21,000 पर्यंत उत्पन्न असणाऱ्यांसाठी; तहसील कार्यालयात अद्ययावत शासन निर्णय तपासा)."
+  },
+  "eligibility": {
+    "minAge": 65,
+    "states": [
+      "Maharashtra"
+    ],
+    "maxAnnualIncome": 21000,
+    "customConditions": [
+      {
+        "en": "Must be a resident of Maharashtra for at least 15 years, aged 65+, and either BPL or have annual family income ≤ ₹21,000.",
+        "hi": "कम से कम 15 वर्षों से महाराष्ट्र का निवासी, आयु 65+ और बीपीएल या वार्षिक पारिवारिक आय ≤ ₹21,000।",
+        "mr": "किमान १५ वर्षे महाराष्ट्राचा रहिवासी, वय ६५ वर्षे पूर्ण आणि BPL किंवा वार्षिक कौटुंबिक उत्पन्न ≤ ₹21,000."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "age-proof",
+      "name": {
+        "en": "Age Proof (Birth Certificate / School Leaving / Aadhaar)",
+        "hi": "आयु प्रमाण (जन्म प्रमाण पत्र / स्कूल लीविंग / आधार)",
+        "mr": "वयाचा पुरावा (जन्म दाखला / शाळा सोडल्याचा दाखला / आधार)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "domicile-certificate",
+      "name": {
+        "en": "State Domicile / Residence Certificate",
+        "hi": "निवास प्रमाण पत्र (डोमिसाइल)",
+        "mr": "महाराष्ट्र अधिवास प्रमाणपत्र (डोमिसाईल)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "income-certificate",
+      "name": {
+        "en": "Income Certificate (issued by Tehsildar / Competent Authority)",
+        "hi": "आय प्रमाण पत्र (तहसीलदार / सक्षम अधिकारी द्वारा जारी)",
+        "mr": "उत्पन्नाचा दाखला (तहसीलदार / सक्षम प्राधिकारी)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "passport-photo",
+      "name": {
+        "en": "Passport-size Photographs",
+        "hi": "पासपोर्ट साइज फोटो",
+        "mr": "पासपोर्ट आकाराचे फोटो"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Apply online via Aaple Sarkar portal (aaplesarkar.mahaonline.gov.in) / Setu Kendra or offline at your Taluka Tehsildar Office (Sanjay Gandhi Yojana desk).",
+      "Submit age proof (65+), 15-year Maharashtra residence proof, income certificate (≤ ₹21,000) or BPL proof, and Aadhaar-linked bank passbook.",
+      "Talathi conducts local inquiry and Tehsildar committee sanctions monthly DBT pension."
+    ],
+    "hi": [
+      "आपले सरकार पोर्टल (aaplesarkar.mahaonline.gov.in), सेतु केंद्र या तालुका तहसीलदार कार्यालय में आवेदन करें।",
+      "आयु प्रमाण (65+), 15 वर्ष निवास प्रमाण, आय प्रमाण पत्र (≤ ₹21,000) या बीपीएल कार्ड और बैंक पासबुक जमा करें।",
+      "तलाठी जांच और तहसीलदार समिति की स्वीकृति के बाद हर महीने पेंशन खाते में आती है।"
+    ],
+    "mr": [
+      "आपले सरकार पोर्टल (aaplesarkar.mahaonline.gov.in), सेतू केंद्र किंवा तालुका तहसीलदार कार्यालयात (संजय गांधी योजना विभाग) अर्ज करा.",
+      "वयाचा पुरावा (६५+), १५ वर्षे महाराष्ट्र रहिवासी पुरावा, उत्पन्नाचा दाखला (≤ ₹21,000) किंवा BPL पुरावा आणि बँक पासबुक जोडा.",
+      "तलाठी चौकशी व तहसीलदार समितीच्या मंजुरीनंतर दरमहा पेन्शन थेट बँक खात्यात जमा होते."
+    ]
+  },
+  "officialUrl": "https://aaplesarkar.mahaonline.gov.in",
+  "helpline": "1800-120-8040",
+  "deadlines": {
+    "en": "Open year-round across all talukas in Maharashtra.",
+    "hi": "महाराष्ट्र के सभी तालुकों में वर्ष भर खुला।",
+    "mr": "महाराष्ट्रातील सर्व तालुक्यांत वर्षभर सुरू."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://aaplesarkar.mahaonline.gov.in",
+    "https://sjsa.maharashtra.gov.in"
+  ],
+  "needsVerification": true,
+  "tags": [
+    "maharashtra",
+    "senior",
+    "shravanbal",
+    "pension",
+    "65+",
+    "destitute",
+    "elderly"
+  ]
+}

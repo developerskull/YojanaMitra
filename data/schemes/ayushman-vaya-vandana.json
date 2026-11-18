@@ -1,0 +1,104 @@
+{
+  "id": "ayushman-vaya-vandana",
+  "name": {
+    "en": "Ayushman Vaya Vandana Card (70+ Senior Citizens)",
+    "hi": "आयुष्मान वय वंदना कार्ड (70+ वरिष्ठ नागरिक)",
+    "mr": "आयुष्मान वय वंदना कार्ड (७०+ ज्येष्ठ नागरिक)"
+  },
+  "category": "senior",
+  "secondaryCategories": [
+    "health"
+  ],
+  "benefitType": "insurance",
+  "benefitHighlight": {
+    "en": "₹5 lakh / year free health cover for all 70+ seniors",
+    "hi": "70+ सभी वरिष्ठ नागरिकों को ₹5 लाख / वर्ष मुफ्त इलाज",
+    "mr": "७०+ सर्व ज्येष्ठ नागरिकांना ₹5 लाख / वर्ष मोफत उपचार"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Health & Family Welfare (National Health Authority)",
+  "summary": {
+    "en": "Universal cashless health insurance cover of ₹5 lakh per year under AB PM-JAY for every Indian senior citizen aged 70 years and above, irrespective of income.",
+    "hi": "आय की किसी सीमा के बिना 70 वर्ष और उससे अधिक उम्र के प्रत्येक भारतीय वरिष्ठ नागरिक के लिए ₹5 लाख प्रति वर्ष का निःशुल्क कैशलेस स्वास्थ्य बीमा।",
+    "mr": "उत्पन्नाची कोणतीही अट न ठेवता ७० वर्षे व त्यावरील सर्व भारतीय ज्येष्ठ नागरिकांसाठी दरवर्षी ₹5 लाखांचे मोफत कॅशलेस आरोग्य कवच."
+  },
+  "benefits": {
+    "en": "₹5 lakh/year cashless hospital coverage across empanelled hospitals nationwide, covering pre-existing diseases from day one. Seniors in existing PM-JAY families receive an exclusive ₹5 lakh top-up dedicated to seniors aged 70+.",
+    "hi": "देशभर के सूचीबद्ध अस्पतालों में पहले दिन से पुरानी बीमारियों सहित ₹5 लाख/वर्ष कैशलेस इलाज। पहले से पीएम-जेएवाई परिवारों के 70+ बुजुर्गों को अतिरिक्त ₹5 लाख का अलग टॉप-अप कवर मिलता है।",
+    "mr": "देशभरातील नोंदणीकृत रुग्णालयांत पहिल्या दिवसापासून जुन्या आजारांसह ₹5 लाख/वर्ष कॅशलेस उपचार. आधीच्या PM-JAY कुटुंबातील ७०+ ज्येष्ठांना स्वतंत्र ₹5 लाखांचे अतिरिक्त टॉप-अप संरक्षण."
+  },
+  "eligibility": {
+    "minAge": 70,
+    "customConditions": [
+      {
+        "en": "All Indian citizens aged 70 years and above as per Aadhaar are eligible regardless of income. Beneficiaries of CGHS/ECHS/CAPF must choose between their existing public scheme and PM-JAY.",
+        "hi": "आधार के अनुसार 70+ सभी भारतीय नागरिक आय की सीमा के बिना पात्र हैं (CGHS/ECHS धारकों को एक योजना चुननी होगी)।",
+        "mr": "आधारनुसार ७०+ सर्व ज्येष्ठ नागरिक उत्पन्नाच्या अटीशिवाय पात्र आहेत (CGHS/ECHS लाभार्थ्यांना एका योजनेची निवड करावी लागते)."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "mobile-aadhaar",
+      "name": {
+        "en": "Active Mobile Number linked with Aadhaar",
+        "hi": "आधार से जुड़ा सक्रिय मोबाइल नंबर",
+        "mr": "आधारशी संलग्न सक्रिय मोबाईल क्रमांक"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Download the official Ayushman App or visit beneficiary.nha.gov.in.",
+      "Select \"Enroll for Ayushman Vaya Vandana Card (70+)\" and log in with your mobile OTP.",
+      "Enter your Aadhaar number and complete instant e-KYC via OTP or face authentication.",
+      "Download the digital Ayushman Vaya Vandana Card immediately for cashless hospital use."
+    ],
+    "hi": [
+      "आधिकारिक आयुष्मान ऐप डाउनलोड करें या beneficiary.nha.gov.in पर जाएं।",
+      "\"Ayushman Vaya Vandana Card (70+)\" चुनें और मोबाइल ओटीपी से लॉगिन करें।",
+      "आधार नंबर दर्ज करें और ओटीपी या फेस ऑथेंटिकेशन से तुरंत ई-केवाईसी पूरा करें।",
+      "कैशलेस अस्पताल उपचार के लिए तुरंत डिजिटल कार्ड डाउनलोड करें।"
+    ],
+    "mr": [
+      "अधिकृत आयुष्मान अ‍ॅप डाउनलोड करा किंवा beneficiary.nha.gov.in वर जा.",
+      "\"Ayushman Vaya Vandana Card (70+)\" निवडून मोबाईल OTP ने लॉगिन करा.",
+      "आधार क्रमांक टाकून OTP किंवा चेहरा पडताळणीने तत्काळ e-KYC पूर्ण करा.",
+      "रुग्णालयात कॅशलेस उपचारासाठी डिजिटल कार्ड ताबडतोब डाउनलोड करा."
+    ]
+  },
+  "officialUrl": "https://beneficiary.nha.gov.in",
+  "helpline": "14555",
+  "deadlines": {
+    "en": "Open year-round; instant enrollment.",
+    "hi": "वर्ष भर खुला; तत्काल पंजीकरण।",
+    "mr": "वर्षभर सुरू; तात्काळ नोंदणी उपलब्ध."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://pmjay.gov.in",
+    "https://beneficiary.nha.gov.in"
+  ],
+  "needsVerification": false,
+  "tags": [
+    "senior",
+    "70+",
+    "health",
+    "ayushman",
+    "vaya vandana",
+    "insurance",
+    "elderly",
+    "no income limit"
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "id": "igndps-disability-pension",
+  "name": {
+    "en": "Indira Gandhi National Disability Pension Scheme (IGNDPS)",
+    "hi": "इंदिरा गांधी राष्ट्रीय दिव्यांगता पेंशन योजना (IGNDPS)",
+    "mr": "इंदिरा गांधी राष्ट्रीय दिव्यांग निवृत्तीवेतन योजना (IGNDPS)"
+  },
+  "category": "disabled",
+  "secondaryCategories": [],
+  "benefitType": "pension",
+  "benefitHighlight": {
+    "en": "Monthly disability pension (₹300–₹500 Central + State top-up)",
+    "hi": "मासिक दिव्यांग पेंशन (₹300–₹500 केंद्र + राज्य अतिरिक्त)",
+    "mr": "मासिक दिव्यांग पेन्शन (₹300–₹500 केंद्र + राज्य वाढीव हिस्सा)"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Rural Development (NSAP)",
+  "summary": {
+    "en": "Central social security monthly pension under NSAP for BPL citizens aged 18–79 with severe (≥80%) or multiple disabilities, supplemented by state top-ups.",
+    "hi": "गरीबी रेखा से नीचे (BPL) जीवन यापन करने वाले 18–79 वर्ष के गंभीर (≥80%) या बहु-दिव्यांग नागरिकों के लिए मासिक पेंशन योजना।",
+    "mr": "दारिद्र्यरेषेखालील (BPL) १८–७९ वयोगटातील गंभीर (≥८०%) किंवा बहु-दिव्यांग नागरिकांसाठी केंद्र व राज्य सरकारचे मासिक निवृत्तीवेतन."
+  },
+  "benefits": {
+    "en": "Central share of ₹300/month (age 18–79) and ₹500/month (age 80+), topped up by respective state governments (for instance, Maharashtra provides ₹2,500/month combined for eligible disabled beneficiaries under state social security integration).",
+    "hi": "केंद्र का अंशदान ₹300/माह (18–79 वर्ष) और ₹500/माह (80+ वर्ष), जिसके ऊपर राज्य सरकारें अतिरिक्त राशि जोड़ती हैं।",
+    "mr": "केंद्राचा हिस्सा ₹300/महिना (१८–७९ वर्षे) आणि ₹500/महिना (८०+ वर्षे); त्यावर राज्य सरकार वाढीव निधी देते (महाराष्ट्रात दिव्यांगांना ₹2,500/महिना)."
+  },
+  "eligibility": {
+    "minAge": 18,
+    "disabilityRequired": true,
+    "minDisabilityPercent": 80,
+    "bplRequired": true,
+    "customConditions": [
+      {
+        "en": "BPL citizen aged 18+ with severe disability (≥80%) or multiple disabilities (≥40% in each of multiple categories totaling ≥80%).",
+        "hi": "18+ बीपीएल नागरिक जिसे 80% या अधिक गंभीर दिव्यांगता या बहु-दिव्यांगता हो।",
+        "mr": "१८+ BPL नागरिक ज्याचे दिव्यांगत्व ८०% किंवा त्यापेक्षा जास्त (किंवा बहु-दिव्यांगत्व) आहे."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "udid-card",
+      "name": {
+        "en": "Disability Certificate / UDID Card (Medical Board)",
+        "hi": "दिव्यांगता प्रमाण पत्र / यूडीआईडी कार्ड (मेडिकल बोर्ड)",
+        "mr": "दिव्यांग प्रमाणपत्र / यूडीआयडी कार्ड (वैद्यकीय मंडळ)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bpl-card",
+      "name": {
+        "en": "BPL Certificate / SECC List Proof",
+        "hi": "बीपीएल प्रमाण पत्र / एसईसीसी सूची प्रमाण",
+        "mr": "दारिद्र्यरेषेखालील (BPL) प्रमाणपत्र / यादीचा पुरावा"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "age-proof",
+      "name": {
+        "en": "Age Proof (Birth Certificate / School Leaving / Aadhaar)",
+        "hi": "आयु प्रमाण (जन्म प्रमाण पत्र / स्कूल लीविंग / आधार)",
+        "mr": "वयाचा पुरावा (जन्म दाखला / शाळा सोडल्याचा दाखला / आधार)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Apply at your Gram Panchayat, Block/Tehsil Office, Municipal Office, or via UMANG / State e-District portal.",
+      "Submit UDID/Medical Board Disability Certificate (≥80%), BPL proof, age proof, and Aadhaar-linked bank passbook.",
+      "Upon Tehsildar/BDO verification, pension is disbursed monthly via DBT."
+    ],
+    "hi": [
+      "ग्राम पंचायत, तहसील/ब्लॉक कार्यालय, नगर पालिका या उमंग ऐप से आवेदन करें।",
+      "दिव्यांगता प्रमाण पत्र (≥80%), बीपीएल प्रमाण, आयु प्रमाण और बैंक पासबुक जमा करें।",
+      "सत्यापन के बाद पेंशन हर महीने सीधे बैंक खाते में जमा होती है।"
+    ],
+    "mr": [
+      "ग्रामपंचायत, तहसील कार्यालय, नगरपालिका किंवा उमंग/आपले सरकार पोर्टलवरून अर्ज करा.",
+      "UDID / वैद्यकीय दिव्यांग प्रमाणपत्र (≥८०%), BPL पुरावा, वयाचा पुरावा आणि बँक पासबुक जोडा.",
+      "पडताळणीनंतर दरमहा पेन्शन थेट बँक खात्यात जमा होते."
+    ]
+  },
+  "officialUrl": "https://nsap.nic.in",
+  "helpline": "1800-11-6446",
+  "deadlines": {
+    "en": "Open year-round.",
+    "hi": "वर्ष भर खुला।",
+    "mr": "वर्षभर सुरू."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://nsap.nic.in",
+    "https://www.myscheme.gov.in/schemes/nsap-igndps"
+  ],
+  "needsVerification": false,
+  "tags": [
+    "disabled",
+    "divyang",
+    "pension",
+    "nsap",
+    "bpl",
+    "80%",
+    "severe disability"
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "id": "mahatma-jyotirao-phule-jan-arogya",
+  "name": {
+    "en": "Mahatma Jyotirao Phule Jan Arogya Yojana (MJPJAY — Maharashtra)",
+    "hi": "महात्मा ज्योतिराव फुले जन आरोग्य योजना (महाराष्ट्र)",
+    "mr": "महात्मा जोतिराव फुले जन आरोग्य योजना (MJPJAY — महाराष्ट्र)"
+  },
+  "category": "health",
+  "secondaryCategories": [
+    "farmer",
+    "worker",
+    "woman",
+    "senior"
+  ],
+  "benefitType": "insurance",
+  "benefitHighlight": {
+    "en": "Up to ₹5 lakh / family / year cashless treatment (Maharashtra)",
+    "hi": "₹5 लाख / परिवार / वर्ष कैशलेस उपचार (महाराष्ट्र)",
+    "mr": "₹5 लाख / कुटुंब / वर्ष कॅशलेस उपचार (महाराष्ट्र)"
+  },
+  "level": "state",
+  "state": "Maharashtra",
+  "ministry": "Public Health Department, Government of Maharashtra",
+  "summary": {
+    "en": "Maharashtra’s flagship cashless health assurance scheme integrated with AB PM-JAY, offering up to ₹5 lakh/year coverage for major surgeries and hospitalizations for Maharashtra residents.",
+    "hi": "महाराष्ट्र की प्रमुख कैशलेस स्वास्थ्य योजना जो आयुष्मान भारत के साथ एकीकृत होकर महाराष्ट्र के परिवारों को ₹5 लाख/वर्ष तक मुफ्त अस्पताल उपचार प्रदान करती है।",
+    "mr": "आयुष्मान भारत योजनेशी संलग्न महाराष्ट्राची प्रमुख आरोग्य योजना; राज्यातील नागरिकांना दरवर्षी ₹5 लाखांपर्यंत मोफत कॅशलेस शस्त्रक्रिया व उपचार."
+  },
+  "benefits": {
+    "en": "Cashless hospitalization up to ₹5 lakh per family per year across network hospitals in Maharashtra covering over 1,300+ medical and surgical procedures, diagnostics, medicines, and follow-up care.",
+    "hi": "महाराष्ट्र के नेटवर्क अस्पतालों में 1,300+ चिकित्सा व सर्जिकल प्रक्रियाओं के लिए ₹5 लाख प्रति परिवार प्रति वर्ष तक कैशलेस इलाज।",
+    "mr": "महाराष्ट्रातील संलग्न रुग्णालयांत १,३००+ आजार व शस्त्रक्रियांसाठी प्रति कुटुंब प्रति वर्ष ₹5 लाखांपर्यंत मोफत कॅशलेस उपचार."
+  },
+  "eligibility": {
+    "states": [
+      "Maharashtra"
+    ],
+    "customConditions": [
+      {
+        "en": "Expanded to cover Maharashtra domicile families (yellow, orange, Antyodaya, Annapurna, and white ration card holders subject to current state GR guidelines; confirm your eligibility on jeevandayee.gov.in).",
+        "hi": "महाराष्ट्र के अधिवासी परिवार (पीला, केसरिया, अंत्योदय व पात्र राशन कार्ड धारक; नवीनतम सरकारी नियम jeevandayee.gov.in पर जांचें)।",
+        "mr": "महाराष्ट्राचे अधिवासी कुटुंबे (पिवळे, केशरी, अंत्योदय, अन्नपूर्णा तसेच विस्तारित योजनेंतर्गत पांढरे रेशन कार्डधारक; jeevandayee.gov.in वर अद्ययावत अटी तपासा)."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "ration-card",
+      "name": {
+        "en": "Ration Card (BPL / Antyodaya / Yellow / Orange)",
+        "hi": "राशन कार्ड (बीपीएल / अंत्योदय / पीला / केसरिया)",
+        "mr": "रेशन कार्ड (पिवळे / केशरी / अंत्योदय)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "domicile-certificate",
+      "name": {
+        "en": "State Domicile / Residence Certificate",
+        "hi": "निवास प्रमाण पत्र (डोमिसाइल)",
+        "mr": "महाराष्ट्र अधिवास प्रमाणपत्र (डोमिसाईल)"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Visit any MJPJAY empanelled hospital in Maharashtra with your Ration Card / Domicile proof and Aadhaar.",
+      "Meet the Arogyamitra desk at the hospital for e-KYC and beneficiary verification.",
+      "Generate your integrated Ayushman-MJPJAY Health Card on beneficiary.nha.gov.in or at CSC.",
+      "Receive cashless pre-authorized treatment without paying out-of-pocket for covered procedures."
+    ],
+    "hi": [
+      "महाराष्ट्र के किसी भी MJPJAY सूचीबद्ध अस्पताल में राशन कार्ड/अधिवास प्रमाण और आधार लेकर जाएं।",
+      "अस्पताल के आरोग्यमित्र डेस्क पर सत्यापन व ई-केवाईसी कराएं।",
+      "beneficiary.nha.gov.in या CSC पर एकीकृत आयुष्मान-MJPJAY कार्ड बनवाएं।",
+      "स्वीकृत प्रक्रियाओं के लिए बिना नकद भुगतान के इलाज प्राप्त करें।"
+    ],
+    "mr": [
+      "महाराष्ट्रातील कोणत्याही MJPJAY संलग्न रुग्णालयात रेशन कार्ड/अधिवास पुरावा आणि आधार कार्ड घेऊन जा.",
+      "रुग्णालयातील आरोग्यमित्र कक्षात पडताळणी व e-KYC करून घ्या.",
+      "beneficiary.nha.gov.in किंवा CSC केंद्रावर एकत्रित आयुष्मान-MJPJAY कार्ड तयार करा.",
+      "मंजूर उपचारांसाठी कोणतेही शुल्क न भरता कॅशलेस उपचार घ्या."
+    ]
+  },
+  "officialUrl": "https://www.jeevandayee.gov.in",
+  "helpline": "155388 / 1800-233-2200",
+  "deadlines": {
+    "en": "Open year-round for Maharashtra residents.",
+    "hi": "महाराष्ट्र के निवासियों के लिए वर्ष भर खुला।",
+    "mr": "महाराष्ट्रातील नागरिकांसाठी वर्षभर उपलब्ध."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://www.jeevandayee.gov.in",
+    "https://www.myscheme.gov.in/schemes/mjpjay"
+  ],
+  "needsVerification": true,
+  "tags": [
+    "maharashtra",
+    "health",
+    "mjpjay",
+    "phule",
+    "hospital",
+    "surgery",
+    "cashless",
+    "nashik",
+    "pune"
+  ]
+}

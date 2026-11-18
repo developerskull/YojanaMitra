@@ -1,0 +1,115 @@
+{
+  "id": "sukanya-samriddhi-yojana",
+  "name": {
+    "en": "Sukanya Samriddhi Yojana (SSY)",
+    "hi": "सुकन्या समृद्धि योजना (एसएसवाई)",
+    "mr": "सुकन्या समृद्धी योजना (SSY)"
+  },
+  "category": "woman",
+  "secondaryCategories": [
+    "student"
+  ],
+  "benefitType": "cash",
+  "benefitHighlight": {
+    "en": "Tax-free girl child savings (~8.2% p.a. quarterly notified*)",
+    "hi": "बालिका कर-मुक्त बचत (~8.2% वार्षिक ब्याज*)",
+    "mr": "मुलीसाठी करमुक्त बचत (~८.२% वार्षिक व्याजदर*)"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Finance",
+  "summary": {
+    "en": "Government-backed small savings account under Beti Bachao Beti Padhao to build a long-term education and marriage corpus for a girl child below 10 years of age.",
+    "hi": "बेटी बचाओ बेटी पढ़ाओ के तहत 10 वर्ष से कम आयु की बालिका की उच्च शिक्षा और भविष्य के लिए उच्च ब्याज वाली सरकारी बचत योजना।",
+    "mr": "बेटी बचाओ बेटी पढाओ अंतर्गत १० वर्षांखालील मुलीच्या उच्च शिक्षण व भविष्यासाठी उच्च व्याजदर देणारी सुरक्षित सरकारी बचत योजना."
+  },
+  "benefits": {
+    "en": "Deposits from ₹250 to ₹1,50,000 per financial year; government-notified interest rate revised quarterly (historically 8.2% p.a. — verify current quarter rate on India Post/NSI); EEE tax exemption under Section 80C; partial withdrawal up to 50% allowed at age 18 for higher education.",
+    "hi": "₹250 से ₹1,50,000 प्रति वर्ष जमा; सरकार द्वारा तिमाही घोषित उच्च ब्याज (हाल में 8.2% वार्षिक — वर्तमान तिमाही दर जांचें); आयकर छूट (EEE); 18 वर्ष की आयु में उच्च शिक्षा के लिए 50% निकासी सुविधा।",
+    "mr": "दरवर्षी ₹250 ते ₹1,50,000 पर्यंत गुंतवणूक; तिमाही जाहीर होणारा उच्च व्याजदर (अलीकडे ८.२% — चालू तिमाही दर तपासा); पूर्ण करमुक्त (EEE); १८ वर्षांनंतर उच्च शिक्षणासाठी ५०% रक्कम काढता येते."
+  },
+  "eligibility": {
+    "maxAge": 10,
+    "gender": [
+      "female"
+    ],
+    "customConditions": [
+      {
+        "en": "Account must be opened by parents/legal guardian in the name of a resident Indian girl child below 10 years of age (max 2 girl children per family, exception for twins/triplets).",
+        "hi": "माता-पिता/अभिभावक द्वारा 10 वर्ष से कम आयु की बालिका के नाम खाता खोला जा सकता है (प्रति परिवार अधिकतम 2 बेटियां)।",
+        "mr": "पालकांद्वारे १० वर्षांखालील मुलीच्या नावे खाते उघडता येते (एका कुटुंबात कमाल २ मुलींसाठी; जुळ्यांसाठी अपवाद)."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "child-birth-cert",
+      "name": {
+        "en": "Girl Child's Birth Certificate",
+        "hi": "बालिका का जन्म प्रमाण पत्र",
+        "mr": "मुलीचा जन्म दाखला"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "passport-photo",
+      "name": {
+        "en": "Passport-size Photographs",
+        "hi": "पासपोर्ट साइज फोटो",
+        "mr": "पासपोर्ट आकाराचे फोटो"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Visit any Post Office or authorized public/private sector bank branch.",
+      "Fill out the Sukanya Samriddhi Account Opening Form (Form-1).",
+      "Submit the girl child’s birth certificate along with the parent/guardian’s Aadhaar, PAN, and address proof.",
+      "Deposit an initial amount of at least ₹250 (and minimum ₹250 every financial year for 15 years) and collect your passbook."
+    ],
+    "hi": [
+      "किसी भी डाकघर या अधिकृत बैंक शाखा में जाएं।",
+      "सुकन्या समृद्धि खाता खोलने का फॉर्म (Form-1) भरें।",
+      "बालिका का जन्म प्रमाण पत्र तथा माता-पिता का आधार, पैन और पता प्रमाण जमा करें।",
+      "न्यूनतम ₹250 जमा कर खाता शुरू करें और पासबुक प्राप्त करें।"
+    ],
+    "mr": [
+      "जवळच्या पोस्ट ऑफिसमध्ये किंवा अधिकृत बँक शाखेत जा.",
+      "सुकन्या समृद्धी खाते उघडण्याचा अर्ज (Form-1) भरा.",
+      "मुलीचा जन्म दाखला आणि पालकांचे आधार, पॅन व पत्त्याचा पुरावा जोडा.",
+      "किमान ₹250 भरून खाते सुरू करा आणि पासबुक घ्या."
+    ]
+  },
+  "officialUrl": "https://www.nsiindia.gov.in",
+  "helpline": "1800-266-6868 (India Post Helpline)",
+  "deadlines": {
+    "en": "Must be opened before the girl child turns 10 years old; open year-round.",
+    "hi": "बालिका के 10 वर्ष के होने से पहले कभी भी खाता खोला जा सकता है।",
+    "mr": "मुलीचे वय १० वर्षे पूर्ण होण्यापूर्वी वर्षातून कधीही खाते उघडता येते."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://www.nsiindia.gov.in",
+    "https://www.indiapost.gov.in"
+  ],
+  "needsVerification": true,
+  "tags": [
+    "girl child",
+    "woman",
+    "savings",
+    "sukanya",
+    "education",
+    "post office",
+    "tax free"
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "id": "pm-mudra-yojana",
+  "name": {
+    "en": "Pradhan Mantri MUDRA Yojana (PMMY)",
+    "hi": "प्रधानमंत्री मुद्रा योजना (पीएमएमवाई)",
+    "mr": "प्रधानमंत्री मुद्रा योजना (PMMY)"
+  },
+  "category": "worker",
+  "secondaryCategories": [
+    "woman"
+  ],
+  "benefitType": "loan",
+  "benefitHighlight": {
+    "en": "Collateral-free business loans up to ₹10L (₹20L Tarun Plus)",
+    "hi": "₹10 लाख तक बिना गारंटी व्यापार ऋण (तरुण प्लस ₹20 लाख)",
+    "mr": "₹10 लाखांपर्यंत विनातारण व्यवसाय कर्ज (तरुण प्लस ₹20 लाख)"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Finance (Department of Financial Services)",
+  "summary": {
+    "en": "Provides collateral-free institutional micro-credit to non-corporate, non-farm small and micro enterprises across manufacturing, trading, services, and agri-allied sectors.",
+    "hi": "छोटे व्यवसायों, दुकानदारों, कारीगरों और सेवा उद्यमों को बिना किसी गारंटी के संस्थागत व्यवसाय ऋण प्रदान करने की योजना।",
+    "mr": "लघु उद्योग, दुकानदार, कारागीर आणि सेवा क्षेत्रातील सूक्ष्म उद्योजकांना कोणतीही तारण न ठेवता व्यवसाय कर्ज देणारी योजना."
+  },
+  "benefits": {
+    "en": "Four collateral-free tiers: Shishu (up to ₹50,000), Kishore (₹50,001 to ₹5 lakh), Tarun (₹5 lakh to ₹10 lakh), and Tarun Plus (₹10 lakh to ₹20 lakh for repeat borrowers who have successfully repaid a previous Tarun loan).",
+    "hi": "चार बिना-गारंटी श्रेणियां: शिशु (₹50,000 तक), किशोर (₹50,001–₹5 लाख), तरुण (₹5–₹10 लाख), और तरुण प्लस (पिछला तरुण ऋण चुकाने वाले उद्यमियों के लिए ₹20 लाख तक)।",
+    "mr": "चार विनातारण टप्पे: शिशू (₹50,000 पर्यंत), किशोर (₹50,001–₹5 लाख), तरुण (₹5–₹10 लाख) आणि तरुण प्लस (मागील तरुण कर्जाची यशस्वी परतफेड केलेल्यांसाठी ₹20 लाखांपर्यंत)."
+  },
+  "eligibility": {
+    "minAge": 18,
+    "occupations": [
+      "entrepreneur",
+      "artisan",
+      "street_vendor",
+      "unorganized_worker",
+      "unemployed"
+    ],
+    "customConditions": [
+      {
+        "en": "Any Indian citizen with a viable non-farm income-generating business plan (manufacturing, trading, services, or agri-allied activities like dairy/poultry) and no bank default history.",
+        "hi": "कोई भी भारतीय नागरिक जिसके पास व्यवहार्य गैर-कृषि व्यवसाय योजना हो और बैंक डिफॉल्ट इतिहास न हो।",
+        "mr": "व्यवहार्य बिगर-शेती व्यवसाय योजना (किंवा दुग्धव्यवसाय/कुक्कुटपालन) असलेला आणि बँक थकबाकी नसलेला कोणताही भारतीय नागरिक."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "pan-card",
+      "name": {
+        "en": "PAN Card",
+        "hi": "पैन कार्ड",
+        "mr": "पॅन कार्ड"
+      },
+      "mandatory": false
+    },
+    {
+      "id": "business-plan",
+      "name": {
+        "en": "Project Report / Business Plan & Identity Proof (PAN/Voter ID)",
+        "hi": "प्रोजेक्ट रिपोर्ट / व्यवसाय योजना एवं पहचान पत्र (पैन/वोटर आईडी)",
+        "mr": "व्यवसाय प्रकल्प अहवाल व ओळखपत्र (पॅन/मतदार ओळखपत्र)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "passport-photo",
+      "name": {
+        "en": "Passport-size Photographs",
+        "hi": "पासपोर्ट साइज फोटो",
+        "mr": "पासपोर्ट आकाराचे फोटो"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Apply online through the official JanSamarth portal (jansamarth.in) or visit any commercial bank, RRB, Small Finance Bank, NBFC, or MFI.",
+      "Select MUDRA category (Shishu/Kishore/Tarun/Tarun Plus) and submit business plan, identity/address proof, and quotation for machinery/stock if applicable.",
+      "Bank evaluates viability and sanctions collateral-free credit backed by CGFMU guarantee."
+    ],
+    "hi": [
+      "आधिकारिक जनसमर्थ पोर्टल (jansamarth.in) से ऑनलाइन आवेदन करें या किसी भी बैंक/एनबीएफसी शाखा में जाएं।",
+      "मुद्रा श्रेणी (शिशु/किशोर/तरुण) चुनकर व्यवसाय योजना और केवाईसी दस्तावेज जमा करें।",
+      "बैंक जांच के बाद बिना गारंटी ऋण स्वीकृत करता है।"
+    ],
+    "mr": [
+      "अधिकृत जनसमर्थ पोर्टलवरून (jansamarth.in) ऑनलाइन अर्ज करा किंवा जवळच्या राष्ट्रीयीकृत/ग्रामीण बँक शाखेत जा.",
+      "योग्य मुद्रा प्रकार (शिशू/किशोर/तरुण/तरुण प्लस) निवडून व्यवसाय आराखडा व केवायसी कागदपत्रे सादर करा.",
+      "बँक प्रकल्पाची पडताळणी करून विनातारण कर्ज मंजूर करते."
+    ]
+  },
+  "officialUrl": "https://www.mudra.org.in",
+  "helpline": "1800-180-1111 / 1800-11-0001",
+  "deadlines": {
+    "en": "Open year-round at all scheduled banks and lending institutions.",
+    "hi": "सभी बैंकों में वर्ष भर खुला।",
+    "mr": "सर्व बँकांमध्ये वर्षभर सुरू."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://www.mudra.org.in",
+    "https://www.jansamarth.in"
+  ],
+  "needsVerification": false,
+  "tags": [
+    "loan",
+    "business",
+    "mudra",
+    "entrepreneur",
+    "msme",
+    "shop",
+    "self employment",
+    "woman"
+  ]
+}

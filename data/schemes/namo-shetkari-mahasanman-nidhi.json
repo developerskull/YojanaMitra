@@ -1,0 +1,128 @@
+{
+  "id": "namo-shetkari-mahasanman-nidhi",
+  "name": {
+    "en": "Namo Shetkari Mahasanman Nidhi Yojana (Maharashtra)",
+    "hi": "नमो शेतकरी महासम्मान निधि योजना (महाराष्ट्र)",
+    "mr": "नमो शेतकरी महासन्मान निधी योजना (महाराष्ट्र)"
+  },
+  "category": "farmer",
+  "secondaryCategories": [],
+  "benefitType": "cash",
+  "benefitHighlight": {
+    "en": "₹6,000 / year (over & above PM-KISAN)",
+    "hi": "₹6,000 / वर्ष (पीएम-किसान के अतिरिक्त)",
+    "mr": "₹6,000 / वर्ष (पीएम-किसान व्यतिरिक्त)"
+  },
+  "level": "state",
+  "state": "Maharashtra",
+  "ministry": "Agriculture Department, Government of Maharashtra",
+  "summary": {
+    "en": "Maharashtra state top-up scheme providing an additional ₹6,000 per year to Maharashtra farmers registered under PM-KISAN, making combined support ₹12,000/year.",
+    "hi": "महाराष्ट्र सरकार की योजना जो पीएम-किसान में पंजीकृत महाराष्ट्र के किसानों को ₹6,000 प्रति वर्ष अतिरिक्त सहायता देती है (कुल ₹12,000/वर्ष)।",
+    "mr": "पीएम-किसान योजनेत पात्र असलेल्या महाराष्ट्रातील शेतकऱ्यांना राज्य सरकारकडून दरवर्षी अतिरिक्त ₹6,000 मदत (एकूण ₹12,000/वर्ष)."
+  },
+  "benefits": {
+    "en": "₹6,000 per year in three installments of ₹2,000 each credited directly via DBT to Maharashtra farmers enrolled in PM-KISAN.",
+    "hi": "पीएम-किसान में पंजीकृत महाराष्ट्र के किसानों को ₹2,000 की तीन किस्तों में ₹6,000 प्रति वर्ष सीधे बैंक खाते में।",
+    "mr": "पीएम-किसान पात्र महाराष्ट्रातील शेतकऱ्यांच्या बँक खात्यात ₹2,000 च्या तीन हप्त्यांत दरवर्षी ₹6,000 थेट जमा होतात."
+  },
+  "eligibility": {
+    "occupations": [
+      "farmer"
+    ],
+    "states": [
+      "Maharashtra"
+    ],
+    "requiresLandOwnership": true,
+    "excludeIncomeTaxPayers": true,
+    "excludeGovtEmployees": true,
+    "customConditions": [
+      {
+        "en": "Must be an active, verified beneficiary of PM-KISAN residing and holding agricultural land in Maharashtra.",
+        "hi": "महाराष्ट्र में कृषि भूमि धारक और पीएम-किसान का सक्रिय सत्यापित लाभार्थी होना अनिवार्य है।",
+        "mr": "महाराष्ट्रात शेतीयोग्य जमीन असलेला आणि पीएम-किसान योजनेचा सक्रिय पात्र लाभार्थी असणे आवश्यक आहे."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "land-7-12",
+      "name": {
+        "en": "Land Ownership Record (7/12 Utara / 8A / Khatauni)",
+        "hi": "भूमि स्वामित्व प्रमाण (खसरा-खतौनी / 7/12 उतारा)",
+        "mr": "जमीन मालकीचा पुरावा (७/१२ उतारा आणि ८-अ)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "mobile-aadhaar",
+      "name": {
+        "en": "Active Mobile Number linked with Aadhaar",
+        "hi": "आधार से जुड़ा सक्रिय मोबाइल नंबर",
+        "mr": "आधारशी संलग्न सक्रिय मोबाईल क्रमांक"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "No separate fresh application is required if you are already approved under PM-KISAN in Maharashtra.",
+      "Ensure your PM-KISAN e-KYC, Aadhaar-bank seeding (DBT enabled), and 7/12 land seeding are complete.",
+      "Check beneficiary status on nsmny.mahait.org using your PM-KISAN registration number or mobile number.",
+      "For corrections, contact your Taluka Agriculture Officer or Maha E-Seva Kendra."
+    ],
+    "hi": [
+      "यदि आप महाराष्ट्र में पीएम-किसान के स्वीकृत लाभार्थी हैं, तो अलग से आवेदन की आवश्यकता नहीं है।",
+      "सुनिश्चित करें कि आपका पीएम-किसान ई-केवाईसी, आधार-बैंक सीडिंग और लैंड सीडिंग पूरा है।",
+      "nsmny.mahait.org पर अपना पीएम-किसान पंजीकरण नंबर या मोबाइल नंबर डालकर स्थिति जांचें।",
+      "सुधार के लिए अपने तालुका कृषि अधिकारी या महा ई-सेवा केंद्र से संपर्क करें।"
+    ],
+    "mr": [
+      "महाराष्ट्रात पीएम-किसानचे मंजूर लाभार्थी असल्यास वेगळा अर्ज करण्याची गरज नाही.",
+      "तुमचे पीएम-किसान e-KYC, आधार-बँक संलग्नीकरण (NPCI/DBT) आणि जमीन पडताळणी पूर्ण असल्याची खात्री करा.",
+      "nsmny.mahait.org या पोर्टलवर नोंदणी क्रमांक किंवा मोबाईल नंबर टाकून हप्त्याची स्थिती तपासा.",
+      "काही त्रुटी असल्यास तालुका कृषी अधिकारी किंवा आपले सरकार सेवा केंद्राशी संपर्क साधा."
+    ]
+  },
+  "officialUrl": "https://nsmny.mahait.org",
+  "helpline": "1800-120-8040 (Maharashtra Krishi Helpline)",
+  "deadlines": {
+    "en": "Automatic sync with PM-KISAN database; complete e-KYC before each state installment release.",
+    "hi": "पीएम-किसान डेटाबेस से स्वचालित जुड़ाव; प्रत्येक किस्त से पहले ई-केवाईसी पूरा रखें।",
+    "mr": "पीएम-किसान यादीतून आपोआप निवड; प्रत्येक हप्त्यापूर्वी e-KYC पूर्ण ठेवणे आवश्यक."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://nsmny.mahait.org",
+    "https://krishi.maharashtra.gov.in"
+  ],
+  "needsVerification": false,
+  "tags": [
+    "maharashtra",
+    "farmer",
+    "shetkari",
+    "namo",
+    "kisan",
+    "nashik",
+    "pune",
+    "dbt"
+  ]
+}

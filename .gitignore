@@ -23,5 +23,6 @@ blob-report/
 .DS_Store
 Thumbs.db
 *.log
+*.tsbuildinfo
 .vscode/
 .idea/

@@ -1,0 +1,150 @@
+{
+  "id": "nsp-post-matric-disability",
+  "name": {
+    "en": "Post-Matric Scholarship for Students with Disabilities (DEPwD / NSP)",
+    "hi": "दिव्यांग छात्रों के लिए पोस्ट-मैट्रिक छात्रवृत्ति योजना (NSP)",
+    "mr": "दिव्यांग विद्यार्थ्यांसाठी मॅट्रिकोत्तर शिष्यवृत्ती योजना (DEPwD / NSP)"
+  },
+  "category": "disabled",
+  "secondaryCategories": [
+    "student"
+  ],
+  "benefitType": "scholarship",
+  "benefitHighlight": {
+    "en": "Tuition fee + maintenance & disability allowance (≥40% PwD)",
+    "hi": "शिक्षण शुल्क + रखरखाव व दिव्यांगता भत्ता (≥40% दिव्यांग छात्र)",
+    "mr": "शिक्षण शुल्क + निर्वाह व दिव्यांग भत्ता (≥४०% दिव्यांग विद्यार्थी)"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Social Justice & Empowerment (DEPwD)",
+  "summary": {
+    "en": "Supports students with ≥40% benchmark disability studying from Class 11 through postgraduate degrees/diplomas with maintenance allowance, book grant, disability allowance, and compulsory tuition fee reimbursement.",
+    "hi": "कक्षा 11 से परास्नातक तक पढ़ने वाले ≥40% दिव्यांग छात्रों को शिक्षण शुल्क प्रतिपूर्ति, पुस्तक अनुदान, रखरखाव व दिव्यांगता भत्ता।",
+    "mr": "इयत्ता ११ वी ते पदव्युत्तर शिक्षण घेणाऱ्या ≥४०% दिव्यांग विद्यार्थ्यांना शिक्षण शुल्क प्रतिपूर्ती, पुस्तक अनुदान, निर्वाह व दिव्यांग भत्ता देणारी योजना."
+  },
+  "benefits": {
+    "en": "Maintenance allowance (₹550–₹1,600/month), annual book grant (₹1,500), disability-specific allowance (₹2,000–₹4,000/year for reader/escort/helper), and compulsory non-refundable fee reimbursement up to ₹1.50 lakh/year.",
+    "hi": "रखरखाव भत्ता (₹550–₹1,600/माह), वार्षिक पुस्तक अनुदान (₹1,500), दिव्यांगता भत्ता (₹2,000–₹4,000/वर्ष) और ₹1.50 लाख/वर्ष तक अनिवार्य शुल्क प्रतिपूर्ति।",
+    "mr": "निर्वाह भत्ता (₹550–₹1,600/महिना), वार्षिक पुस्तक अनुदान (₹1,500), दिव्यांग भत्ता (₹2,000–₹4,000/वर्ष) आणि ₹1.50 लाख/वर्षांपर्यंत अनिवार्य शुल्क प्रतिपूर्ती."
+  },
+  "eligibility": {
+    "occupations": [
+      "student"
+    ],
+    "disabilityRequired": true,
+    "minDisabilityPercent": 40,
+    "maxAnnualIncome": 250000,
+    "educationLevels": [
+      "higher_secondary",
+      "diploma_iti",
+      "undergraduate",
+      "postgraduate"
+    ],
+    "customConditions": [
+      {
+        "en": "Indian student with ≥40% certified disability (UDID card), studying in Class 11 to PG degree/diploma at a recognized institution, with annual parental income ≤ ₹2.5 lakh.",
+        "hi": "≥40% प्रमाणित दिव्यांग (UDID) छात्र जो कक्षा 11 से परास्नातक तक मान्यता प्राप्त संस्थान में पढ़ रहा हो और पारिवारिक आय ≤ ₹2.5 लाख हो।",
+        "mr": "≥४०% प्रमाणित दिव्यांग (UDID) विद्यार्थी जो इयत्ता ११ वी ते पदव्युत्तर मान्यताप्राप्त अभ्यासक्रमात शिकत असून कौटुंबिक उत्पन्न ≤ ₹2.5 लाख आहे."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "udid-card",
+      "name": {
+        "en": "Disability Certificate / UDID Card (Medical Board)",
+        "hi": "दिव्यांगता प्रमाण पत्र / यूडीआईडी कार्ड (मेडिकल बोर्ड)",
+        "mr": "दिव्यांग प्रमाणपत्र / यूडीआयडी कार्ड (वैद्यकीय मंडळ)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "income-certificate",
+      "name": {
+        "en": "Income Certificate (issued by Tehsildar / Competent Authority)",
+        "hi": "आय प्रमाण पत्र (तहसीलदार / सक्षम अधिकारी द्वारा जारी)",
+        "mr": "उत्पन्नाचा दाखला (तहसीलदार / सक्षम प्राधिकारी)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "marksheet",
+      "name": {
+        "en": "Previous Exam Marksheet / Bonafide Student Certificate",
+        "hi": "पिछली परीक्षा की मार्कशीट / बोनाफाइड प्रमाण पत्र",
+        "mr": "मागील परीक्षेची गुणपत्रिका / बोनाफाईड प्रमाणपत्र"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "college-fee-receipt",
+      "name": {
+        "en": "College Admission Letter & Fee Receipt (CAP Allotment)",
+        "hi": "कॉलेज प्रवेश पत्र एवं शुल्क रसीद",
+        "mr": "महाविद्यालय प्रवेश पत्र (CAP अलॉटमेंट) व फी पावती"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Complete One-Time Registration (OTR) on the National Scholarship Portal (scholarships.gov.in).",
+      "Select \"Post-Matric Scholarship for Students with Disabilities\" under Department of Empowerment of Persons with Disabilities (DEPwD).",
+      "Upload UDID card/disability certificate, income certificate, previous marksheet, and fee receipt.",
+      "Submit before deadline and ensure online verification by your school/college Nodal Officer."
+    ],
+    "hi": [
+      "राष्ट्रीय छात्रवृत्ति पोर्टल (scholarships.gov.in) पर One-Time Registration (OTR) पूरा करें।",
+      "DEPwD के तहत \"Post-Matric Scholarship for Students with Disabilities\" चुनें।",
+      "UDID कार्ड, आय प्रमाण पत्र, मार्कशीट और शुल्क रसीद अपलोड करें।",
+      "संस्थान नोडल अधिकारी से ऑनलाइन सत्यापन कराएं।"
+    ],
+    "mr": [
+      "नॅशनल स्कॉलरशिप पोर्टलवर (scholarships.gov.in) One-Time Registration (OTR) पूर्ण करा.",
+      "DEPwD विभागांतर्गत \"Post-Matric Scholarship for Students with Disabilities\" निवडा.",
+      "UDID कार्ड, उत्पन्नाचा दाखला, मागील गुणपत्रिका आणि फी पावती अपलोड करा.",
+      "मुदतीपूर्वी अर्ज सादर करून महाविद्यालय नोडल अधिकाऱ्याकडून पडताळणी करून घ्या."
+    ]
+  },
+  "officialUrl": "https://scholarships.gov.in",
+  "helpline": "0120-6619540 (NSP Helpdesk)",
+  "deadlines": {
+    "en": "Annual academic cycle on NSP (typically July–October; verify on scholarships.gov.in).",
+    "hi": "NSP पर वार्षिक चक्र (आमतौर पर जुलाई–अक्टूबर; scholarships.gov.in पर जांचें)।",
+    "mr": "NSP वर वार्षिक मुदत (साधारण जुलै–ऑक्टोबर; scholarships.gov.in वर तपासा)."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://scholarships.gov.in",
+    "https://depwd.gov.in"
+  ],
+  "needsVerification": false,
+  "tags": [
+    "disabled",
+    "student",
+    "scholarship",
+    "divyang",
+    "nsp",
+    "udid",
+    "post matric"
+  ]
+}

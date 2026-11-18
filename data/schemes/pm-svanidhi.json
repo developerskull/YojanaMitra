@@ -1,0 +1,127 @@
+{
+  "id": "pm-svanidhi",
+  "name": {
+    "en": "PM Street Vendor's AtmaNirbhar Nidhi (PM SVANidhi)",
+    "hi": "पीएम स्वनिधि (स्ट्रीट वेंडर आत्मनिर्भर निधि योजना)",
+    "mr": "पीएम स्वनिधी योजना (शहरी फेरीवाले कर्ज योजना)"
+  },
+  "category": "worker",
+  "secondaryCategories": [
+    "woman"
+  ],
+  "benefitType": "loan",
+  "benefitHighlight": {
+    "en": "Collateral-free vendor loans (₹10K -> ₹20K -> ₹50K) + 7% subsidy*",
+    "hi": "फेरीवालों को बिना गारंटी ऋण (₹10K -> ₹20K -> ₹50K) + 7% सब्सिडी*",
+    "mr": "फेरीवाल्यांसाठी विनातारण कर्ज (₹10K -> ₹20K -> ₹50K) + ७% व्याज सवलत*"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Housing and Urban Affairs (MoHUA)",
+  "summary": {
+    "en": "Micro-credit working capital facility for urban street vendors (hawkers, cart pullers, vegetable/fruit/tea sellers) with 7% interest subsidy on timely repayment and digital cashback incentives.",
+    "hi": "शहरी रेहड़ी-पटरी व फेरीवालों (सब्जी, फल, चाय, ठेला विक्रेता) के लिए बिना गारंटी कार्यशील पूंजी ऋण, समय पर भुगतान पर 7% ब्याज सब्सिडी और डिजिटल कैशबैक।",
+    "mr": "शहरी भागातील फेरीवाले व पथविक्रेते (भाजीपाला, फळे, चहा, हातगाडी विक्रेते) यांच्यासाठी विनातारण खेळते भांडवल कर्ज, ७% व्याज अनुदान व डिजिटल कॅशबॅक."
+  },
+  "benefits": {
+    "en": "Progressive collateral-free working capital loans starting at ₹10,000, stepping up to ₹20,000 and ₹50,000 on timely repayment (check pmsvanidhi.mohua.gov.in for any revised tranche limits), plus 7% interest subsidy and UPI cashback.",
+    "hi": "समय पर भुगतान पर ₹10,000, फिर ₹20,000 और ₹50,000 तक बिना गारंटी ऋण, साथ ही 7% ब्याज सब्सिडी और डिजिटल भुगतान पर कैशबैक (नवीनतम सीमा पोर्टल पर जांचें)।",
+    "mr": "वेळेवर परतफेडीवर ₹10,000, नंतर ₹20,000 आणि ₹50,000 पर्यंत विनातारण कर्ज, ७% व्याज अनुदान व UPI व्यवहारांवर कॅशबॅक (अद्ययावत मर्यादा पोर्टलवर तपासा)."
+  },
+  "eligibility": {
+    "minAge": 18,
+    "occupations": [
+      "street_vendor"
+    ],
+    "residenceType": [
+      "urban"
+    ],
+    "customConditions": [
+      {
+        "en": "Urban street vendors operating in cities/towns possessing a Certificate of Vending (CoV), Identity Card, or Letter of Recommendation (LoR) from their Urban Local Body (ULB) / Town Vending Committee.",
+        "hi": "शहरी क्षेत्रों में कार्यरत स्ट्रीट वेंडर जिनके पास नगर निकाय से वेंडिंग प्रमाण पत्र या अनुशंसा पत्र (LoR) हो।",
+        "mr": "शहरी भागातील फेरीवाले ज्यांच्याकडे महानगरपालिका/नगरपरिषदेचे फेरीवाला प्रमाणपत्र किंवा शिफारस पत्र (LoR) आहे."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "vending-certificate",
+      "name": {
+        "en": "Certificate of Vending / Letter of Recommendation from ULB/TVC",
+        "hi": "वेंडिंग प्रमाण पत्र / नगर निकाय से अनुशंसा पत्र",
+        "mr": "फेरीवाला प्रमाणपत्र / स्थानिक स्वराज्य संस्थेचे शिफारस पत्र"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "mobile-aadhaar",
+      "name": {
+        "en": "Active Mobile Number linked with Aadhaar",
+        "hi": "आधार से जुड़ा सक्रिय मोबाइल नंबर",
+        "mr": "आधारशी संलग्न सक्रिय मोबाईल क्रमांक"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Apply online at pmsvanidhi.mohua.gov.in, via the PM SVANidhi mobile app, or at a nearby CSC / Municipal office.",
+      "If you do not yet have a Vending Certificate, request a Letter of Recommendation (LoR) online through your Urban Local Body.",
+      "Verify mobile and Aadhaar, pick your preferred bank/MFI lender, and submit the application.",
+      "Repay on time via digital channels to automatically earn 7% interest subsidy and qualify for higher loan tranches."
+    ],
+    "hi": [
+      "pmsvanidhi.mohua.gov.in, पीएम स्वनिधि ऐप या नजदीकी CSC/नगर पालिका में आवेदन करें।",
+      "यदि वेंडिंग प्रमाण पत्र नहीं है, तो नगर निकाय से ऑनलाइन अनुशंसा पत्र (LoR) के लिए आवेदन करें।",
+      "मोबाइल व आधार सत्यापित कर पसंदीदा बैंक चुनें और आवेदन जमा करें।",
+      "समय पर भुगतान कर 7% ब्याज सब्सिडी और अगली बड़ी किस्त के पात्र बनें।"
+    ],
+    "mr": [
+      "pmsvanidhi.mohua.gov.in पोर्टल, पीएम स्वनिधी अ‍ॅप किंवा CSC/नगरपालिका कार्यालयात अर्ज करा.",
+      "फेरीवाला प्रमाणपत्र नसल्यास नगरपालिकेकडे ऑनलाइन शिफारस पत्रासाठी (LoR) अर्ज करा.",
+      "मोबाईल व आधार पडताळणी करून बँक निवडा आणि अर्ज सादर करा.",
+      "वेळेवर परतफेड करून ७% व्याज अनुदान व पुढील मोठ्या कर्जासाठी पात्र व्हा."
+    ]
+  },
+  "officialUrl": "https://pmsvanidhi.mohua.gov.in",
+  "helpline": "1800-11-1979",
+  "deadlines": {
+    "en": "Check pmsvanidhi.mohua.gov.in for current active lending phase deadlines.",
+    "hi": "सक्रिय ऋण चरण की अंतिम तिथि के लिए pmsvanidhi.mohua.gov.in देखें।",
+    "mr": "चालू कर्ज टप्प्याच्या मुदतीसाठी pmsvanidhi.mohua.gov.in पोर्टल तपासा."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://pmsvanidhi.mohua.gov.in",
+    "https://www.myscheme.gov.in/schemes/pm-svanidhi"
+  ],
+  "needsVerification": true,
+  "tags": [
+    "street vendor",
+    "hawker",
+    "feriwala",
+    "urban",
+    "loan",
+    "svanidhi",
+    "worker"
+  ]
+}

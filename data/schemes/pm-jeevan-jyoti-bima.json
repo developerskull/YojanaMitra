@@ -1,0 +1,112 @@
+{
+  "id": "pm-jeevan-jyoti-bima",
+  "name": {
+    "en": "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)",
+    "hi": "प्रधानमंत्री जीवन ज्योति बीमा योजना (पीएमजेजेबीवाई)",
+    "mr": "प्रधानमंत्री जीवन ज्योती विमा योजना (PMJJBY)"
+  },
+  "category": "health",
+  "secondaryCategories": [
+    "worker",
+    "farmer",
+    "woman"
+  ],
+  "benefitType": "insurance",
+  "benefitHighlight": {
+    "en": "₹2 lakh life insurance cover for ₹436 / year",
+    "hi": "₹436 / वर्ष में ₹2 लाख का जीवन बीमा",
+    "mr": "₹436 / वर्षात ₹2 लाखांचे जीवन विमा संरक्षण"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Finance (Department of Financial Services)",
+  "summary": {
+    "en": "Affordable one-year renewable term life insurance providing ₹2 lakh payout to the nominee in case of the insured person’s death due to any reason, for bank/post office account holders aged 18–50.",
+    "hi": "18–50 वर्ष के बैंक/डाकघर खाताधारकों के लिए मात्र ₹436/वर्ष में ₹2 लाख का जीवन बीमा, किसी भी कारण से मृत्यु पर परिवार को सहायता।",
+    "mr": "१८ ते ५० वयोगटातील बँक/पोस्ट खातेधारकांसाठी केवळ ₹436 प्रति वर्ष हप्त्यात ₹2 लाखांचे जीवन विमा कवच."
+  },
+  "benefits": {
+    "en": "₹2,00,000 life insurance cover paid to the nominee upon death of the insured due to any cause, at a low annual auto-debited premium of ₹436 (pro-rata based on enrollment quarter).",
+    "hi": "किसी भी कारण से मृत्यु होने पर नामांकित व्यक्ति को ₹2,00,000 का बीमा लाभ; वार्षिक प्रीमियम मात्र ₹436 (ऑटो-डेबिट)।",
+    "mr": "कोणत्याही कारणाने मृत्यू झाल्यास वारसाला ₹2,00,000 विमा रक्कम; वार्षिक हप्ता फक्त ₹436 (बँक खात्यातून ऑटो-डेबिट)."
+  },
+  "eligibility": {
+    "minAge": 18,
+    "maxAge": 50,
+    "customConditions": [
+      {
+        "en": "Any individual aged 18 to 50 years holding a savings bank or post office account with consent for annual auto-debit (coverage continues up to age 55 once enrolled before 50).",
+        "hi": "18 से 50 वर्ष का कोई भी व्यक्ति जिसका बचत बैंक या डाकघर खाता हो (पंजीकरण के बाद 55 वर्ष तक नवीनीकरण संभव)।",
+        "mr": "बँक किंवा पोस्ट बचत खाते असलेली १८ ते ५० वयोगटातील कोणतीही व्यक्ती (नोंदणीनंतर ५५ वर्षांपर्यंत विमा सुरू ठेवता येतो)."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "mobile-aadhaar",
+      "name": {
+        "en": "Active Mobile Number linked with Aadhaar",
+        "hi": "आधार से जुड़ा सक्रिय मोबाइल नंबर",
+        "mr": "आधारशी संलग्न सक्रिय मोबाईल क्रमांक"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Visit your bank branch, Post Office, Bank Mitra, or log in to your bank’s net banking / mobile banking app.",
+      "Fill the PMJJBY enrollment-cum-auto-debit consent form with nominee details.",
+      "Keep at least ₹436 balance before 31st May each year for automatic annual renewal (cover runs 1 June to 31 May)."
+    ],
+    "hi": [
+      "अपनी बैंक शाखा, डाकघर, बैंक मित्र या मोबाइल/नेट बैंकिंग ऐप के माध्यम से आवेदन करें।",
+      "नॉमिनी विवरण के साथ PMJJBY नामांकन व ऑटो-डेबिट सहमति फॉर्म जमा करें।",
+      "प्रतिवर्ष 31 मई से पहले खाते में ₹436 शेष रखें (कवर अवधि 1 जून से 31 मई)।"
+    ],
+    "mr": [
+      "तुमच्या बँक शाखेत, पोस्ट ऑफिसमध्ये, बँक मित्राकडे किंवा नेट बँकिंग अ‍ॅपद्वारे नोंदणी करा.",
+      "वारसदाराच्या माहितीसह PMJJBY ऑटो-डेबिट संमती अर्ज भरा.",
+      "दरवर्षी ३१ मेपूर्वी खात्यात किमान ₹436 शिल्लक ठेवा (विमा कालावधी १ जून ते ३१ मे)."
+    ]
+  },
+  "officialUrl": "https://jansuraksha.gov.in",
+  "helpline": "1800-180-1111 / 1800-11-0001",
+  "deadlines": {
+    "en": "Open year-round; annual renewal every June 1 – May 31.",
+    "hi": "वर्ष भर खुला; वार्षिक नवीनीकरण 1 जून से 31 मई।",
+    "mr": "वर्षभर सुरू; वार्षिक नूतनीकरण १ जून ते ३१ मे."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://jansuraksha.gov.in",
+    "https://www.myscheme.gov.in/schemes/pmjjby"
+  ],
+  "needsVerification": false,
+  "tags": [
+    "life insurance",
+    "pmjjby",
+    "436",
+    "jan suraksha",
+    "worker",
+    "farmer",
+    "bank"
+  ]
+}

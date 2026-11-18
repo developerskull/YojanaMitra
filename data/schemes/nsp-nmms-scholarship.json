@@ -1,0 +1,128 @@
+{
+  "id": "nsp-nmms-scholarship",
+  "name": {
+    "en": "National Means-cum-Merit Scholarship Scheme (NMMSS)",
+    "hi": "राष्ट्रीय साधन-सह-योग्यता छात्रवृत्ति योजना (NMMSS)",
+    "mr": "राष्ट्रीय आर्थिक दुर्बल घटक विद्यार्थी शिष्यवृत्ती (NMMS)"
+  },
+  "category": "student",
+  "secondaryCategories": [],
+  "benefitType": "scholarship",
+  "benefitHighlight": {
+    "en": "₹12,000 / year for Class 9–12 school students",
+    "hi": "कक्षा 9 से 12 के छात्रों को ₹12,000 / वर्ष छात्रवृत्ति",
+    "mr": "इयत्ता ९ वी ते १२ वीसाठी ₹12,000 / वर्ष शिष्यवृत्ती"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Education (Department of School Education & Literacy)",
+  "summary": {
+    "en": "Provides ₹12,000 per year from Class 9 to Class 12 to meritorious students from economically weaker sections studying in government, government-aided, or local body schools to prevent dropout.",
+    "hi": "सरकारी और सहायता प्राप्त स्कूलों में पढ़ने वाले आर्थिक रूप से कमजोर मेधावी छात्रों को कक्षा 9 से 12 तक पढ़ाई जारी रखने हेतु ₹12,000 प्रति वर्ष छात्रवृत्ति।",
+    "mr": "सरकारी व अनुदानित शाळांतील आर्थिकदृष्ट्या दुर्बल पण हुशार विद्यार्थ्यांना इयत्ता ९ वी ते १२ वी दरम्यान गळती रोखण्यासाठी दरवर्षी ₹12,000 शिष्यवृत्ती."
+  },
+  "benefits": {
+    "en": "₹12,000 per year (₹1,000/month) paid annually via DBT from Class 9 through Class 12 (up to 4 years) upon meeting promotion/marks renewal criteria.",
+    "hi": "कक्षा 9 से 12 तक प्रति वर्ष ₹12,000 (₹1,000/माह) सीधे बैंक खाते में (हर वर्ष नवीनीकरण शर्तों के साथ)।",
+    "mr": "इयत्ता ९ वी ते १२ वीपर्यंत दरवर्षी ₹12,000 (₹1,000/महिना) थेट बँक खात्यात जमा."
+  },
+  "eligibility": {
+    "minAge": 13,
+    "maxAge": 18,
+    "occupations": [
+      "student"
+    ],
+    "educationLevels": [
+      "secondary",
+      "higher_secondary"
+    ],
+    "maxAnnualIncome": 350000,
+    "customConditions": [
+      {
+        "en": "Must study in a Government, Government-aided, or Local Body school (not Kendriya Vidyalaya/JNV/private unaided), score at least 55% in Class 7 (50% for SC/ST), qualify the state NMMS exam in Class 8, and have parental income ≤ ₹3.5 lakh/year.",
+        "hi": "सरकारी/सहायता प्राप्त स्कूल का छात्र, कक्षा 7 में न्यूनतम 55% अंक (SC/ST के लिए 50%), कक्षा 8 की राज्य NMMS परीक्षा उत्तीर्ण और पारिवारिक आय ≤ ₹3.5 लाख।",
+        "mr": "शासकीय/अनुदानित/स्थानिक स्वराज्य संस्थेच्या शाळेतील विद्यार्थी, ७ वीत किमान ५५% गुण (SC/ST साठी ५०%), ८ वीतील राज्य NMMS परीक्षा उत्तीर्ण आणि कौटुंबिक उत्पन्न ≤ ₹3.5 लाख."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "income-certificate",
+      "name": {
+        "en": "Income Certificate (issued by Tehsildar / Competent Authority)",
+        "hi": "आय प्रमाण पत्र (तहसीलदार / सक्षम अधिकारी द्वारा जारी)",
+        "mr": "उत्पन्नाचा दाखला (तहसीलदार / सक्षम प्राधिकारी)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "marksheet",
+      "name": {
+        "en": "Previous Exam Marksheet / Bonafide Student Certificate",
+        "hi": "पिछली परीक्षा की मार्कशीट / बोनाफाइड प्रमाण पत्र",
+        "mr": "मागील परीक्षेची गुणपत्रिका / बोनाफाईड प्रमाणपत्र"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Appear for the state-level NMMS selection examination conducted in Class 8 (in Maharashtra via MSCE Pune).",
+      "After qualifying, complete One-Time Registration (OTR) and apply on the National Scholarship Portal (scholarships.gov.in) in Class 9.",
+      "Upload income certificate, NMMS selection details, and school bonafide; get verified by school principal and District Education Officer.",
+      "Renew online on NSP in Classes 10, 11, and 12."
+    ],
+    "hi": [
+      "कक्षा 8 में राज्य स्तरीय NMMS चयन परीक्षा में शामिल हों।",
+      "उत्तीर्ण होने के बाद कक्षा 9 में scholarships.gov.in पर OTR और छात्रवृत्ति आवेदन भरें।",
+      "आय प्रमाण पत्र और स्कूल प्रमाण अपलोड कर प्रधानाचार्य व जिला शिक्षा अधिकारी से सत्यापित कराएं।",
+      "कक्षा 10, 11 और 12 में NSP पर वार्षिक नवीनीकरण करें।"
+    ],
+    "mr": [
+      "इयत्ता ८ वीमध्ये राज्यस्तरीय NMMS परीक्षा द्या (महाराष्ट्रात राज्य परीक्षा परिषद, पुणे मार्फत).",
+      "परीक्षा उत्तीर्ण झाल्यावर इयत्ता ९ वीत scholarships.gov.in वर OTR नोंदणी करून अर्ज भरा.",
+      "उत्पन्नाचा दाखला व शाळेचे प्रमाणपत्र अपलोड करून मुख्याध्यापक व शिक्षणाधिकारी यांच्याकडून पडताळणी करून घ्या.",
+      "इयत्ता १० वी, ११ वी व १२ वीत NSP वर दरवर्षी नूतनीकरण करा."
+    ]
+  },
+  "officialUrl": "https://scholarships.gov.in",
+  "helpline": "0120-6619540 (NSP Helpdesk)",
+  "deadlines": {
+    "en": "State NMMS exam typically in Nov–Dec (Class 8); NSP claim window typically July–Oct each year.",
+    "hi": "राज्य NMMS परीक्षा आमतौर पर नवंबर–दिसंबर में; NSP आवेदन जुलाई–अक्टूबर में।",
+    "mr": "राज्य NMMS परीक्षा साधारण नोव्हेंबर–डिसेंबरमध्ये; NSP अर्ज साधारण जुलै–ऑक्टोबरमध्ये."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://scholarships.gov.in",
+    "https://dsel.education.gov.in/scheme/nmmss"
+  ],
+  "needsVerification": false,
+  "tags": [
+    "student",
+    "school",
+    "class 8",
+    "class 9",
+    "nmms",
+    "scholarship",
+    "nsp"
+  ]
+}

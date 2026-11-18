@@ -1,0 +1,130 @@
+{
+  "id": "stand-up-india",
+  "name": {
+    "en": "Stand-Up India Scheme (Women & SC/ST Entrepreneurs)",
+    "hi": "स्टैंड-अप इंडिया योजना (महिला एवं SC/ST उद्यमी)",
+    "mr": "स्टँड-अप इंडिया योजना (महिला व SC/ST उद्योजक)"
+  },
+  "category": "woman",
+  "secondaryCategories": [
+    "worker"
+  ],
+  "benefitType": "loan",
+  "benefitHighlight": {
+    "en": "₹10 lakh – ₹1 crore greenfield business loan",
+    "hi": "नए व्यवसाय के लिए ₹10 लाख से ₹1 करोड़ तक ऋण",
+    "mr": "नवीन उद्योगासाठी ₹10 लाख ते ₹1 कोटी कर्ज"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Finance (Department of Financial Services)",
+  "summary": {
+    "en": "Facilitates bank loans between ₹10 lakh and ₹1 crore to at least one Scheduled Caste/Scheduled Tribe borrower and one woman borrower per bank branch for setting up a new (greenfield) enterprise.",
+    "hi": "महिलाओं तथा अनुसूचित जाति/जनजाति के उद्यमियों को नया (ग्रीनफील्ड) व्यवसाय शुरू करने के लिए ₹10 लाख से ₹1 करोड़ तक का बैंक ऋण।",
+    "mr": "महिला तसेच अनुसूचित जाती/जमातीच्या (SC/ST) उद्योजकांना नवीन उद्योग सुरू करण्यासाठी ₹10 लाख ते ₹1 कोटींपर्यंत बँक कर्ज देणारी योजना."
+  },
+  "benefits": {
+    "en": "Composite loan (term loan + working capital) between ₹10 lakh and ₹1 crore covering up to 85% of project cost (minimum 10% own margin), repayable over up to 7 years with up to 18 months moratorium, backed by Credit Guarantee Fund for Stand-Up India (CGFSI).",
+    "hi": "परियोजना लागत के 85% तक ₹10 लाख से ₹1 करोड़ का समग्र ऋण, 7 वर्ष तक चुकौती अवधि (18 महीने तक मोरेटोरियम) और क्रेडिट गारंटी कवर।",
+    "mr": "प्रकल्प खर्चाच्या ८५% पर्यंत ₹10 लाख ते ₹1 कोटी एकत्रित कर्ज, ७ वर्षांपर्यंत परतफेड कालावधी (१८ महिन्यांपर्यंत सवलत) आणि क्रेडिट गॅरंटी संरक्षण."
+  },
+  "eligibility": {
+    "minAge": 18,
+    "customConditions": [
+      {
+        "en": "Must be a woman entrepreneur OR belong to SC/ST category, setting up a first-time (greenfield) enterprise in manufacturing, services, trading, or agri-allied sector, with no bank default history.",
+        "hi": "आवेदक महिला उद्यमी या SC/ST वर्ग से होना चाहिए, पहली बार नया व्यवसाय शुरू कर रहा हो और किसी बैंक का डिफॉल्टर न हो।",
+        "mr": "अर्जदार महिला उद्योजक किंवा SC/ST प्रवर्गातील असावा, नवीन (ग्रीनफील्ड) उद्योग सुरू करत असावा आणि कोणत्याही बँकेचा थकबाकीदार नसावा."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "pan-card",
+      "name": {
+        "en": "PAN Card",
+        "hi": "पैन कार्ड",
+        "mr": "पॅन कार्ड"
+      },
+      "mandatory": false
+    },
+    {
+      "id": "business-plan",
+      "name": {
+        "en": "Project Report / Business Plan & Identity Proof (PAN/Voter ID)",
+        "hi": "प्रोजेक्ट रिपोर्ट / व्यवसाय योजना एवं पहचान पत्र (पैन/वोटर आईडी)",
+        "mr": "व्यवसाय प्रकल्प अहवाल व ओळखपत्र (पॅन/मतदार ओळखपत्र)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "caste-certificate",
+      "name": {
+        "en": "Caste Certificate (issued by Competent Authority)",
+        "hi": "जाति प्रमाण पत्र (सक्षम अधिकारी द्वारा जारी)",
+        "mr": "जातीचा दाखला (सक्षम प्राधिकारी)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Register on the official Stand-Up Mitra portal (standupmitra.in) or JanSamarth portal (jansamarth.in).",
+      "Prepare your greenfield project report (handholding agencies on Stand-Up Mitra can assist).",
+      "Submit the loan application online or directly at your preferred Scheduled Commercial Bank branch.",
+      "Bank appraises viability and sanctions the loan under Stand-Up India guidelines."
+    ],
+    "hi": [
+      "आधिकारिक स्टैंड-अप मित्रा पोर्टल (standupmitra.in) या जनसमर्थ पोर्टल (jansamarth.in) पर पंजीकरण करें।",
+      "अपनी नई परियोजना की प्रोजेक्ट रिपोर्ट तैयार करें।",
+      "ऑनलाइन या नजदीकी वाणिज्यिक बैंक शाखा में ऋण आवेदन जमा करें।",
+      "बैंक परियोजना की जांच कर योजना के नियमों के तहत ऋण स्वीकृत करता है।"
+    ],
+    "mr": [
+      "अधिकृत स्टँड-अप मित्र पोर्टल (standupmitra.in) किंवा जनसमर्थ पोर्टलवर (jansamarth.in) नोंदणी करा.",
+      "नवीन उद्योगाचा प्रकल्प अहवाल (Project Report) तयार करा.",
+      "ऑनलाइन किंवा जवळच्या राष्ट्रीयीकृत/व्यापारी बँक शाखेत कर्ज अर्ज सादर करा.",
+      "बँक प्रकल्पाची व्यवहार्यता तपासून योजनेंतर्गत कर्ज मंजूर करते."
+    ]
+  },
+  "officialUrl": "https://www.standupmitra.in",
+  "helpline": "1800-180-1111",
+  "deadlines": {
+    "en": "Check standupmitra.in / bank branch for current scheme extension status.",
+    "hi": "वर्तमान योजना विस्तार की स्थिति standupmitra.in या बैंक शाखा पर जांचें।",
+    "mr": "योजनेच्या अद्ययावत कालावधीसाठी standupmitra.in किंवा बँक शाखेत चौकशी करा."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://www.standupmitra.in",
+    "https://www.jansamarth.in"
+  ],
+  "needsVerification": true,
+  "tags": [
+    "woman",
+    "sc",
+    "st",
+    "entrepreneur",
+    "business loan",
+    "stand up india",
+    "startup"
+  ]
+}

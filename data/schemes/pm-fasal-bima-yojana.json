@@ -1,0 +1,121 @@
+{
+  "id": "pm-fasal-bima-yojana",
+  "name": {
+    "en": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+    "hi": "प्रधानमंत्री फसल बीमा योजना (पीएमएफबीवाई)",
+    "mr": "प्रधानमंत्री पीक विमा योजना (PMFBY)"
+  },
+  "category": "farmer",
+  "secondaryCategories": [],
+  "benefitType": "insurance",
+  "benefitHighlight": {
+    "en": "Crop insurance at 1.5%–2% farmer premium",
+    "hi": "1.5%–2% किसान प्रीमियम पर फसल बीमा",
+    "mr": "१.५%–२% शेतकरी हप्त्यावर पीक विमा"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Agriculture & Farmers Welfare",
+  "summary": {
+    "en": "Comprehensive crop insurance protecting farmers against non-preventable natural risks (drought, flood, hailstorm, pests, post-harvest losses) from pre-sowing to post-harvest.",
+    "hi": "सूखा, बाढ़, ओलावृष्टि, कीट और कटाई के बाद के नुकसान जैसे प्राकृतिक जोखिमों से किसानों को सुरक्षा देने वाली फसल बीमा योजना।",
+    "mr": "दुष्काळ, पूर, गारपीट, कीड आणि काढणीनंतरच्या नुकसानीपासून शेतकऱ्यांना संरक्षण देणारी सर्वसमावेशक पीक विमा योजना."
+  },
+  "benefits": {
+    "en": "Uniform low farmer premium: maximum 2% for Kharif crops, 1.5% for Rabi crops, and 5% for commercial/horticultural crops; the rest of the actuarial premium is subsidized by Central and State governments.",
+    "hi": "किसानों के लिए कम प्रीमियम: खरीफ के लिए अधिकतम 2%, रबी के लिए 1.5% और वाणिज्यिक/बागवानी फसलों के लिए 5%; शेष प्रीमियम केंद्र और राज्य सरकार वहन करती है।",
+    "mr": "शेतकऱ्यांसाठी कमी विमा हप्ता: खरीप पिकांसाठी कमाल २%, रब्बीसाठी १.५% आणि नगदी/फळपिकांसाठी ५%; उर्वरित हप्ता केंद्र व राज्य सरकार भरते."
+  },
+  "eligibility": {
+    "occupations": [
+      "farmer"
+    ],
+    "customConditions": [
+      {
+        "en": "All farmers including sharecroppers and tenant farmers growing notified crops in notified areas are eligible.",
+        "hi": "अधिसूचित क्षेत्रों में अधिसूचित फसलें उगाने वाले सभी किसान (बटाईदार और काश्तकार सहित) पात्र हैं।",
+        "mr": "अधिसूचित क्षेत्रात अधिसूचित पिके घेणारे सर्व शेतकरी (कुळ व भाडेपट्टीने शेती करणारे शेतकरी देखील) पात्र आहेत."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "land-7-12",
+      "name": {
+        "en": "Land Ownership Record (7/12 Utara / 8A / Khatauni)",
+        "hi": "भूमि स्वामित्व प्रमाण (खसरा-खतौनी / 7/12 उतारा)",
+        "mr": "जमीन मालकीचा पुरावा (७/१२ उतारा आणि ८-अ)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "sowing-certificate",
+      "name": {
+        "en": "Crop Sowing Certificate / Pik Pahani (e-Pik Pahani)",
+        "hi": "बुवाई प्रमाण पत्र (फसल विवरण)",
+        "mr": "पीक पेरा प्रमाणपत्र (ई-पीक पाहणी)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Visit pmfby.gov.in, use the Crop Insurance mobile app, or visit a bank branch / CSC before the seasonal cut-off date.",
+      "Register as a farmer, select state, district, village, and notified Kharif or Rabi crop.",
+      "Upload land records (7/12 or lease agreement) and crop sowing certificate.",
+      "Pay the nominal farmer premium share and keep the policy receipt; report localized calamity within 72 hours."
+    ],
+    "hi": [
+      "मौसमी अंतिम तिथि से पहले pmfby.gov.in, क्रॉप इंश्योरेंस ऐप, बैंक शाखा या CSC पर जाएं।",
+      "किसान पंजीकरण करें और राज्य, जिला, गांव तथा अधिसूचित फसल चुनें।",
+      "भूमि अभिलेख (खतौनी/पट्टा) और बुवाई प्रमाण पत्र अपलोड करें।",
+      "निर्धारित किसान प्रीमियम जमा करें और रसीद संभालें; आपदा होने पर 72 घंटे के भीतर सूचना दें।"
+    ],
+    "mr": [
+      "हंगामाच्या अंतिम तारखेपूर्वी pmfby.gov.in पोर्टल, क्रॉप इन्शुरन्स अ‍ॅप, बँक किंवा CSC केंद्रावर अर्ज करा.",
+      "शेतकरी नोंदणी करून राज्य, जिल्हा, गाव आणि अधिसूचित खरीप किंवा रब्बी पीक निवडा.",
+      "७/१२ उतारा (किंवा भाडेकरार) आणि ई-पीक पाहणी / पीक पेरा प्रमाणपत्र अपलोड करा.",
+      "शेतकरी हिस्सा विमा हप्ता भरून पावती जपून ठेवा; नुकसान झाल्यास ७२ तासांत कळवा."
+    ]
+  },
+  "officialUrl": "https://pmfby.gov.in",
+  "helpline": "14447 (Krishi Rakshak Helpline)",
+  "deadlines": {
+    "en": "Seasonal cut-off dates notified each Kharif (typically July) and Rabi (typically December) by respective state governments.",
+    "hi": "प्रत्येक खरीफ (आमतौर पर जुलाई) और रबी (आमतौर पर दिसंबर) सीजन के लिए राज्य सरकार द्वारा अंतिम तिथि घोषित की जाती है।",
+    "mr": "प्रत्येक खरीप (साधारण जुलै) व रब्बी (साधारण डिसेंबर) हंगामासाठी राज्य सरकार अंतिम तारीख जाहीर करते."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://pmfby.gov.in",
+    "https://www.myscheme.gov.in/schemes/pmfby"
+  ],
+  "needsVerification": true,
+  "tags": [
+    "farmer",
+    "crop insurance",
+    "fasal bima",
+    "pik vima",
+    "kharif",
+    "rabi",
+    "drought"
+  ]
+}

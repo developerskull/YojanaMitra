@@ -1,0 +1,151 @@
+{
+  "id": "nsp-post-matric-sc",
+  "name": {
+    "en": "Post-Matric Scholarship for SC Students (GOI / MahaDBT)",
+    "hi": "अनुसूचित जाति (SC) छात्रों के लिए पोस्ट-मैट्रिक छात्रवृत्ति",
+    "mr": "अनुसूचित जाती (SC) विद्यार्थ्यांसाठी मॅट्रिकोत्तर शिष्यवृत्ती योजना"
+  },
+  "category": "student",
+  "secondaryCategories": [],
+  "benefitType": "scholarship",
+  "benefitHighlight": {
+    "en": "100% tuition fee + annual academic allowance (SC)",
+    "hi": "100% शिक्षण शुल्क + वार्षिक शैक्षणिक भत्ता (SC)",
+    "mr": "१००% शिक्षण शुल्क व वार्षिक निर्वाह भत्ता (SC)"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Social Justice & Empowerment",
+  "summary": {
+    "en": "Centrally sponsored scholarship covering compulsory non-refundable tuition fees and annual academic allowance for Scheduled Caste (SC) students studying after Class 10.",
+    "hi": "कक्षा 10वीं के बाद पढ़ाई करने वाले अनुसूचित जाति (SC) छात्रों के लिए अनिवार्य शिक्षण शुल्क और वार्षिक शैक्षणिक भत्ता प्रदान करने वाली योजना।",
+    "mr": "इयत्ता १० वी नंतरच्या सर्व मान्यताप्राप्त अभ्यासक्रमांसाठी अनुसूचित जातीच्या (SC) विद्यार्थ्यांना शिक्षण शुल्क व निर्वाह भत्ता देणारी योजना."
+  },
+  "benefits": {
+    "en": "Full reimbursement of compulsory non-refundable fees plus annual academic allowance ranging from ₹2,500 to ₹13,500 (hostellers and day scholars across course groups), credited via Aadhaar DBT.",
+    "hi": "अनिवार्य गैर-वापसी योग्य शुल्क की पूर्ण प्रतिपूर्ति तथा पाठ्यक्रम समूह के अनुसार ₹2,500 से ₹13,500 प्रति वर्ष शैक्षणिक भत्ता (सीधे आधार-लिंक्ड खाते में)।",
+    "mr": "अनिवार्य शिक्षण व परीक्षा शुल्काची पूर्ण प्रतिपूर्ती तसेच अभ्यासक्रम गटानुसार ₹2,500 ते ₹13,500 वार्षिक शैक्षणिक भत्ता थेट बँक खात्यात."
+  },
+  "eligibility": {
+    "occupations": [
+      "student"
+    ],
+    "casteCategories": [
+      "sc"
+    ],
+    "maxAnnualIncome": 250000,
+    "educationLevels": [
+      "higher_secondary",
+      "diploma_iti",
+      "undergraduate",
+      "postgraduate"
+    ],
+    "customConditions": [
+      {
+        "en": "Must belong to Scheduled Caste (SC), pursuing recognized post-matriculation studies (Class 11 onwards, ITI, Diploma, UG, PG, PhD), with annual parental income ≤ ₹2.5 lakh.",
+        "hi": "अनुसूचित जाति (SC) से संबंधित, कक्षा 11वीं या आगे के मान्यता प्राप्त कोर्स में अध्ययनरत और पारिवारिक वार्षिक आय ≤ ₹2.5 लाख।",
+        "mr": "अनुसूचित जाती (SC) प्रवर्गातील, इयत्ता ११ वीपुढील मान्यताप्राप्त अभ्यासक्रमात शिकणारे व कौटुंबिक वार्षिक उत्पन्न ≤ ₹2.5 लाख."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "caste-certificate",
+      "name": {
+        "en": "Caste Certificate (issued by Competent Authority)",
+        "hi": "जाति प्रमाण पत्र (सक्षम अधिकारी द्वारा जारी)",
+        "mr": "जातीचा दाखला (सक्षम प्राधिकारी)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "income-certificate",
+      "name": {
+        "en": "Income Certificate (issued by Tehsildar / Competent Authority)",
+        "hi": "आय प्रमाण पत्र (तहसीलदार / सक्षम अधिकारी द्वारा जारी)",
+        "mr": "उत्पन्नाचा दाखला (तहसीलदार / सक्षम प्राधिकारी)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "marksheet",
+      "name": {
+        "en": "Previous Exam Marksheet / Bonafide Student Certificate",
+        "hi": "पिछली परीक्षा की मार्कशीट / बोनाफाइड प्रमाण पत्र",
+        "mr": "मागील परीक्षेची गुणपत्रिका / बोनाफाईड प्रमाणपत्र"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "college-fee-receipt",
+      "name": {
+        "en": "College Admission Letter & Fee Receipt (CAP Allotment)",
+        "hi": "कॉलेज प्रवेश पत्र एवं शुल्क रसीद",
+        "mr": "महाविद्यालय प्रवेश पत्र (CAP अलॉटमेंट) व फी पावती"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Apply via your State Scholarship Portal (e.g., mahadbt.maharashtra.gov.in in Maharashtra) or National Scholarship Portal (scholarships.gov.in).",
+      "Complete Aadhaar authentication and link your bank account with NPCI DBT.",
+      "Upload SC caste certificate, income certificate, previous marksheet, and bonafide/fee receipt.",
+      "Track institute verification and district social welfare approval online."
+    ],
+    "hi": [
+      "अपने राज्य छात्रवृत्ति पोर्टल (जैसे महाराष्ट्र में mahadbt.maharashtra.gov.in) या NSP (scholarships.gov.in) पर आवेदन करें।",
+      "आधार सत्यापन पूरा करें और बैंक खाते को एनपीसीआई डीबीटी से जोड़ें।",
+      "जाति प्रमाण पत्र, आय प्रमाण पत्र, मार्कशीट और कॉलेज शुल्क रसीद अपलोड करें।",
+      "संस्थान और समाज कल्याण विभाग द्वारा सत्यापन की स्थिति ऑनलाइन ट्रैक करें।"
+    ],
+    "mr": [
+      "तुमच्या राज्य शिष्यवृत्ती पोर्टलवर (महाराष्ट्रात mahadbt.maharashtra.gov.in) किंवा NSP वर (scholarships.gov.in) अर्ज करा.",
+      "आधार पडताळणी व बँक खाते NPCI DBT संलग्न असल्याची खात्री करा.",
+      "जातीचा दाखला, उत्पन्नाचा दाखला, मागील गुणपत्रिका आणि महाविद्यालय शुल्क पावती अपलोड करा.",
+      "महाविद्यालय व समाज कल्याण विभागाची ऑनलाइन मंजुरी स्थिती पोर्टलवर तपासा."
+    ]
+  },
+  "officialUrl": "https://scholarships.gov.in",
+  "helpline": "0120-6619540 / 022-49150800 (MahaDBT)",
+  "deadlines": {
+    "en": "Annual academic year window notified by State Social Welfare Department / NSP.",
+    "hi": "राज्य समाज कल्याण विभाग / NSP द्वारा प्रतिवर्ष घोषित अंतिम तिथि।",
+    "mr": "राज्य समाज कल्याण विभाग / महाडीबीटी व NSP वर दरवर्षी जाहीर होणारी मुदत."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://socialjustice.gov.in",
+    "https://scholarships.gov.in",
+    "https://mahadbt.maharashtra.gov.in"
+  ],
+  "needsVerification": false,
+  "tags": [
+    "student",
+    "scholarship",
+    "sc",
+    "post matric",
+    "mahadbt",
+    "nsp",
+    "college",
+    "tuition"
+  ]
+}

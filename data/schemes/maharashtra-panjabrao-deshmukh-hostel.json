@@ -1,0 +1,149 @@
+{
+  "id": "maharashtra-panjabrao-deshmukh-hostel",
+  "name": {
+    "en": "Dr. Panjabrao Deshmukh Vasatigruh Nirvah Bhatta Yojana (Maharashtra Hostel Allowance)",
+    "hi": "डॉ. पंजाबराव देशमुख वसतिगृह निर्वाह भत्ता योजना (महाराष्ट्र)",
+    "mr": "डॉ. पंजाबराव देशमुख वसतिगृह निर्वाह भत्ता योजना (MahaDBT — महाराष्ट्र)"
+  },
+  "category": "student",
+  "secondaryCategories": [
+    "farmer",
+    "worker"
+  ],
+  "benefitType": "scholarship",
+  "benefitHighlight": {
+    "en": "Up to ₹30,000 / year hostel allowance (Maharashtra)*",
+    "hi": "₹30,000 / वर्ष तक छात्रावास निर्वाह भत्ता (महाराष्ट्र)*",
+    "mr": "₹30,000 / वर्षांपर्यंत वसतिगृह निर्वाह भत्ता (महाराष्ट्र)*"
+  },
+  "level": "state",
+  "state": "Maharashtra",
+  "ministry": "Directorate of Higher / Technical Education, Government of Maharashtra",
+  "summary": {
+    "en": "Hostel and living maintenance allowance on MahaDBT for Maharashtra students whose parents are registered construction/unorganized workers or marginal landholding farmers (≤ 5 acres) or have family income ≤ ₹8 lakh.",
+    "hi": "महाराष्ट्र के पंजीकृत श्रमिकों, अल्पभूधारक किसानों या ₹8 लाख से कम आय वाले परिवारों के छात्रों को छात्रावास व रहने के खर्च के लिए वार्षिक भत्ता।",
+    "mr": "महाराष्ट्रातील नोंदणीकृत कामगार, अल्पभूधारक शेतकरी किंवा ₹8 लाखांपेक्षा कमी उत्पन्न असलेल्या कुटुंबातील विद्यार्थ्यांना वसतिगृह खर्चासाठी वार्षिक निर्वाह भत्ता."
+  },
+  "benefits": {
+    "en": "Up to ₹30,000/year in Mumbai/MMR/Pune/Nagpur/Aurangabad cities and ₹20,000/year in other cities for children of registered workers & marginal farmers; ₹10,000/₹8,000/year for other eligible families with income ≤ ₹8 lakh (verify current slab on MahaDBT).",
+    "hi": "पंजीकृत श्रमिक/अल्पभूधारक किसान के बच्चों को प्रमुख शहरों में ₹30,000/वर्ष व अन्य शहरों में ₹20,000/वर्ष; अन्य पात्र (≤ ₹8 लाख आय) छात्रों को ₹10,000/₹8,000/वर्ष।",
+    "mr": "नोंदणीकृत कामगार/अल्पभूधारक शेतकऱ्यांच्या मुलांसाठी प्रमुख शहरांत ₹30,000/वर्ष व इतर शहरांत ₹20,000/वर्ष; इतर पात्र (≤ ₹8 लाख उत्पन्न) विद्यार्थ्यांना ₹10,000/₹8,000/वर्ष."
+  },
+  "eligibility": {
+    "occupations": [
+      "student"
+    ],
+    "states": [
+      "Maharashtra"
+    ],
+    "maxAnnualIncome": 800000,
+    "educationLevels": [
+      "diploma_iti",
+      "undergraduate",
+      "postgraduate"
+    ],
+    "customConditions": [
+      {
+        "en": "Maharashtra domicile student living in a hostel/rented room away from home while enrolled through CAP in recognized technical/professional/higher courses.",
+        "hi": "महाराष्ट्र अधिवासी छात्र जो घर से दूर छात्रावास/किराए के कमरे में रहकर CAP से प्रवेशित कोर्स कर रहा हो।",
+        "mr": "महाराष्ट्राचा अधिवासी विद्यार्थी जो घरापासून दूर वसतिगृहात/भाड्याच्या खोलीत राहून CAP प्रवेशित अभ्यासक्रम शिकत आहे."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "domicile-certificate",
+      "name": {
+        "en": "State Domicile / Residence Certificate",
+        "hi": "निवास प्रमाण पत्र (डोमिसाइल)",
+        "mr": "महाराष्ट्र अधिवास प्रमाणपत्र (डोमिसाईल)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "income-certificate",
+      "name": {
+        "en": "Income Certificate (issued by Tehsildar / Competent Authority)",
+        "hi": "आय प्रमाण पत्र (तहसीलदार / सक्षम अधिकारी द्वारा जारी)",
+        "mr": "उत्पन्नाचा दाखला (तहसीलदार / सक्षम प्राधिकारी)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "hostel-receipt",
+      "name": {
+        "en": "Hostel Admission Receipt / Rent Agreement & Registered Worker/Farmer Proof",
+        "hi": "छात्रावास प्रवेश रसीद / किराया अनुबंध एवं माता-पिता का प्रमाण",
+        "mr": "वसतिगृह प्रवेश पावती / भाडेकरार व पालक नोंदणी पुरावा"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "college-fee-receipt",
+      "name": {
+        "en": "College Admission Letter & Fee Receipt (CAP Allotment)",
+        "hi": "कॉलेज प्रवेश पत्र एवं शुल्क रसीद",
+        "mr": "महाविद्यालय प्रवेश पत्र (CAP अलॉटमेंट) व फी पावती"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Log in to mahadbt.maharashtra.gov.in and complete your student profile.",
+      "Select \"Dr. Panjabrao Deshmukh Vasatigruh Nirvah Bhatta Yojana\" under your Directorate.",
+      "Upload hostel admission receipt / registered rent agreement, income certificate, and marginal farmer (Alpbhudharak) or registered worker certificate if applicable.",
+      "Submit for college approval and receive allowance via Aadhaar-seeded DBT."
+    ],
+    "hi": [
+      "mahadbt.maharashtra.gov.in पर लॉगिन करें और छात्र प्रोफाइल पूरा करें।",
+      "\"डॉ. पंजाबराव देशमुख वसतिगृह निर्वाह भत्ता योजना\" चुनें।",
+      "छात्रावास रसीद/किराया अनुबंध, आय प्रमाण पत्र और अल्पभूधारक किसान/श्रमिक प्रमाण पत्र अपलोड करें।",
+      "कॉलेज सत्यापन के बाद भत्ता सीधे बैंक खाते में जमा होता है।"
+    ],
+    "mr": [
+      "mahadbt.maharashtra.gov.in पोर्टलवर लॉगिन करून विद्यार्थी प्रोफाईल पूर्ण करा.",
+      "\"डॉ. पंजाबराव देशमुख वसतिगृह निर्वाह भत्ता योजना\" निवडा.",
+      "वसतिगृह पावती/भाडेकरार, उत्पन्नाचा दाखला आणि अल्पभूधारक शेतकरी/नोंदणीकृत कामगार प्रमाणपत्र अपलोड करा.",
+      "महाविद्यालय मंजुरीनंतर भत्ता थेट आधार-संलग्न बँक खात्यात जमा होतो."
+    ]
+  },
+  "officialUrl": "https://mahadbt.maharashtra.gov.in",
+  "helpline": "022-49150800 (MahaDBT Helpline)",
+  "deadlines": {
+    "en": "Annual academic cycle on MahaDBT.",
+    "hi": "महाडीबीटी पर वार्षिक शैक्षणिक सत्र।",
+    "mr": "महाडीबीटी पोर्टलवर वार्षिक शैक्षणिक मुदत."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://mahadbt.maharashtra.gov.in"
+  ],
+  "needsVerification": true,
+  "tags": [
+    "maharashtra",
+    "student",
+    "hostel",
+    "panjabrao deshmukh",
+    "farmer child",
+    "mahadbt"
+  ]
+}

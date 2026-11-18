@@ -1,0 +1,124 @@
+{
+  "id": "kisan-credit-card",
+  "name": {
+    "en": "Kisan Credit Card (KCC)",
+    "hi": "किसान क्रेडिट कार्ड (केसीसी)",
+    "mr": "किसान क्रेडिट कार्ड (KCC)"
+  },
+  "category": "farmer",
+  "secondaryCategories": [],
+  "benefitType": "loan",
+  "benefitHighlight": {
+    "en": "Crop loan up to ₹3 lakh at ~4% effective interest*",
+    "hi": "₹3 लाख तक फसल ऋण ~4% प्रभावी ब्याज पर*",
+    "mr": "₹3 लाखांपर्यंत पीक कर्ज ~४% प्रभावी व्याजदरात*"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Agriculture & Farmers Welfare / Ministry of Finance",
+  "summary": {
+    "en": "Timely, affordable short-term credit for crop cultivation, post-harvest expenses, animal husbandry, and fisheries with government interest subvention.",
+    "hi": "फसल खेती, कटाई के बाद के खर्च, पशुपालन और मत्स्य पालन के लिए सरकारी ब्याज अनुदान के साथ सस्ता कृषि ऋण।",
+    "mr": "शेती, काढणी खर्च, पशुपालन आणि मत्स्यपालनासाठी सरकारी व्याज सवलतीसह वेळेत आणि स्वस्त कृषी कर्ज."
+  },
+  "benefits": {
+    "en": "Revolving cash credit limit based on landholding and crop scale of finance. Under the Modified Interest Subvention Scheme, prompt repayment brings effective interest on short-term loans up to ₹3 lakh down to ~4% p.a. (verify latest RBI/GoI circular). Collateral-free limit up to ₹1.60 lakh (₹2 lakh per recent RBI update — confirm with bank).",
+    "hi": "भूमि और फसल लागत के अनुसार रिवॉल्विंग क्रेडिट सीमा। समय पर भुगतान पर ₹3 लाख तक के अल्पकालिक ऋण पर प्रभावी ब्याज ~4% वार्षिक (नवीनतम आरबीआई परिपत्र की जांच करें)।",
+    "mr": "जमीन व पिकाच्या खर्चाप्रमाणे फिरती कर्जमर्यादा. वेळेवर परतफेड केल्यास ₹3 लाखांपर्यंतच्या अल्पमुदतीच्या पीक कर्जावर प्रभावी व्याजदर ~४% वार्षिक (बँकेकडे नवीनतम दर तपासा)."
+  },
+  "eligibility": {
+    "minAge": 18,
+    "maxAge": 75,
+    "occupations": [
+      "farmer"
+    ],
+    "customConditions": [
+      {
+        "en": "Individual/joint owner-cultivators, tenant farmers, oral lessees, sharecroppers, SHGs, and animal husbandry/fisheries farmers are eligible.",
+        "hi": "भूमिधारक किसान, काश्तकार, बटाईदार, स्वयं सहायता समूह और पशुपालन/मत्स्य किसान पात्र हैं।",
+        "mr": "जमीनधारक शेतकरी, कुळ, भाडेपट्टी शेतकरी, बचत गट तसेच पशुपालन व मत्स्यपालन करणारे शेतकरी पात्र आहेत."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "land-7-12",
+      "name": {
+        "en": "Land Ownership Record (7/12 Utara / 8A / Khatauni)",
+        "hi": "भूमि स्वामित्व प्रमाण (खसरा-खतौनी / 7/12 उतारा)",
+        "mr": "जमीन मालकीचा पुरावा (७/१२ उतारा आणि ८-अ)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "passport-photo",
+      "name": {
+        "en": "Passport-size Photographs",
+        "hi": "पासपोर्ट साइज फोटो",
+        "mr": "पासपोर्ट आकाराचे फोटो"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Approach your nearest Public Sector Bank, Regional Rural Bank, Cooperative Bank, or apply via JanSamarth portal (jansamarth.in).",
+      "Submit the KCC application form along with Aadhaar, land records (7/12 & 8A), and cropping pattern.",
+      "Bank verifies land records and sanctions credit limit as per District Level Technical Committee (DLTC) scale of finance.",
+      "Receive your RuPay KCC debit card and withdraw funds as needed for farming operations."
+    ],
+    "hi": [
+      "अपने नजदीकी सरकारी बैंक, ग्रामीण बैंक, सहकारी बैंक या जनसमर्थ पोर्टल (jansamarth.in) पर आवेदन करें।",
+      "आधार, भूमि रिकॉर्ड और फसल विवरण के साथ केसीसी आवेदन पत्र जमा करें।",
+      "बैंक भूमि अभिलेखों का सत्यापन कर जिला स्तरीय मानक के अनुसार ऋण सीमा स्वीकृत करता है।",
+      "रुपे केसीसी कार्ड प्राप्त करें और खेती की जरूरत के अनुसार राशि निकालें।"
+    ],
+    "mr": [
+      "जवळच्या राष्ट्रीयीकृत, ग्रामीण किंवा सहकारी बँकेत किंवा जनसमर्थ पोर्टलवर (jansamarth.in) अर्ज करा.",
+      "आधार, ७/१२ उतारा आणि पीक तपशीलासह KCC अर्ज सादर करा.",
+      "बँक जमीन पडताळणी करून जिल्हा स्तरीय पीक कर्ज दराप्रमाणे कर्जमर्यादा मंजूर करते.",
+      "रुपे KCC कार्ड मिळवून शेतीच्या गरजेनुसार रक्कम वापरा आणि वेळेवर परतफेड करून व्याज सवलत मिळवा."
+    ]
+  },
+  "officialUrl": "https://www.jansamarth.in",
+  "helpline": "1800-180-1551 (Kisan Call Centre)",
+  "deadlines": {
+    "en": "Open year-round at all scheduled commercial, cooperative, and rural banks.",
+    "hi": "सभी बैंकों में वर्ष भर खुला।",
+    "mr": "सर्व राष्ट्रीयीकृत, ग्रामीण आणि सहकारी बँकांमध्ये वर्षभर सुरू."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://www.jansamarth.in",
+    "https://www.myscheme.gov.in/schemes/kcc"
+  ],
+  "needsVerification": true,
+  "tags": [
+    "farmer",
+    "loan",
+    "credit",
+    "kcc",
+    "crop loan",
+    "interest subvention",
+    "dairy",
+    "fisheries"
+  ]
+}

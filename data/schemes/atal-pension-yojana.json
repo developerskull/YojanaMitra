@@ -1,0 +1,116 @@
+{
+  "id": "atal-pension-yojana",
+  "name": {
+    "en": "Atal Pension Yojana (APY)",
+    "hi": "अटल पेंशन योजना (एपीवाई)",
+    "mr": "अटल पेन्शन योजना (APY)"
+  },
+  "category": "senior",
+  "secondaryCategories": [
+    "worker",
+    "farmer",
+    "woman"
+  ],
+  "benefitType": "pension",
+  "benefitHighlight": {
+    "en": "Guaranteed ₹1,000 – ₹5,000 / month pension after age 60",
+    "hi": "60 वर्ष के बाद ₹1,000 – ₹5,000 / माह गारंटीड पेंशन",
+    "mr": "६० वर्षांनंतर दरमहा ₹1,000 – ₹5,000 खात्रीशीर पेन्शन"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Finance (PFRDA)",
+  "summary": {
+    "en": "Government-guaranteed voluntary contributory pension scheme primarily for unorganized sector workers aged 18–40, ensuring fixed monthly pension of ₹1,000 to ₹5,000 after age 60.",
+    "hi": "18 से 40 वर्ष के असंगठित क्षेत्र के नागरिकों के लिए सरकार-गारंटीकृत पेंशन योजना, जो 60 वर्ष के बाद ₹1,000 से ₹5,000 प्रति माह निश्चित पेंशन देती है।",
+    "mr": "१८ ते ४० वयोगटातील असंघटित क्षेत्रातील नागरिकांसाठी शासन हमी असलेली पेन्शन योजना; वयाच्या ६० व्या वर्षानंतर दरमहा ₹1,000 ते ₹5,000 निश्चित पेन्शन."
+  },
+  "benefits": {
+    "en": "Guaranteed minimum monthly pension of ₹1,000, ₹2,000, ₹3,000, ₹4,000, or ₹5,000 starting at age 60 based on chosen contribution; same pension to spouse after subscriber’s death, and return of accumulated corpus (₹1.7L–₹8.5L) to nominee.",
+    "hi": "60 वर्ष से ₹1,000 से ₹5,000 तक निश्चित मासिक पेंशन; अभिदाता के बाद जीवनसाथी को वही पेंशन और उसके बाद नामांकित व्यक्ति को पूरा कोष वापस।",
+    "mr": "वयाच्या ६० वर्षांनंतर निवडीनुसार दरमहा ₹1,000 ते ₹5,000 खात्रीशीर पेन्शन; सभासदानंतर जोडीदाराला तेच पेन्शन आणि नंतर वारसाला संपूर्ण संचित निधी परत."
+  },
+  "eligibility": {
+    "minAge": 18,
+    "maxAge": 40,
+    "excludeIncomeTaxPayers": true,
+    "customConditions": [
+      {
+        "en": "Any Indian citizen aged 18–40 with a savings bank or post office account who is NOT an income tax payer (effective Oct 2022 rule).",
+        "hi": "18 से 40 वर्ष का कोई भी भारतीय नागरिक जिसका बचत बैंक/डाकघर खाता हो और जो आयकर दाता न हो।",
+        "mr": "बँक किंवा पोस्ट बचत खाते असलेला १८ ते ४० वयोगटातील कोणताही भारतीय नागरिक जो आयकर भरत नाही."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "mobile-aadhaar",
+      "name": {
+        "en": "Active Mobile Number linked with Aadhaar",
+        "hi": "आधार से जुड़ा सक्रिय मोबाइल नंबर",
+        "mr": "आधारशी संलग्न सक्रिय मोबाईल क्रमांक"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Visit your bank branch, Post Office, or apply online via your bank’s net banking/mobile app or eNPS APY portal (enps.nsdl.com).",
+      "Choose your desired pension slab (₹1,000 to ₹5,000/month) and contribution frequency (monthly/quarterly/half-yearly).",
+      "Provide nominee details and enable auto-debit from your savings account.",
+      "Download your PRAN card and track contributions via the APY mobile app."
+    ],
+    "hi": [
+      "अपनी बैंक शाखा, डाकघर, नेट बैंकिंग या eNPS पोर्टल (enps.nsdl.com) से आवेदन करें।",
+      "वांछित मासिक पेंशन स्लैब (₹1,000 से ₹5,000) और अंशदान अवधि चुनें।",
+      "नामांकित व्यक्ति (नॉमिनी) का विवरण दें और ऑटो-डेबिट सक्रिय करें।",
+      "अपना PRAN कार्ड प्राप्त करें।"
+    ],
+    "mr": [
+      "तुमच्या बँक शाखेत, पोस्ट ऑफिसमध्ये किंवा नेट बँकिंग / eNPS पोर्टलवरून (enps.nsdl.com) अर्ज करा.",
+      "तुम्हाला हवी असलेली मासिक पेन्शन रक्कम (₹1,000 ते ₹5,000) आणि हप्ता प्रकार निवडा.",
+      "वारसदाराची (नॉमिनी) माहिती देऊन बचत खात्यातून ऑटो-डेबिट सुरू करा.",
+      "तुमचे PRAN कार्ड मिळवा."
+    ]
+  },
+  "officialUrl": "https://www.npscra.nsdl.co.in/scheme-details.php",
+  "helpline": "1800-110-069 / 1800-889-1030",
+  "deadlines": {
+    "en": "Open year-round for citizens aged 18–40.",
+    "hi": "18–40 वर्ष के नागरिकों के लिए वर्ष भर खुला।",
+    "mr": "१८ ते ४० वयोगटातील नागरिकांसाठी वर्षभर सुरू."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://www.npscra.nsdl.co.in/scheme-details.php",
+    "https://www.myscheme.gov.in/schemes/apy"
+  ],
+  "needsVerification": false,
+  "tags": [
+    "pension",
+    "atal pension",
+    "apy",
+    "retirement",
+    "unorganized worker",
+    "senior",
+    "savings"
+  ]
+}

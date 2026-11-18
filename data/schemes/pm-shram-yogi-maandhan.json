@@ -1,0 +1,127 @@
+{
+  "id": "pm-shram-yogi-maandhan",
+  "name": {
+    "en": "Pradhan Mantri Shram Yogi Maan-dhan (PM-SYM)",
+    "hi": "प्रधानमंत्री श्रम योगी मान-धन योजना (पीएम-एसवाईएम)",
+    "mr": "प्रधानमंत्री श्रम योगी मानधन योजना (PM-SYM)"
+  },
+  "category": "worker",
+  "secondaryCategories": [
+    "senior"
+  ],
+  "benefitType": "pension",
+  "benefitHighlight": {
+    "en": "₹3,000 / month assured pension after age 60 (50% Govt match)",
+    "hi": "60 वर्ष बाद ₹3,000 / माह निश्चित पेंशन (50% सरकारी योगदान)",
+    "mr": "६० वर्षांनंतर दरमहा ₹3,000 खात्रीशीर पेन्शन (५०% शासन हिस्सा)"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Labour and Employment",
+  "summary": {
+    "en": "Voluntary contributory pension scheme for unorganized sector workers aged 18–40 earning up to ₹15,000/month, with matching 50% government contribution guaranteeing ₹3,000/month pension after age 60.",
+    "hi": "₹15,000/माह तक कमाने वाले 18–40 वर्ष के असंगठित श्रमिकों के लिए पेंशन योजना, जिसमें सरकार बराबर (50%) योगदान देती है और 60 वर्ष बाद ₹3,000/माह पेंशन मिलती है।",
+    "mr": "दरमहा ₹15,000 पर्यंत उत्पन्न असलेल्या १८–४० वयोगटातील असंघटित कामगारांसाठी पेन्शन योजना; सरकारचा ५०% समान हिस्सा व ६० वर्षांनंतर दरमहा ₹3,000 पेन्शन."
+  },
+  "benefits": {
+    "en": "Assured monthly pension of ₹3,000 after attaining age 60. Worker contributes ₹55 to ₹200/month depending on entry age, and Central Government matches the exact same amount every month; 50% family pension to spouse.",
+    "hi": "60 वर्ष के बाद ₹3,000/माह निश्चित पेंशन। आयु के अनुसार श्रमिक ₹55 से ₹200/माह जमा करता है और केंद्र सरकार उतनी ही राशि मिलाती है; जीवनसाथी को 50% पारिवारिक पेंशन।",
+    "mr": "वयाच्या ६० व्या वर्षानंतर दरमहा ₹3,000 निश्चित पेन्शन. वयानुसार कामगार ₹55 ते ₹200/महिना भरतो आणि केंद्र सरकार तेवढाच समान हिस्सा भरते; जोडीदाराला ५०% कुटुंब निवृत्तीवेतन."
+  },
+  "eligibility": {
+    "minAge": 18,
+    "maxAge": 40,
+    "occupations": [
+      "unorganized_worker",
+      "artisan",
+      "street_vendor"
+    ],
+    "maxAnnualIncome": 180000,
+    "excludeIncomeTaxPayers": true,
+    "excludeGovtEmployees": true,
+    "customConditions": [
+      {
+        "en": "Unorganized worker (construction worker, domestic help, driver, agricultural labourer, rickshaw puller, tailors, etc.) aged 18–40, monthly income ≤ ₹15,000, not covered under EPFO/ESIC/NPS, and not an income tax payer.",
+        "hi": "18–40 वर्ष का असंगठित श्रमिक (मासिक आय ≤ ₹15,000) जो EPFO/ESIC/NPS के दायरे में न हो और आयकर दाता न हो।",
+        "mr": "१८–४० वयोगटातील असंघटित कामगार (मासिक उत्पन्न ≤ ₹15,000) ज्याचा EPFO/ESIC/NPS मध्ये समावेश नाही आणि आयकर दाता नाही."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "mobile-aadhaar",
+      "name": {
+        "en": "Active Mobile Number linked with Aadhaar",
+        "hi": "आधार से जुड़ा सक्रिय मोबाइल नंबर",
+        "mr": "आधारशी संलग्न सक्रिय मोबाईल क्रमांक"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "eshram-card",
+      "name": {
+        "en": "e-Shram Card / Unorganized Worker Registration (if available)",
+        "hi": "ई-श्रम कार्ड / असंगठित श्रमिक पंजीकरण (यदि उपलब्ध हो)",
+        "mr": "ई-श्रम कार्ड / असंघटित कामगार नोंदणी (असल्यास)"
+      },
+      "mandatory": false
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Self-enroll online at maandhan.in (or via e-Shram portal) OR visit your nearest Common Service Centre (CSC) with Aadhaar and savings bank passbook.",
+      "Complete Aadhaar verification and set up auto-debit mandate for monthly contribution (₹55–₹200 based on age).",
+      "Pay the first installment and receive your Shram Yogi Pension Card immediately."
+    ],
+    "hi": [
+      "maandhan.in पर स्वयं ऑनलाइन पंजीकरण करें या आधार व बैंक पासबुक लेकर नजदीकी CSC केंद्र जाएं।",
+      "आधार सत्यापन कर मासिक अंशदान (₹55–₹200) हेतु ऑटो-डेबिट मैंडेट सेट करें।",
+      "पहली किस्त जमा कर तुरंत श्रम योगी पेंशन कार्ड प्राप्त करें।"
+    ],
+    "mr": [
+      "maandhan.in पोर्टलवर ऑनलाइन नोंदणी करा किंवा आधार व बँक पासबुकसह जवळच्या CSC केंद्रावर जा.",
+      "आधार पडताळणी करून मासिक हप्त्यासाठी (₹55–₹200) ऑटो-डेबिट सुरू करा.",
+      "पहिला हप्ता भरून ताबडतोब श्रम योगी पेन्शन कार्ड मिळवा."
+    ]
+  },
+  "officialUrl": "https://maandhan.in",
+  "helpline": "1800-267-6888 / 14434 (e-Shram)",
+  "deadlines": {
+    "en": "Open year-round for unorganized workers aged 18–40.",
+    "hi": "18–40 वर्ष के असंगठित श्रमिकों के लिए वर्ष भर खुला।",
+    "mr": "१८–४० वयोगटातील असंघटित कामगारांसाठी वर्षभर सुरू."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://maandhan.in",
+    "https://eshram.gov.in"
+  ],
+  "needsVerification": false,
+  "tags": [
+    "worker",
+    "labour",
+    "kamgar",
+    "e-shram",
+    "pension",
+    "unorganized",
+    "maandhan"
+  ]
+}

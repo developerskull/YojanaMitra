@@ -1,0 +1,133 @@
+{
+  "id": "ignwps-widow-pension",
+  "name": {
+    "en": "Indira Gandhi National Widow Pension Scheme (IGNWPS)",
+    "hi": "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना (IGNWPS)",
+    "mr": "इंदिरा गांधी राष्ट्रीय विधवा निवृत्तीवेतन योजना (IGNWPS)"
+  },
+  "category": "woman",
+  "secondaryCategories": [
+    "senior"
+  ],
+  "benefitType": "pension",
+  "benefitHighlight": {
+    "en": "Monthly pension (₹300–₹500 Central + State top-up)",
+    "hi": "मासिक पेंशन (₹300–₹500 केंद्र + राज्य अतिरिक्त)",
+    "mr": "मासिक निवृत्तीवेतन (₹300–₹500 केंद्र + राज्य वाढीव हिस्सा)"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Rural Development (NSAP)",
+  "summary": {
+    "en": "Central social assistance monthly pension under NSAP for widows aged 40–79 living Below Poverty Line (BPL), supplemented by state government top-ups.",
+    "hi": "गरीबी रेखा से नीचे (BPL) जीवन यापन करने वाली 40–79 वर्ष की विधवा महिलाओं को केंद्र और राज्य सरकार द्वारा मासिक पेंशन सहायता।",
+    "mr": "दारिद्र्यरेषेखालील (BPL) ४० ते ७९ वयोगटातील विधवा महिलांना केंद्र व राज्य सरकारकडून मिळणारे मासिक निवृत्तीवेतन."
+  },
+  "benefits": {
+    "en": "Central share of ₹300/month (age 40–79) and ₹500/month (age 80+), topped up by respective state governments (for example, in Maharashtra combined assistance is ₹1,500/month under state social security integration).",
+    "hi": "केंद्र का हिस्सा ₹300/माह (40–79 वर्ष) और ₹500/माह (80+ वर्ष), जिसके ऊपर राज्य सरकारें अतिरिक्त राशि जोड़ती हैं।",
+    "mr": "केंद्राचा हिस्सा ₹300/महिना (४०–७९ वर्षे) व ₹500/महिना (८०+ वर्षे); त्यावर राज्य सरकार वाढीव निधी देते (महाराष्ट्रात एकत्रित ₹1,500/महिना)."
+  },
+  "eligibility": {
+    "minAge": 40,
+    "gender": [
+      "female"
+    ],
+    "maritalStatus": [
+      "widowed"
+    ],
+    "bplRequired": true,
+    "customConditions": [
+      {
+        "en": "Applicant must be a widow aged 40 years or above belonging to a BPL household as per Government of India criteria.",
+        "hi": "आवेदिका 40 वर्ष या अधिक आयु की विधवा महिला और बीपीएल परिवार से होनी चाहिए।",
+        "mr": "अर्जदार ४० वर्षे किंवा अधिक वयाची विधवा महिला असून दारिद्र्यरेषेखालील (BPL) कुटुंबातील असावी."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "spouse-death-cert",
+      "name": {
+        "en": "Husband's Death Certificate",
+        "hi": "पति का मृत्यु प्रमाण पत्र",
+        "mr": "पतीचा मृत्यू दाखला"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bpl-card",
+      "name": {
+        "en": "BPL Certificate / SECC List Proof",
+        "hi": "बीपीएल प्रमाण पत्र / एसईसीसी सूची प्रमाण",
+        "mr": "दारिद्र्यरेषेखालील (BPL) प्रमाणपत्र / यादीचा पुरावा"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "age-proof",
+      "name": {
+        "en": "Age Proof (Birth Certificate / School Leaving / Aadhaar)",
+        "hi": "आयु प्रमाण (जन्म प्रमाण पत्र / स्कूल लीविंग / आधार)",
+        "mr": "वयाचा पुरावा (जन्म दाखला / शाळा सोडल्याचा दाखला / आधार)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Apply via your local Tehsil / Block office, Gram Panchayat / Municipal office, UMANG app, or State e-District / Aaple Sarkar portal.",
+      "Submit widowhood proof (husband’s death certificate), age proof, BPL proof, and Aadhaar-linked bank passbook.",
+      "After local revenue officer verification, pension is sanctioned and credited monthly via DBT."
+    ],
+    "hi": [
+      "स्थानीय तहसील/ब्लॉक कार्यालय, ग्राम पंचायत/नगर पालिका, उमंग ऐप या राज्य ई-डिस्ट्रिक्ट पोर्टल से आवेदन करें।",
+      "पति का मृत्यु प्रमाण पत्र, आयु प्रमाण, बीपीएल कार्ड और बैंक पासबुक जमा करें।",
+      "राजस्व अधिकारी के सत्यापन के बाद पेंशन हर महीने सीधे खाते में आती है।"
+    ],
+    "mr": [
+      "तहसील कार्यालय, ग्रामपंचायत/नगरपालिका, उमंग अ‍ॅप किंवा आपले सरकार पोर्टलवरून अर्ज करा.",
+      "पतीचा मृत्यू दाखला, वयाचा पुरावा, BPL प्रमाणपत्र व आधार-संलग्न बँक पासबुक जोडा.",
+      "तहसीलदारांच्या पडताळणीनंतर दरमहा निवृत्तीवेतन थेट बँक खात्यात जमा होते."
+    ]
+  },
+  "officialUrl": "https://nsap.nic.in",
+  "helpline": "1800-11-6446",
+  "deadlines": {
+    "en": "Open year-round.",
+    "hi": "वर्ष भर खुला।",
+    "mr": "वर्षभर सुरू."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://nsap.nic.in",
+    "https://www.myscheme.gov.in/schemes/nsap-ignwps"
+  ],
+  "needsVerification": false,
+  "tags": [
+    "woman",
+    "widow",
+    "pension",
+    "nsap",
+    "bpl",
+    "social security"
+  ]
+}

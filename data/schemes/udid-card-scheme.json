@@ -1,0 +1,114 @@
+{
+  "id": "udid-card-scheme",
+  "name": {
+    "en": "Unique Disability ID (UDID) Card — Swavlamban",
+    "hi": "विशिष्ट दिव्यांगता पहचान पत्र (UDID कार्ड — स्वावलंबन)",
+    "mr": "विशिष्ट दिव्यांग ओळखपत्र (UDID कार्ड — स्वावलंबन)"
+  },
+  "category": "disabled",
+  "secondaryCategories": [
+    "health",
+    "student",
+    "senior"
+  ],
+  "benefitType": "equipment",
+  "benefitHighlight": {
+    "en": "Single national ID unlocking pensions, travel & scheme benefits",
+    "hi": "पेंशन, यात्रा छूट व सभी योजनाओं के लिए एक राष्ट्रीय दिव्यांग कार्ड",
+    "mr": "पेन्शन, प्रवास सवलत व सर्व योजनांसाठी एकच राष्ट्रीय दिव्यांग कार्ड"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Social Justice & Empowerment (DEPwD)",
+  "summary": {
+    "en": "Provides a single, nationally valid digital and physical Unique Disability ID (UDID) card to Persons with Disabilities (Divyangjan) to simplify access to all central and state welfare schemes, pensions, reservations, and travel concessions.",
+    "hi": "दिव्यांगजनों को सभी केंद्र व राज्य कल्याण योजनाओं, पेंशन, आरक्षण और यात्रा रियायतों का लाभ आसानी से दिलाने हेतु एकल राष्ट्रीय डिजिटल पहचान पत्र।",
+    "mr": "दिव्यांग नागरिकांना सर्व केंद्र व राज्य शासकीय योजना, पेन्शन, आरक्षण आणि प्रवास सवलतींचा लाभ सुलभतेने मिळवून देणारे एकमेव राष्ट्रीय डिजिटल ओळखपत्र."
+  },
+  "benefits": {
+    "en": "Free nationally accepted disability certificate and smart UDID card covering all 21 benchmark disabilities under the RPwD Act 2016; eliminates repeated paper verification across ministries and states.",
+    "hi": "RPwD अधिनियम 2016 के तहत सभी 21 दिव्यांगताओं के लिए निःशुल्क राष्ट्रीय प्रमाण पत्र व UDID कार्ड; हर योजना में बार-बार दस्तावेज सत्यापन की आवश्यकता समाप्त।",
+    "mr": "RPwD कायदा २०१६ मधील सर्व २१ प्रकारच्या दिव्यांगत्वासाठी मोफत राष्ट्रीय प्रमाणपत्र व UDID कार्ड; सर्व शासकीय योजनांसाठी थेट ग्राह्य."
+  },
+  "eligibility": {
+    "disabilityRequired": true,
+    "customConditions": [
+      {
+        "en": "Any Indian citizen with any of the 21 specified disabilities under the Rights of Persons with Disabilities (RPwD) Act, 2016.",
+        "hi": "दिव्यांगजन अधिकार अधिनियम 2016 के तहत 21 निर्दिष्ट दिव्यांगताओं में से किसी से भी प्रभावित कोई भी भारतीय नागरिक।",
+        "mr": "दिव्यांग हक्क अधिनियम २०१६ मधील २१ प्रकारच्या दिव्यांगत्वापैकी कोणत्याही प्रकारातील भारतीय नागरिक."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "passport-photo",
+      "name": {
+        "en": "Passport-size Photographs",
+        "hi": "पासपोर्ट साइज फोटो",
+        "mr": "पासपोर्ट आकाराचे फोटो"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "age-proof",
+      "name": {
+        "en": "Age Proof (Birth Certificate / School Leaving / Aadhaar)",
+        "hi": "आयु प्रमाण (जन्म प्रमाण पत्र / स्कूल लीविंग / आधार)",
+        "mr": "वयाचा पुरावा (जन्म दाखला / शाळा सोडल्याचा दाखला / आधार)"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Apply online at swavlambancard.gov.in or visit your nearest CSC / District Civil Hospital.",
+      "Fill personal, disability, and identity details and upload photo, signature/thumbprint, and Aadhaar (plus existing disability certificate if you already have one).",
+      "Attend medical assessment at the designated Government Hospital / Chief Medical Officer (CMO) board.",
+      "Download e-UDID card and Disability Certificate directly from swavlambancard.gov.in; physical card is sent by post."
+    ],
+    "hi": [
+      "swavlambancard.gov.in पर ऑनलाइन आवेदन करें या नजदीकी CSC/जिला अस्पताल जाएं।",
+      "व्यक्तिगत व दिव्यांगता विवरण भरें तथा फोटो, हस्ताक्षर व आधार अपलोड करें।",
+      "नामित सरकारी अस्पताल / मुख्य चिकित्सा अधिकारी (CMO) बोर्ड में मेडिकल जांच कराएं।",
+      "swavlambancard.gov.in से ई-यूडीआईडी डाउनलोड करें; भौतिक कार्ड डाक द्वारा आता है।"
+    ],
+    "mr": [
+      "swavlambancard.gov.in पोर्टलवर ऑनलाइन अर्ज करा किंवा जवळच्या CSC/जिल्हा सामान्य रुग्णालयात जा.",
+      "वैयक्तिक व दिव्यांगत्वाचा तपशील भरून फोटो, स्वाक्षरी व आधार अपलोड करा.",
+      "नियुक्त शासकीय रुग्णालयातील वैद्यकीय मंडळाकडे (CMO) तपासणी पूर्ण करा.",
+      "swavlambancard.gov.in वरून ई-UDID कार्ड डाउनलोड करा; मूळ कार्ड पोस्टाने घरपोच येते."
+    ]
+  },
+  "officialUrl": "https://www.swavlambancard.gov.in",
+  "helpline": "011-24365019 (DEPwD)",
+  "deadlines": {
+    "en": "Open year-round.",
+    "hi": "वर्ष भर खुला।",
+    "mr": "वर्षभर सुरू."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://www.swavlambancard.gov.in",
+    "https://depwd.gov.in"
+  ],
+  "needsVerification": false,
+  "tags": [
+    "disabled",
+    "divyang",
+    "udid",
+    "swavlamban",
+    "certificate",
+    "pwd",
+    "concession"
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "id": "pm-vishwakarma",
+  "name": {
+    "en": "PM Vishwakarma Yojana (Traditional Artisans & Craftspeople)",
+    "hi": "पीएम विश्वकर्मा योजना (पारंपरिक कारीगर एवं शिल्पकार)",
+    "mr": "पीएम विश्वकर्मा योजना (पारंपरिक कारागीर व शिल्पकार)"
+  },
+  "category": "worker",
+  "secondaryCategories": [
+    "woman"
+  ],
+  "benefitType": "skill",
+  "benefitHighlight": {
+    "en": "₹15,000 toolkit + ₹500/day training + ₹3L loan at 5%",
+    "hi": "₹15,000 टूलकिट + ₹500/दिन प्रशिक्षण + 5% पर ₹3 लाख ऋण",
+    "mr": "₹15,000 टूलकिट + ₹500/दिवस भत्ता + ५% व्याजावर ₹3 लाख कर्ज"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Micro, Small and Medium Enterprises (MSME)",
+  "summary": {
+    "en": "End-to-end recognition, skill upgradation, toolkit grant, and concessional collateral-free credit for traditional artisans and craftspeople working with their hands and tools across 18 notified trades.",
+    "hi": "18 पारंपरिक व्यवसायों में हाथ और औजारों से काम करने वाले कारीगरों (बढ़ई, लोहार, सुनार, कुम्हार, दर्जी, नाई, राजमिस्त्री आदि) को पहचान, प्रशिक्षण, टूलकिट और सस्ता ऋण।",
+    "mr": "१८ पारंपरिक व्यवसायांत हाताने व अवजारांनी काम करणाऱ्या कारागिरांसाठी (सुतार, लोहार, सोनार, कुंभार, शिंपी, न्हावी, गवंडी इ.) ओळखपत्र, प्रशिक्षण, टूलकिट व ५% व्याजाचे कर्ज."
+  },
+  "benefits": {
+    "en": "PM Vishwakarma Certificate & ID card; 5–7 days basic skill training with ₹500/day stipend; ₹15,000 toolkit e-voucher; collateral-free enterprise loan of ₹1 lakh (1st tranche) + ₹2 lakh (2nd tranche) at 5% concessional interest; digital transaction incentive.",
+    "hi": "विश्वकर्मा प्रमाण पत्र व आईडी; ₹500/दिन स्टाइपेंड के साथ प्रशिक्षण; ₹15,000 टूलकिट ई-वाउचर; 5% ब्याज पर ₹1 लाख + ₹2 लाख बिना गारंटी ऋण; डिजिटल लेनदेन प्रोत्साहन।",
+    "mr": "पीएम विश्वकर्मा प्रमाणपत्र व ओळखपत्र; ₹500/दिवस विद्यावेतनासह प्रशिक्षण; ₹15,000 टूलकिट ई-व्हाऊचर; ५% सवलतीच्या व्याजदराने ₹1 लाख + ₹2 लाख विनातारण कर्ज."
+  },
+  "eligibility": {
+    "minAge": 18,
+    "occupations": [
+      "artisan",
+      "unorganized_worker"
+    ],
+    "excludeGovtEmployees": true,
+    "customConditions": [
+      {
+        "en": "Self-employed artisan aged 18+ engaged in one of the 18 notified traditional trades (carpenter, blacksmith, goldsmith, potter, cobbler, mason, barber, tailor, washerman, basket/mat maker, garland maker, etc.); max one member per family; no prior PMEGP/Mudra/SVANidhi active loan in last 5 years.",
+        "hi": "18 अधिसूचित पारंपरिक व्यवसायों में स्व-नियोजित 18+ कारीगर; परिवार से एक सदस्य; सरकारी कर्मचारी व उनके परिवार अपात्र।",
+        "mr": "१८ अधिसूचित पारंपरिक व्यवसायांतील १८+ स्वयंरोजगार कारागीर; एका कुटुंबातून एक सदस्य; शासकीय कर्मचारी कुटुंब अपात्र."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "ration-card",
+      "name": {
+        "en": "Ration Card (BPL / Antyodaya / Yellow / Orange)",
+        "hi": "राशन कार्ड (बीपीएल / अंत्योदय / पीला / केसरिया)",
+        "mr": "रेशन कार्ड (पिवळे / केशरी / अंत्योदय)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "mobile-aadhaar",
+      "name": {
+        "en": "Active Mobile Number linked with Aadhaar",
+        "hi": "आधार से जुड़ा सक्रिय मोबाइल नंबर",
+        "mr": "आधारशी संलग्न सक्रिय मोबाईल क्रमांक"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Visit your nearest Common Service Centre (CSC) with Aadhaar, Ration Card, mobile number, and bank details (registration is done via CSC biometric authentication).",
+      "Register on pmvishwakarma.gov.in through the CSC VLE and select your traditional trade.",
+      "Application undergoes 3-stage verification (Gram Panchayat / ULB -> District Committee -> Screening Committee).",
+      "After approval, complete skill training to unlock the ₹15,000 toolkit voucher and 5% concessional loan."
+    ],
+    "hi": [
+      "आधार, राशन कार्ड, मोबाइल और बैंक पासबुक लेकर नजदीकी कॉमन सर्विस सेंटर (CSC) जाएं।",
+      "CSC के माध्यम से pmvishwakarma.gov.in पर बायोमेट्रिक पंजीकरण कर अपना पारंपरिक व्यवसाय चुनें।",
+      "ग्राम पंचायत/नगर निकाय और जिला समिति द्वारा तीन-स्तरीय सत्यापन होता है।",
+      "स्वीकृति के बाद प्रशिक्षण पूरा कर ₹15,000 टूलकिट और 5% ब्याज ऋण प्राप्त करें।"
+    ],
+    "mr": [
+      "आधार, रेशन कार्ड, मोबाईल व बँक पासबुक घेऊन जवळच्या आपले सरकार सेवा केंद्रात (CSC) जा.",
+      "CSC केंद्राद्वारे pmvishwakarma.gov.in वर बायोमेट्रिक नोंदणी करून तुमचा पारंपरिक व्यवसाय निवडा.",
+      "ग्रामपंचायत/नगरपालिका व जिल्हा समितीमार्फत तीन टप्प्यांत पडताळणी होते.",
+      "मंजुरीनंतर प्रशिक्षण पूर्ण करून ₹15,000 टूलकिट व्हाऊचर व ५% व्याजदराचे कर्ज मिळवा."
+    ]
+  },
+  "officialUrl": "https://pmvishwakarma.gov.in",
+  "helpline": "1800-267-7777 / 17923",
+  "deadlines": {
+    "en": "Open year-round through CSC centers (5-year scheme FY 2023–24 to FY 2027–28).",
+    "hi": "CSC केंद्रों के माध्यम से वर्ष भर खुला (2023–2028)।",
+    "mr": "CSC केंद्रांमार्फत वर्षभर सुरू (२०२३–२०२८ कालावधी)."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://pmvishwakarma.gov.in",
+    "https://www.myscheme.gov.in/schemes/pmv"
+  ],
+  "needsVerification": false,
+  "tags": [
+    "artisan",
+    "carpenter",
+    "tailor",
+    "mason",
+    "barber",
+    "potter",
+    "goldsmith",
+    "vishwakarma",
+    "worker",
+    "loan"
+  ]
+}

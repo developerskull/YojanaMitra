@@ -1,0 +1,142 @@
+{
+  "id": "maharashtra-sanjay-gandhi-niradhar",
+  "name": {
+    "en": "Sanjay Gandhi Niradhar Anudan Yojana (Maharashtra)",
+    "hi": "संजय गांधी निराधार अनुदान योजना (महाराष्ट्र)",
+    "mr": "संजय गांधी निराधार अनुदान योजना (महाराष्ट्र)"
+  },
+  "category": "disabled",
+  "secondaryCategories": [
+    "woman",
+    "senior"
+  ],
+  "benefitType": "pension",
+  "benefitHighlight": {
+    "en": "₹1,500/mo (₹2,500/mo for Divyangjan) in Maharashtra*",
+    "hi": "महाराष्ट्र में ₹1,500/माह (दिव्यांगों को ₹2,500/माह)*",
+    "mr": "महाराष्ट्रात दरमहा ₹1,500 (दिव्यांगांसाठी ₹2,500/महिना)*"
+  },
+  "level": "state",
+  "state": "Maharashtra",
+  "ministry": "Social Justice & Special Assistance Department, Government of Maharashtra",
+  "summary": {
+    "en": "Maharashtra state social security monthly grant for destitute persons below age 65, persons with ≥40% disability, widows, orphans, abandoned women, and patients suffering from severe illnesses.",
+    "hi": "महाराष्ट्र में 65 वर्ष से कम आयु के निराश्रित व्यक्तियों, ≥40% दिव्यांगों, विधवाओं, अनाथों और गंभीर रोगियों के लिए मासिक आर्थिक सहायता योजना।",
+    "mr": "महाराष्ट्रातील ६५ वर्षांखालील निराधार व्यक्ती, ≥४०% दिव्यांग, विधवा, अनाथ, परित्यक्ता महिला व गंभीर आजारांनी ग्रस्त नागरिकांसाठी मासिक अनुदान योजना."
+  },
+  "benefits": {
+    "en": "₹1,500 per month for eligible destitute/widow/orphan/critically ill beneficiaries, and ₹2,500 per month for eligible persons with disabilities (verify latest Maharashtra GR at Tehsil office).",
+    "hi": "पात्र निराश्रित/विधवा/अनाथ/गंभीर रोगी लाभार्थियों को ₹1,500 प्रति माह और पात्र दिव्यांगजनों को ₹2,500 प्रति माह (तहसील में नवीनतम जीआर की पुष्टि करें)।",
+    "mr": "पात्र निराधार/विधवा/अनाथ/गंभीर आजारी लाभार्थ्यांना दरमहा ₹1,500 आणि पात्र दिव्यांग नागरिकांना दरमहा ₹2,500 थेट बँक खात्यात (तहसील कार्यालयात अद्ययावत शासन निर्णय तपासा)."
+  },
+  "eligibility": {
+    "maxAge": 65,
+    "states": [
+      "Maharashtra"
+    ],
+    "maxAnnualIncome": 50000,
+    "customConditions": [
+      {
+        "en": "Maharashtra resident for ≥15 years, below age 65, belonging to eligible vulnerable group (≥40% disability with annual income ≤ ₹50,000, OR destitute/widow/orphan/divorced without maintenance/severe illness with annual family income ≤ ₹21,000).",
+        "hi": "कम से कम 15 वर्षों से महाराष्ट्र निवासी, 65 वर्ष से कम आयु; दिव्यांगों के लिए वार्षिक आय ≤ ₹50,000 और अन्य निराश्रित/विधवा/अनाथ श्रेणियों के लिए ≤ ₹21,000।",
+        "mr": "किमान १५ वर्षे महाराष्ट्राचा रहिवासी, वय ६५ वर्षांखालील; दिव्यांगांसाठी वार्षिक उत्पन्न ≤ ₹50,000 आणि इतर निराधार/विधवा/अनाथ/गंभीर आजारी गटांसाठी ≤ ₹21,000."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "domicile-certificate",
+      "name": {
+        "en": "State Domicile / Residence Certificate",
+        "hi": "निवास प्रमाण पत्र (डोमिसाइल)",
+        "mr": "महाराष्ट्र अधिवास प्रमाणपत्र (डोमिसाईल)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "income-certificate",
+      "name": {
+        "en": "Income Certificate (issued by Tehsildar / Competent Authority)",
+        "hi": "आय प्रमाण पत्र (तहसीलदार / सक्षम अधिकारी द्वारा जारी)",
+        "mr": "उत्पन्नाचा दाखला (तहसीलदार / सक्षम प्राधिकारी)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "age-proof",
+      "name": {
+        "en": "Age Proof (Birth Certificate / School Leaving / Aadhaar)",
+        "hi": "आयु प्रमाण (जन्म प्रमाण पत्र / स्कूल लीविंग / आधार)",
+        "mr": "वयाचा पुरावा (जन्म दाखला / शाळा सोडल्याचा दाखला / आधार)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "udid-card",
+      "name": {
+        "en": "Disability Certificate / UDID Card (Medical Board)",
+        "hi": "दिव्यांगता प्रमाण पत्र / यूडीआईडी कार्ड (मेडिकल बोर्ड)",
+        "mr": "दिव्यांग प्रमाणपत्र / यूडीआयडी कार्ड (वैद्यकीय मंडळ)"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Apply online via Aaple Sarkar portal (aaplesarkar.mahaonline.gov.in) / Setu Kendra or offline at the Taluka Tehsildar Office (Sanjay Gandhi Yojana branch).",
+      "Attach domicile proof (15 years), income certificate, age proof, bank passbook, and category proof (UDID card / husband’s death certificate / medical certificate).",
+      "After Talathi verification and Sanjay Gandhi Committee approval, monthly grant is transferred via DBT."
+    ],
+    "hi": [
+      "आपले सरकार पोर्टल, सेतु केंद्र या तालुका तहसीलदार कार्यालय (संजय गांधी योजना शाखा) में आवेदन करें।",
+      "15 वर्ष निवास प्रमाण, आय प्रमाण पत्र, आयु प्रमाण, बैंक पासबुक और श्रेणी प्रमाण (दिव्यांगता/मृत्यु/मेडिकल प्रमाण पत्र) संलग्न करें।",
+      "तलाठी जांच और समिति की मंजूरी के बाद हर महीने अनुदान सीधे खाते में आता है।"
+    ],
+    "mr": [
+      "आपले सरकार पोर्टल (aaplesarkar.mahaonline.gov.in), सेतू केंद्र किंवा तालुका तहसीलदार कार्यालयात (संजय गांधी योजना कक्ष) अर्ज करा.",
+      "१५ वर्षे रहिवासी पुरावा, उत्पन्नाचा दाखला, वयाचा पुरावा, बँक पासबुक व प्रवर्ग पुरावा (UDID / पतीचा मृत्यू दाखला / वैद्यकीय प्रमाणपत्र) जोडा.",
+      "तलाठी चौकशी व संजय गांधी समितीच्या मंजुरीनंतर दरमहा अनुदान थेट बँक खात्यात जमा होते."
+    ]
+  },
+  "officialUrl": "https://aaplesarkar.mahaonline.gov.in",
+  "helpline": "1800-120-8040",
+  "deadlines": {
+    "en": "Open year-round across all talukas in Maharashtra.",
+    "hi": "महाराष्ट्र के सभी तालुकों में वर्ष भर खुला।",
+    "mr": "महाराष्ट्रातील सर्व तालुक्यांत वर्षभर सुरू."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://aaplesarkar.mahaonline.gov.in",
+    "https://sjsa.maharashtra.gov.in"
+  ],
+  "needsVerification": true,
+  "tags": [
+    "maharashtra",
+    "disabled",
+    "divyang",
+    "widow",
+    "niradhar",
+    "sanjay gandhi",
+    "pension",
+    "destitute"
+  ]
+}

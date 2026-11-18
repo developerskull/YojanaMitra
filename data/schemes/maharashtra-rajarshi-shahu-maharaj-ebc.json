@@ -1,0 +1,155 @@
+{
+  "id": "maharashtra-rajarshi-shahu-maharaj-ebc",
+  "name": {
+    "en": "Rajarshi Chhatrapati Shahu Maharaj Shikshan Shulkh Shishyavritti (MahaDBT — EWS/Open)",
+    "hi": "राजर्षि छत्रपति शाहू महाराज शिक्षण शुल्क छात्रवृत्ति योजना (महाराष्ट्र — महाडीबीटी)",
+    "mr": "राजर्षी छत्रपती शाहू महाराज शिक्षण शुल्क शिष्यवृत्ती योजना (MahaDBT — महाराष्ट्र)"
+  },
+  "category": "student",
+  "secondaryCategories": [
+    "woman"
+  ],
+  "benefitType": "scholarship",
+  "benefitHighlight": {
+    "en": "50%–100% tuition & exam fee reimbursement (Maharashtra EWS/Open)*",
+    "hi": "50%–100% शिक्षण व परीक्षा शुल्क प्रतिपूर्ति (महाराष्ट्र)*",
+    "mr": "५०%–१००% शिक्षण व परीक्षा शुल्क प्रतिपूर्ती (महाराष्ट्र)*"
+  },
+  "level": "state",
+  "state": "Maharashtra",
+  "ministry": "Directorate of Higher / Technical Education, Government of Maharashtra",
+  "summary": {
+    "en": "Maharashtra state fee reimbursement scheme (EBC) supporting General/Open/EWS category students admitted through CAP in professional and higher education courses whose family income is ≤ ₹8 lakh.",
+    "hi": "महाराष्ट्र के सामान्य/EWS वर्ग के छात्रों (पारिवारिक आय ≤ ₹8 लाख) को CAP के माध्यम से प्रवेशित व्यावसायिक व उच्च शिक्षा पाठ्यक्रमों में 50% से 100% शुल्क प्रतिपूर्ति।",
+    "mr": "महाराष्ट्रातील खुला/EWS प्रवर्गातील (कौटुंबिक उत्पन्न ≤ ₹8 लाख) CAP फेरीद्वारे प्रवेश घेतलेल्या विद्यार्थ्यांसाठी ५०% ते १००% शिक्षण व परीक्षा शुल्क प्रतिपूर्ती योजना."
+  },
+  "benefits": {
+    "en": "50% reimbursement of tuition and exam fees for eligible male students and up to 100% fee waiver for eligible girl students in specified professional courses (as per Maharashtra Govt GR — verify current course list on MahaDBT).",
+    "hi": "पात्र छात्रों को 50% शिक्षण व परीक्षा शुल्क प्रतिपूर्ति और निर्दिष्ट व्यावसायिक पाठ्यक्रमों में पात्र छात्राओं को 100% शुल्क छूट (महाडीबीटी पर नवीनतम जीआर जांचें)।",
+    "mr": "पात्र विद्यार्थ्यांना ५०% शिक्षण व परीक्षा शुल्क प्रतिपूर्ती, तर व्यावसायिक अभ्यासक्रमांतील पात्र मुलींसाठी १००% शिक्षण शुल्क माफी (महाडीबीटीवर अद्ययावत शासन निर्णय तपासा)."
+  },
+  "eligibility": {
+    "occupations": [
+      "student"
+    ],
+    "states": [
+      "Maharashtra"
+    ],
+    "casteCategories": [
+      "general",
+      "ews"
+    ],
+    "maxAnnualIncome": 800000,
+    "educationLevels": [
+      "diploma_iti",
+      "undergraduate",
+      "postgraduate"
+    ],
+    "customConditions": [
+      {
+        "en": "Maharashtra domicile student from General/EWS/SEBC category admitted through Centralized Admission Process (CAP) in recognized professional/non-professional courses with annual family income ≤ ₹8 lakh.",
+        "hi": "महाराष्ट्र अधिवासी छात्र, CAP प्रवेश प्रक्रिया से मान्यता प्राप्त कॉलेज में प्रवेशित और पारिवारिक वार्षिक आय ≤ ₹8 लाख।",
+        "mr": "महाराष्ट्राचा अधिवासी विद्यार्थी, CAP प्रवेश प्रक्रियेद्वारे मान्यताप्राप्त महाविद्यालयात प्रवेशित व वार्षिक कौटुंबिक उत्पन्न ≤ ₹8 लाख."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "domicile-certificate",
+      "name": {
+        "en": "State Domicile / Residence Certificate",
+        "hi": "निवास प्रमाण पत्र (डोमिसाइल)",
+        "mr": "महाराष्ट्र अधिवास प्रमाणपत्र (डोमिसाईल)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "income-certificate",
+      "name": {
+        "en": "Income Certificate (issued by Tehsildar / Competent Authority)",
+        "hi": "आय प्रमाण पत्र (तहसीलदार / सक्षम अधिकारी द्वारा जारी)",
+        "mr": "उत्पन्नाचा दाखला (तहसीलदार / सक्षम प्राधिकारी)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "college-fee-receipt",
+      "name": {
+        "en": "College Admission Letter & Fee Receipt (CAP Allotment)",
+        "hi": "कॉलेज प्रवेश पत्र एवं शुल्क रसीद",
+        "mr": "महाविद्यालय प्रवेश पत्र (CAP अलॉटमेंट) व फी पावती"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "marksheet",
+      "name": {
+        "en": "Previous Exam Marksheet / Bonafide Student Certificate",
+        "hi": "पिछली परीक्षा की मार्कशीट / बोनाफाइड प्रमाण पत्र",
+        "mr": "मागील परीक्षेची गुणपत्रिका / बोनाफाईड प्रमाणपत्र"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Register and log in to mahadbt.maharashtra.gov.in using Aadhaar authentication.",
+      "Complete profile, address, income, and current course details (including CAP allotment letter).",
+      "Select \"Rajarshi Chhatrapati Shahu Maharaj Shikshan Shulkh Shishyavritti Scheme\" under your Directorate (DTE/DHE/DMER/Agriculture).",
+      "Submit application before academic deadline and track college & department approval."
+    ],
+    "hi": [
+      "mahadbt.maharashtra.gov.in पर आधार से पंजीकरण व लॉगिन करें।",
+      "प्रोफाइल, आय, अधिवास और वर्तमान पाठ्यक्रम (CAP आवंटन पत्र सहित) विवरण भरें।",
+      "अपने निदेशालय के अंतर्गत \"राजर्षि छत्रपति शाहू महाराज शिक्षण शुल्क शिष्यवृत्ति योजना\" चुनें।",
+      "अंतिम तिथि से पहले आवेदन जमा करें और कॉलेज सत्यापन ट्रैक करें।"
+    ],
+    "mr": [
+      "mahadbt.maharashtra.gov.in पोर्टलवर आधार पडताळणीने नोंदणी व लॉगिन करा.",
+      "प्रोफाईल, अधिवास, उत्पन्न व सध्याच्या अभ्यासक्रमाची (CAP अलॉटमेंट पत्रासह) माहिती भरा.",
+      "योग्य संचालनालयांतर्गत \"राजर्षी छत्रपती शाहू महाराज शिक्षण शुल्क शिष्यवृत्ती योजना\" निवडा.",
+      "मुदतीपूर्वी अर्ज सादर करून महाविद्यालय व विभाग मंजुरीची स्थिती तपासा."
+    ]
+  },
+  "officialUrl": "https://mahadbt.maharashtra.gov.in",
+  "helpline": "022-49150800 (MahaDBT Helpline)",
+  "deadlines": {
+    "en": "Annual academic cycle on MahaDBT (typically opens Oct–Nov and runs until March–May; check portal).",
+    "hi": "महाडीबीटी पर वार्षिक शैक्षणिक सत्र (आमतौर पर अक्टूबर–मई; पोर्टल पर सटीक तिथि देखें)।",
+    "mr": "महाडीबीटीवर वार्षिक शैक्षणिक मुदत (साधारण ऑक्टोबर ते मे; पोर्टलवर अद्ययावत तारीख तपासा)."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://mahadbt.maharashtra.gov.in"
+  ],
+  "needsVerification": true,
+  "tags": [
+    "maharashtra",
+    "student",
+    "ebc",
+    "ews",
+    "open",
+    "engineering",
+    "college",
+    "mahadbt",
+    "girls free education"
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "id": "maharashtra-lek-ladki-yojana",
+  "name": {
+    "en": "Lek Ladki Yojana (Maharashtra)",
+    "hi": "लेक लाडकी योजना (महाराष्ट्र)",
+    "mr": "लेक लाडकी योजना (महाराष्ट्र)"
+  },
+  "category": "woman",
+  "secondaryCategories": [
+    "student"
+  ],
+  "benefitType": "cash",
+  "benefitHighlight": {
+    "en": "₹1,01,000 total assistance from birth to age 18 (Maharashtra)",
+    "hi": "जन्म से 18 वर्ष तक कुल ₹1,01,000 सहायता (महाराष्ट्र)",
+    "mr": "जन्मापासून १८ वर्षांपर्यंत एकूण ₹1,01,000 मदत (महाराष्ट्र)"
+  },
+  "level": "state",
+  "state": "Maharashtra",
+  "ministry": "Women and Child Development Department, Government of Maharashtra",
+  "summary": {
+    "en": "Maharashtra state financial empowerment scheme giving ₹1,01,000 in 5 milestones to girl children born on or after 1 April 2023 in yellow or orange ration card families.",
+    "hi": "महाराष्ट्र के पीले और केसरिया राशन कार्ड धारक परिवारों में 1 अप्रैल 2023 या उसके बाद जन्मी बालिका को जन्म से 18 वर्ष तक 5 चरणों में ₹1,01,000 की सहायता।",
+    "mr": "महाराष्ट्रातील पिवळे व केशरी रेशन कार्डधारक कुटुंबांत १ एप्रिल २०२३ नंतर जन्मलेल्या मुलीला जन्मापासून १८ वर्षांपर्यंत ५ टप्प्यांत ₹1,01,000 आर्थिक मदत."
+  },
+  "benefits": {
+    "en": "₹5,000 at birth, ₹6,000 on Class 1 admission, ₹7,000 on Class 6 admission, ₹8,000 on Class 11 admission, and ₹75,000 upon turning 18 (total ₹1,01,000).",
+    "hi": "जन्म पर ₹5,000, कक्षा 1 में ₹6,000, कक्षा 6 में ₹7,000, कक्षा 11 में ₹8,000 और 18 वर्ष की आयु पर ₹75,000 (कुल ₹1,01,000)।",
+    "mr": "जन्मानंतर ₹5,000, इयत्ता १ लीत ₹6,000, इयत्ता ६ वीत ₹7,000, इयत्ता ११ वीत ₹8,000 आणि १८ वर्षे पूर्ण झाल्यावर ₹75,000 (एकूण ₹1,01,000)."
+  },
+  "eligibility": {
+    "maxAge": 18,
+    "gender": [
+      "female"
+    ],
+    "states": [
+      "Maharashtra"
+    ],
+    "maxAnnualIncome": 100000,
+    "customConditions": [
+      {
+        "en": "Girl child born on or after 1 April 2023 in a Maharashtra resident family holding a yellow or orange ration card with annual family income ≤ ₹1 lakh.",
+        "hi": "1 अप्रैल 2023 या बाद जन्मी बालिका, महाराष्ट्र निवासी पीला/केसरिया राशन कार्ड और वार्षिक पारिवारिक आय ₹1 लाख से कम।",
+        "mr": "१ एप्रिल २०२३ किंवा त्यानंतर जन्मलेली मुलगी, महाराष्ट्र अधिवासी पिवळे/केशरी रेशन कार्डधारक कुटुंब व वार्षिक उत्पन्न ₹1 लाखापर्यंत."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "child-birth-cert",
+      "name": {
+        "en": "Girl Child's Birth Certificate",
+        "hi": "बालिका का जन्म प्रमाण पत्र",
+        "mr": "मुलीचा जन्म दाखला"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "ration-card",
+      "name": {
+        "en": "Ration Card (BPL / Antyodaya / Yellow / Orange)",
+        "hi": "राशन कार्ड (बीपीएल / अंत्योदय / पीला / केसरिया)",
+        "mr": "रेशन कार्ड (पिवळे / केशरी / अंत्योदय)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "income-certificate",
+      "name": {
+        "en": "Income Certificate (issued by Tehsildar / Competent Authority)",
+        "hi": "आय प्रमाण पत्र (तहसीलदार / सक्षम अधिकारी द्वारा जारी)",
+        "mr": "उत्पन्नाचा दाखला (तहसीलदार / सक्षम प्राधिकारी)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Contact your local Anganwadi Sevika / Child Development Project Officer (CDPO) in Maharashtra.",
+      "Fill the Lek Ladki Yojana application form and attach the child’s birth certificate, yellow/orange ration card, parent Aadhaar, and income certificate.",
+      "Anganwadi Sevika verifies and submits the form to the District Women & Child Development Office.",
+      "Each milestone installment is credited directly via DBT into the linked bank account."
+    ],
+    "hi": [
+      "महाराष्ट्र में अपने नजदीकी आंगनवाड़ी सेविका या बाल विकास परियोजना अधिकारी (CDPO) से संपर्क करें।",
+      "लेक लाडकी योजना फॉर्म भरकर जन्म प्रमाण पत्र, पीला/केसरिया राशन कार्ड, आधार और आय प्रमाण पत्र संलग्न करें।",
+      "आंगनवाड़ी सेविका सत्यापन के बाद आवेदन जिला कार्यालय को भेजती है।",
+      "प्रत्येक चरण की राशि सीधे बैंक खाते में जमा होती है।"
+    ],
+    "mr": [
+      "तुमच्या भागातील अंगणवाडी सेविका किंवा बाल विकास प्रकल्प अधिकारी (CDPO) यांच्याशी संपर्क साधा.",
+      "लेक लाडकी योजनेचा अर्ज भरून मुलीचा जन्म दाखला, पिवळे/केशरी रेशन कार्ड, आधार व उत्पन्नाचा दाखला जोडा.",
+      "अंगणवाडी सेविका पडताळणी करून अर्ज जिल्हा महिला व बाल विकास कार्यालयात सादर करते.",
+      "प्रत्येक टप्प्याचे अनुदान थेट बँक खात्यात जमा होते."
+    ]
+  },
+  "officialUrl": "https://womenchild.maharashtra.gov.in",
+  "helpline": "181 (Maharashtra Women Helpline)",
+  "deadlines": {
+    "en": "Open year-round for girl children born on or after 1 April 2023.",
+    "hi": "1 अप्रैल 2023 के बाद जन्मी बालिकाओं के लिए वर्ष भर खुला।",
+    "mr": "१ एप्रिल २०२३ नंतर जन्मलेल्या मुलींसाठी वर्षभर सुरू."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://womenchild.maharashtra.gov.in",
+    "https://www.myscheme.gov.in/schemes/lly"
+  ],
+  "needsVerification": true,
+  "tags": [
+    "maharashtra",
+    "girl child",
+    "woman",
+    "lek ladki",
+    "education",
+    "ration card"
+  ]
+}

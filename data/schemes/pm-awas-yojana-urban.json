@@ -1,0 +1,126 @@
+{
+  "id": "pm-awas-yojana-urban",
+  "name": {
+    "en": "Pradhan Mantri Awas Yojana – Urban 2.0 (PMAY-U 2.0)",
+    "hi": "प्रधानमंत्री आवास योजना – शहरी 2.0 (पीएमएवाई-यू 2.0)",
+    "mr": "प्रधानमंत्री आवास योजना – शहरी २.० (PMAY-U 2.0)"
+  },
+  "category": "housing",
+  "secondaryCategories": [
+    "worker",
+    "woman"
+  ],
+  "benefitType": "housing",
+  "benefitHighlight": {
+    "en": "Urban housing subsidy / Interest Subsidy up to ₹1.80L–₹2.50L*",
+    "hi": "शहरी आवास अनुदान / ब्याज सब्सिडी ₹1.80–₹2.50 लाख तक*",
+    "mr": "शहरी घरकुल अनुदान / व्याज सवलत ₹1.80–₹2.50 लाखांपर्यंत*"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Housing and Urban Affairs (MoHUA)",
+  "summary": {
+    "en": "Supports urban EWS, LIG, and MIG families who do not own a pucca house anywhere in India through Beneficiary-Led Construction (BLC), Affordable Housing, or Interest Subsidy Scheme (ISS).",
+    "hi": "देश में कहीं भी पक्का घर न रखने वाले शहरी EWS, LIG और MIG परिवारों को घर निर्माण, किफायती आवास या गृह ऋण ब्याज सब्सिडी की सहायता।",
+    "mr": "देशात कुठेही पक्के घर नसलेल्या शहरी EWS, LIG व MIG कुटुंबांना घर बांधणी, परवडणारे घर किंवा गृहकर्ज व्याज सवलत देणारी योजना."
+  },
+  "benefits": {
+    "en": "Financial assistance up to ₹2.50 lakh under BLC/AHP (Central + State share) for EWS families, or interest subsidy up to ₹1.80 lakh over 5 yearly installments on eligible home loans under ISS (EWS/LIG/MIG). Verify exact city-level guidelines on pmaymis.gov.in.",
+    "hi": "EWS परिवारों के लिए निर्माण हेतु ₹2.50 लाख तक सहायता, या पात्र गृह ऋण पर ISS के तहत 5 वार्षिक किस्तों में ₹1.80 लाख तक ब्याज सब्सिडी (pmaymis.gov.in पर नियम जांचें)।",
+    "mr": "EWS कुटुंबांसाठी घर बांधणीस ₹2.50 लाखांपर्यंत मदत किंवा पात्र गृहकर्जावर ISS अंतर्गत ५ वार्षिक हप्त्यांत ₹1.80 लाखांपर्यंत व्याज सवलत (pmaymis.gov.in वर नियम तपासा)."
+  },
+  "eligibility": {
+    "residenceType": [
+      "urban"
+    ],
+    "maxAnnualIncome": 900000,
+    "customConditions": [
+      {
+        "en": "EWS (income ≤ ₹3 lakh), LIG (₹3–₹6 lakh), or MIG (₹6–₹9 lakh) urban households with no pucca house anywhere in India and no prior central/state housing grant.",
+        "hi": "EWS (≤ ₹3 लाख), LIG (₹3–₹6 लाख) या MIG (₹6–₹9 लाख) शहरी परिवार जिनके पास देश में कहीं भी पक्का घर न हो।",
+        "mr": "EWS (≤ ₹3 लाख), LIG (₹3–₹6 लाख) किंवा MIG (₹6–₹9 लाख) शहरी कुटुंबे ज्यांच्याकडे भारतात कुठेही पक्के घर नाही."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "income-certificate",
+      "name": {
+        "en": "Income Certificate (issued by Tehsildar / Competent Authority)",
+        "hi": "आय प्रमाण पत्र (तहसीलदार / सक्षम अधिकारी द्वारा जारी)",
+        "mr": "उत्पन्नाचा दाखला (तहसीलदार / सक्षम प्राधिकारी)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "mobile-aadhaar",
+      "name": {
+        "en": "Active Mobile Number linked with Aadhaar",
+        "hi": "आधार से जुड़ा सक्रिय मोबाइल नंबर",
+        "mr": "आधारशी संलग्न सक्रिय मोबाईल क्रमांक"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Visit the official PMAY-U 2.0 portal (pmay-urban.gov.in or pmaymis.gov.in).",
+      "Click \"Apply for PMAY-U 2.0\", check eligibility, and verify identity via Aadhaar OTP.",
+      "Choose your vertical (BLC, AHP, ARH, or ISS) and enter income, family, and property/loan details.",
+      "Submit for Urban Local Body (Municipal Corporation/Council) or bank verification."
+    ],
+    "hi": [
+      "आधिकारिक पीएमएवाई-यू 2.0 पोर्टल (pmay-urban.gov.in) पर जाएं।",
+      "\"Apply for PMAY-U 2.0\" पर क्लिक करें, पात्रता जांचें और आधार ओटीपी से सत्यापन करें।",
+      "अपना विकल्प (BLC, AHP, ARH या ISS) चुनें और आय व परिवार विवरण भरें।",
+      "नगर निगम/नगर पालिका या बैंक सत्यापन के लिए आवेदन जमा करें।"
+    ],
+    "mr": [
+      "अधिकृत PMAY-U 2.0 पोर्टलवर (pmay-urban.gov.in) जा.",
+      "\"Apply for PMAY-U 2.0\" वर क्लिक करून पात्रता तपासा व आधार OTP ने पडताळणी करा.",
+      "योग्य घटक (BLC, AHP, ARH किंवा ISS) निवडून उत्पन्न व कुटुंबाचा तपशील भरा.",
+      "महानगरपालिका/नगरपरिषद किंवा बँक पडताळणीसाठी अर्ज सादर करा."
+    ]
+  },
+  "officialUrl": "https://pmay-urban.gov.in",
+  "helpline": "1800-11-3377 / 1800-11-3388",
+  "deadlines": {
+    "en": "Open for 5-year implementation period (2024–2029); check Urban Local Body announcements.",
+    "hi": "5 वर्षीय अवधि (2024–2029) के लिए खुला; नगर निकाय सूचना देखें।",
+    "mr": "५ वर्षांच्या कालावधीसाठी (२०२४–२०२९) सुरू; स्थानिक नगरपालिकेशी संपर्क साधा."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://pmay-urban.gov.in",
+    "https://pmaymis.gov.in"
+  ],
+  "needsVerification": true,
+  "tags": [
+    "housing",
+    "urban",
+    "home loan",
+    "subsidy",
+    "pmay",
+    "ews",
+    "lig",
+    "mig"
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "pm-awas-yojana-gramin",
+  "name": {
+    "en": "Pradhan Mantri Awas Yojana – Gramin (PMAY-G)",
+    "hi": "प्रधानमंत्री आवास योजना – ग्रामीण (पीएमएवाई-जी)",
+    "mr": "प्रधानमंत्री आवास योजना – ग्रामीण (PMAY-G)"
+  },
+  "category": "housing",
+  "secondaryCategories": [
+    "farmer",
+    "worker",
+    "woman"
+  ],
+  "benefitType": "housing",
+  "benefitHighlight": {
+    "en": "₹1.20 lakh – ₹1.30 lakh pucca house grant",
+    "hi": "पक्के घर के लिए ₹1.20 लाख – ₹1.30 लाख सहायता",
+    "mr": "पक्क्या घरासाठी ₹1.20 लाख – ₹1.30 लाख अनुदान"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Rural Development",
+  "summary": {
+    "en": "Provides financial assistance to rural homeless households and families living in zero-, one-, or two-room kutcha houses to build a pucca house with basic amenities.",
+    "hi": "ग्रामीण बेघर और कच्चे मकान में रहने वाले परिवारों को पक्का मकान बनाने के लिए सीधी वित्तीय सहायता।",
+    "mr": "ग्रामीण भागातील बेघर व कच्च्या घरात राहणाऱ्या कुटुंबांना मूलभूत सुविधांसह पक्के घर बांधण्यासाठी थेट आर्थिक अनुदान."
+  },
+  "benefits": {
+    "en": "₹1,20,000 in plain areas and ₹1,30,000 in hilly/difficult/IAP areas transferred in installments directly to bank accounts, plus 90–95 days of MGNREGA unskilled wage support and ₹12,000 toilet assistance under SBM-G.",
+    "hi": "मैदानी क्षेत्रों में ₹1,20,000 और पहाड़ी/दुर्गम क्षेत्रों में ₹1,30,000 की सहायता, साथ में मनरेगा से 90–95 दिन की मजदूरी व स्वच्छ भारत मिशन से ₹12,000 शौचालय सहायता।",
+    "mr": "सपाट भागात ₹1,20,000 आणि डोंगराळ/दुर्गम भागात ₹1,30,000 अनुदान हप्त्यांत जमा; याशिवाय मनरेगा अंतर्गत ९०–९५ दिवसांची मजुरी व शौचालयासाठी ₹12,000 मदत."
+  },
+  "eligibility": {
+    "residenceType": [
+      "rural"
+    ],
+    "bplRequired": true,
+    "customConditions": [
+      {
+        "en": "Rural families listed in SECC 2011 / Awaas+ survey who do not own a pucca house anywhere in India and pass Gram Sabha verification.",
+        "hi": "SECC 2011 / आवास+ सर्वेक्षण में शामिल ग्रामीण परिवार जिनके पास पक्का मकान न हो और ग्राम सभा द्वारा सत्यापित हों।",
+        "mr": "SECC २०११ / आवास+ सर्वेक्षणात समाविष्ट ग्रामीण कुटुंबे ज्यांच्याकडे पक्के घर नाही व ग्रामसभेची मंजुरी आहे."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bpl-card",
+      "name": {
+        "en": "BPL Certificate / SECC List Proof",
+        "hi": "बीपीएल प्रमाण पत्र / एसईसीसी सूची प्रमाण",
+        "mr": "दारिद्र्यरेषेखालील (BPL) प्रमाणपत्र / यादीचा पुरावा"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "mobile-aadhaar",
+      "name": {
+        "en": "Active Mobile Number linked with Aadhaar",
+        "hi": "आधार से जुड़ा सक्रिय मोबाइल नंबर",
+        "mr": "आधारशी संलग्न सक्रिय मोबाईल क्रमांक"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Check if your name appears in the PMAY-G beneficiary list at pmayg.nic.in or at your Gram Panchayat office.",
+      "If eligible and left out, request inclusion during the official Awaas+ survey through your Gram Panchayat / Block Development Office (BDO).",
+      "Complete Gram Sabha verification and submit Aadhaar consent and bank passbook to the Gram Sevak.",
+      "Installments are released via DBT after geo-tagged inspection at each construction stage."
+    ],
+    "hi": [
+      "pmayg.nic.in या ग्राम पंचायत कार्यालय में अपनी पात्रता/लाभार्थी सूची जांचें।",
+      "यदि नाम छूटा है, तो ग्राम पंचायत / प्रखंड कार्यालय (BDO) के माध्यम से आवास+ सर्वेक्षण में पंजीकरण का अनुरोध करें।",
+      "ग्राम सभा सत्यापन के बाद ग्राम सेवक के पास आधार सहमति और बैंक विवरण जमा करें।",
+      "निर्माण के प्रत्येक चरण की जियो-टैग फोटो के बाद किस्तें सीधे खाते में आती हैं।"
+    ],
+    "mr": [
+      "pmayg.nic.in पोर्टलवर किंवा तुमच्या ग्रामपंचायत कार्यालयात लाभार्थी यादीत नाव तपासा.",
+      "पात्र असूनही नाव नसल्यास ग्रामपंचायत किंवा गटविकास अधिकारी (BDO) कार्यालयामार्फत आवास+ सर्वेक्षणात नोंदणी करा.",
+      "ग्रामसभेच्या मंजुरीनंतर ग्रामसेवकाकडे आधार संमतीपत्र व बँक पासबुक जमा करा.",
+      "बांधकामाच्या प्रत्येक टप्प्याच्या जिओ-टॅग तपासणीनंतर अनुदानाचे हप्ते बँक खात्यात जमा होतात."
+    ]
+  },
+  "officialUrl": "https://pmayg.nic.in",
+  "helpline": "1800-11-6446",
+  "deadlines": {
+    "en": "Ongoing under PMAY-G Phase 2 (2024–2029); check Gram Panchayat for active Awaas+ survey dates.",
+    "hi": "पीएमएवाई-जी चरण 2 (2024–2029) के तहत जारी; सक्रिय आवास+ सर्वे तिथियों के लिए ग्राम पंचायत से संपर्क करें।",
+    "mr": "PMAY-G टप्पा २ (२०२४–२०२९) अंतर्गत सुरू; आवास+ सर्वेक्षणासाठी ग्रामपंचायतीशी संपर्क साधा."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://pmayg.nic.in",
+    "https://www.myscheme.gov.in/schemes/pmay-g"
+  ],
+  "needsVerification": false,
+  "tags": [
+    "housing",
+    "rural",
+    "gramin",
+    "house",
+    "pmay",
+    "ghar",
+    "gharkul",
+    "bpl"
+  ]
+}

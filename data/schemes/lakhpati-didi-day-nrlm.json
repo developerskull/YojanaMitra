@@ -1,0 +1,128 @@
+{
+  "id": "lakhpati-didi-day-nrlm",
+  "name": {
+    "en": "Lakhpati Didi & DAY-NRLM (Rural Women SHG Support)",
+    "hi": "लखपति दीदी एवं दीनदयाल अंत्योदय योजना – एनआरएलएम",
+    "mr": "लखपती दीदी आणि उमेद / DAY-NRLM (महिला बचत गट योजना)"
+  },
+  "category": "woman",
+  "secondaryCategories": [
+    "worker"
+  ],
+  "benefitType": "skill",
+  "benefitHighlight": {
+    "en": "SHG livelihood training, revolving fund & low-interest credit",
+    "hi": "स्वयं सहायता समूह प्रशिक्षण, फंड एवं सस्ता व्यवसाय ऋण",
+    "mr": "बचत गट प्रशिक्षण, फिरता निधी व कमी व्याजदरात व्यवसाय कर्ज"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Rural Development",
+  "summary": {
+    "en": "Empowers rural women organized in Self-Help Groups (SHGs) with skill training, community investment funds, market linkages, and subsidized bank credit to earn a sustainable annual income of ₹1 lakh or more.",
+    "hi": "ग्रामीण महिला स्वयं सहायता समूहों (SHG) को कौशल प्रशिक्षण, सामुदायिक निधि, बाजार जुड़ाव और सस्ते बैंक ऋण से ₹1 लाख+ वार्षिक आय कमाने में सक्षम बनाने की पहल।",
+    "mr": "ग्रामीण महिला बचत गटांना (उमेद/SHG) कौशल्य प्रशिक्षण, खेळता निधी, बाजारपेठ जोडणी व सवलतीच्या कर्जाद्वारे दरवर्षी ₹1 लाखांहून अधिक उत्पन्न मिळवण्यासाठी सक्षम करणारी योजना."
+  },
+  "benefits": {
+    "en": "Revolving Fund (₹20,000–₹30,000 per eligible SHG), Community Investment Fund (CIF), collateral-free SHG bank loans with interest subvention (down to 7% / 4% on prompt repayment in select districts), and free vocational/enterprise training.",
+    "hi": "पात्र स्वयं सहायता समूह को रिवॉल्विंग फंड (₹20,000–₹30,000), सामुदायिक निवेश निधि, सस्ता बैंक ऋण (ब्याज अनुदान सहित) और निःशुल्क उद्यम प्रशिक्षण।",
+    "mr": "पात्र बचत गटांना फिरता निधी (₹20,000–₹30,000), समुदाय गुंतवणूक निधी, व्याज सवलतीसह विनातारण बँक कर्ज आणि मोफत उद्योग प्रशिक्षण."
+  },
+  "eligibility": {
+    "minAge": 18,
+    "gender": [
+      "female"
+    ],
+    "residenceType": [
+      "rural"
+    ],
+    "customConditions": [
+      {
+        "en": "Rural women who join or form a registered Self-Help Group (SHG) under State Rural Livelihoods Mission (such as UMED in Maharashtra).",
+        "hi": "राज्य ग्रामीण आजीविका मिशन के तहत स्वयं सहायता समूह (SHG) से जुड़ी ग्रामीण महिलाएं पात्र हैं।",
+        "mr": "राज्य ग्रामीण जीवनोन्नती अभियानांतर्गत (महाराष्ट्रात उमेद) बचत गटाच्या सदस्य असलेल्या ग्रामीण महिला पात्र आहेत."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "passport-photo",
+      "name": {
+        "en": "Passport-size Photographs",
+        "hi": "पासपोर्ट साइज फोटो",
+        "mr": "पासपोर्ट आकाराचे फोटो"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "mobile-aadhaar",
+      "name": {
+        "en": "Active Mobile Number linked with Aadhaar",
+        "hi": "आधार से जुड़ा सक्रिय मोबाइल नंबर",
+        "mr": "आधारशी संलग्न सक्रिय मोबाईल क्रमांक"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Join an existing village Self-Help Group (SHG) or form a new group of 10–15 rural women with your Block Mission Management Unit (BMMU / UMED).",
+      "Maintain regular group savings and Panchasutra meetings for 3–6 months.",
+      "Prepare a household livelihood plan with your Community Resource Person (CRP) to access Revolving Fund, CIF, and bank linkage.",
+      "Enroll in Lakhpati Didi skill/enterprise modules via your State Rural Livelihoods Mission (lakhpatididi.gov.in)."
+    ],
+    "hi": [
+      "अपने गांव के स्वयं सहायता समूह (SHG) से जुड़ें या ब्लॉक मिशन इकाई (NRLM) की मदद से नया समूह बनाएं।",
+      "नियमित बचत और बैठकें (पंचसूत्र) 3–6 महीने तक चलाएं।",
+      "सीआरपी की मदद से आजीविका योजना तैयार कर फंड और बैंक ऋण प्राप्त करें।",
+      "राज्य आजीविका मिशन (lakhpatididi.gov.in) से कौशल प्रशिक्षण प्राप्त करें।"
+    ],
+    "mr": [
+      "गावातील महिला बचत गटात (उमेद) सामील व्हा किंवा तालुका अभियान कक्षाच्या मदतीने १०–१५ महिलांचा नवीन गट तयार करा.",
+      "३–६ महिने नियमित बचत व पंचसूत्री बैठका ठेवा.",
+      "सीआरपी (CRP) यांच्या मदतीने उपजीविका आराखडा तयार करून फिरता निधी व बँक कर्ज मिळवा.",
+      "लखपती दीदी उपक्रमांतर्गत (lakhpatididi.gov.in) व्यवसाय व कौशल्य प्रशिक्षण घ्या."
+    ]
+  },
+  "officialUrl": "https://lakhpatididi.gov.in",
+  "helpline": "1800-11-6446 (Rural Development)",
+  "deadlines": {
+    "en": "Open year-round through Block/District Rural Livelihoods Mission offices.",
+    "hi": "ब्लॉक/जिला ग्रामीण आजीविका मिशन के माध्यम से वर्ष भर खुला।",
+    "mr": "तालुका व जिल्हा उमेद/ग्रामीण जीवनोन्नती कार्यालयामार्फत वर्षभर सुरू."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://lakhpatididi.gov.in",
+    "https://aajeevika.gov.in"
+  ],
+  "needsVerification": false,
+  "tags": [
+    "woman",
+    "shg",
+    "bachat gat",
+    "lakhpati didi",
+    "rural",
+    "entrepreneur",
+    "umed",
+    "nrlm"
+  ]
+}

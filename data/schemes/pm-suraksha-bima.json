@@ -1,0 +1,112 @@
+{
+  "id": "pm-suraksha-bima",
+  "name": {
+    "en": "Pradhan Mantri Suraksha Bima Yojana (PMSBY)",
+    "hi": "प्रधानमंत्री सुरक्षा बीमा योजना (पीएमएसबीवाई)",
+    "mr": "प्रधानमंत्री सुरक्षा विमा योजना (PMSBY)"
+  },
+  "category": "health",
+  "secondaryCategories": [
+    "worker",
+    "farmer",
+    "senior"
+  ],
+  "benefitType": "insurance",
+  "benefitHighlight": {
+    "en": "₹2 lakh accident insurance cover for just ₹20 / year",
+    "hi": "मात्र ₹20 / वर्ष में ₹2 लाख दुर्घटना बीमा",
+    "mr": "फक्त ₹20 / वर्षात ₹2 लाखांचा अपघात विमा"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Finance (Department of Financial Services)",
+  "summary": {
+    "en": "Ultra-affordable accidental death and disability insurance for savings bank/post office account holders aged 18–70 at just ₹20 per year.",
+    "hi": "18 से 70 वर्ष के बैंक/डाकघर खाताधारकों के लिए मात्र ₹20 प्रति वर्ष में ₹2 लाख का दुर्घटना मृत्यु एवं दिव्यांगता बीमा।",
+    "mr": "१८ ते ७० वयोगटातील बँक/पोस्ट खातेधारकांसाठी अवघ्या ₹20 प्रति वर्ष हप्त्यात ₹2 लाखांचा अपघात व अपंगत्व विमा."
+  },
+  "benefits": {
+    "en": "₹2,00,000 for accidental death or total & irrecoverable loss of both eyes/hands/feet, and ₹1,00,000 for total & irrecoverable loss of one eye or one limb, at ₹20/year auto-debited premium.",
+    "hi": "दुर्घटना में मृत्यु या पूर्ण स्थायी विकलांगता पर ₹2,00,000 और आंशिक स्थायी विकलांगता पर ₹1,00,000 का बीमा लाभ (मात्र ₹20/वर्ष)।",
+    "mr": "अपघाती मृत्यू किंवा पूर्ण कायमस्वरूपी अपंगत्वावर ₹2,00,000 आणि एका अवयवाच्या नुकसानीवर ₹1,00,000 विमा लाभ (हप्ता फक्त ₹20/वर्ष)."
+  },
+  "eligibility": {
+    "minAge": 18,
+    "maxAge": 70,
+    "customConditions": [
+      {
+        "en": "Any savings bank or post office account holder aged 18 to 70 years who gives auto-debit consent.",
+        "hi": "18 से 70 वर्ष का कोई भी बचत बैंक या डाकघर खाताधारक।",
+        "mr": "बँक किंवा पोस्ट बचत खाते असलेला १८ ते ७० वयोगटातील कोणताही नागरिक."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "mobile-aadhaar",
+      "name": {
+        "en": "Active Mobile Number linked with Aadhaar",
+        "hi": "आधार से जुड़ा सक्रिय मोबाइल नंबर",
+        "mr": "आधारशी संलग्न सक्रिय मोबाईल क्रमांक"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Enroll via your bank branch, Post Office, Bank Mitra, or bank mobile app / net banking.",
+      "Submit PMSBY consent form with nominee name and relationship.",
+      "Maintain ₹20 balance before 31st May each year for uninterrupted annual accident cover (June 1 – May 31)."
+    ],
+    "hi": [
+      "अपनी बैंक शाखा, डाकघर, बैंक मित्र या मोबाइल/नेट बैंकिंग से पंजीकरण करें।",
+      "नॉमिनी विवरण के साथ PMSBY ऑटो-डेबिट फॉर्म भरें।",
+      "प्रतिवर्ष 31 मई से पहले खाते में ₹20 शेष रखें।"
+    ],
+    "mr": [
+      "बँक शाखा, पोस्ट ऑफिस, बँक मित्र किंवा मोबाईल/नेट बँकिंगद्वारे नोंदणी करा.",
+      "वारसदाराच्या तपशीलासह PMSBY संमती अर्ज सादर करा.",
+      "दरवर्षी ३१ मेपूर्वी खात्यात किमान ₹20 शिल्लक ठेवा."
+    ]
+  },
+  "officialUrl": "https://jansuraksha.gov.in",
+  "helpline": "1800-180-1111 / 1800-11-0001",
+  "deadlines": {
+    "en": "Open year-round; annual policy cycle June 1 – May 31.",
+    "hi": "वर्ष भर खुला; वार्षिक चक्र 1 जून से 31 मई।",
+    "mr": "वर्षभर सुरू; वार्षिक कालावधी १ जून ते ३१ मे."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://jansuraksha.gov.in",
+    "https://www.myscheme.gov.in/schemes/pmsby"
+  ],
+  "needsVerification": false,
+  "tags": [
+    "accident insurance",
+    "pmsby",
+    "20 rupees",
+    "jan suraksha",
+    "worker",
+    "farmer",
+    "senior"
+  ]
+}

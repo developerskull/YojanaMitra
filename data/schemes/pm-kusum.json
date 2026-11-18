@@ -1,0 +1,122 @@
+{
+  "id": "pm-kusum",
+  "name": {
+    "en": "PM-KUSUM (Solar Agriculture Pumps & Solarization)",
+    "hi": "पीएम-कुसुम (सौर कृषि पंप योजना)",
+    "mr": "पीएम-कुसुम (सौर कृषी पंप योजना)"
+  },
+  "category": "farmer",
+  "secondaryCategories": [],
+  "benefitType": "subsidy",
+  "benefitHighlight": {
+    "en": "Up to 60%+ subsidy on solar irrigation pumps*",
+    "hi": "सौर कृषि पंप पर 60%+ तक सब्सिडी*",
+    "mr": "सौर कृषी पंपावर ६०%+ पर्यंत अनुदान*"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of New and Renewable Energy (MNRE)",
+  "summary": {
+    "en": "Helps farmers install standalone solar agricultural pumps (Component B) or solarize existing grid-connected pumps (Component C) with substantial central and state subsidies.",
+    "hi": "किसानों को ऑफ-ग्रिड सोलर कृषि पंप लगाने या मौजूदा पंपों को सौर ऊर्जा से जोड़ने के लिए केंद्र और राज्य सरकार की सब्सिडी।",
+    "mr": "शेतकऱ्यांना स्वतंत्र सौर कृषी पंप बसवण्यासाठी किंवा विद्यमान पंप सौर ऊर्जेवर चालवण्यासाठी केंद्र व राज्य सरकारचे मोठे अनुदान."
+  },
+  "benefits": {
+    "en": "Typically 30% Central Financial Assistance + at least 30% State subsidy (total 60% subsidy; some states like Maharashtra offer up to 90%–95% under Magel Tyala Saur Krishi Pump for eligible farmers), with 30% bank loan option and only ~10% farmer contribution. Confirm exact state share on state portal.",
+    "hi": "आमतौर पर 30% केंद्रीय अनुदान + न्यूनतम 30% राज्य अनुदान (कुल 60% सब्सिडी; कुछ राज्यों में अधिक), 30% बैंक ऋण और लगभग 10% किसान अंशदान। राज्य पोर्टल पर सटीक दर की पुष्टि करें।",
+    "mr": "साधारणपणे ३०% केंद्र अनुदान + किमान ३०% राज्य अनुदान (महाराष्ट्रात मागेल त्याला सौर कृषी पंप अंतर्गत सर्वसाधारण शेतकऱ्यांना ९०% व SC/ST शेतकऱ्यांना ९५% पर्यंत अनुदान). अचूक हिस्सा राज्य पोर्टलवर तपासा."
+  },
+  "eligibility": {
+    "occupations": [
+      "farmer"
+    ],
+    "requiresLandOwnership": true,
+    "customConditions": [
+      {
+        "en": "Individual farmers, FPOs, cooperatives, and water user associations with agricultural land and assured water source (without conventional grid connection for standalone pumps).",
+        "hi": "खेती की जमीन और जल स्रोत वाले व्यक्तिगत किसान, एफपीओ और सहकारी समितियां पात्र हैं।",
+        "mr": "शेतीयोग्य जमीन व पाण्याचा स्रोत असलेले वैयक्तिक शेतकरी, FPO व सहकारी संस्था पात्र आहेत."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "land-7-12",
+      "name": {
+        "en": "Land Ownership Record (7/12 Utara / 8A / Khatauni)",
+        "hi": "भूमि स्वामित्व प्रमाण (खसरा-खतौनी / 7/12 उतारा)",
+        "mr": "जमीन मालकीचा पुरावा (७/१२ उतारा आणि ८-अ)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "passport-photo",
+      "name": {
+        "en": "Passport-size Photographs",
+        "hi": "पासपोर्ट साइज फोटो",
+        "mr": "पासपोर्ट आकाराचे फोटो"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Apply only through your state implementing agency portal (e.g., MSEDCL / MEDA Mahadiscom portal in Maharashtra; verify official state links at pmkusum.mnre.gov.in).",
+      "Warning: Beware of fake websites. MNRE does not take direct applications on private sites.",
+      "Upload 7/12 land record, Aadhaar, and water source details; select pump capacity (3 HP, 5 HP, or 7.5 HP).",
+      "After joint survey and approval, deposit the beneficiary share online for vendor installation."
+    ],
+    "hi": [
+      "केवल अपने राज्य की अधिकृत एजेंसी पोर्टल से आवेदन करें (आधिकारिक राज्य लिंक pmkusum.mnre.gov.in पर जांचें)।",
+      "सावधानी: फर्जी वेबसाइटों से बचें।",
+      "भूमि अभिलेख, आधार और जल स्रोत का विवरण अपलोड करें तथा पंप क्षमता (3/5/7.5 HP) चुनें।",
+      "सर्वेक्षण और स्वीकृति के बाद लाभार्थी हिस्सा जमा करें।"
+    ],
+    "mr": [
+      "फक्त अधिकृत राज्य पोर्टलवरूनच अर्ज करा (महाराष्ट्रासाठी महावितरण पोर्टल; अधिकृत यादी pmkusum.mnre.gov.in वर तपासा).",
+      "सावधानता: बनावट वेबसाईटपासून सावध राहा.",
+      "७/१२ उतारा, आधार व पाण्याच्या स्रोताची माहिती अपलोड करून पंपाची क्षमता (३/५/७.५ HP) निवडा.",
+      "पाहणी व मंजुरीनंतर शेतकरी हिस्सा ऑनलाइन भरून पंप बसवून घ्या."
+    ]
+  },
+  "officialUrl": "https://pmkusum.mnre.gov.in",
+  "helpline": "1800-180-3333 (MNRE Helpline)",
+  "deadlines": {
+    "en": "State-wise quota windows open periodically; check state DISCOM/energy agency announcements.",
+    "hi": "राज्यवार कोटा समय-समय पर खुलता है; राज्य ऊर्जा एजेंसी की सूचना देखें।",
+    "mr": "राज्याच्या कोट्यानुसार टप्प्याटप्प्याने अर्ज खुले होतात; महावितरण पोर्टलवर तपासा."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://pmkusum.mnre.gov.in",
+    "https://www.myscheme.gov.in/schemes/pm-kusum"
+  ],
+  "needsVerification": true,
+  "tags": [
+    "farmer",
+    "solar pump",
+    "kusum",
+    "irrigation",
+    "electricity",
+    "maharashtra",
+    "subsidy"
+  ]
+}

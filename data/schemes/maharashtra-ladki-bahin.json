@@ -1,0 +1,139 @@
+{
+  "id": "maharashtra-ladki-bahin",
+  "name": {
+    "en": "Mukhyamantri Majhi Ladki Bahin Yojana (Maharashtra)",
+    "hi": "मुख्यमंत्री माझी लाडकी बहीण योजना (महाराष्ट्र)",
+    "mr": "मुख्यमंत्री माझी लाडकी बहीण योजना (महाराष्ट्र)"
+  },
+  "category": "woman",
+  "secondaryCategories": [],
+  "benefitType": "cash",
+  "benefitHighlight": {
+    "en": "₹1,500 / month DBT for eligible Maharashtra women",
+    "hi": "पात्र महाराष्ट्र महिलाओं को ₹1,500 / माह DBT",
+    "mr": "पात्र महिलांना दरमहा ₹1,500 थेट बँक खात्यात"
+  },
+  "level": "state",
+  "state": "Maharashtra",
+  "ministry": "Women and Child Development Department, Government of Maharashtra",
+  "summary": {
+    "en": "Monthly direct financial assistance of ₹1,500 to eligible women aged 21–65 in Maharashtra to promote economic independence, health, and nutrition.",
+    "hi": "महाराष्ट्र की 21 से 65 वर्ष की पात्र महिलाओं को आर्थिक स्वतंत्रता, स्वास्थ्य और पोषण के लिए ₹1,500 प्रति माह की सीधी सहायता।",
+    "mr": "महाराष्ट्रातील २१ ते ६५ वयोगटातील पात्र महिलांना आर्थिक स्वावलंबन, आरोग्य व पोषणासाठी दरमहा ₹1,500 थेट आर्थिक मदत."
+  },
+  "benefits": {
+    "en": "₹1,500 per month transferred directly via DBT into the beneficiary woman’s own Aadhaar-linked bank account.",
+    "hi": "₹1,500 प्रति माह सीधे लाभार्थी महिला के स्वयं के आधार-लिंक्ड बैंक खाते में जमा किए जाते हैं।",
+    "mr": "दरमहा ₹1,500 थेट लाभार्थी महिलेच्या स्वतःच्या आधार-संलग्न बँक खात्यात (DBT) जमा होतात."
+  },
+  "eligibility": {
+    "minAge": 21,
+    "maxAge": 65,
+    "gender": [
+      "female"
+    ],
+    "states": [
+      "Maharashtra"
+    ],
+    "maxAnnualIncome": 250000,
+    "excludeIncomeTaxPayers": true,
+    "excludeGovtEmployees": true,
+    "customConditions": [
+      {
+        "en": "Married, widowed, divorced, abandoned, destitute women, and one unmarried woman per family residing in Maharashtra. Families owning a four-wheeler (except tractor) or paying income tax are excluded.",
+        "hi": "महाराष्ट्र निवासी विवाहित, विधवा, तलाकशुदा, परित्यक्ता, निराश्रित महिलाएं व परिवार की एक अविवाहित महिला। चार पहिया वाहन (ट्रैक्टर छोड़कर) या आयकर दाता परिवार अपात्र।",
+        "mr": "महाराष्ट्रातील विवाहित, विधवा, घटस्फोटित, परित्यक्ता, निराधार महिला आणि कुटुंबातील एक अविवाहित महिला पात्र. चारचाकी वाहन (ट्रॅक्टर वगळून) किंवा आयकर भरणारे कुटुंब अपात्र."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "domicile-certificate",
+      "name": {
+        "en": "State Domicile / Residence Certificate",
+        "hi": "निवास प्रमाण पत्र (डोमिसाइल)",
+        "mr": "महाराष्ट्र अधिवास प्रमाणपत्र (डोमिसाईल)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "income-certificate",
+      "name": {
+        "en": "Income Certificate (issued by Tehsildar / Competent Authority)",
+        "hi": "आय प्रमाण पत्र (तहसीलदार / सक्षम अधिकारी द्वारा जारी)",
+        "mr": "उत्पन्नाचा दाखला (तहसीलदार / सक्षम प्राधिकारी)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "passport-photo",
+      "name": {
+        "en": "Passport-size Photographs",
+        "hi": "पासपोर्ट साइज फोटो",
+        "mr": "पासपोर्ट आकाराचे फोटो"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Apply online at ladakibahin.maharashtra.gov.in, via the Nari Shakti Doot app, or through Anganwadi Sevika / Setu Suvidha Kendra.",
+      "Verify your mobile number and Aadhaar; upload domicile proof (or 15-year-old ration card/voter ID/birth cert) and income certificate (exempt for yellow/orange ration card).",
+      "Sign the self-declaration (Hamipatra) and link your bank account with Aadhaar NPCI seeding.",
+      "Check approval status and complete any periodic e-KYC verification requested on the official portal."
+    ],
+    "hi": [
+      "ladakibahin.maharashtra.gov.in, नारी शक्ति दूत ऐप या आंगनवाड़ी सेविका/सेतु केंद्र से आवेदन करें।",
+      "मोबाईल व आधार सत्यापित करें; अधिवास प्रमाण और आय प्रमाण पत्र (पीले/केसरिया राशन कार्ड पर छूट) अपलोड करें।",
+      "स्व-घोषणापत्र (हमीपत्र) भरें और बैंक खाते को आधार एनपीसीआई से लिंक रखें।",
+      "आधिकारिक पोर्टल पर स्थिति जांचें और समय-समय पर मांगा गया ई-केवाईसी पूरा करें।"
+    ],
+    "mr": [
+      "ladakibahin.maharashtra.gov.in पोर्टल, नारीशक्ती दूत अ‍ॅप किंवा अंगणवाडी सेविका/सेतू केंद्रामार्फत अर्ज करा.",
+      "मोबाईल व आधार पडताळणी करून अधिवास पुरावा व उत्पन्नाचा दाखला (पिवळे/केशरी रेशन कार्ड असल्यास सूट) अपलोड करा.",
+      "स्वयंघोषणापत्र (हमीपत्र) सादर करा आणि बँक खाते आधार-NPCI संलग्न ठेवा.",
+      "अधिकृत पोर्टलवर अर्जाची स्थिती व आवश्यक e-KYC पूर्ण करा."
+    ]
+  },
+  "officialUrl": "https://ladakibahin.maharashtra.gov.in",
+  "helpline": "181 (Maharashtra Women Helpline)",
+  "deadlines": {
+    "en": "Check ladakibahin.maharashtra.gov.in for current fresh registration and e-KYC deadlines notified by Maharashtra Government.",
+    "hi": "नए पंजीकरण और ई-केवाईसी की वर्तमान अंतिम तिथियों के लिए ladakibahin.maharashtra.gov.in देखें।",
+    "mr": "नवीन नोंदणी व e-KYC च्या अद्ययावत तारखांसाठी ladakibahin.maharashtra.gov.in पोर्टल तपासा."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://ladakibahin.maharashtra.gov.in",
+    "https://www.myscheme.gov.in/schemes/mmlby"
+  ],
+  "needsVerification": true,
+  "tags": [
+    "maharashtra",
+    "woman",
+    "mahila",
+    "ladki bahin",
+    "1500",
+    "dbt",
+    "nashik",
+    "pune"
+  ]
+}

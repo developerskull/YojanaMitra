@@ -1,0 +1,129 @@
+{
+  "id": "pm-kisan",
+  "name": {
+    "en": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+    "hi": "प्रधानमंत्री किसान सम्मान निधि (पीएम-किसान)",
+    "mr": "प्रधानमंत्री किसान सन्मान निधी (पीएम-किसान)"
+  },
+  "category": "farmer",
+  "secondaryCategories": [],
+  "benefitType": "cash",
+  "benefitHighlight": {
+    "en": "₹6,000 / year (3 × ₹2,000)",
+    "hi": "₹6,000 / वर्ष (3 × ₹2,000)",
+    "mr": "₹6,000 / वर्ष (३ × ₹2,000)"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Agriculture & Farmers Welfare",
+  "summary": {
+    "en": "Direct income support of ₹6,000 per year to all eligible landholding farmer families across India to help meet agricultural and household needs.",
+    "hi": "देश के सभी पात्र भूमिधारक किसान परिवारों को कृषि और घरेलू जरूरतों के लिए ₹6,000 प्रति वर्ष की सीधी आय सहायता।",
+    "mr": "देशातील सर्व पात्र जमीनधारक शेतकरी कुटुंबांना शेती व घरगुती खर्चासाठी दरवर्षी ₹6,000 थेट आर्थिक मदत."
+  },
+  "benefits": {
+    "en": "₹6,000 per year paid in three equal installments of ₹2,000 every four months directly into Aadhaar-seeded bank accounts via DBT.",
+    "hi": "हर चार महीने में ₹2,000 की तीन समान किस्तों में कुल ₹6,000 प्रति वर्ष सीधे आधार-लिंक्ड बैंक खाते (DBT) में भेजे जाते हैं।",
+    "mr": "दर चार महिन्यांनी ₹2,000 च्या तीन समान हप्त्यांत एकूण ₹6,000 प्रति वर्ष थेट आधार-संलग्न बँक खात्यात (DBT) जमा होतात."
+  },
+  "eligibility": {
+    "occupations": [
+      "farmer"
+    ],
+    "requiresLandOwnership": true,
+    "excludeIncomeTaxPayers": true,
+    "excludeGovtEmployees": true,
+    "customConditions": [
+      {
+        "en": "Family (husband, wife, minor children) must hold cultivable land as per state land records.",
+        "hi": "परिवार (पति, पत्नी, नाबालिग बच्चे) के नाम राज्य के भूमि अभिलेख में खेती योग्य जमीन होनी चाहिए।",
+        "mr": "कुटुंबाच्या (पती, पत्नी, अज्ञान मुले) नावावर राज्य जमीन अभिलेखात शेतीयोग्य जमीन असणे आवश्यक आहे."
+      },
+      {
+        "en": "Institutional landholders, income tax payers, serving/retired govt officers, and constitutional post holders are excluded.",
+        "hi": "संस्थागत भूमिधारक, आयकर दाता, सरकारी अधिकारी और संवैधानिक पद धारक अपात्र हैं।",
+        "mr": "संस्थात्मक जमीनधारक, आयकर भरणारे, शासकीय अधिकारी व घटनात्मक पदधारक अपात्र आहेत."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "land-7-12",
+      "name": {
+        "en": "Land Ownership Record (7/12 Utara / 8A / Khatauni)",
+        "hi": "भूमि स्वामित्व प्रमाण (खसरा-खतौनी / 7/12 उतारा)",
+        "mr": "जमीन मालकीचा पुरावा (७/१२ उतारा आणि ८-अ)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "mobile-aadhaar",
+      "name": {
+        "en": "Active Mobile Number linked with Aadhaar",
+        "hi": "आधार से जुड़ा सक्रिय मोबाइल नंबर",
+        "mr": "आधारशी संलग्न सक्रिय मोबाईल क्रमांक"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Visit the official PM-KISAN portal (pmkisan.gov.in) or nearest Common Service Centre (CSC).",
+      "Select \"New Farmer Registration\", enter your Aadhaar number, mobile number, and state.",
+      "Verify OTP and fill in landholding details (survey/khata number) and bank account details.",
+      "Complete mandatory e-KYC (OTP or biometric at CSC) and verify land seeding with your local Patwari/Talathi."
+    ],
+    "hi": [
+      "आधिकारिक पीएम-किसान पोर्टल (pmkisan.gov.in) या नजदीकी कॉमन सर्विस सेंटर (CSC) पर जाएं।",
+      "\"New Farmer Registration\" चुनें और अपना आधार नंबर, मोबाइल नंबर और राज्य दर्ज करें।",
+      "ओटीपी सत्यापित करें और जमीन का विवरण (खसरा/खाता संख्या) व बैंक विवरण भरें।",
+      "अनिवार्य ई-केवाईसी (ओटीपी या CSC बायोमेट्रिक) पूरा करें और पटवारी/तलाठी से लैंड सीडिंग सत्यापित कराएं।"
+    ],
+    "mr": [
+      "अधिकृत पीएम-किसान पोर्टल (pmkisan.gov.in) किंवा जवळच्या आपले सरकार सेवा केंद्रावर (CSC) जा.",
+      "\"New Farmer Registration\" निवडून तुमचा आधार क्रमांक, मोबाईल क्रमांक आणि राज्य नोंदवा.",
+      "OTP पडताळणी करून जमिनीचा ७/१२ व ८-अ तपशील आणि बँक खाते माहिती भरा.",
+      "अनिवार्य e-KYC पूर्ण करा आणि तलाठी/कृषी कार्यालयाकडून जमीन पडताळणी (Land Seeding) करून घ्या."
+    ]
+  },
+  "officialUrl": "https://pmkisan.gov.in",
+  "helpline": "155261 / 011-24300606",
+  "deadlines": {
+    "en": "Open year-round (installments released every 4 months; e-KYC must be completed before installment release).",
+    "hi": "वर्ष भर खुला (हर 4 महीने में किस्त जारी; किस्त से पहले ई-केवाईसी अनिवार्य)।",
+    "mr": "वर्षभर सुरू (दर ४ महिन्यांनी हप्ता जमा होतो; हप्त्यापूर्वी e-KYC आवश्यक)."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://pmkisan.gov.in",
+    "https://www.myscheme.gov.in/schemes/pm-kisan"
+  ],
+  "needsVerification": false,
+  "tags": [
+    "farmer",
+    "kisan",
+    "shetkari",
+    "agriculture",
+    "dbt",
+    "land",
+    "income support"
+  ]
+}

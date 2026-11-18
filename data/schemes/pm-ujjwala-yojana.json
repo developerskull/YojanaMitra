@@ -1,0 +1,125 @@
+{
+  "id": "pm-ujjwala-yojana",
+  "name": {
+    "en": "Pradhan Mantri Ujjwala Yojana 2.0 (PMUY)",
+    "hi": "प्रधानमंत्री उज्ज्वला योजना 2.0 (पीएमयूवाई)",
+    "mr": "प्रधानमंत्री उज्ज्वला योजना २.० (PMUY)"
+  },
+  "category": "woman",
+  "secondaryCategories": [
+    "housing"
+  ],
+  "benefitType": "subsidy",
+  "benefitHighlight": {
+    "en": "Free LPG connection + first refill & stove + refill subsidy",
+    "hi": "निःशुल्क एलपीजी कनेक्शन + पहला रिफिल व चूल्हा + सब्सिडी",
+    "mr": "मोफत एलपीजी गॅस जोडणी + पहिला सिलिंडर व शेगडी + अनुदान"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Petroleum and Natural Gas",
+  "summary": {
+    "en": "Provides deposit-free clean cooking LPG gas connections to adult women of poor households without an existing LPG connection.",
+    "hi": "बिना एलपीजी कनेक्शन वाले गरीब परिवारों की वयस्क महिलाओं को निःशुल्क स्वच्छ रसोई गैस कनेक्शन प्रदान करने की योजना।",
+    "mr": "गॅस जोडणी नसलेल्या गरीब कुटुंबातील प्रौढ महिलांना धूरमुक्त स्वयंपाकासाठी मोफत एलपीजी गॅस कनेक्शन देणारी योजना."
+  },
+  "benefits": {
+    "en": "Deposit-free LPG connection (₹1,600 support for 14.2 kg cylinder), free first refill and hotplate (stove) under Ujjwala 2.0, plus targeted per-cylinder LPG refill subsidy (currently ₹300/cylinder up to 12 refills/year — confirm latest cabinet extension).",
+    "hi": "डिपॉजिट-फ्री एलपीजी कनेक्शन, उज्ज्वला 2.0 के तहत पहला रिफिल व चूल्हा मुफ्त, तथा पात्र लाभार्थियों को प्रति सिलेंडर सब्सिडी (नवीनतम सब्सिडी दर आधिकारिक पोर्टल पर जांचें)।",
+    "mr": "डिपॉझिटशिवाय मोफत एलपीजी जोडणी, उज्ज्वला २.० अंतर्गत पहिला सिलिंडर व शेगडी मोफत तसेच प्रति सिलिंडर अनुदान (अद्ययावत अनुदान दर अधिकृत पोर्टलवर तपासा)."
+  },
+  "eligibility": {
+    "minAge": 18,
+    "gender": [
+      "female"
+    ],
+    "bplRequired": true,
+    "customConditions": [
+      {
+        "en": "Adult woman belonging to SC/ST, PMAY-G, Antyodaya, Most Backward Classes, forest dwellers, or SECC poor household with no other LPG connection in the same household.",
+        "hi": "SC/ST, अंत्योदय, PMAY-G, अति पिछड़ा या SECC गरीब परिवार की वयस्क महिला जिसके घर में पहले से कोई एलपीजी कनेक्शन न हो।",
+        "mr": "SC/ST, अंत्योदय, PMAY-G किंवा गरीब कुटुंबातील प्रौढ महिला ज्यांच्या घरात आधीपासून कोणतेही एलपीजी कनेक्शन नाही."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "ration-card",
+      "name": {
+        "en": "Ration Card (BPL / Antyodaya / Yellow / Orange)",
+        "hi": "राशन कार्ड (बीपीएल / अंत्योदय / पीला / केसरिया)",
+        "mr": "रेशन कार्ड (पिवळे / केशरी / अंत्योदय)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "passport-photo",
+      "name": {
+        "en": "Passport-size Photographs",
+        "hi": "पासपोर्ट साइज फोटो",
+        "mr": "पासपोर्ट आकाराचे फोटो"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Apply online at pmuy.gov.in by choosing your preferred Oil Marketing Company (Indane, Bharatgas, or HP Gas) or visit your nearest LPG distributor.",
+      "Submit e-KYC, Aadhaar, Ration Card (or self-declaration for migrant families), and bank account details.",
+      "Distributor verifies no duplicate LPG connection exists in the household.",
+      "Collect your LPG cylinder, regulator, hose, and stove upon approval."
+    ],
+    "hi": [
+      "pmuy.gov.in पर इंडेन, भारतगैस या एचपी गैस चुनकर ऑनलाइन आवेदन करें या नजदीकी गैस एजेंसी जाएं।",
+      "ई-केवाईसी, आधार, राशन कार्ड (या प्रवासी परिवार हेतु स्व-घोषणा) और बैंक विवरण जमा करें।",
+      "एजेंसी परिवार में किसी अन्य एलपीजी कनेक्शन की जांच करती है।",
+      "स्वीकृति के बाद सिलेंडर, रेगुलेटर और चूल्हा प्राप्त करें।"
+    ],
+    "mr": [
+      "pmuy.gov.in वर इंडेन, भारतगॅस किंवा एचपी गॅस निवडून ऑनलाइन अर्ज करा किंवा जवळच्या गॅस एजन्सीत जा.",
+      "e-KYC, आधार, रेशन कार्ड (किंवा स्थलांतरित कुटुंबासाठी स्वयंघोषणापत्र) व बँक तपशील सादर करा.",
+      "घरात आधी गॅस जोडणी नसल्याची पडताळणी एजन्सी करते.",
+      "मंजुरीनंतर गॅस सिलिंडर, रेग्युलेटर आणि शेगडी मिळवा."
+    ]
+  },
+  "officialUrl": "https://www.pmuy.gov.in",
+  "helpline": "1800-266-6696 / 1906",
+  "deadlines": {
+    "en": "Open subject to active Ujjwala 2.0 release quota; check pmuy.gov.in.",
+    "hi": "उज्ज्वला 2.0 कोटा के अनुसार खुला; pmuy.gov.in पर जांचें।",
+    "mr": "उज्ज्वला २.० कोट्यानुसार सुरू; pmuy.gov.in वर स्थिती तपासा."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://www.pmuy.gov.in",
+    "https://www.myscheme.gov.in/schemes/pmuy"
+  ],
+  "needsVerification": true,
+  "tags": [
+    "woman",
+    "lpg",
+    "gas",
+    "ujjwala",
+    "cooking",
+    "bpl",
+    "subsidy"
+  ]
+}

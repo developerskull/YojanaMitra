@@ -1,0 +1,122 @@
+{
+  "id": "pm-surya-ghar-muft-bijli",
+  "name": {
+    "en": "PM Surya Ghar: Muft Bijli Yojana",
+    "hi": "पीएम सूर्य घर: मुफ्त बिजली योजना",
+    "mr": "पीएम सूर्य घर: मोफत वीज योजना"
+  },
+  "category": "housing",
+  "secondaryCategories": [
+    "farmer",
+    "worker",
+    "senior"
+  ],
+  "benefitType": "subsidy",
+  "benefitHighlight": {
+    "en": "₹30,000 – ₹78,000 rooftop solar subsidy",
+    "hi": "छत सौर पैनल पर ₹30,000 – ₹78,000 सब्सिडी",
+    "mr": "छतावरील सौर प्रकल्पावर ₹30,000 – ₹78,000 अनुदान"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of New and Renewable Energy (MNRE)",
+  "summary": {
+    "en": "Provides direct capital subsidy to Indian residential households for installing rooftop solar panels, helping save up to 300 units of electricity per month.",
+    "hi": "भारतीय घरेलू परिवारों को छत पर सौर पैनल लगाने के लिए सीधी सब्सिडी, जिससे हर महीने 300 यूनिट तक मुफ्त बिजली की बचत संभव है।",
+    "mr": "भारतीय कुटुंबांना घराच्या छतावर सौर ऊर्जा प्रकल्प बसवण्यासाठी थेट अनुदान, ज्यामुळे दरमहा ३०० युनिटपर्यंत वीज बचत होऊ शकते."
+  },
+  "benefits": {
+    "en": "Central Financial Assistance of ₹30,000 for 1 kW, ₹60,000 for 2 kW, and ₹78,000 for 3 kW or larger residential rooftop solar systems, plus collateral-free low-interest loans via JanSamarth.",
+    "hi": "1 kW के लिए ₹30,000, 2 kW के लिए ₹60,000 और 3 kW या अधिक के लिए ₹78,000 की सीधी सब्सिडी, साथ ही कम ब्याज पर ऋण सुविधा।",
+    "mr": "१ kW साठी ₹30,000, २ kW साठी ₹60,000 आणि ३ kW किंवा अधिक क्षमतेसाठी ₹78,000 थेट अनुदान आणि कमी व्याजदरात बँक कर्ज सुविधा."
+  },
+  "eligibility": {
+    "customConditions": [
+      {
+        "en": "Must be an Indian citizen owning a house with a roof suitable for solar panels, a valid domestic electricity connection, and not have previously availed rooftop solar subsidy.",
+        "hi": "वैध घरेलू बिजली कनेक्शन और सौर पैनल योग्य छत वाले सभी भारतीय घर मालिक पात्र हैं।",
+        "mr": "वैध घरगुती वीज जोडणी व सौर पॅनेलसाठी योग्य छत असलेले सर्व भारतीय घरमालक पात्र आहेत."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "electricity-bill",
+      "name": {
+        "en": "Recent Electricity Bill (Consumer Number)",
+        "hi": "हाल का बिजली बिल (उपभोक्ता संख्या)",
+        "mr": "अलीकडील वीज बिल (ग्राहक क्रमांक)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "mobile-aadhaar",
+      "name": {
+        "en": "Active Mobile Number linked with Aadhaar",
+        "hi": "आधार से जुड़ा सक्रिय मोबाइल नंबर",
+        "mr": "आधारशी संलग्न सक्रिय मोबाईल क्रमांक"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Register at pmsuryaghar.gov.in using your State, Electricity Distribution Company (DISCOM), and Consumer Number.",
+      "Apply for Rooftop Solar and wait for online feasibility approval from your DISCOM.",
+      "Install the solar plant through any registered vendor listed on the portal and apply for net-metering.",
+      "After commissioning certificate generation, submit bank details on the portal; subsidy is credited within ~30 days."
+    ],
+    "hi": [
+      "pmsuryaghar.gov.in पर राज्य, बिजली वितरण कंपनी और उपभोक्ता संख्या के साथ पंजीकरण करें।",
+      "रूफटॉप सोलर के लिए आवेदन करें और बिजली कंपनी की स्वीकृति की प्रतीक्षा करें।",
+      "पोर्टल पर पंजीकृत वेंडर से सोलर प्लांट लगवाएं और नेट-मीटरिंग के लिए आवेदन करें।",
+      "कमीशनिंग प्रमाण पत्र के बाद बैंक विवरण दें; लगभग 30 दिनों में सब्सिडी खाते में आती है।"
+    ],
+    "mr": [
+      "pmsuryaghar.gov.in पोर्टलवर राज्य, वीज कंपनी (महावितरण इ.) आणि ग्राहक क्रमांकासह नोंदणी करा.",
+      "रूफटॉप सोलरसाठी अर्ज करून वीज कंपनीची तांत्रिक मंजुरी मिळवा.",
+      "पोर्टलवरील नोंदणीकृत विक्रेत्याकडून सौर प्रकल्प बसवा आणि नेट-मीटरिंगसाठी अर्ज करा.",
+      "प्रकल्प कार्यान्वित झाल्यानंतर बँक तपशील भरा; सुमारे ३० दिवसांत अनुदान खात्यात जमा होते."
+    ]
+  },
+  "officialUrl": "https://pmsuryaghar.gov.in",
+  "helpline": "15555",
+  "deadlines": {
+    "en": "Open year-round across all states/UTs.",
+    "hi": "सभी राज्यों में वर्ष भर खुला।",
+    "mr": "सर्व राज्यांमध्ये वर्षभर सुरू."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://pmsuryaghar.gov.in",
+    "https://www.myscheme.gov.in/schemes/pmsgmb"
+  ],
+  "needsVerification": false,
+  "tags": [
+    "solar",
+    "electricity",
+    "rooftop",
+    "bijli",
+    "subsidy",
+    "housing",
+    "surya ghar"
+  ]
+}

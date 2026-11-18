@@ -1,0 +1,123 @@
+{
+  "id": "rashtriya-vayoshri-yojana",
+  "name": {
+    "en": "Rashtriya Vayoshri Yojana (RVY — Free Assistive Devices for Seniors)",
+    "hi": "राष्ट्रीय वयोश्री योजना (वरिष्ठ नागरिकों के लिए निःशुल्क सहायक उपकरण)",
+    "mr": "राष्ट्रीय वयोश्री योजना (ज्येष्ठ नागरिकांसाठी मोफत सहाय्यक उपकरणे)"
+  },
+  "category": "senior",
+  "secondaryCategories": [
+    "disabled",
+    "health"
+  ],
+  "benefitType": "equipment",
+  "benefitHighlight": {
+    "en": "Free hearing aids, wheelchairs, spectacles & walking aids",
+    "hi": "निःशुल्क श्रवण यंत्र, व्हीलचेयर, चश्मा व छड़ी",
+    "mr": "मोफत श्रवणयंत्र, व्हीलचेअर, चष्मे व काठ्या"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Social Justice & Empowerment",
+  "summary": {
+    "en": "Provides free physical aids and assisted-living devices to low-income senior citizens aged 60+ suffering from age-related disabilities or infirmities.",
+    "hi": "उम्र से संबंधित दिव्यांगता/कमजोरी से जूझ रहे 60+ कम आय वाले बुजुर्गों को निःशुल्क सहायक उपकरण (चश्मा, श्रवण यंत्र, व्हीलचेयर, वॉकर) प्रदान करने की योजना।",
+    "mr": "वयोमानानुसार अपंगत्व किंवा अशक्तपणा असलेल्या ६०+ कमी उत्पन्न गटातील ज्येष्ठ नागरिकांना मोफत सहाय्यक उपकरणे देणारी योजना."
+  },
+  "benefits": {
+    "en": "Free distribution of walking sticks, elbow crutches, walkers, tripods, hearing aids, wheelchairs, artificial dentures, and spectacles through ALIMCO assessment camps.",
+    "hi": "एलिम्को (ALIMCO) शिविरों के माध्यम से वॉकिंग स्टिक, वॉकर, श्रवण यंत्र, व्हीलचेयर, कृत्रिम दांत और चश्मे निःशुल्क दिए जाते हैं।",
+    "mr": "ALIMCO तपासणी शिबिरांद्वारे काठी, वॉकर, श्रवणयंत्र, व्हीलचेअर, कृत्रिम दात आणि चष्मे मोफत दिले जातात."
+  },
+  "eligibility": {
+    "minAge": 60,
+    "maxAnnualIncome": 180000,
+    "customConditions": [
+      {
+        "en": "Senior citizens aged 60+ belonging to BPL category OR with monthly income not exceeding ₹15,000 (₹1.80 lakh/year) who have age-related disability/infirmity assessed at an ALIMCO camp.",
+        "hi": "60+ वरिष्ठ नागरिक जो बीपीएल हों या जिनकी मासिक आय ₹15,000 (₹1.80 लाख/वर्ष) से अधिक न हो और उम्र संबंधी कमजोरी हो।",
+        "mr": "६०+ ज्येष्ठ नागरिक जे BPL आहेत किंवा ज्यांचे मासिक उत्पन्न ₹15,000 (₹1.80 लाख/वर्ष) पेक्षा जास्त नाही आणि वयोमानानुसार अपंगत्व आहे."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "age-proof",
+      "name": {
+        "en": "Age Proof (Birth Certificate / School Leaving / Aadhaar)",
+        "hi": "आयु प्रमाण (जन्म प्रमाण पत्र / स्कूल लीविंग / आधार)",
+        "mr": "वयाचा पुरावा (जन्म दाखला / शाळा सोडल्याचा दाखला / आधार)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "income-certificate",
+      "name": {
+        "en": "Income Certificate (issued by Tehsildar / Competent Authority)",
+        "hi": "आय प्रमाण पत्र (तहसीलदार / सक्षम अधिकारी द्वारा जारी)",
+        "mr": "उत्पन्नाचा दाखला (तहसीलदार / सक्षम प्राधिकारी)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "passport-photo",
+      "name": {
+        "en": "Passport-size Photographs",
+        "hi": "पासपोर्ट साइज फोटो",
+        "mr": "पासपोर्ट आकाराचे फोटो"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Check upcoming ALIMCO assessment camps in your district via alimco.in, District Social Welfare Office, or Elderline (14567).",
+      "Register at the assessment camp or online portal with Aadhaar, age proof, and income/BPL certificate.",
+      "Doctors/audiologists assess required aids at the camp.",
+      "Receive prescribed assistive devices free of cost at the distribution camp."
+    ],
+    "hi": [
+      "alimco.in, जिला समाज कल्याण कार्यालय या एल्डरलाइन (14567) से अपने जिले में एलिम्को शिविर की जानकारी लें।",
+      "आधार, आयु प्रमाण और आय/बीपीएल प्रमाण पत्र के साथ मूल्यांकन शिविर में पंजीकरण करें।",
+      "चिकित्सक आवश्यक उपकरणों का मूल्यांकन करेंगे।",
+      "वितरण शिविर में निर्धारित उपकरण निःशुल्क प्राप्त करें।"
+    ],
+    "mr": [
+      "alimco.in, जिल्हा समाज कल्याण कार्यालय किंवा एल्डरलाईन (१४५६७) वर तुमच्या जिल्ह्यातील शिबिराची माहिती घ्या.",
+      "आधार, वयाचा पुरावा आणि उत्पन्न/BPL दाखल्यासह तपासणी शिबिरात नोंदणी करा.",
+      "वैद्यकीय तज्ज्ञांकडून आवश्यक उपकरणांची तपासणी केली जाते.",
+      "वितरण शिबिरात गरजेची सहाय्यक उपकरणे मोफत मिळवा."
+    ]
+  },
+  "officialUrl": "https://www.alimco.in",
+  "helpline": "14567 (National Elderline)",
+  "deadlines": {
+    "en": "District-wise assessment camps announced throughout the year; call Elderline 14567.",
+    "hi": "वर्ष भर जिलावार शिविर आयोजित होते हैं; एल्डरलाइन 14567 पर कॉल करें।",
+    "mr": "वर्षभर जिल्हास्तरीय शिबिरे आयोजित केली जातात; एल्डरलाईन १४५६७ वर चौकशी करा."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://www.alimco.in",
+    "https://socialjustice.gov.in"
+  ],
+  "needsVerification": false,
+  "tags": [
+    "senior",
+    "assistive devices",
+    "hearing aid",
+    "wheelchair",
+    "spectacles",
+    "elderly",
+    "rvy"
+  ]
+}

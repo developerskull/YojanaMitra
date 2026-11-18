@@ -1,0 +1,128 @@
+{
+  "id": "senior-citizen-savings-scheme",
+  "name": {
+    "en": "Senior Citizen Savings Scheme (SCSS)",
+    "hi": "वरिष्ठ नागरिक बचत योजना (एससीएसएस)",
+    "mr": "ज्येष्ठ नागरिक बचत योजना (SCSS)"
+  },
+  "category": "senior",
+  "secondaryCategories": [],
+  "benefitType": "cash",
+  "benefitHighlight": {
+    "en": "Quarterly interest on up to ₹30 lakh deposit (~8.2% p.a.*)",
+    "hi": "₹30 लाख तक जमा पर तिमाही ब्याज (~8.2% वार्षिक*)",
+    "mr": "₹30 लाखांपर्यंत गुंतवणुकीवर तिमाही व्याज (~८.२% वार्षिक*)"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Finance",
+  "summary": {
+    "en": "Sovereign-backed regular income savings scheme for Indian senior citizens aged 60+, offering high quarterly interest payouts and Section 80C tax benefit.",
+    "hi": "60+ भारतीय वरिष्ठ नागरिकों के लिए सरकारी गारंटी वाली सुरक्षित बचत योजना, जिसमें तिमाही ब्याज भुगतान और धारा 80C कर लाभ मिलता है।",
+    "mr": "६० वर्षांवरील भारतीय ज्येष्ठ नागरिकांसाठी शासन हमी असलेली सुरक्षित बचत योजना; दर तीन महिन्यांनी व्याज उत्पन्न व कलम 80C कर सवलत."
+  },
+  "benefits": {
+    "en": "Deposit ₹1,000 to ₹30,00,000 for a 5-year tenure (extendable in 3-year blocks); quarterly interest credited directly to savings account at government-notified rate (historically 8.2% p.a. — confirm current quarter rate at India Post/bank).",
+    "hi": "5 वर्ष की अवधि के लिए ₹1,000 से ₹30,00,000 तक निवेश (3-3 वर्ष बढ़ाया जा सकता है); तिमाही ब्याज (हाल में 8.2% वार्षिक — वर्तमान तिमाही दर जांचें)।",
+    "mr": "५ वर्षांसाठी ₹1,000 ते ₹30,00,000 पर्यंत गुंतवणूक (पुढे ३ वर्षांनी वाढवता येते); तिमाही व्याज (अलीकडे ८.२% — चालू तिमाही दर तपासा)."
+  },
+  "eligibility": {
+    "minAge": 60,
+    "customConditions": [
+      {
+        "en": "Resident Indian citizens aged 60+ (or retired civilian employees aged 55–60 / retired defence personnel aged 50–60 within specified retirement window).",
+        "hi": "60 वर्ष या अधिक आयु के निवासी भारतीय (या निर्धारित शर्तों के साथ 55–60 वर्ष के सेवानिवृत्त कर्मचारी / 50+ रक्षा कर्मी)।",
+        "mr": "६० वर्षे व त्यावरील भारतीय नागरिक (किंवा विशिष्ट अटींसह ५५–६० वयोगटातील निवृत्त कर्मचारी / ५०+ निवृत्त संरक्षण कर्मचारी)."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "pan-card",
+      "name": {
+        "en": "PAN Card",
+        "hi": "पैन कार्ड",
+        "mr": "पॅन कार्ड"
+      },
+      "mandatory": false
+    },
+    {
+      "id": "age-proof",
+      "name": {
+        "en": "Age Proof (Birth Certificate / School Leaving / Aadhaar)",
+        "hi": "आयु प्रमाण (जन्म प्रमाण पत्र / स्कूल लीविंग / आधार)",
+        "mr": "वयाचा पुरावा (जन्म दाखला / शाळा सोडल्याचा दाखला / आधार)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "passport-photo",
+      "name": {
+        "en": "Passport-size Photographs",
+        "hi": "पासपोर्ट साइज फोटो",
+        "mr": "पासपोर्ट आकाराचे फोटो"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Visit any Post Office or authorized public/private bank branch offering SCSS.",
+      "Fill the SCSS Account Opening Form and attach KYC (Aadhaar, PAN, age proof) and nominee details.",
+      "Deposit between ₹1,000 and ₹30 lakh (via cheque/transfer for amounts above ₹1 lakh).",
+      "Receive quarterly interest automatically in your linked savings account on 1st April, July, October, and January."
+    ],
+    "hi": [
+      "किसी भी डाकघर या अधिकृत बैंक शाखा में जाएं।",
+      "SCSS खाता खोलने का फॉर्म भरकर आधार, पैन, आयु प्रमाण और नॉमिनी विवरण दें।",
+      "₹1,000 से ₹30 लाख तक की राशि जमा करें।",
+      "प्रत्येक तिमाही में ब्याज सीधे आपके बचत खाते में जमा होता है।"
+    ],
+    "mr": [
+      "जवळच्या पोस्ट ऑफिसमध्ये किंवा अधिकृत बँक शाखेत जा.",
+      "SCSS खाते उघडण्याचा अर्ज भरून आधार, पॅन, वयाचा पुरावा आणि वारस तपशील जोडा.",
+      "₹1,000 ते ₹30 लाखांपर्यंत रक्कम जमा करा.",
+      "दर तिमाहीस व्याज थेट तुमच्या बचत खात्यात जमा होईल."
+    ]
+  },
+  "officialUrl": "https://www.nsiindia.gov.in",
+  "helpline": "1800-266-6868 (India Post)",
+  "deadlines": {
+    "en": "Open year-round.",
+    "hi": "वर्ष भर खुला।",
+    "mr": "वर्षभर सुरू."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://www.nsiindia.gov.in",
+    "https://www.indiapost.gov.in"
+  ],
+  "needsVerification": true,
+  "tags": [
+    "senior",
+    "savings",
+    "scss",
+    "interest",
+    "retired",
+    "post office",
+    "60+"
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "soil-health-card",
+  "name": {
+    "en": "Soil Health Card Scheme",
+    "hi": "मृदा स्वास्थ्य कार्ड योजना",
+    "mr": "मृदा आरोग्य पत्रिका योजना (Soil Health Card)"
+  },
+  "category": "farmer",
+  "secondaryCategories": [],
+  "benefitType": "subsidy",
+  "benefitHighlight": {
+    "en": "Free soil testing & fertilizer advisory",
+    "hi": "निःशुल्क मिट्टी जांच व उर्वरक सलाह",
+    "mr": "मोफत माती परीक्षण व खत व्यवस्थापन सल्ला"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Agriculture & Farmers Welfare",
+  "summary": {
+    "en": "Provides farmers with free soil testing across 12 nutrient parameters and crop-wise fertilizer recommendations to improve yield and reduce input costs.",
+    "hi": "मिट्टी के 12 पोषक तत्वों की मुफ्त जांच और फसल-वार उर्वरक सिफारिश प्रदान कर उपज बढ़ाने और खर्च घटाने की योजना।",
+    "mr": "जमिनीतील १२ पोषक घटकांची मोफत तपासणी व पीकनिहाय खत मात्रा शिफारस देऊन उत्पादन वाढवणारी योजना."
+  },
+  "benefits": {
+    "en": "Free laboratory testing of soil samples (N, P, K, pH, EC, organic carbon, and micronutrients) plus a digital/printed Soil Health Card with tailored fertilizer dosage.",
+    "hi": "मिट्टी के नमूने की मुफ्त प्रयोगशाला जांच (एनपीके, पीएच, जैविक कार्बन, सूक्ष्म पोषक तत्व) और फसल के अनुसार सटीक खाद सलाह।",
+    "mr": "मातीच्या नमुन्याची मोफत प्रयोगशाळा तपासणी (नत्र, स्फुरद, पालाश, सामू व सूक्ष्म अन्नद्रव्ये) आणि पीकनिहाय खत सल्ला."
+  },
+  "eligibility": {
+    "occupations": [
+      "farmer"
+    ],
+    "customConditions": [
+      {
+        "en": "All farmers across India can get their agricultural soil tested through state agriculture departments or Krishi Vigyan Kendras.",
+        "hi": "भारत के सभी किसान राज्य कृषि विभाग या कृषि विज्ञान केंद्र से मिट्टी जांच करा सकते हैं।",
+        "mr": "देशातील सर्व शेतकरी राज्य कृषी विभाग किंवा कृषी विज्ञान केंद्रामार्फत माती परीक्षण करू शकतात."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "land-7-12",
+      "name": {
+        "en": "Land Ownership Record (7/12 Utara / 8A / Khatauni)",
+        "hi": "भूमि स्वामित्व प्रमाण (खसरा-खतौनी / 7/12 उतारा)",
+        "mr": "जमीन मालकीचा पुरावा (७/१२ उतारा आणि ८-अ)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "mobile-aadhaar",
+      "name": {
+        "en": "Active Mobile Number linked with Aadhaar",
+        "hi": "आधार से जुड़ा सक्रिय मोबाइल नंबर",
+        "mr": "आधारशी संलग्न सक्रिय मोबाईल क्रमांक"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Contact your village Krishi Sahayak, Taluka Agriculture Office, or nearest Soil Testing Laboratory.",
+      "Collect and submit a soil sample from your farm as guided.",
+      "Track and download your Soil Health Card online at soilhealth.dac.gov.in using your registered mobile number or farmer details."
+    ],
+    "hi": [
+      "अपने गांव के कृषि सहायक, तालुका कृषि कार्यालय या नजदीकी मृदा परीक्षण प्रयोगशाला से संपर्क करें।",
+      "निर्देशानुसार अपने खेत से मिट्टी का नमूना जमा करें।",
+      "soilhealth.dac.gov.in पर मोबाइल नंबर या किसान विवरण से अपना मृदा स्वास्थ्य कार्ड डाउनलोड करें।"
+    ],
+    "mr": [
+      "तुमच्या गावातील कृषी सहायक, तालुका कृषी कार्यालय किंवा जवळच्या माती परीक्षण प्रयोगशाळेशी संपर्क साधा.",
+      "मार्गदर्शनानुसार शेतातील मातीचा नमुना तपासणीसाठी जमा करा.",
+      "soilhealth.dac.gov.in पोर्टलवरून तुमची मृदा आरोग्य पत्रिका ऑनलाइन डाउनलोड करा."
+    ]
+  },
+  "officialUrl": "https://soilhealth.dac.gov.in",
+  "helpline": "1800-180-1551 (Kisan Call Centre)",
+  "deadlines": {
+    "en": "Open year-round (recommended before Kharif or Rabi sowing).",
+    "hi": "वर्ष भर उपलब्ध (बुवाई से पहले जांच कराना श्रेष्ठ है)।",
+    "mr": "वर्षभर उपलब्ध (खरीप किंवा रब्बी पेरणीपूर्वी तपासणी करणे फायदेशीर)."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://soilhealth.dac.gov.in"
+  ],
+  "needsVerification": false,
+  "tags": [
+    "farmer",
+    "soil",
+    "testing",
+    "fertilizer",
+    "agriculture",
+    "free"
+  ]
+}

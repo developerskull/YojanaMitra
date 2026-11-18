@@ -1,0 +1,141 @@
+{
+  "id": "maharashtra-annasaheb-patil-loan",
+  "name": {
+    "en": "Annasaheb Patil Economic Development Corp Interest Subvention Loan (Maharashtra)",
+    "hi": "अण्णासाहेब पाटील आर्थिक विकास महामंडल ब्याज प्रतिपूर्ति ऋण योजना (महाराष्ट्र)",
+    "mr": "अण्णासाहेब पाटील आर्थिक मागास विकास महामंडळ व्याज परतावा कर्ज योजना (महाराष्ट्र)"
+  },
+  "category": "worker",
+  "secondaryCategories": [
+    "woman",
+    "farmer"
+  ],
+  "benefitType": "loan",
+  "benefitHighlight": {
+    "en": "Interest reimbursement on business loans up to ₹15L (Individual)*",
+    "hi": "₹15 लाख तक के व्यवसाय ऋण पर ब्याज प्रतिपूर्ति (महाराष्ट्र)*",
+    "mr": "₹15 लाखांपर्यंतच्या व्यवसाय कर्जावर व्याज परतावा (महाराष्ट्र)*"
+  },
+  "level": "state",
+  "state": "Maharashtra",
+  "ministry": "Skill, Employment, Entrepreneurship & Innovation Dept, Govt of Maharashtra",
+  "summary": {
+    "en": "Provides bank interest reimbursement (up to 12% p.a.) on business loans up to ₹15 lakh (individual) or ₹50 lakh (group) for economically weaker youth and entrepreneurs in Maharashtra.",
+    "hi": "महाराष्ट्र के आर्थिक रूप से पिछड़े वर्ग के युवाओं और उद्यमियों को ₹15 लाख (व्यक्तिगत) या ₹50 लाख (समूह) के बैंक व्यवसाय ऋण पर 12% तक ब्याज प्रतिपूर्ति।",
+    "mr": "महाराष्ट्रातील आर्थिकदृष्ट्या दुर्बल घटकातील तरुण व उद्योजकांना ₹15 लाख (वैयक्तिक) किंवा ₹50 लाख (गट) बँक व्यवसाय कर्जावर १२% पर्यंत व्याज परतावा."
+  },
+  "benefits": {
+    "en": "Reimbursement of bank interest (up to 12% p.a., capped at ₹4.5 lakh over up to 5 years for individual loans up to ₹15 lakh) credited directly to borrower’s account upon timely EMI payment. Verify latest caps on udyog.mahaswayam.gov.in.",
+    "hi": "समय पर किस्त भुगतान पर ₹15 लाख तक के व्यक्तिगत ऋण पर 12% वार्षिक तक (अधिकतम ₹4.5 लाख, 5 वर्ष) ब्याज की सीधी प्रतिपूर्ति। नवीनतम शर्तें पोर्टल पर जांचें।",
+    "mr": "वेळेवर हप्ते भरल्यास ₹15 लाखांपर्यंतच्या वैयक्तिक कर्जावर १२% वार्षिक दराने (कमाल ₹4.5 लाख, ५ वर्षे) व्याज परतावा थेट खात्यात. अद्ययावत अटी पोर्टलवर तपासा."
+  },
+  "eligibility": {
+    "minAge": 18,
+    "maxAge": 50,
+    "states": [
+      "Maharashtra"
+    ],
+    "occupations": [
+      "entrepreneur",
+      "unemployed",
+      "farmer",
+      "artisan"
+    ],
+    "maxAnnualIncome": 800000,
+    "customConditions": [
+      {
+        "en": "Maharashtra domicile belonging to economically weaker / open / Maratha / non-reserved categories with annual family income ≤ ₹8 lakh (age up to 50 for men, 55 for women) and no prior benefit from another state corporation.",
+        "hi": "महाराष्ट्र अधिवासी (वार्षिक आय ≤ ₹8 लाख), आयु सीमा पुरुष 50 व महिला 55 वर्ष तक।",
+        "mr": "महाराष्ट्र अधिवासी (कौटुंबिक उत्पन्न ≤ ₹8 लाख), वयोमर्यादा पुरुष ५० व महिला ५५ वर्षांपर्यंत."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "domicile-certificate",
+      "name": {
+        "en": "State Domicile / Residence Certificate",
+        "hi": "निवास प्रमाण पत्र (डोमिसाइल)",
+        "mr": "महाराष्ट्र अधिवास प्रमाणपत्र (डोमिसाईल)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "income-certificate",
+      "name": {
+        "en": "Income Certificate (issued by Tehsildar / Competent Authority)",
+        "hi": "आय प्रमाण पत्र (तहसीलदार / सक्षम अधिकारी द्वारा जारी)",
+        "mr": "उत्पन्नाचा दाखला (तहसीलदार / सक्षम प्राधिकारी)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "business-plan",
+      "name": {
+        "en": "Project Report / Business Plan & Identity Proof (PAN/Voter ID)",
+        "hi": "प्रोजेक्ट रिपोर्ट / व्यवसाय योजना एवं पहचान पत्र (पैन/वोटर आईडी)",
+        "mr": "व्यवसाय प्रकल्प अहवाल व ओळखपत्र (पॅन/मतदार ओळखपत्र)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Register on udyog.mahaswayam.gov.in and apply for the Letter of Intent (LOI) under Individual or Group Interest Subvention Scheme.",
+      "Upload Aadhaar, Maharashtra domicile, income certificate (≤ ₹8 lakh), and project proposal.",
+      "Download approved LOI and approach any nationalized/scheduled/cooperative bank for business loan sanction.",
+      "Upload bank sanction and monthly EMI statements on the portal to receive regular interest reimbursement."
+    ],
+    "hi": [
+      "udyog.mahaswayam.gov.in पर पंजीकरण करें और व्यक्तिगत/समूह ब्याज प्रतिपूर्ति योजना के तहत LOI के लिए आवेदन करें।",
+      "आधार, अधिवास, आय प्रमाण पत्र (≤ ₹8 लाख) और प्रोजेक्ट रिपोर्ट अपलोड करें।",
+      "मंजूर LOI लेकर किसी भी राष्ट्रीयकृत/सहकारी बैंक से व्यवसाय ऋण स्वीकृत कराएं।",
+      "नियमित किस्त प्रमाण अपलोड कर बैंक खाते में ब्याज प्रतिपूर्ति प्राप्त करें।"
+    ],
+    "mr": [
+      "udyog.mahaswayam.gov.in पोर्टलवर नोंदणी करून वैयक्तिक किंवा गट व्याज परतावा योजनेअंतर्गत पात्रता प्रमाणपत्रासाठी (LOI) अर्ज करा.",
+      "आधार, अधिवास, उत्पन्नाचा दाखला (≤ ₹8 लाख) आणि व्यवसाय प्रकल्प अहवाल अपलोड करा.",
+      "मंजूर LOI घेऊन राष्ट्रीयीकृत/सहकारी बँकेकडून व्यवसाय कर्ज मंजूर करून घ्या.",
+      "बँकेचे हप्ते नियमित भरून पोर्टलवर विवरण अपलोड केल्यावर व्याज परतावा थेट खात्यात जमा होतो."
+    ]
+  },
+  "officialUrl": "https://udyog.mahaswayam.gov.in",
+  "helpline": "022-22612516 / District Skill Office",
+  "deadlines": {
+    "en": "Open year-round on MahaSwayam portal.",
+    "hi": "महास्वयं पोर्टल पर वर्ष भर खुला।",
+    "mr": "महास्वयं पोर्टलवर वर्षभर सुरू."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://udyog.mahaswayam.gov.in"
+  ],
+  "needsVerification": true,
+  "tags": [
+    "maharashtra",
+    "loan",
+    "entrepreneur",
+    "youth",
+    "annasaheb patil",
+    "interest free",
+    "business"
+  ]
+}

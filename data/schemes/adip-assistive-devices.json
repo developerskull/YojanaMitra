@@ -1,0 +1,125 @@
+{
+  "id": "adip-assistive-devices",
+  "name": {
+    "en": "ADIP Scheme (Free / Subsidized Aids & Appliances for Divyangjan)",
+    "hi": "एडिप (ADIP) योजना (दिव्यांगजनों के लिए निःशुल्क सहायक उपकरण)",
+    "mr": "ADIP योजना (दिव्यांगांसाठी मोफत / अनुदानित सहाय्यक साधने)"
+  },
+  "category": "disabled",
+  "secondaryCategories": [
+    "student",
+    "senior"
+  ],
+  "benefitType": "equipment",
+  "benefitHighlight": {
+    "en": "100% free aids (income ≤ ₹22,500/mo) incl. motorized tricycles",
+    "hi": "निःशुल्क सहायक उपकरण (आय ≤ ₹22,500/माह) — मोटराइज्ड ट्राईसाइकिल सहित",
+    "mr": "मोफत सहाय्यक साधने (उत्पन्न ≤ ₹22,500/महिना) — मोटारसायकल ट्रायसिकलसह"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Social Justice & Empowerment (DEPwD)",
+  "summary": {
+    "en": "Provides durable, modern, scientifically manufactured assistive aids and appliances (motorized tricycles, wheelchairs, hearing aids, prosthetic limbs, Braille kits, smart canes) free or at 50% subsidy to Divyangjan.",
+    "hi": "दिव्यांगजनों को आधुनिक और टिकाऊ सहायक उपकरण (मोटराइज्ड ट्राईसाइकिल, व्हीलचेयर, श्रवण यंत्र, कृत्रिम अंग, ब्रेल किट, स्मार्ट केन) निःशुल्क या 50% सब्सिडी पर प्रदान करने की योजना।",
+    "mr": "दिव्यांग नागरिकांना आधुनिक व टिकाऊ सहाय्यक साधने (मोटराइज्ड ट्रायसिकल, व्हीलचेअर, श्रवणयंत्र, कृत्रिम अवयव, ब्रेल संच, स्मार्ट काठी) मोफत किंवा ५०% अनुदानावर देणारी योजना."
+  },
+  "benefits": {
+    "en": "100% free assistive devices for persons with monthly income up to ₹22,500 (₹2.70 lakh/year), and 50% subsidy for monthly income between ₹22,501 and ₹30,000 (₹3.60 lakh/year). Includes motorized tricycles, cochlear implants (for children), wheelchairs, and hearing aids.",
+    "hi": "₹22,500/माह तक आय वालों को 100% निःशुल्क उपकरण और ₹22,501–₹30,000/माह आय वालों को 50% सब्सिडी। मोटराइज्ड ट्राईसाइकिल, व्हीलचेयर, श्रवण यंत्र व कृत्रिम अंग शामिल।",
+    "mr": "मासिक उत्पन्न ₹22,500 पर्यंत असल्यास १००% मोफत साधने आणि ₹22,501 ते ₹30,000 असल्यास ५०% अनुदान. मोटराइज्ड ट्रायसिकल, व्हीलचेअर, श्रवणयंत्रे व कृत्रिम अवयवांचा समावेश."
+  },
+  "eligibility": {
+    "disabilityRequired": true,
+    "minDisabilityPercent": 40,
+    "maxAnnualIncome": 360000,
+    "customConditions": [
+      {
+        "en": "Indian citizen with ≥40% benchmark disability (UDID card / Medical Board certificate), monthly income ≤ ₹22,500 for 100% subsidy (or ≤ ₹30,000 for 50% subsidy), and not received the same aid in the last 3 years.",
+        "hi": "कम से कम 40% दिव्यांगता प्रमाण पत्र (UDID), मासिक आय ≤ ₹22,500 (100% छूट) या ≤ ₹30,000 (50% छूट), और पिछले 3 वर्षों में वही उपकरण न लिया हो।",
+        "mr": "किमान ४०% दिव्यांगत्व (UDID कार्ड), मासिक उत्पन्न ≤ ₹22,500 (१००% मोफत) किंवा ≤ ₹30,000 (५०% अनुदान) आणि गेल्या ३ वर्षांत तेच साधन घेतलेले नसावे."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "udid-card",
+      "name": {
+        "en": "Disability Certificate / UDID Card (Medical Board)",
+        "hi": "दिव्यांगता प्रमाण पत्र / यूडीआईडी कार्ड (मेडिकल बोर्ड)",
+        "mr": "दिव्यांग प्रमाणपत्र / यूडीआयडी कार्ड (वैद्यकीय मंडळ)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "income-certificate",
+      "name": {
+        "en": "Income Certificate (issued by Tehsildar / Competent Authority)",
+        "hi": "आय प्रमाण पत्र (तहसीलदार / सक्षम अधिकारी द्वारा जारी)",
+        "mr": "उत्पन्नाचा दाखला (तहसीलदार / सक्षम प्राधिकारी)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "passport-photo",
+      "name": {
+        "en": "Passport-size Photographs",
+        "hi": "पासपोर्ट साइज फोटो",
+        "mr": "पासपोर्ट आकाराचे फोटो"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Register online via ALIMCO portal (alimco.in) or attend a District Social Welfare / ALIMCO assessment camp.",
+      "Bring your UDID Card / ≥40% Disability Certificate, Income Certificate (from Tehsildar/MP/MLA/Gram Pradhan as accepted), and Aadhaar.",
+      "Undergo technical assessment by ALIMCO rehabilitation professionals.",
+      "Collect customized assistive aids free of cost at the distribution camp or designated center."
+    ],
+    "hi": [
+      "alimco.in पोर्टल पर ऑनलाइन पंजीकरण करें या जिला समाज कल्याण / एलिम्को शिविर में जाएं।",
+      "अपना UDID कार्ड (≥40% दिव्यांगता), आय प्रमाण पत्र और आधार साथ लाएं।",
+      "एलिम्को विशेषज्ञों द्वारा तकनीकी मूल्यांकन कराएं।",
+      "वितरण शिविर में निःशुल्क उपकरण प्राप्त करें।"
+    ],
+    "mr": [
+      "alimco.in पोर्टलवर ऑनलाइन नोंदणी करा किंवा जिल्हा समाज कल्याण / ALIMCO तपासणी शिबिरात सहभागी व्हा.",
+      "तुमचे UDID कार्ड (≥४०% दिव्यांगत्व), उत्पन्नाचा दाखला आणि आधार कार्ड सोबत ठेवा.",
+      "ALIMCO तज्ज्ञांकडून आवश्यक उपकरणाची तपासणी करून घ्या.",
+      "वितरण शिबिरात किंवा केंद्रावर मोफत सहाय्यक साधने मिळवा."
+    ]
+  },
+  "officialUrl": "https://www.alimco.in",
+  "helpline": "1800-180-5129 (ALIMCO Helpline)",
+  "deadlines": {
+    "en": "Open year-round via ALIMCO centers and periodic district camps.",
+    "hi": "एलिम्को केंद्रों व जिला शिविरों के माध्यम से वर्ष भर उपलब्ध।",
+    "mr": "ALIMCO केंद्रे व जिल्हास्तरीय शिबिरांद्वारे वर्षभर उपलब्ध."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://www.alimco.in",
+    "https://depwd.gov.in/adip"
+  ],
+  "needsVerification": false,
+  "tags": [
+    "disabled",
+    "divyang",
+    "adip",
+    "tricycle",
+    "wheelchair",
+    "hearing aid",
+    "prosthetic",
+    "alimco"
+  ]
+}

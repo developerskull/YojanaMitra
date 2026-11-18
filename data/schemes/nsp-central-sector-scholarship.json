@@ -1,0 +1,138 @@
+{
+  "id": "nsp-central-sector-scholarship",
+  "name": {
+    "en": "PM-USP Central Sector Scheme of Scholarship for College & University Students",
+    "hi": "पीएम-यूएसपी केंद्रीय क्षेत्र कॉलेज एवं विश्वविद्यालय छात्रवृत्ति योजना",
+    "mr": "केंद्रीय क्षेत्र महाविद्यालय व विद्यापीठ शिष्यवृत्ती योजना (NSP)"
+  },
+  "category": "student",
+  "secondaryCategories": [],
+  "benefitType": "scholarship",
+  "benefitHighlight": {
+    "en": "₹12,000/yr (UG) & ₹20,000/yr (PG) merit scholarship",
+    "hi": "₹12,000/वर्ष (स्नातक) व ₹20,000/वर्ष (परास्नातक) छात्रवृत्ति",
+    "mr": "₹12,000/वर्ष (पदवी) व ₹20,000/वर्ष (पदव्युत्तर) शिष्यवृत्ती"
+  },
+  "level": "central",
+  "state": "All India",
+  "ministry": "Ministry of Education (Department of Higher Education)",
+  "summary": {
+    "en": "Merit-cum-means scholarship on the National Scholarship Portal (NSP) for students above the 80th percentile in Class 12 board exams pursuing regular undergraduate or postgraduate courses.",
+    "hi": "कक्षा 12वीं बोर्ड में 80वें पर्सेंटाइल से ऊपर अंक पाने वाले मेधावी छात्रों के लिए राष्ट्रीय छात्रवृत्ति पोर्टल (NSP) पर कॉलेज व विश्वविद्यालय छात्रवृत्ति।",
+    "mr": "इयत्ता १२ वीच्या परीक्षेत ८० पर्सेंटाईलपेक्षा अधिक गुण मिळवून नियमित पदवी/पदव्युत्तर शिक्षण घेणाऱ्या विद्यार्थ्यांसाठी राष्ट्रीय शिष्यवृत्ती (NSP)."
+  },
+  "benefits": {
+    "en": "₹12,000 per annum during the first three years of graduation and ₹20,000 per annum at postgraduate level (and 4th/5th year of integrated/technical courses), paid directly via DBT.",
+    "hi": "स्नातक के पहले तीन वर्षों के लिए ₹12,000 प्रति वर्ष और परास्नातक (तथा 4थे/5वें वर्ष के तकनीकी/एकीकृत पाठ्यक्रम) के लिए ₹20,000 प्रति वर्ष सीधे DBT द्वारा।",
+    "mr": "पदवीच्या पहिल्या तीन वर्षांसाठी दरवर्षी ₹12,000 आणि पदव्युत्तर (तसेच ४थ्या/५व्या वर्षाच्या व्यावसायिक अभ्यासक्रमासाठी) दरवर्षी ₹20,000 थेट बँक खात्यात."
+  },
+  "eligibility": {
+    "minAge": 17,
+    "maxAge": 28,
+    "occupations": [
+      "student"
+    ],
+    "educationLevels": [
+      "higher_secondary",
+      "undergraduate",
+      "postgraduate"
+    ],
+    "maxAnnualIncome": 450000,
+    "customConditions": [
+      {
+        "en": "Must be above the 80th percentile of successful candidates in Class 12 board examination, enrolled in a regular recognized degree course, with gross parental income ≤ ₹4.5 lakh/year, and not availing any other scholarship.",
+        "hi": "कक्षा 12वीं में 80वें पर्सेंटाइल से अधिक अंक, नियमित मान्यता प्राप्त डिग्री कोर्स में प्रवेश, पारिवारिक आय ≤ ₹4.5 लाख और कोई अन्य छात्रवृत्ति न ले रहे हों।",
+        "mr": "१२ वीच्या मंडळ परीक्षेत ८० पर्सेंटाईलपेक्षा जास्त गुण, मान्यताप्राप्त नियमित अभ्यासक्रमात प्रवेश, कौटुंबिक उत्पन्न ≤ ₹4.5 लाख आणि इतर कोणतीही शिष्यवृत्ती नसावी."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": {
+        "en": "Aadhaar Card",
+        "hi": "आधार कार्ड",
+        "mr": "आधार कार्ड"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "marksheet",
+      "name": {
+        "en": "Previous Exam Marksheet / Bonafide Student Certificate",
+        "hi": "पिछली परीक्षा की मार्कशीट / बोनाफाइड प्रमाण पत्र",
+        "mr": "मागील परीक्षेची गुणपत्रिका / बोनाफाईड प्रमाणपत्र"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "income-certificate",
+      "name": {
+        "en": "Income Certificate (issued by Tehsildar / Competent Authority)",
+        "hi": "आय प्रमाण पत्र (तहसीलदार / सक्षम अधिकारी द्वारा जारी)",
+        "mr": "उत्पन्नाचा दाखला (तहसीलदार / सक्षम प्राधिकारी)"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "bank-passbook",
+      "name": {
+        "en": "Aadhaar-linked Bank Account Passbook / Cancelled Cheque",
+        "hi": "आधार से जुड़ा बैंक खाता पासबुक / रद्द चेक",
+        "mr": "आधार संलग्न बँक खाते पासबुक / रद्द धनादेश"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "college-fee-receipt",
+      "name": {
+        "en": "College Admission Letter & Fee Receipt (CAP Allotment)",
+        "hi": "कॉलेज प्रवेश पत्र एवं शुल्क रसीद",
+        "mr": "महाविद्यालय प्रवेश पत्र (CAP अलॉटमेंट) व फी पावती"
+      },
+      "mandatory": true
+    }
+  ],
+  "applicationSteps": {
+    "en": [
+      "Complete One-Time Registration (OTR) on the National Scholarship Portal (scholarships.gov.in) using Aadhaar face authentication.",
+      "Log in with your OTR ID, select \"PM-USP Central Sector Scheme of Scholarship\", and fill academic & family income details.",
+      "Upload Class 12 marksheet, income certificate, and bank details; submit before the annual portal deadline.",
+      "Get your application verified online by your college/university Nodal Officer for DBT release."
+    ],
+    "hi": [
+      "राष्ट्रीय छात्रवृत्ति पोर्टल (scholarships.gov.in) पर आधार फेस ऑथेंटिकेशन से One-Time Registration (OTR) पूरा करें।",
+      "OTR आईडी से लॉगिन कर \"Central Sector Scheme of Scholarship\" चुनें और शैक्षणिक व आय विवरण भरें।",
+      "12वीं की मार्कशीट व आय प्रमाण पत्र अपलोड करें और अंतिम तिथि से पहले जमा करें।",
+      "डीबीटी भुगतान के लिए अपने कॉलेज नोडल अधिकारी से ऑनलाइन सत्यापन कराएं।"
+    ],
+    "mr": [
+      "नॅशनल स्कॉलरशिप पोर्टलवर (scholarships.gov.in) आधार फेस ऑथेंटिकेशनद्वारे One-Time Registration (OTR) करा.",
+      "OTR आयडीने लॉगिन करून \"Central Sector Scheme of Scholarship\" निवडा आणि शैक्षणिक व उत्पन्नाचा तपशील भरा.",
+      "१२ वी गुणपत्रिका व उत्पन्नाचा दाखला अपलोड करून मुदतीपूर्वी अर्ज सादर करा.",
+      "तुमच्या महाविद्यालयाच्या नोडल अधिकाऱ्याकडून ऑनलाइन पडताळणी पूर्ण करून घ्या."
+    ]
+  },
+  "officialUrl": "https://scholarships.gov.in",
+  "helpline": "0120-6619540 (NSP Helpdesk)",
+  "deadlines": {
+    "en": "Annual academic cycle on NSP (typically July–October; verify exact dates on scholarships.gov.in).",
+    "hi": "NSP पर वार्षिक शैक्षणिक चक्र (आमतौर पर जुलाई–अक्टूबर; scholarships.gov.in पर सटीक तिथि देखें)।",
+    "mr": "NSP वर वार्षिक शैक्षणिक मुदत (साधारण जुलै–ऑक्टोबर; scholarships.gov.in वर अद्ययावत तारीख तपासा)."
+  },
+  "lastVerified": "2026-11-18",
+  "sourceUrls": [
+    "https://scholarships.gov.in",
+    "https://www.education.gov.in"
+  ],
+  "needsVerification": true,
+  "tags": [
+    "student",
+    "scholarship",
+    "nsp",
+    "college",
+    "merit",
+    "undergraduate",
+    "postgraduate"
+  ]
+}
