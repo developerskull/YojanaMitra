@@ -6,6 +6,7 @@ const KEYS = {
   lang: 'yojanamitra_lang',
   profile: 'yojanamitra_profile',
   savedSchemes: 'yojanamitra_saved_schemes',
+  appliedSchemes: 'yojanamitra_applied_schemes',
   compareSchemes: 'yojanamitra_compare_schemes',
   checkedDocs: 'yojanamitra_checked_docs',
   theme: 'yojanamitra_theme',
@@ -70,6 +71,25 @@ export function toggleSavedSchemeId(id: string): string[] {
   const current = getSavedSchemeIds();
   const next = current.includes(id) ? current.filter((x) => x !== id) : [...current, id];
   safeSet(KEYS.savedSchemes, JSON.stringify(next));
+  return next;
+}
+
+export function getAppliedSchemeIds(): string[] {
+  const raw = safeGet(KEYS.appliedSchemes);
+  if (!raw) return [];
+  try {
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed.filter((x): x is string => typeof x === 'string') : [];
+  } catch {
+    return [];
+  }
+}
+
+export function addAppliedSchemeId(id: string): string[] {
+  const current = getAppliedSchemeIds();
+  if (current.includes(id)) return current;
+  const next = [...current, id];
+  safeSet(KEYS.appliedSchemes, JSON.stringify(next));
   return next;
 }
 
@@ -139,6 +159,7 @@ export function clearAllUserData(): void {
   try {
     window.localStorage.removeItem(KEYS.profile);
     window.localStorage.removeItem(KEYS.savedSchemes);
+    window.localStorage.removeItem(KEYS.appliedSchemes);
     window.localStorage.removeItem(KEYS.compareSchemes);
     window.localStorage.removeItem(KEYS.checkedDocs);
     window.dispatchEvent(new Event('yojanamitra:storage'));

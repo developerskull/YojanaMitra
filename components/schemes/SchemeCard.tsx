@@ -27,6 +27,8 @@ import type { EligibilityEvaluation } from '@/lib/eligibility/engine';
 import { useI18n } from '@/lib/i18n/context';
 import type { Scheme } from '@/lib/schemes/schema';
 import {
+  addAppliedSchemeId,
+  getAppliedSchemeIds,
   getCheckedDocIds,
   getCompareSchemeIds,
   getSavedSchemeIds,
@@ -44,6 +46,24 @@ export interface SchemeCardProps {
   defaultExpanded?: boolean;
 }
 
+function extractAnnualBenefit(scheme: Scheme): number {
+  const en = (scheme.benefitHighlight.en || '').toLowerCase();
+  if (en.includes('5 lakh')) return 500000;
+  if (en.includes('3 lakh')) return 300000;
+  if (en.includes('2.5 lakh')) return 250000;
+  if (en.includes('1.5 lakh')) return 150000;
+  if (en.includes('1.2 lakh')) return 120000;
+  if (en.includes('1,500 / month') || en.includes('1500 / month')) return 18000;
+  if (en.includes('6,000')) return 6000;
+  if (en.includes('30,000')) return 30000;
+  if (en.includes('20,000')) return 20000;
+  if (en.includes('50,000')) return 50000;
+  if (en.includes('10,000')) return 10000;
+  if (en.includes('3,000')) return 3000;
+  if (en.includes('1,000 / month')) return 12000;
+  return 10000;
+}
+
 export function SchemeCard({
   scheme,
   evaluation,
@@ -58,17 +78,46 @@ export function SchemeCard({
   const [comparing, setComparing] = useState(false);
   const [checkedDocs, setCheckedDocs] = useState<string[]>([]);
   const [speaking, setSpeaking] = useState(false);
+  const [applied, setApplied] = useState(false);
+  const [applying, setApplying] = useState(false);
 
   useEffect(() => {
     const sync = () => {
       setSaved(getSavedSchemeIds().includes(scheme.id));
       setComparing(getCompareSchemeIds().includes(scheme.id));
       setCheckedDocs(getCheckedDocIds());
+      setApplied(getAppliedSchemeIds().includes(scheme.id));
     };
     sync();
     window.addEventListener('yojanamitra:storage', sync);
     return () => window.removeEventListener('yojanamitra:storage', sync);
   }, [scheme.id]);
+
+  const handleTrackApplication = async () => {
+    if (applied || applying) return;
+    setApplying(true);
+    addAppliedSchemeId(scheme.id);
+    setApplied(true);
+    try {
+      await fetch('/api/applications', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          schemeId: scheme.id,
+          schemeName: scheme.name,
+          category: scheme.category,
+          benefitType: scheme.benefitType,
+          benefitHighlight: scheme.benefitHighlight,
+          estimatedAnnualBenefit: extractAnnualBenefit(scheme),
+          status: 'applied',
+        }),
+      });
+    } catch {
+      // Offline fallback: already marked in local storage
+    } finally {
+      setApplying(false);
+    }
+  };
 
   const status = evaluation?.status;
   const badgeVariant =
@@ -174,6 +223,15 @@ export function SchemeCard({
             {citationId && (
               <Badge variant="default" className="font-mono">
                 [{citationId}]
+              </Badge>
+            )}
+            {applied && (
+              <Badge
+                variant="teal"
+                className="gap-1 border-emerald-500/40 bg-emerald-500/15 text-emerald-800 dark:text-emerald-300"
+              >
+                <CheckCircle2 className="h-3.5 w-3.5" />
+                <span>{lang === 'mr' ? 'अर्ज नोंदवला' : lang === 'hi' ? 'आवेदन दर्ज' : 'Applied'}</span>
               </Badge>
             )}
           </div>
@@ -342,6 +400,31 @@ export function SchemeCard({
 
         <Button
           type="button"
+          variant={applied ? 'secondary' : 'outline'}
+          size="sm"
+          onClick={() => void handleTrackApplication()}
+          disabled={applying}
+          aria-pressed={applied}
+          className={cn(applied && 'border-emerald-500/40 text-emerald-800 dark:text-emerald-300')}
+        >
+          <CheckCircle2 className="h-4 w-4" />
+          <span>
+            {applied
+              ? lang === 'mr'
+                ? 'अर्ज नोंदवला'
+                : lang === 'hi'
+                  ? 'आवेदन दर्ज'
+                  : 'Applied'
+              : lang === 'mr'
+                ? 'अर्ज ट्रॅक करा'
+                : lang === 'hi'
+                  ? 'आवेदन ट्रैक करें'
+                  : 'Track Application'}
+          </span>
+        </Button>
+
+        <Button
+          type="button"
           variant={saved ? 'secondary' : 'outline'}
           size="sm"
           onClick={handleSave}
@@ -363,11 +446,7 @@ export function SchemeCard({
         </Button>
 
         <Button asChild variant="outline" size="sm">
-          <a
-            href={`https://wa.me/?text=${whatsappText}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={`https://wa.me/?text=${whatsappText}`} target="_blank" rel="noopener noreferrer">
             <Share2 className="h-4 w-4" aria-hidden="true" />
             <span className="hidden sm:inline">{c.shareWhatsApp}</span>
             <span className="sm:hidden">WhatsApp</span>
