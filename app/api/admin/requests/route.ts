@@ -14,7 +14,7 @@ export async function GET() {
     return NextResponse.json({ error: 'Administrator access required' }, { status: 403 });
   }
 
-  const records = getRequestLogStore().list(250);
+  const records = await getRequestLogStore().list(250);
   const registeredCitizens = getUserStore().countUsers();
 
   const totalRequests = records.length;
@@ -73,6 +73,6 @@ export async function DELETE() {
   if (!session || session.role !== 'admin') {
     return NextResponse.json({ error: 'Administrator access required' }, { status: 403 });
   }
-  getRequestLogStore().clear();
+  await getRequestLogStore().clear();
   return NextResponse.json({ ok: true });
 }

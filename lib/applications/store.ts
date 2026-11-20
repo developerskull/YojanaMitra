@@ -1,6 +1,7 @@
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
+import { getSupabaseServer, isSupabaseConfigured } from '@/lib/supabase/server';
 
 export type ApplicationStatus =
   'applied' | 'under_review' | 'approved' | 'benefit_received' | 'rejected';
@@ -70,16 +71,22 @@ export interface ApplicationStore {
     input: Omit<SchemeApplication, 'id' | 'appliedAt' | 'updatedAt' | 'status'> & {
       status?: ApplicationStatus;
     }
-  ): SchemeApplication;
+  ): SchemeApplication | Promise<SchemeApplication>;
   listApplications(filter?: {
     userId?: string;
     schemeId?: string;
     status?: ApplicationStatus;
-  }): SchemeApplication[];
-  getApplicationById(id: string): SchemeApplication | undefined;
-  updateStatus(id: string, status: ApplicationStatus, notes?: string): SchemeApplication | null;
-  getStats(): ApplicationStats;
-  clear(): void;
+  }): SchemeApplication[] | Promise<SchemeApplication[]>;
+  getApplicationById(
+    id: string
+  ): SchemeApplication | undefined | Promise<SchemeApplication | undefined>;
+  updateStatus(
+    id: string,
+    status: ApplicationStatus,
+    notes?: string
+  ): SchemeApplication | null | Promise<SchemeApplication | null>;
+  getStats(): ApplicationStats | Promise<ApplicationStats>;
+  clear(): void | Promise<void>;
 }
 
 const MAX_APPLICATIONS = 1000;
@@ -385,107 +392,7 @@ class FileBackedApplicationStore implements ApplicationStore {
   }
 
   getStats(): ApplicationStats {
-    const totalApplications = this.applications.length;
-    const uniqueUsers = new Set(this.applications.map((a) => a.userId)).size;
-
-    let totalPotentialBenefitValue = 0;
-    let totalRealizedBenefitValue = 0;
-
-    const byStatus: Record<ApplicationStatus, number> = {
-      applied: 0,
-      under_review: 0,
-      approved: 0,
-      benefit_received: 0,
-      rejected: 0,
-    };
-
-    const schemeMap = new Map<
-      string,
-      {
-        schemeId: string;
-        schemeName: string;
-        category: string;
-        unitBenefit: number;
-        applicationCount: number;
-        approvedCount: number;
-        totalPotentialBenefit: number;
-        realizedBenefit: number;
-      }
-    >();
-
-    const categoryMap = new Map<string, { count: number; totalBenefit: number }>();
-
-    for (const app of this.applications) {
-      const val = app.estimatedAnnualBenefit || 0;
-      totalPotentialBenefitValue += val;
-
-      if (app.status === 'approved' || app.status === 'benefit_received') {
-        totalRealizedBenefitValue += val;
-      }
-
-      byStatus[app.status] = (byStatus[app.status] ?? 0) + 1;
-
-      // Group by scheme
-      const existingScheme = schemeMap.get(app.schemeId) ?? {
-        schemeId: app.schemeId,
-        schemeName: app.schemeName.en,
-        category: app.category,
-        unitBenefit: val,
-        applicationCount: 0,
-        approvedCount: 0,
-        totalPotentialBenefit: 0,
-        realizedBenefit: 0,
-      };
-
-      existingScheme.applicationCount += 1;
-      existingScheme.totalPotentialBenefit += val;
-      if (app.status === 'approved' || app.status === 'benefit_received') {
-        existingScheme.approvedCount += 1;
-        existingScheme.realizedBenefit += val;
-      }
-      schemeMap.set(app.schemeId, existingScheme);
-
-      // Group by category
-      const existingCat = categoryMap.get(app.category) ?? { count: 0, totalBenefit: 0 };
-      existingCat.count += 1;
-      existingCat.totalBenefit += val;
-      categoryMap.set(app.category, existingCat);
-    }
-
-    // Sort most beneficial schemes by total potential benefit descending
-    const mostBeneficialSchemes = Array.from(schemeMap.values()).sort(
-      (a, b) => b.totalPotentialBenefit - a.totalPotentialBenefit
-    );
-
-    // Sort top applied schemes by application volume descending
-    const topAppliedSchemes = Array.from(schemeMap.values())
-      .map((s) => ({
-        schemeId: s.schemeId,
-        schemeName: s.schemeName,
-        category: s.category,
-        count: s.applicationCount,
-        totalBenefit: s.totalPotentialBenefit,
-      }))
-      .sort((a, b) => b.count - a.count);
-
-    const categoryBreakdown = Array.from(categoryMap.entries())
-      .map(([cat, data]) => ({
-        category: cat,
-        applicationsCount: data.count,
-        totalBenefitValue: data.totalBenefit,
-      }))
-      .sort((a, b) => b.totalBenefitValue - a.totalBenefitValue);
-
-    return {
-      totalApplications,
-      totalUniqueUsers: uniqueUsers,
-      totalPotentialBenefitValue,
-      totalRealizedBenefitValue,
-      byStatus,
-      mostBeneficialSchemes,
-      topAppliedSchemes,
-      categoryBreakdown,
-    };
+    return computeStatsFromApplications(this.applications);
   }
 
   clear(): void {
@@ -494,11 +401,296 @@ class FileBackedApplicationStore implements ApplicationStore {
   }
 }
 
+export function computeStatsFromApplications(applications: SchemeApplication[]): ApplicationStats {
+  const totalApplications = applications.length;
+  const uniqueUsers = new Set(applications.map((a) => a.userId)).size;
+
+  let totalPotentialBenefitValue = 0;
+  let totalRealizedBenefitValue = 0;
+
+  const byStatus: Record<ApplicationStatus, number> = {
+    applied: 0,
+    under_review: 0,
+    approved: 0,
+    benefit_received: 0,
+    rejected: 0,
+  };
+
+  const schemeMap = new Map<
+    string,
+    {
+      schemeId: string;
+      schemeName: string;
+      category: string;
+      unitBenefit: number;
+      applicationCount: number;
+      approvedCount: number;
+      totalPotentialBenefit: number;
+      realizedBenefit: number;
+    }
+  >();
+
+  const categoryMap = new Map<string, { count: number; totalBenefit: number }>();
+
+  for (const app of applications) {
+    const val = app.estimatedAnnualBenefit || 0;
+    totalPotentialBenefitValue += val;
+
+    if (app.status === 'approved' || app.status === 'benefit_received') {
+      totalRealizedBenefitValue += val;
+    }
+
+    byStatus[app.status] = (byStatus[app.status] ?? 0) + 1;
+
+    // Group by scheme
+    const existingScheme = schemeMap.get(app.schemeId) ?? {
+      schemeId: app.schemeId,
+      schemeName: app.schemeName.en,
+      category: app.category,
+      unitBenefit: val,
+      applicationCount: 0,
+      approvedCount: 0,
+      totalPotentialBenefit: 0,
+      realizedBenefit: 0,
+    };
+
+    existingScheme.applicationCount += 1;
+    existingScheme.totalPotentialBenefit += val;
+    if (app.status === 'approved' || app.status === 'benefit_received') {
+      existingScheme.approvedCount += 1;
+      existingScheme.realizedBenefit += val;
+    }
+    schemeMap.set(app.schemeId, existingScheme);
+
+    // Group by category
+    const existingCat = categoryMap.get(app.category) ?? { count: 0, totalBenefit: 0 };
+    existingCat.count += 1;
+    existingCat.totalBenefit += val;
+    categoryMap.set(app.category, existingCat);
+  }
+
+  // Sort most beneficial schemes by total potential benefit descending
+  const mostBeneficialSchemes = Array.from(schemeMap.values()).sort(
+    (a, b) => b.totalPotentialBenefit - a.totalPotentialBenefit
+  );
+
+  // Sort top applied schemes by application volume descending
+  const topAppliedSchemes = Array.from(schemeMap.values())
+    .map((s) => ({
+      schemeId: s.schemeId,
+      schemeName: s.schemeName,
+      category: s.category,
+      count: s.applicationCount,
+      totalBenefit: s.totalPotentialBenefit,
+    }))
+    .sort((a, b) => b.count - a.count);
+
+  const categoryBreakdown = Array.from(categoryMap.entries())
+    .map(([cat, data]) => ({
+      category: cat,
+      applicationsCount: data.count,
+      totalBenefitValue: data.totalBenefit,
+    }))
+    .sort((a, b) => b.totalBenefitValue - a.totalBenefitValue);
+
+  return {
+    totalApplications,
+    totalUniqueUsers: uniqueUsers,
+    totalPotentialBenefitValue,
+    totalRealizedBenefitValue,
+    byStatus,
+    mostBeneficialSchemes,
+    topAppliedSchemes,
+    categoryBreakdown,
+  };
+}
+
+function mapRowToApplication(r: Record<string, unknown>): SchemeApplication {
+  const parseJson = (val: unknown): { en: string; hi: string; mr: string } => {
+    if (typeof val === 'string') {
+      try {
+        return JSON.parse(val);
+      } catch {
+        return { en: val, hi: val, mr: val };
+      }
+    }
+    if (typeof val === 'object' && val !== null) {
+      return val as { en: string; hi: string; mr: string };
+    }
+    return { en: '', hi: '', mr: '' };
+  };
+
+  return {
+    id: String(r.id),
+    userId: String(r.user_id),
+    userName: String(r.user_name),
+    userEmail: String(r.user_email),
+    userState: r.user_state ? String(r.user_state) : undefined,
+    userOccupation: r.user_occupation ? String(r.user_occupation) : undefined,
+    schemeId: String(r.scheme_id),
+    schemeName: parseJson(r.scheme_name),
+    category: String(r.category),
+    benefitType: String(r.benefit_type),
+    benefitHighlight: parseJson(r.benefit_highlight),
+    estimatedAnnualBenefit: Number(r.estimated_annual_benefit) || 0,
+    status: r.status as ApplicationStatus,
+    appliedAt: String(r.applied_at),
+    updatedAt: String(r.updated_at),
+    applicationRefNumber: r.application_ref_number ? String(r.application_ref_number) : undefined,
+    notes: r.notes ? String(r.notes) : undefined,
+  };
+}
+
+export class SupabaseApplicationStore implements ApplicationStore {
+  private fallbackStore = new FileBackedApplicationStore();
+
+  async createApplication(
+    input: Omit<SchemeApplication, 'id' | 'appliedAt' | 'updatedAt' | 'status'> & {
+      status?: ApplicationStatus;
+    }
+  ): Promise<SchemeApplication> {
+    const supabase = getSupabaseServer();
+    if (!supabase) return this.fallbackStore.createApplication(input);
+
+    const now = new Date().toISOString();
+    const id = `app_${Date.now()}_${crypto.randomBytes(3).toString('hex')}`;
+    const row = {
+      id,
+      user_id: input.userId,
+      user_name: input.userName,
+      user_email: input.userEmail,
+      user_state: input.userState ?? null,
+      user_occupation: input.userOccupation ?? null,
+      scheme_id: input.schemeId,
+      scheme_name: input.schemeName,
+      category: input.category,
+      benefit_type: input.benefitType,
+      benefit_highlight: input.benefitHighlight,
+      estimated_annual_benefit: Number(input.estimatedAnnualBenefit) || 0,
+      status: input.status ?? 'applied',
+      application_ref_number: input.applicationRefNumber ?? null,
+      notes: input.notes ?? null,
+      applied_at: now,
+      updated_at: now,
+    };
+
+    try {
+      const { data, error } = await supabase
+        .from('scheme_applications')
+        .insert(row)
+        .select()
+        .single();
+      if (error) {
+        return this.fallbackStore.createApplication(input);
+      }
+      return mapRowToApplication(data);
+    } catch {
+      return this.fallbackStore.createApplication(input);
+    }
+  }
+
+  async listApplications(filter?: {
+    userId?: string;
+    schemeId?: string;
+    status?: ApplicationStatus;
+  }): Promise<SchemeApplication[]> {
+    const supabase = getSupabaseServer();
+    if (!supabase) return this.fallbackStore.listApplications(filter);
+
+    try {
+      let query = supabase
+        .from('scheme_applications')
+        .select('*')
+        .order('applied_at', { ascending: false });
+      if (filter?.userId) query = query.eq('user_id', filter.userId);
+      if (filter?.schemeId) query = query.eq('scheme_id', filter.schemeId);
+      if (filter?.status) query = query.eq('status', filter.status);
+
+      const { data, error } = await query;
+      if (error || !data) {
+        return this.fallbackStore.listApplications(filter);
+      }
+      return data.map(mapRowToApplication);
+    } catch {
+      return this.fallbackStore.listApplications(filter);
+    }
+  }
+
+  async getApplicationById(id: string): Promise<SchemeApplication | undefined> {
+    const supabase = getSupabaseServer();
+    if (!supabase) return this.fallbackStore.getApplicationById(id);
+
+    try {
+      const { data, error } = await supabase
+        .from('scheme_applications')
+        .select('*')
+        .eq('id', id)
+        .single();
+      if (error || !data) return this.fallbackStore.getApplicationById(id);
+      return mapRowToApplication(data);
+    } catch {
+      return this.fallbackStore.getApplicationById(id);
+    }
+  }
+
+  async updateStatus(
+    id: string,
+    status: ApplicationStatus,
+    notes?: string
+  ): Promise<SchemeApplication | null> {
+    const supabase = getSupabaseServer();
+    if (!supabase) return this.fallbackStore.updateStatus(id, status, notes);
+
+    const updates: Record<string, unknown> = {
+      status,
+      updated_at: new Date().toISOString(),
+    };
+    if (notes !== undefined) updates.notes = notes;
+
+    try {
+      const { data, error } = await supabase
+        .from('scheme_applications')
+        .update(updates)
+        .eq('id', id)
+        .select()
+        .single();
+
+      if (error || !data) {
+        return this.fallbackStore.updateStatus(id, status, notes);
+      }
+      return mapRowToApplication(data);
+    } catch {
+      return this.fallbackStore.updateStatus(id, status, notes);
+    }
+  }
+
+  async getStats(): Promise<ApplicationStats> {
+    const apps = await this.listApplications();
+    return computeStatsFromApplications(apps);
+  }
+
+  async clear(): Promise<void> {
+    const supabase = getSupabaseServer();
+    if (supabase) {
+      try {
+        await supabase.from('scheme_applications').delete().neq('id', '');
+      } catch {
+        // Fallback
+      }
+    }
+    this.fallbackStore.clear();
+  }
+}
+
 let applicationStoreSingleton: ApplicationStore | null = null;
 
 export function getApplicationStore(): ApplicationStore {
   if (!applicationStoreSingleton) {
-    applicationStoreSingleton = new FileBackedApplicationStore();
+    if (isSupabaseConfigured()) {
+      applicationStoreSingleton = new SupabaseApplicationStore();
+    } else {
+      applicationStoreSingleton = new FileBackedApplicationStore();
+    }
   }
   return applicationStoreSingleton;
 }

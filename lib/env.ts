@@ -24,6 +24,9 @@ const envSchema = z.object({
   ADMIN_EMAIL: z.string().email().default('admin@yojanamitra.in'),
   ADMIN_PASSWORD: z.string().min(6).default('Admin@1234'),
   NEXT_PUBLIC_APP_URL: z.string().url().default('http://localhost:3000'),
+  NEXT_PUBLIC_SUPABASE_URL: z.string().optional().default(''),
+  NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string().optional().default(''),
+  SUPABASE_SERVICE_ROLE_KEY: z.string().optional().default(''),
 });
 
 export type AppEnv = z.infer<typeof envSchema>;

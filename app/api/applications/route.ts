@@ -19,13 +19,13 @@ export async function GET(request: Request) {
 
     // If admin is requesting, they can see all or filtered
     if (session?.role === 'admin') {
-      const applications = store.listApplications({
+      const applications = await store.listApplications({
         userId: filterUserId ?? undefined,
         schemeId: filterSchemeId ?? undefined,
         status: filterStatus ?? undefined,
       });
 
-      const stats = includeStats ? store.getStats() : undefined;
+      const stats = includeStats ? await store.getStats() : undefined;
 
       return NextResponse.json({
         applications,
@@ -36,7 +36,7 @@ export async function GET(request: Request) {
 
     // If regular citizen is requesting, only return their applications
     if (session) {
-      const userApps = store.listApplications({
+      const userApps = await store.listApplications({
         userId: session.id,
       });
 
@@ -109,7 +109,7 @@ export async function POST(request: Request) {
     const userOccupation = guestOccupation ?? 'citizen';
 
     const store = getApplicationStore();
-    const application = store.createApplication({
+    const application = await store.createApplication({
       userId,
       userName,
       userEmail,
@@ -163,7 +163,7 @@ export async function PATCH(request: Request) {
     }
 
     const store = getApplicationStore();
-    const updated = store.updateStatus(id, status as ApplicationStatus, notes);
+    const updated = await store.updateStatus(id, status as ApplicationStatus, notes);
 
     if (!updated) {
       return NextResponse.json({ error: 'Application not found' }, { status: 404 });
