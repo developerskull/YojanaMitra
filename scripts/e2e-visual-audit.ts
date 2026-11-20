@@ -143,6 +143,28 @@ async function runVisualAudit() {
     console.log('📸 Saved 05_saved_hub.png');
 
     // ==========================================
+    // 5.5 CITIZEN REGISTRATION & OTP VERIFICATION
+    // ==========================================
+    console.log('\n--- 5.5 Testing 2-Step Citizen Registration & OTP ---');
+    await page.goto('http://127.0.0.1:3000/login', { waitUntil: 'domcontentloaded' });
+    await page.getByRole('button', { name: /Create Account/i }).click();
+    await page.getByPlaceholder('e.g., Sunita Deshmukh').fill('Sunita Deshmukh');
+    const demoEmail = `sunita.${Date.now()}@yojanamitra.in`;
+    await page.getByPlaceholder('citizen@yojanamitra.in').fill(demoEmail);
+    await page.getByPlaceholder('••••••••').fill('Maharashtra@2026');
+    await page.getByRole('button', { name: /Continue to Verification/i }).click();
+
+    const otpStepVisible = await page.getByText(/Step 2 of 2 · OTP Verification/i).waitFor({ timeout: 10000 }).then(() => true).catch(() => false);
+    const demoOtpVisible = await page.getByText(/Demo OTP \(Auto-fill\)/i).isVisible();
+    results.push({
+      step: 'Citizen Registration OTP Flow',
+      status: otpStepVisible && demoOtpVisible ? 'PASS' : 'FAIL',
+      details: '2-step registration transition rendered with 6-digit OTP input, timer, and demo quick-fill chip',
+    });
+    await page.screenshot({ path: path.join(SCREENSHOT_DIR, '09_otp_verification.png') });
+    console.log('📸 Saved 09_otp_verification.png');
+
+    // ==========================================
     // 6. ADMIN COMMAND CENTER (/admin)
     // ==========================================
     console.log('\n--- 6. Testing Admin Command Center & Live Database ---');

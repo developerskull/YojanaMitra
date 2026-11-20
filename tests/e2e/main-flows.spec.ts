@@ -90,4 +90,35 @@ test.describe('YojanaMitra Main Flows', () => {
       timeout: 10000,
     });
   });
+
+  test('citizen registration 2-step OTP verification flow creates account and starts authenticated session', async ({
+    page,
+  }) => {
+    const testEmail = `citizen.otp.${Date.now()}@example.com`;
+    await page.goto('/login');
+
+    // Switch to Register mode
+    await page.getByRole('button', { name: /Create Account/i }).click();
+
+    // Step 1: Fill registration details
+    await page.getByPlaceholder('e.g., Sunita Deshmukh').fill('Anita Kale');
+    await page.getByPlaceholder('citizen@yojanamitra.in').fill(testEmail);
+    await page.getByPlaceholder('••••••••').fill('Maharashtra@2026');
+    await page.getByRole('button', { name: /Continue to Verification/i }).click();
+
+    // Step 2: Verify OTP screen is displayed
+    await expect(page.getByText(/Step 2 of 2 · OTP Verification/i)).toBeVisible({ timeout: 10000 });
+    await expect(page.getByText(testEmail).first()).toBeVisible();
+    await expect(page.getByText(/Demo OTP \(Auto-fill\)/i)).toBeVisible();
+
+    // Click "Paste Code" chip to auto-populate the generated 6-digit OTP
+    await page.getByRole('button', { name: /Paste Code/i }).click();
+
+    // Submit OTP verification
+    await page.getByRole('button', { name: /Verify & Activate Account/i }).click();
+
+    // Verify successful authentication and redirection to home
+    await page.waitForURL('**/');
+    await expect(page.getByText(/Anita Kale/i).first()).toBeVisible({ timeout: 10000 });
+  });
 });
