@@ -546,7 +546,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
 - [ ] **WhatsApp Business Cloud Integration**: Connect `/api/chat` directly to WhatsApp so rural citizens can query schemes via voice notes and text without installing an app.
 - [ ] **Interactive Voice Response (IVR / Phone Call)**: Add a toll-free IVR number powered by telephony gateways for non-smartphone feature-phone users across rural India.
 - [ ] **Expansion to More States & Languages**: Scale beyond Maharashtra and Central schemes to include Tamil Nadu, Karnataka, Uttar Pradesh, Gujarat, West Bengal, and Andhra Pradesh in their native languages.
-- [ ] **Swappable Persistence Layer**: Implement optional database adapters (`PostgreSQL` + `pgvector` behind `SchemeRepository`, `Redis` / `Upstash` behind `ResponseCache` and `RateLimiter`) for organizations managing thousands of municipal schemes.
+- [ ] **Swappable Persistence Layer**: Implement optional database adapters (`PostgreSQL` / `Supabase` + `pgvector` behind `ApplicationStore` and `RequestLogStore`). See [DATABASE.md](./DATABASE.md) for the complete production SQL schema, indexes, RLS policies, and queries.
 
 ---
 
