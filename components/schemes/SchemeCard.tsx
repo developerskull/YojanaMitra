@@ -200,7 +200,7 @@ export function SchemeCard({
   const failedReasons = evaluation?.localized.failedReasons[lang] ?? [];
 
   return (
-    <Card className="overflow-hidden hover:-translate-y-0.5 hover:shadow-lg">
+    <Card className="surface-card group overflow-hidden rounded-3xl transition-all duration-200 hover:-translate-y-1 hover:shadow-xl">
       {/* Status Accent Top Rail */}
       <div className={cn('h-1.5 w-full bg-gradient-to-r', topStripe)} />
 
@@ -245,11 +245,18 @@ export function SchemeCard({
         </h3>
 
         {/* Highlighted Benefit Pill */}
-        <div className="flex items-center gap-2.5 rounded-xl border border-[var(--accent-teal)]/20 bg-gradient-to-r from-[var(--accent-teal-soft)] to-transparent px-4 py-3 text-sm font-bold text-[var(--accent-teal)] sm:text-base">
+        <div
+          className={cn(
+            'flex items-center gap-2.5 rounded-2xl px-4 py-3 text-sm font-bold sm:text-base',
+            scheme.benefitType === 'cash' || scheme.benefitType === 'pension'
+              ? 'benefit-badge-gold'
+              : 'border border-[var(--accent-teal)]/20 bg-gradient-to-r from-[var(--accent-teal-soft)] to-transparent text-[var(--accent-teal)]'
+          )}
+        >
           <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-[var(--accent-teal)] text-white dark:text-[#041B19]">
             <IndianRupee className="h-4 w-4" />
           </span>
-          <span>{scheme.benefitHighlight[lang]}</span>
+          <span className="font-extrabold tracking-tight">{scheme.benefitHighlight[lang]}</span>
         </div>
 
         <p className="text-sm leading-relaxed text-[var(--fg-secondary)] sm:text-base">

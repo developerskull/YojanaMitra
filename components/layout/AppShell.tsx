@@ -102,6 +102,9 @@ export function AppShell({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="flex min-h-screen flex-col pb-20 md:pb-0">
+      {/* Indian National Tricolor Micro-Accent */}
+      <div className="tricolor-stripe h-1 w-full" aria-hidden="true" />
+
       {/* WCAG Skip Link */}
       <a
         href="#main-content"
@@ -301,7 +304,10 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       </header>
 
       {/* Main Content */}
-      <main id="main-content" className="mx-auto w-full max-w-6xl flex-1 px-3 py-6 sm:px-6 sm:py-10">
+      <main
+        id="main-content"
+        className="mx-auto w-full max-w-6xl flex-1 px-3 py-6 sm:px-6 sm:py-10"
+      >
         {children}
       </main>
 

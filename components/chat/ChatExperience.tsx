@@ -441,10 +441,19 @@ export function ChatExperience() {
               <div className="flex flex-col items-center gap-3">
                 <div className="relative flex items-center justify-center">
                   {isListening && (
-                    <span
-                      aria-hidden="true"
-                      className="absolute h-24 w-24 animate-ping rounded-full bg-red-500/25"
-                    />
+                    <>
+                      <span
+                        aria-hidden="true"
+                        className="absolute h-24 w-24 animate-ping rounded-full bg-red-500/25"
+                      />
+                      <div className="pointer-events-none absolute -bottom-6 flex items-center gap-1">
+                        <span className="wave-bar-1 w-1 rounded-full bg-red-500" />
+                        <span className="wave-bar-2 w-1 rounded-full bg-red-500" />
+                        <span className="wave-bar-3 w-1 rounded-full bg-red-500" />
+                        <span className="wave-bar-4 w-1 rounded-full bg-red-500" />
+                        <span className="wave-bar-2 w-1 rounded-full bg-red-500" />
+                      </div>
+                    </>
                   )}
                   <button
                     type="button"
@@ -556,9 +565,7 @@ export function ChatExperience() {
                   <Lock className="h-4 w-4 text-[var(--accent-teal)]" />
                   <span>0%</span>
                 </div>
-                <div className="text-xs font-medium text-[var(--fg-muted)]">
-                  Hallucination Rate
-                </div>
+                <div className="text-xs font-medium text-[var(--fg-muted)]">Hallucination Rate</div>
               </div>
             </div>
           </section>
@@ -583,44 +590,44 @@ export function ChatExperience() {
             </div>
 
             <div className="grid grid-cols-1 gap-3.5 sm:grid-cols-2 lg:grid-cols-3">
-              {(
-                ['farmer', 'student', 'woman', 'senior', 'worker', 'disabled'] as const
-              ).map((key) => {
-                const cat = t.landing.categories[key];
-                const meta = CATEGORY_META[key];
-                const Icon = meta.icon;
-                return (
-                  <button
-                    key={key}
-                    type="button"
-                    onClick={() => void sendMessage(cat.prompt)}
-                    className={cn(
-                      'surface-card group flex min-h-[124px] cursor-pointer flex-col justify-between rounded-2xl p-5 text-left transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md',
-                      meta.ringHover
-                    )}
-                  >
-                    <div className="flex w-full items-start justify-between">
-                      <span
-                        className={cn(
-                          'flex h-12 w-12 items-center justify-center rounded-xl transition-transform group-hover:scale-105',
-                          meta.tint
-                        )}
-                      >
-                        <Icon className="h-6 w-6" aria-hidden="true" />
-                      </span>
-                      <ArrowUpRight className="h-5 w-5 text-[var(--fg-muted)] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-[var(--accent-teal)]" />
-                    </div>
-                    <div className="mt-4">
-                      <div className="font-display text-lg font-bold text-[var(--fg-primary)] group-hover:text-[var(--accent-teal)]">
-                        {cat.label}
+              {(['farmer', 'student', 'woman', 'senior', 'worker', 'disabled'] as const).map(
+                (key) => {
+                  const cat = t.landing.categories[key];
+                  const meta = CATEGORY_META[key];
+                  const Icon = meta.icon;
+                  return (
+                    <button
+                      key={key}
+                      type="button"
+                      onClick={() => void sendMessage(cat.prompt)}
+                      className={cn(
+                        'surface-interactive surface-card group flex min-h-[136px] cursor-pointer flex-col justify-between rounded-3xl p-5 text-left transition-all duration-200 hover:-translate-y-1 hover:shadow-lg',
+                        meta.ringHover
+                      )}
+                    >
+                      <div className="flex w-full items-start justify-between">
+                        <span
+                          className={cn(
+                            'flex h-12 w-12 items-center justify-center rounded-xl transition-transform group-hover:scale-105',
+                            meta.tint
+                          )}
+                        >
+                          <Icon className="h-6 w-6" aria-hidden="true" />
+                        </span>
+                        <ArrowUpRight className="h-5 w-5 text-[var(--fg-muted)] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-[var(--accent-teal)]" />
                       </div>
-                      <div className="mt-0.5 text-xs font-medium text-[var(--fg-muted)]">
-                        {meta.examples[lang]}
+                      <div className="mt-4">
+                        <div className="font-display text-lg font-bold text-[var(--fg-primary)] group-hover:text-[var(--accent-teal)]">
+                          {cat.label}
+                        </div>
+                        <div className="mt-0.5 text-xs font-medium text-[var(--fg-muted)]">
+                          {meta.examples[lang]}
+                        </div>
                       </div>
-                    </div>
-                  </button>
-                );
-              })}
+                    </button>
+                  );
+                }
+              )}
             </div>
           </section>
 

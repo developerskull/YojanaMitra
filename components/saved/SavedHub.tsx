@@ -89,10 +89,25 @@ export function SavedHub({ allSchemes }: { allSchemes: Scheme[] }) {
     return encodeURIComponent(lines.join('\n'));
   }, [t, savedSchemes, aggregatedDocs, checkedDocs, lang]);
 
-  const tabs: Array<{ key: TabKey; label: string; count: number; icon: React.ComponentType<{ className?: string }> }> = [
+  const tabs: Array<{
+    key: TabKey;
+    label: string;
+    count: number;
+    icon: React.ComponentType<{ className?: string }>;
+  }> = [
     { key: 'saved', label: t.saved.tabSaved, count: savedSchemes.length, icon: Bookmark },
-    { key: 'checklist', label: t.saved.tabChecklist, count: aggregatedDocs.length, icon: FileCheck2 },
-    { key: 'compare', label: t.saved.tabCompare, count: compareSchemes.length, icon: GitCompareArrows },
+    {
+      key: 'checklist',
+      label: t.saved.tabChecklist,
+      count: aggregatedDocs.length,
+      icon: FileCheck2,
+    },
+    {
+      key: 'compare',
+      label: t.saved.tabCompare,
+      count: compareSchemes.length,
+      icon: GitCompareArrows,
+    },
   ];
 
   return (
@@ -176,8 +191,48 @@ export function SavedHub({ allSchemes }: { allSchemes: Scheme[] }) {
 
       {/* Tab 2: Aggregated Documents Checklist */}
       {activeTab === 'checklist' && (
-        <Card>
-          <CardContent className="space-y-4 p-6">
+        <Card className="surface-elevated overflow-hidden rounded-3xl">
+          <CardContent className="space-y-6 p-6 sm:p-8">
+            {aggregatedDocs.length > 0 && (
+              <div className="rounded-2xl border border-[var(--border-subtle)] bg-[var(--bg-canvas)] p-5">
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <div className="flex items-center gap-2 font-display text-base font-bold text-[var(--fg-primary)]">
+                    <FileCheck2 className="h-5 w-5 text-[var(--accent-teal)]" />
+                    <span>Paperwork Readiness Meter</span>
+                  </div>
+                  <span className="font-mono text-sm font-extrabold text-[var(--accent-teal)]">
+                    {aggregatedDocs.filter(({ doc }) => checkedDocs.includes(doc.id)).length} of{' '}
+                    {aggregatedDocs.length} Ready (
+                    {Math.round(
+                      (aggregatedDocs.filter(({ doc }) => checkedDocs.includes(doc.id)).length /
+                        aggregatedDocs.length) *
+                        100
+                    )}
+                    %)
+                  </span>
+                </div>
+                <div className="mt-3 h-2.5 overflow-hidden rounded-full bg-[var(--bg-surface-muted)]">
+                  <div
+                    className="h-full rounded-full bg-gradient-to-r from-[#0D5C63] to-[#10B981] transition-all duration-300"
+                    style={{
+                      width: `${Math.round(
+                        (aggregatedDocs.filter(({ doc }) => checkedDocs.includes(doc.id)).length /
+                          aggregatedDocs.length) *
+                          100
+                      )}%`,
+                    }}
+                  />
+                </div>
+                {aggregatedDocs.filter(({ doc }) => checkedDocs.includes(doc.id)).length ===
+                  aggregatedDocs.length && (
+                  <p className="mt-2 text-xs font-bold text-emerald-600 dark:text-emerald-400">
+                    ✓ All documents ready! You can now visit your nearest Common Service Centre
+                    (CSC) or apply online.
+                  </p>
+                )}
+              </div>
+            )}
+
             <p className="text-base text-[var(--fg-secondary)]">{t.saved.checklistIntro}</p>
             {aggregatedDocs.length === 0 ? (
               <p className="py-4 text-sm text-[var(--fg-muted)]">{t.saved.emptySaved}</p>
