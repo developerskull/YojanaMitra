@@ -735,8 +735,8 @@ export function AdminDashboard() {
           {/* Scheme Leaderboards */}
           <div className="grid gap-6 lg:grid-cols-2">
             {/* Schemes Ranked by Financial Value */}
-            <Card>
-              <CardContent className="space-y-4 p-6 pt-6">
+            <Card className="min-w-0 overflow-hidden">
+              <CardContent className="space-y-4 p-5 pt-5 sm:p-6 sm:pt-6">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2 font-display text-base font-bold">
                     <BarChart3 className="h-5 w-5 text-[var(--accent-teal)]" />
@@ -756,21 +756,24 @@ export function AdminDashboard() {
                     return (
                       <div
                         key={scheme.schemeId}
-                        className="space-y-1 rounded-xl p-2.5 transition-colors hover:bg-[var(--bg-surface-muted)]"
+                        className="space-y-1.5 rounded-xl p-2.5 transition-colors hover:bg-[var(--bg-surface-muted)]"
                       >
-                        <div className="flex items-start justify-between gap-2">
-                          <div>
+                        <div className="flex min-w-0 items-start justify-between gap-3">
+                          <div className="min-w-0 flex-1">
                             <span className="mr-1.5 font-mono text-xs font-bold text-[var(--accent-saffron)]">
                               #{idx + 1}
                             </span>
-                            <span className="font-semibold text-[var(--fg-primary)]">
+                            <span
+                              className="font-semibold leading-snug text-[var(--fg-primary)] line-clamp-2"
+                              title={scheme.schemeName}
+                            >
                               {scheme.schemeName}
                             </span>
                             <div className="mt-0.5 text-xs text-[var(--fg-muted)]">
                               {scheme.applicationCount} applicants · {scheme.approvedCount} approved
                             </div>
                           </div>
-                          <div className="text-right">
+                          <div className="shrink-0 text-right">
                             <span className="font-mono text-sm font-extrabold text-[var(--accent-teal)]">
                               ₹{scheme.totalPotentialBenefit.toLocaleString('en-IN')}
                             </span>
@@ -779,7 +782,7 @@ export function AdminDashboard() {
                             </div>
                           </div>
                         </div>
-                        <div className="h-2 overflow-hidden rounded-full bg-[var(--bg-surface-muted)]">
+                        <div className="h-2 w-full overflow-hidden rounded-full bg-[var(--bg-surface-muted)]">
                           <div
                             className="h-full rounded-full bg-gradient-to-r from-[#0D5C63] to-[#D45015]"
                             style={{ width: `${pct}%` }}
@@ -793,8 +796,8 @@ export function AdminDashboard() {
             </Card>
 
             {/* Schemes Ranked by Application Volume */}
-            <Card>
-              <CardContent className="space-y-4 p-6 pt-6">
+            <Card className="min-w-0 overflow-hidden">
+              <CardContent className="space-y-4 p-5 pt-5 sm:p-6 sm:pt-6">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2 font-display text-base font-bold">
                     <Sparkles className="h-5 w-5 text-[var(--accent-saffron)]" />
@@ -810,14 +813,17 @@ export function AdminDashboard() {
                   {(appStats?.topAppliedSchemes ?? []).map((scheme, idx) => (
                     <div
                       key={scheme.schemeId}
-                      className="flex items-center justify-between rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-canvas)] p-3"
+                      className="flex min-w-0 items-center justify-between gap-3 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-canvas)] p-3"
                     >
-                      <div className="flex items-center gap-3">
+                      <div className="flex min-w-0 flex-1 items-center gap-3">
                         <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-[var(--accent-saffron-soft)] font-mono text-xs font-bold text-[var(--accent-saffron)]">
                           {idx + 1}
                         </span>
-                        <div>
-                          <div className="font-semibold text-[var(--fg-primary)]">
+                        <div className="min-w-0 flex-1">
+                          <div
+                            className="font-semibold leading-snug text-[var(--fg-primary)] line-clamp-2"
+                            title={scheme.schemeName}
+                          >
                             {scheme.schemeName}
                           </div>
                           <div className="flex items-center gap-2 text-xs text-[var(--fg-muted)]">
@@ -827,7 +833,7 @@ export function AdminDashboard() {
                           </div>
                         </div>
                       </div>
-                      <Badge variant="teal" className="text-xs font-bold">
+                      <Badge variant="teal" className="shrink-0 text-xs font-bold">
                         {scheme.count} Applied
                       </Badge>
                     </div>
@@ -937,8 +943,8 @@ export function AdminDashboard() {
 
           {/* Visual Breakdown Row */}
           <div className="grid gap-4 lg:grid-cols-2">
-            <Card>
-              <CardContent className="space-y-4 p-6 pt-6">
+            <Card className="min-w-0 overflow-hidden">
+              <CardContent className="space-y-4 p-5 pt-5 sm:p-6 sm:pt-6">
                 <div className="flex items-center gap-2 font-display text-base font-bold">
                   <Globe className="h-4 w-4 text-[var(--accent-teal)]" />
                   <span>Requests by Language</span>
@@ -954,13 +960,15 @@ export function AdminDashboard() {
                   const pct = Math.round((count / totalLang) * 100);
                   return (
                     <div key={item.code} className="space-y-1">
-                      <div className="flex justify-between text-sm">
-                        <span className="font-medium text-[var(--fg-primary)]">{item.label}</span>
-                        <span className="font-semibold text-[var(--fg-secondary)]">
+                      <div className="flex min-w-0 items-center justify-between gap-2 text-sm">
+                        <span className="min-w-0 flex-1 font-medium text-[var(--fg-primary)]">
+                          {item.label}
+                        </span>
+                        <span className="shrink-0 font-semibold text-[var(--fg-secondary)]">
                           {count} ({m?.totalRequests ? pct : 0}%)
                         </span>
                       </div>
-                      <div className="h-2.5 overflow-hidden rounded-full bg-[var(--bg-surface-muted)]">
+                      <div className="h-2.5 w-full overflow-hidden rounded-full bg-[var(--bg-surface-muted)]">
                         <div
                           className={`h-full rounded-full transition-all ${item.color}`}
                           style={{ width: `${m?.totalRequests ? pct : 0}%` }}
@@ -972,11 +980,16 @@ export function AdminDashboard() {
               </CardContent>
             </Card>
 
-            <Card>
-              <CardContent className="space-y-3.5 p-6 pt-6">
-                <div className="flex items-center gap-2 font-display text-base font-bold">
-                  <Sparkles className="h-4 w-4 text-[var(--accent-saffron)]" />
-                  <span>Top Matched Welfare Schemes</span>
+            <Card className="min-w-0 overflow-hidden">
+              <CardContent className="space-y-3.5 p-5 pt-5 sm:p-6 sm:pt-6">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2 font-display text-base font-bold">
+                    <Sparkles className="h-4 w-4 text-[var(--accent-saffron)]" />
+                    <span>Top Matched Welfare Schemes</span>
+                  </div>
+                  <Badge variant="saffron" className="text-[11px] font-bold">
+                    DEMAND
+                  </Badge>
                 </div>
                 {!m?.topSchemes.length ? (
                   <p className="py-4 text-sm text-[var(--fg-muted)]">
@@ -984,18 +997,23 @@ export function AdminDashboard() {
                     real-time demand here.
                   </p>
                 ) : (
-                  <div className="space-y-2.5">
+                  <div className="space-y-3">
                     {m.topSchemes.map((s) => (
-                      <div key={s.id} className="space-y-1">
-                        <div className="flex items-center justify-between gap-2 text-sm">
-                          <span className="truncate font-medium text-[var(--fg-primary)]">
+                      <div key={s.id} className="space-y-1.5">
+                        <div className="flex min-w-0 items-start justify-between gap-3 text-sm">
+                          <span
+                            className="min-w-0 flex-1 font-semibold leading-snug text-[var(--fg-primary)] line-clamp-2"
+                            title={s.name}
+                          >
                             {s.name}
                           </span>
-                          <Badge variant="teal">{s.count}</Badge>
+                          <Badge variant="teal" className="shrink-0 font-mono text-xs font-bold">
+                            {s.count}
+                          </Badge>
                         </div>
-                        <div className="h-2 overflow-hidden rounded-full bg-[var(--bg-surface-muted)]">
+                        <div className="h-2 w-full overflow-hidden rounded-full bg-[var(--bg-surface-muted)]">
                           <div
-                            className="h-full rounded-full bg-gradient-to-r from-[#0D5C63] to-[#D45015]"
+                            className="h-full rounded-full bg-gradient-to-r from-[#0D5C63] to-[#D45015] transition-all"
                             style={{ width: `${Math.round((s.count / maxSchemeCount) * 100)}%` }}
                           />
                         </div>
