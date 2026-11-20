@@ -17,6 +17,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
+    "test:visual": "tsx scripts/e2e-visual-audit.ts",
     "setup": "npm install && npm run validate:data && npm run build-index"
   },
   "dependencies": {
