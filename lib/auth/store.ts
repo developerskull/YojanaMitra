@@ -8,6 +8,7 @@ export interface StoredUser {
   id: string;
   name: string;
   email: string;
+  phone?: string;
   role: UserRole;
   passwordHash: string;
   createdAt: string;
@@ -18,7 +19,12 @@ export interface StoredUser {
  */
 export interface UserStore {
   findByEmail(email: string): StoredUser | undefined;
-  createCitizen(input: { name: string; email: string; password: string }): StoredUser;
+  createCitizen(input: {
+    name: string;
+    email: string;
+    password: string;
+    phone?: string;
+  }): StoredUser;
   verifyPassword(user: StoredUser, password: string): boolean;
   countUsers(): number;
 }
@@ -106,7 +112,12 @@ class FileBackedUserStore implements UserStore {
     return this.users.get(email.trim().toLowerCase());
   }
 
-  createCitizen(input: { name: string; email: string; password: string }): StoredUser {
+  createCitizen(input: {
+    name: string;
+    email: string;
+    password: string;
+    phone?: string;
+  }): StoredUser {
     const email = input.email.trim().toLowerCase();
     if (this.users.has(email)) {
       throw new Error('An account with this email already exists');
@@ -115,6 +126,7 @@ class FileBackedUserStore implements UserStore {
       id: `usr-${crypto.randomUUID().slice(0, 8)}`,
       name: input.name.trim(),
       email,
+      phone: input.phone?.trim(),
       role: 'user',
       passwordHash: hashPassword(input.password),
       createdAt: new Date().toISOString(),

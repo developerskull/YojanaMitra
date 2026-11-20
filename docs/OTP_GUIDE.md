@@ -8,9 +8,9 @@ This document provides a comprehensive architectural and operational guide to th
 
 Under Indian e-Governance standards (e.g., DigiLocker, PM-Kisan eKYC, Aaple Sarkar, Umang), citizen onboarding must verify the citizen's contact coordinates before granting access to personal benefit trackers and sensitive document vaults.
 
-YojanaMitra implements a frictionless, secure, 2-step registration process:
-1. **Step 1 (Citizen Details)**: Citizen provides Name, Email, and Password.
-2. **Step 2 (OTP Verification)**: Citizen enters a cryptographically random 6-digit code received via SMS/Email to finalize account creation and establish a signed, tamper-proof session.
+YojanaMitra implements a frictionless, secure, 2-step registration process with **dual delivery (Email & Mobile SMS)**:
+1. **Step 1 (Citizen Details)**: Citizen provides Full Name, Email, 10-digit Indian Mobile Number (`+91`), and Password.
+2. **Step 2 (OTP Verification)**: A cryptographically random 6-digit code is dispatched to both the citizen's **Email** and **Mobile SMS**. Entering the code activates the account and establishes a signed session.
 
 ```mermaid
 sequenceDiagram
@@ -19,22 +19,26 @@ sequenceDiagram
     participant UI as LoginView (Client)
     participant API as /api/auth/otp (Next.js Edge/Node)
     participant Engine as OTP Service (lib/auth/otp.ts)
+    participant SMS as Fast2SMS Gateway (Mobile)
+    participant Mail as Resend Gateway (Email)
     participant DB as UserStore / Supabase
-    participant Gateway as SMS / Email Gateway
 
-    Citizen->>UI: Fills Name, Email, Password & clicks "Continue to Verification"
-    UI->>API: POST { action: 'request', name, email, password }
+    Citizen->>UI: Fills Name, Email, Mobile (+91), Password & clicks "Continue"
+    UI->>API: POST { action: 'request', name, email, phone, password }
     API->>Engine: requestRegistrationOtp(input)
-    Engine->>Engine: Validate email uniqueness
+    Engine->>Engine: Validate email uniqueness & 10-digit mobile
     Engine->>Engine: Generate 6-digit CSPRNG code & set 5-min TTL
-    Engine-->>Gateway: Dispatches SMS / Email (or local demo preview)
-    API-->>UI: { success: true, message, demoOtp }
-    UI->>Citizen: Displays Step 2: 6-digit input + 120s countdown
+    par Dual Dispatch
+        Engine->>SMS: dispatchSmsOtp(+91 mobile, code)
+        Engine->>Mail: dispatchEmailOtp(email, name, code)
+    end
+    API-->>UI: { success: true, message, demoOtp, phone }
+    UI->>Citizen: Displays Step 2: Email & Mobile badges + 6-digit input + timer
     Citizen->>UI: Enters 6-digit OTP code & clicks "Verify & Activate"
     UI->>API: POST { action: 'verify', email, code }
     API->>Engine: confirmRegistrationOtp(email, code)
     Engine->>Engine: Verify match, expiry & attempt counter (< 4)
-    Engine->>DB: createCitizen({ name, email, password })
+    Engine->>DB: createCitizen({ name, email, phone, password })
     API->>API: createSessionToken() & set HttpOnly signed cookie
     API-->>UI: { success: true, user }
     UI->>Citizen: Redirects to YojanaMitra Home (Logged In)

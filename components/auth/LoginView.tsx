@@ -13,8 +13,10 @@ import {
   LayoutDashboard,
   Lock,
   Mail,
+  Phone,
   RefreshCw,
   ShieldCheck,
+  Smartphone,
   Sparkles,
   User,
   UserPlus,
@@ -41,6 +43,8 @@ export function LoginView() {
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [registeredPhone, setRegisteredPhone] = useState('');
   const [password, setPassword] = useState('');
   const [otpCode, setOtpCode] = useState('');
   const [demoOtp, setDemoOtp] = useState<string | null>(null);
@@ -69,6 +73,13 @@ export function LoginView() {
     e.preventDefault();
     setError(null);
     setInfoMessage(null);
+
+    const cleanPhone = phone.replace(/\D/g, '').trim();
+    if (cleanPhone.length !== 10) {
+      setError('Please enter a valid 10-digit Indian mobile number.');
+      return;
+    }
+
     setSubmitting(true);
 
     try {
@@ -79,6 +90,7 @@ export function LoginView() {
           action: 'request',
           name,
           email,
+          phone: cleanPhone,
           password,
         }),
       });
@@ -87,6 +99,7 @@ export function LoginView() {
         success?: boolean;
         error?: string;
         demoOtp?: string;
+        phone?: string;
         message?: string;
       };
 
@@ -97,10 +110,11 @@ export function LoginView() {
       }
 
       setDemoOtp(data.demoOtp ?? null);
+      setRegisteredPhone(data.phone ?? cleanPhone);
       setCountdown(120);
       setOtpCode('');
       setRegStep('otp');
-      setInfoMessage(data.message ?? 'Verification code sent to your email.');
+      setInfoMessage(data.message ?? 'Verification code sent to your email and mobile.');
     } catch {
       setError('Network error. Please check your connection and try again.');
     } finally {
@@ -236,6 +250,7 @@ export function LoginView() {
     setUserMode('login');
     setRegStep('form');
     setEmail('citizen@yojanamitra.in');
+    setPhone('9820012345');
     setPassword('Citizen@1234');
     setError(null);
     setInfoMessage(null);
@@ -263,14 +278,19 @@ export function LoginView() {
       alreadySignedIn: 'You are currently signed in as',
       goDashboard: 'Open Admin Dashboard',
       goHome: 'Go to Scheme Assistant',
-      otpTitle: 'Verify Your Email',
+      phoneLabel: 'Mobile Number',
+      phonePlaceholder: '98200 12345',
+      emailBadge: 'Email',
+      smsBadge: 'Mobile SMS',
+      otpTitle: 'Verify Email & Mobile',
       otpSubtitle: 'Enter the 6-digit verification code sent to',
+      otpSubBoth: 'A 6-digit verification code has been dispatched to both:',
       otpExpires: 'Code expires in',
       resendCode: 'Resend Code',
       resendWait: 'Resend code in',
       verifyBtn: 'Verify & Activate Account',
       backToForm: 'Edit Registration Details',
-      demoChipLabel: 'Demo OTP (Auto-fill)',
+      demoChipLabel: 'Demo OTP (Simulated SMS & Email)',
       enterOtpLabel: '6-Digit Verification Code',
       otpPlaceholder: '000000',
     },
@@ -285,14 +305,19 @@ export function LoginView() {
       alreadySignedIn: 'आप वर्तमान में लॉगिन हैं:',
       goDashboard: 'एडमिन डैशबोर्ड खोलें',
       goHome: 'योजना सहायक पर जाएं',
-      otpTitle: 'खाता सत्यापित करें',
+      phoneLabel: 'मोबाइल नंबर',
+      phonePlaceholder: '98200 12345',
+      emailBadge: 'ईमेल',
+      smsBadge: 'मोबाइल एसएमएस',
+      otpTitle: 'ईमेल और मोबाइल सत्यापित करें',
       otpSubtitle: 'पर भेजा गया 6-अंकीय सत्यापन कोड दर्ज करें:',
+      otpSubBoth: '६-अंकीय सत्यापन कोड दोनों माध्यमों पर भेजा गया है:',
       otpExpires: 'कोड समाप्ति समय:',
       resendCode: 'कोड पुनः भेजें',
       resendWait: 'पुनः कोड भेजें:',
       verifyBtn: 'सत्यापित करें और खाता सक्रिय करें',
       backToForm: 'विवरण संपादित करें',
-      demoChipLabel: 'डेमो ओटीपी (स्वतः भरें)',
+      demoChipLabel: 'डेमो ओटीपी (एसएमएस व ईमेल)',
       enterOtpLabel: '६-अंकीय सत्यापन कोड',
       otpPlaceholder: '000000',
     },
@@ -307,14 +332,19 @@ export function LoginView() {
       alreadySignedIn: 'तुम्ही सध्या लॉगिन आहात:',
       goDashboard: 'अॅडमिन डॅशबोर्ड उघडा',
       goHome: 'योजना सहाय्यकाकडे जा',
-      otpTitle: 'खाते पडताळणी करा',
+      phoneLabel: 'मोबाईल क्रमांक',
+      phonePlaceholder: '98200 12345',
+      emailBadge: 'ईमेल',
+      smsBadge: 'मोबाईल एसएमएस',
+      otpTitle: 'ईमेल आणि मोबाईल पडताळणी करा',
       otpSubtitle: 'वर पाठवलेला ६-अंकी पडताळणी कोड प्रविष्ट करा:',
+      otpSubBoth: '६-अंकी पडताळणी कोड दोन्हीवर पाठवला आहे:',
       otpExpires: 'कोड कालबाह्य होईल:',
       resendCode: 'कोड पुन्हा पाठवा',
       resendWait: 'पुन्हा कोड पाठवा:',
       verifyBtn: 'पडताळणी करा आणि खाते सुरू करा',
       backToForm: 'माहिती बदला',
-      demoChipLabel: 'डेमो ओटीपी (आपोआप भरा)',
+      demoChipLabel: 'डेमो ओटीपी (एसएमएस आणि ईमेल)',
       enterOtpLabel: '६-अंकी पडताळणी कोड',
       otpPlaceholder: '000000',
     },
@@ -548,10 +578,21 @@ export function LoginView() {
 
               <div>
                 <h2 className="text-xl font-bold text-[var(--fg-primary)]">{copy.otpTitle}</h2>
-                <p className="mt-1 text-sm text-[var(--fg-secondary)]">
-                  {copy.otpSubtitle}{' '}
-                  <strong className="text-[var(--fg-primary)]">{email}</strong>
+                <p className="mt-1 text-xs text-[var(--fg-secondary)]">
+                  {copy.otpSubBoth}
                 </p>
+                <div className="mt-2.5 flex flex-wrap gap-2 text-xs">
+                  <span className="inline-flex items-center gap-1.5 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-surface-muted)] px-2.5 py-1 text-[var(--fg-primary)]">
+                    <Mail className="h-3.5 w-3.5 text-[var(--accent-teal)]" />
+                    <span>{copy.emailBadge}:</span>
+                    <strong className="font-mono text-xs">{email}</strong>
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-surface-muted)] px-2.5 py-1 text-[var(--fg-primary)]">
+                    <Smartphone className="h-3.5 w-3.5 text-[var(--accent-saffron)]" />
+                    <span>{copy.smsBadge}:</span>
+                    <strong className="font-mono text-xs">+91 {registeredPhone || phone}</strong>
+                  </span>
+                </div>
               </div>
 
               {/* Demo Quick-Fill Chip */}
@@ -678,6 +719,28 @@ export function LoginView() {
                   />
                 </div>
               </label>
+
+              {portalTab === 'user' && userMode === 'register' && (
+                <label className="block space-y-1.5 text-sm font-semibold">
+                  <span>{copy.phoneLabel}</span>
+                  <div className="relative flex overflow-hidden rounded-xl border border-[var(--border-strong)] bg-[var(--bg-canvas)] focus-within:border-[var(--accent-teal)]">
+                    <div className="flex items-center gap-1 border-r border-[var(--border-subtle)] bg-[var(--bg-surface-muted)] px-3 text-sm font-bold text-[var(--fg-secondary)]">
+                      <Phone className="h-4 w-4 text-[var(--fg-muted)]" />
+                      <span>+91</span>
+                    </div>
+                    <input
+                      type="tel"
+                      inputMode="numeric"
+                      required
+                      maxLength={10}
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value.replace(/\D/g, '').slice(0, 10))}
+                      placeholder={copy.phonePlaceholder}
+                      className="min-h-[50px] w-full bg-transparent px-3 text-base font-normal focus:outline-none"
+                    />
+                  </div>
+                </label>
+              )}
 
               <label className="block space-y-1.5 text-sm font-semibold">
                 <span>Password</span>

@@ -13,6 +13,7 @@ const RequestOtpSchema = z.object({
   action: z.literal('request'),
   name: z.string().min(2, 'Name must be at least 2 characters').max(80),
   email: z.string().email('Please enter a valid email address'),
+  phone: z.string().min(10, 'Enter a 10-digit mobile number').max(15),
   password: z.string().min(6, 'Password must be at least 6 characters').max(128),
 });
 
@@ -53,9 +54,10 @@ export async function POST(req: NextRequest) {
 
   // 1. ACTION: REQUEST OTP
   if (payload.action === 'request') {
-    const result = requestRegistrationOtp({
+    const result = await requestRegistrationOtp({
       name: payload.name,
       email: payload.email,
+      phone: payload.phone,
       password: payload.password,
     });
 
@@ -65,22 +67,24 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({
       success: true,
-      message: `Verification code sent to ${payload.email}`,
+      message: result.message ?? `Verification code sent to ${payload.email} and mobile`,
       demoOtp: result.demoOtp,
+      phone: result.phone,
     });
   }
 
   // 2. ACTION: RESEND OTP
   if (payload.action === 'resend') {
-    const result = resendRegistrationOtp(payload.email);
+    const result = await resendRegistrationOtp(payload.email);
     if (!result.success) {
       return NextResponse.json({ error: result.error }, { status: 400 });
     }
 
     return NextResponse.json({
       success: true,
-      message: `Fresh verification code sent to ${payload.email}`,
+      message: result.message ?? `Fresh verification code sent to ${payload.email} and mobile`,
       demoOtp: result.demoOtp,
+      phone: result.phone,
     });
   }
 

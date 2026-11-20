@@ -103,13 +103,15 @@ test.describe('YojanaMitra Main Flows', () => {
     // Step 1: Fill registration details
     await page.getByPlaceholder('e.g., Sunita Deshmukh').fill('Anita Kale');
     await page.getByPlaceholder('citizen@yojanamitra.in').fill(testEmail);
+    await page.getByPlaceholder('98200 12345').fill('9820012345');
     await page.getByPlaceholder('••••••••').fill('Maharashtra@2026');
     await page.getByRole('button', { name: /Continue to Verification/i }).click();
 
     // Step 2: Verify OTP screen is displayed
     await expect(page.getByText(/Step 2 of 2 · OTP Verification/i)).toBeVisible({ timeout: 10000 });
     await expect(page.getByText(testEmail).first()).toBeVisible();
-    await expect(page.getByText(/Demo OTP \(Auto-fill\)/i)).toBeVisible();
+    await expect(page.getByText('+91 9820012345').first()).toBeVisible();
+    await expect(page.getByText(/Demo OTP/i)).toBeVisible();
 
     // Click "Paste Code" chip to auto-populate the generated 6-digit OTP
     await page.getByRole('button', { name: /Paste Code/i }).click();

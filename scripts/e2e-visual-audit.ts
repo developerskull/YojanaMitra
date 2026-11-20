@@ -151,15 +151,16 @@ async function runVisualAudit() {
     await page.getByPlaceholder('e.g., Sunita Deshmukh').fill('Sunita Deshmukh');
     const demoEmail = `sunita.${Date.now()}@yojanamitra.in`;
     await page.getByPlaceholder('citizen@yojanamitra.in').fill(demoEmail);
+    await page.getByPlaceholder('98200 12345').fill('9820012345');
     await page.getByPlaceholder('••••••••').fill('Maharashtra@2026');
     await page.getByRole('button', { name: /Continue to Verification/i }).click();
 
     const otpStepVisible = await page.getByText(/Step 2 of 2 · OTP Verification/i).waitFor({ timeout: 10000 }).then(() => true).catch(() => false);
-    const demoOtpVisible = await page.getByText(/Demo OTP \(Auto-fill\)/i).isVisible();
+    const demoOtpVisible = await page.getByText(/Demo OTP/i).isVisible();
     results.push({
       step: 'Citizen Registration OTP Flow',
       status: otpStepVisible && demoOtpVisible ? 'PASS' : 'FAIL',
-      details: '2-step registration transition rendered with 6-digit OTP input, timer, and demo quick-fill chip',
+      details: '2-step registration transition rendered with dual Email & Mobile delivery, 6-digit OTP, timer, and demo quick-fill chip',
     });
     await page.screenshot({ path: path.join(SCREENSHOT_DIR, '09_otp_verification.png') });
     console.log('📸 Saved 09_otp_verification.png');
