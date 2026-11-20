@@ -143,7 +143,7 @@ export function SavedHub({ allSchemes }: { allSchemes: Scheme[] }) {
       <div
         role="tablist"
         aria-label="Saved schemes sections"
-        className="no-print flex flex-wrap gap-2 border-b border-[var(--border-subtle)] pb-2"
+        className="no-print flex gap-2 overflow-x-auto no-scrollbar border-b border-[var(--border-subtle)] pb-2"
       >
         {tabs.map(({ key, label, count, icon: Icon }) => (
           <button
@@ -153,7 +153,7 @@ export function SavedHub({ allSchemes }: { allSchemes: Scheme[] }) {
             aria-selected={activeTab === key}
             onClick={() => setActiveTab(key)}
             className={cn(
-              'inline-flex min-h-[48px] cursor-pointer items-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold transition-colors',
+              'inline-flex min-h-[48px] shrink-0 cursor-pointer items-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold transition-colors',
               activeTab === key
                 ? 'bg-[var(--accent-teal)] text-white'
                 : 'bg-[var(--bg-surface)] text-[var(--fg-secondary)] hover:bg-[var(--bg-surface-muted)]'
@@ -290,6 +290,9 @@ export function SavedHub({ allSchemes }: { allSchemes: Scheme[] }) {
               </div>
             ) : (
               <div className="overflow-x-auto">
+                <div className="pb-2 text-xs text-[var(--fg-muted)] sm:hidden">
+                  ← Swipe table horizontally to compare schemes →
+                </div>
                 <table className="w-full min-w-[600px] border-collapse text-left text-sm">
                   <thead>
                     <tr className="border-b border-[var(--border-subtle)]">

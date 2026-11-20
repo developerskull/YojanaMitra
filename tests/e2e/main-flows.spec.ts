@@ -42,7 +42,7 @@ test.describe('YojanaMitra Main Flows', () => {
     await page.getByRole('button', { name: 'Maharashtra' }).click();
     // Answer Age -> 72
     await page.locator('input[type="number"]').fill('72');
-    await page.getByRole('button', { name: /Next/i }).click();
+    await page.getByRole('button', { name: 'Next', exact: true }).click();
     // Click "See My Eligible Schemes"
     await page.getByRole('button', { name: /See My Eligible Schemes/i }).click();
 
@@ -84,6 +84,10 @@ test.describe('YojanaMitra Main Flows', () => {
 
     await expect(page.getByRole('heading', { name: /Admin Command Center/i })).toBeVisible();
     await expect(page.getByText(/Ramesh Patil/i).first()).toBeVisible({ timeout: 10000 });
-    await expect(page.getByText(/72-year-old senior citizen/i).first()).toBeVisible();
+    // Switch to Query Audit Stream tab to inspect citizen search query
+    await page.getByRole('button', { name: /Query Audit Stream/i }).click();
+    await expect(page.getByText(/72-year-old senior citizen/i).first()).toBeVisible({
+      timeout: 10000,
+    });
   });
 });

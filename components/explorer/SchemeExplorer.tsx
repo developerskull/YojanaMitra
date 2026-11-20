@@ -175,14 +175,14 @@ export function SchemeExplorer({ initialSchemes }: { initialSchemes: Scheme[] })
 
         {/* Level Filters & Sort Row */}
         <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[var(--border-subtle)] pt-3 text-sm">
-          <div className="flex flex-wrap items-center gap-2">
+          <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
             <span className="text-xs font-bold uppercase text-[var(--fg-muted)]">
               Jurisdiction:
             </span>
             <button
               type="button"
               onClick={() => setLevelFilter('all')}
-              className={`rounded-xl px-3 py-1 text-xs font-bold transition-all ${
+              className={`rounded-xl px-2.5 py-1 text-xs font-bold transition-all sm:px-3 ${
                 levelFilter === 'all'
                   ? 'bg-[var(--fg-primary)] text-[var(--bg-surface)]'
                   : 'border border-[var(--border-subtle)] bg-[var(--bg-surface)] text-[var(--fg-secondary)]'
@@ -193,7 +193,7 @@ export function SchemeExplorer({ initialSchemes }: { initialSchemes: Scheme[] })
             <button
               type="button"
               onClick={() => setLevelFilter('central')}
-              className={`rounded-xl px-3 py-1 text-xs font-bold transition-all ${
+              className={`rounded-xl px-2.5 py-1 text-xs font-bold transition-all sm:px-3 ${
                 levelFilter === 'central'
                   ? 'bg-[var(--accent-teal)] text-white dark:text-[#041B19]'
                   : 'border border-[var(--border-subtle)] bg-[var(--bg-surface)] text-[var(--fg-secondary)]'
@@ -204,7 +204,7 @@ export function SchemeExplorer({ initialSchemes }: { initialSchemes: Scheme[] })
             <button
               type="button"
               onClick={() => setLevelFilter('state')}
-              className={`rounded-xl px-3 py-1 text-xs font-bold transition-all ${
+              className={`rounded-xl px-2.5 py-1 text-xs font-bold transition-all sm:px-3 ${
                 levelFilter === 'state'
                   ? 'bg-[var(--accent-saffron)] text-white'
                   : 'border border-[var(--border-subtle)] bg-[var(--bg-surface)] text-[var(--fg-secondary)]'

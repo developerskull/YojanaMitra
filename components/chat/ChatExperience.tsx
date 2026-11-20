@@ -685,7 +685,7 @@ export function ChatExperience() {
               <div key={msg.id} className="space-y-4">
                 {msg.role === 'user' ? (
                   <div className="flex justify-end">
-                    <div className="max-w-[85%] rounded-2xl rounded-tr-sm bg-gradient-to-r from-[#0D5C63] to-[#13747C] px-4 py-3 text-base font-medium text-white shadow-sm">
+                    <div className="max-w-[88%] sm:max-w-[75%] break-words rounded-2xl rounded-tr-sm bg-gradient-to-r from-[#0D5C63] to-[#13747C] px-4 py-3 text-base font-medium text-white shadow-sm">
                       {msg.text}
                     </div>
                   </div>

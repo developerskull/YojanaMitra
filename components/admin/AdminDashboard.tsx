@@ -401,11 +401,11 @@ export function AdminDashboard() {
       )}
 
       {/* Main Feature Tabs */}
-      <div className="flex flex-wrap gap-2 border-b border-[var(--border-subtle)] pb-2">
+      <div className="flex gap-2 overflow-x-auto no-scrollbar border-b border-[var(--border-subtle)] pb-2">
         <button
           type="button"
           onClick={() => setActiveTab('applications')}
-          className={`flex items-center gap-2 rounded-2xl px-4 py-2.5 text-sm font-bold transition-all ${
+          className={`flex shrink-0 items-center gap-2 rounded-2xl px-4 py-2.5 text-sm font-bold transition-all ${
             activeTab === 'applications'
               ? 'bg-[var(--accent-teal)] text-white shadow-sm dark:text-[#041B19]'
               : 'text-[var(--fg-secondary)] hover:bg-[var(--bg-surface-muted)] hover:text-[var(--fg-primary)]'
@@ -421,7 +421,7 @@ export function AdminDashboard() {
         <button
           type="button"
           onClick={() => setActiveTab('benefits')}
-          className={`flex items-center gap-2 rounded-2xl px-4 py-2.5 text-sm font-bold transition-all ${
+          className={`flex shrink-0 items-center gap-2 rounded-2xl px-4 py-2.5 text-sm font-bold transition-all ${
             activeTab === 'benefits'
               ? 'bg-[var(--accent-teal)] text-white shadow-sm dark:text-[#041B19]'
               : 'text-[var(--fg-secondary)] hover:bg-[var(--bg-surface-muted)] hover:text-[var(--fg-primary)]'
@@ -437,7 +437,7 @@ export function AdminDashboard() {
         <button
           type="button"
           onClick={() => setActiveTab('queries')}
-          className={`flex items-center gap-2 rounded-2xl px-4 py-2.5 text-sm font-bold transition-all ${
+          className={`flex shrink-0 items-center gap-2 rounded-2xl px-4 py-2.5 text-sm font-bold transition-all ${
             activeTab === 'queries'
               ? 'bg-[var(--accent-teal)] text-white shadow-sm dark:text-[#041B19]'
               : 'text-[var(--fg-secondary)] hover:bg-[var(--bg-surface-muted)] hover:text-[var(--fg-primary)]'
@@ -529,14 +529,14 @@ export function AdminDashboard() {
                   </p>
                 </div>
                 <div className="flex flex-wrap items-center gap-2">
-                  <div className="relative">
+                  <div className="relative w-full sm:w-auto">
                     <Search className="pointer-events-none absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 text-[var(--fg-muted)]" />
                     <input
                       type="search"
                       value={appSearch}
                       onChange={(e) => setAppSearch(e.target.value)}
                       placeholder="Search citizen, scheme, ref#..."
-                      className="min-h-[42px] w-56 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-canvas)] pr-3 pl-9 text-sm focus:border-[var(--accent-teal)] focus:outline-none sm:w-64"
+                      className="min-h-[42px] w-full rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-canvas)] pr-3 pl-9 text-sm focus:border-[var(--accent-teal)] focus:outline-none sm:w-64"
                     />
                   </div>
 
@@ -567,6 +567,9 @@ export function AdminDashboard() {
                 </div>
               ) : (
                 <div className="overflow-x-auto">
+                  <div className="pb-2 text-xs text-[var(--fg-muted)] sm:hidden">
+                    ← Swipe table horizontally to view all citizen details &amp; status →
+                  </div>
                   <table className="w-full min-w-[900px] border-collapse text-left text-sm">
                     <thead>
                       <tr className="border-b border-[var(--border-subtle)] text-xs font-bold uppercase text-[var(--fg-muted)]">
@@ -1012,14 +1015,14 @@ export function AdminDashboard() {
                   All Citizen Requests ({filteredRequests.length})
                 </h2>
                 <div className="flex flex-wrap items-center gap-2">
-                  <div className="relative">
+                  <div className="relative w-full sm:w-auto">
                     <Search className="pointer-events-none absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 text-[var(--fg-muted)]" />
                     <input
                       type="search"
                       value={search}
                       onChange={(e) => setSearch(e.target.value)}
                       placeholder="Search user, query, state, scheme..."
-                      className="min-h-[42px] w-56 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-canvas)] pr-3 pl-9 text-sm focus:border-[var(--accent-teal)] focus:outline-none sm:w-64"
+                      className="min-h-[42px] w-full rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-canvas)] pr-3 pl-9 text-sm focus:border-[var(--accent-teal)] focus:outline-none sm:w-64"
                     />
                   </div>
 
@@ -1075,6 +1078,9 @@ export function AdminDashboard() {
                 </div>
               ) : (
                 <div className="overflow-x-auto">
+                  <div className="pb-2 text-xs text-[var(--fg-muted)] sm:hidden">
+                    ← Swipe table horizontally to view queries &amp; latency →
+                  </div>
                   <table className="w-full min-w-[820px] border-collapse text-left text-sm">
                     <thead>
                       <tr className="border-b border-[var(--border-subtle)] text-xs font-bold uppercase text-[var(--fg-muted)]">

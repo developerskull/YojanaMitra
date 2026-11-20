@@ -101,7 +101,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   const adminLabel = lang === 'mr' ? 'अॅडमिन' : lang === 'hi' ? 'एडमिन' : 'Admin';
 
   return (
-    <div className="flex min-h-screen flex-col pb-20 md:pb-0">
+    <div className="flex min-h-screen flex-col pb-28 md:pb-0">
       {/* Indian National Tricolor Micro-Accent */}
       <div className="tricolor-stripe h-1 w-full" aria-hidden="true" />
 
@@ -226,7 +226,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                   onClick={() => setLang(opt.code)}
                   aria-pressed={lang === opt.code}
                   className={cn(
-                    'min-h-[38px] min-w-[38px] cursor-pointer rounded-lg px-2 text-xs font-bold transition-all sm:px-2.5',
+                    'min-h-[34px] min-w-[32px] cursor-pointer rounded-lg px-1.5 text-[11px] font-bold transition-all sm:min-h-[38px] sm:min-w-[38px] sm:px-2.5 sm:text-xs',
                     lang === opt.code
                       ? 'bg-gradient-to-r from-[#D45015] to-[#E56A24] text-white shadow-xs'
                       : 'text-[var(--fg-secondary)] hover:text-[var(--fg-primary)]'

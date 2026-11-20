@@ -46,9 +46,7 @@ export function LoginView() {
 
     try {
       const endpoint =
-        portalTab === 'user' && userMode === 'register'
-          ? '/api/auth/register'
-          : '/api/auth/login';
+        portalTab === 'user' && userMode === 'register' ? '/api/auth/register' : '/api/auth/login';
 
       const payload =
         portalTab === 'user' && userMode === 'register'
@@ -103,7 +101,8 @@ export function LoginView() {
   const copy = {
     en: {
       title: 'Welcome to YojanaMitra',
-      subtitle: 'Sign in as a Citizen to personalize your experience, or sign in as Admin to monitor all user requests.',
+      subtitle:
+        'Sign in as a Citizen to personalize your experience, or sign in as Admin to monitor all user requests.',
       citizenTab: 'Citizen Login',
       adminTab: 'Admin Login',
       signIn: 'Sign In',
@@ -143,7 +142,7 @@ export function LoginView() {
     <div className="mx-auto max-w-5xl py-2 sm:py-6">
       <div className="surface-elevated grid overflow-hidden rounded-[2rem] lg:grid-cols-12">
         {/* Left Showcase Panel */}
-        <div className="relative flex flex-col justify-between bg-gradient-to-br from-[#093D42] via-[#0D5C63] to-[#16324F] p-7 text-white sm:p-10 lg:col-span-5">
+        <div className="relative flex flex-col justify-between bg-gradient-to-br from-[#093D42] via-[#0D5C63] to-[#16324F] p-5 text-white sm:p-10 lg:col-span-5">
           <div
             aria-hidden="true"
             className="pointer-events-none absolute -right-20 -bottom-20 h-64 w-64 rounded-full bg-[#D45015]/25 blur-3xl"
@@ -210,7 +209,7 @@ export function LoginView() {
         </div>
 
         {/* Right Form Panel */}
-        <div className="flex flex-col justify-center bg-[var(--bg-surface)] p-7 sm:p-10 lg:col-span-7">
+        <div className="flex flex-col justify-center bg-[var(--bg-surface)] p-5 sm:p-10 lg:col-span-7">
           {user && (
             <div className="mb-6 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-emerald-500/30 bg-[var(--status-eligible-bg)] p-4 text-sm">
               <div>

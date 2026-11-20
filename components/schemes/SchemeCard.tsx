@@ -412,7 +412,10 @@ export function SchemeCard({
           onClick={() => void handleTrackApplication()}
           disabled={applying}
           aria-pressed={applied}
-          className={cn(applied && 'border-emerald-500/40 text-emerald-800 dark:text-emerald-300')}
+          className={cn(
+            'flex-1 sm:flex-none',
+            applied && 'border-emerald-500/40 text-emerald-800 dark:text-emerald-300'
+          )}
         >
           <CheckCircle2 className="h-4 w-4" />
           <span>
