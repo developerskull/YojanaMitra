@@ -1,6 +1,7 @@
 'use client';
 
 import type { SupportedLang } from '@/lib/schemes/schema';
+import { cleanTextForSpeech } from './utils';
 import {
   LANG_TO_LOCALE,
   type SpeechToTextAdapter,
@@ -126,30 +127,19 @@ export class WebSpeechSTTAdapter implements SpeechToTextAdapter {
   }
 }
 
-/**
- * Strips markdown formatting & citation tags like [S1] before speaking aloud.
- */
-export function cleanTextForSpeech(raw: string): string {
-  return raw
-    .replace(/\[S\d+\]/g, '')
-    .replace(/[*_`#>]/g, ' ')
-    .replace(/https?:\/\/\S+/g, '')
-    .replace(/\s+/g, ' ')
-    .trim();
-}
+export { cleanTextForSpeech } from './utils';
 
 export class WebSpeechTTSAdapter implements TextToSpeechAdapter {
-  readonly providerName = 'web-speech-synthesis';
+  readonly providerName = 'hybrid-indic-tts';
+  private currentAudio: HTMLAudioElement | null = null;
+  private currentAudioUrl: string | null = null;
+  private abortController: AbortController | null = null;
 
   isSupported(): boolean {
-    return typeof window !== 'undefined' && 'speechSynthesis' in window;
+    return typeof window !== 'undefined';
   }
 
   speak(text: string, lang: SupportedLang, onEnd?: () => void): void {
-    if (!this.isSupported()) {
-      onEnd?.();
-      return;
-    }
     this.stop();
 
     const cleaned = cleanTextForSpeech(text);
@@ -158,16 +148,94 @@ export class WebSpeechTTSAdapter implements TextToSpeechAdapter {
       return;
     }
 
+    // 1. Primary High-Definition Indic TTS Audio (native Marathi / Hindi / English MP3)
+    const controller = new AbortController();
+    this.abortController = controller;
+
+    fetch('/api/tts', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ text: cleaned, lang }),
+      signal: controller.signal,
+    })
+      .then(async (res) => {
+        if (!res.ok) throw new Error(`TTS API returned ${res.status}`);
+        const blob = await res.blob();
+        if (controller.signal.aborted) return;
+
+        const audioUrl = URL.createObjectURL(blob);
+        this.currentAudioUrl = audioUrl;
+        const audio = new Audio(audioUrl);
+        this.currentAudio = audio;
+
+        audio.onended = () => {
+          this.cleanup();
+          onEnd?.();
+        };
+        audio.onerror = () => {
+          this.cleanup();
+          this.fallbackSpeechSynthesis(cleaned, lang, onEnd);
+        };
+
+        await audio.play();
+      })
+      .catch((err) => {
+        if (controller.signal.aborted) return;
+        console.warn(
+          '[TTS] High-fidelity Indic audio failed, using browser speech synthesis fallback:',
+          err
+        );
+        this.fallbackSpeechSynthesis(cleaned, lang, onEnd);
+      });
+  }
+
+  /**
+   * Safe offline / in-browser fallback.
+   * If Marathi voice ('mr-IN') is not installed in the browser/OS, falls back to
+   * Hindi ('hi-IN') which uses the exact same Devanagari script phonetics.
+   * NEVER falls back to English for Devanagari text.
+   */
+  private fallbackSpeechSynthesis(
+    cleaned: string,
+    lang: SupportedLang,
+    onEnd?: () => void
+  ): void {
+    if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
+      onEnd?.();
+      return;
+    }
+
+    window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(cleaned);
     const targetLocale = LANG_TO_LOCALE[lang];
     utterance.lang = targetLocale;
-    utterance.rate = 0.96;
+    utterance.rate = 0.95;
 
     const voices = window.speechSynthesis.getVoices();
-    const matched =
-      voices.find((v) => v.lang.toLowerCase() === targetLocale.toLowerCase()) ??
-      voices.find((v) => v.lang.toLowerCase().startsWith(lang)) ??
-      voices.find((v) => v.lang.toLowerCase().includes('in'));
+    let matched: SpeechSynthesisVoice | undefined;
+
+    if (lang === 'mr') {
+      matched =
+        voices.find(
+          (v) => v.lang.toLowerCase() === 'mr-in' || v.lang.toLowerCase() === 'mr'
+        ) ??
+        voices.find(
+          (v) => v.lang.toLowerCase() === 'hi-in' || v.lang.toLowerCase() === 'hi'
+        );
+    } else if (lang === 'hi') {
+      matched =
+        voices.find(
+          (v) => v.lang.toLowerCase() === 'hi-in' || v.lang.toLowerCase() === 'hi'
+        ) ??
+        voices.find(
+          (v) => v.lang.toLowerCase() === 'mr-in' || v.lang.toLowerCase() === 'mr'
+        );
+    } else {
+      matched =
+        voices.find((v) => v.lang.toLowerCase() === 'en-in') ??
+        voices.find((v) => v.lang.toLowerCase().startsWith('en'));
+    }
+
     if (matched) {
       utterance.voice = matched;
     }
@@ -178,8 +246,32 @@ export class WebSpeechTTSAdapter implements TextToSpeechAdapter {
   }
 
   stop(): void {
-    if (this.isSupported()) {
+    if (this.abortController) {
+      this.abortController.abort();
+      this.abortController = null;
+    }
+    if (this.currentAudio) {
+      try {
+        this.currentAudio.pause();
+        this.currentAudio.currentTime = 0;
+      } catch {
+        // Safe no-op
+      }
+      this.currentAudio = null;
+    }
+    this.cleanup();
+
+    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
       window.speechSynthesis.cancel();
     }
   }
+
+  private cleanup(): void {
+    if (this.currentAudioUrl) {
+      URL.revokeObjectURL(this.currentAudioUrl);
+      this.currentAudioUrl = null;
+    }
+  }
 }
+
+export { WebSpeechTTSAdapter as HybridTTSAdapter };
