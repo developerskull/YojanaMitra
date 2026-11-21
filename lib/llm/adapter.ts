@@ -78,8 +78,13 @@ class GeminiProvider implements LLMProvider {
       contents,
       generationConfig: {
         temperature: options.temperature ?? 0.2,
-        maxOutputTokens: options.maxTokens ?? 1024,
+        maxOutputTokens: options.maxTokens ?? 4096,
         ...(forceJson ? { responseMimeType: 'application/json' } : {}),
+        // For Gemini 2.5 Flash thinking models, dedicate token budget to response text
+        // so Hindi/Marathi generations never hit MAX_TOKENS mid-sentence
+        thinkingConfig: {
+          thinkingBudget: options.thinkingBudget ?? 0,
+        },
       },
     };
   }

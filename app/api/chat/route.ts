@@ -363,7 +363,8 @@ export async function POST(req: NextRequest) {
 
             for await (const chunk of provider.streamText({
               temperature: 0.15,
-              maxTokens: 900,
+              maxTokens: 4096,
+              thinkingBudget: 0,
               messages: [
                 { role: 'system', content: systemPrompt },
                 {

@@ -11,6 +11,7 @@ export interface LLMGenerateOptions {
   messages: LLMMessage[];
   temperature?: number;
   maxTokens?: number;
+  thinkingBudget?: number;
   modelOverride?: string;
 }
 
