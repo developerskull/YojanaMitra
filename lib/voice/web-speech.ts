@@ -211,38 +211,50 @@ export class WebSpeechTTSAdapter implements TextToSpeechAdapter {
     utterance.lang = targetLocale;
     utterance.rate = 0.95;
 
-    const voices = window.speechSynthesis.getVoices();
-    let matched: SpeechSynthesisVoice | undefined;
+    const speakUtterance = () => {
+      const voices = window.speechSynthesis.getVoices();
+      let matched: SpeechSynthesisVoice | undefined;
 
-    if (lang === 'mr') {
-      matched =
-        voices.find(
-          (v) => v.lang.toLowerCase() === 'mr-in' || v.lang.toLowerCase() === 'mr'
-        ) ??
-        voices.find(
-          (v) => v.lang.toLowerCase() === 'hi-in' || v.lang.toLowerCase() === 'hi'
-        );
-    } else if (lang === 'hi') {
-      matched =
-        voices.find(
-          (v) => v.lang.toLowerCase() === 'hi-in' || v.lang.toLowerCase() === 'hi'
-        ) ??
-        voices.find(
-          (v) => v.lang.toLowerCase() === 'mr-in' || v.lang.toLowerCase() === 'mr'
-        );
+      if (lang === 'mr') {
+        matched =
+          voices.find(
+            (v) => v.lang.toLowerCase() === 'mr-in' || v.lang.toLowerCase() === 'mr'
+          ) ??
+          voices.find(
+            (v) => v.lang.toLowerCase() === 'hi-in' || v.lang.toLowerCase() === 'hi'
+          );
+      } else if (lang === 'hi') {
+        matched =
+          voices.find(
+            (v) => v.lang.toLowerCase() === 'hi-in' || v.lang.toLowerCase() === 'hi'
+          ) ??
+          voices.find(
+            (v) => v.lang.toLowerCase() === 'mr-in' || v.lang.toLowerCase() === 'mr'
+          );
+      } else {
+        matched =
+          voices.find((v) => v.lang.toLowerCase() === 'en-in') ??
+          voices.find((v) => v.lang.toLowerCase().startsWith('en'));
+      }
+
+      if (matched) {
+        utterance.voice = matched;
+        utterance.lang = matched.lang;
+      }
+
+      utterance.onend = () => onEnd?.();
+      utterance.onerror = () => onEnd?.();
+      window.speechSynthesis.speak(utterance);
+    };
+
+    if (window.speechSynthesis.getVoices().length === 0) {
+      window.speechSynthesis.onvoiceschanged = () => {
+        window.speechSynthesis.onvoiceschanged = null;
+        speakUtterance();
+      };
     } else {
-      matched =
-        voices.find((v) => v.lang.toLowerCase() === 'en-in') ??
-        voices.find((v) => v.lang.toLowerCase().startsWith('en'));
+      speakUtterance();
     }
-
-    if (matched) {
-      utterance.voice = matched;
-    }
-
-    utterance.onend = () => onEnd?.();
-    utterance.onerror = () => onEnd?.();
-    window.speechSynthesis.speak(utterance);
   }
 
   stop(): void {
