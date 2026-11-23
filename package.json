@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "npm run validate:data && next build",
+    "postbuild": "tsx scripts/patch-routes-manifest.ts",
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write .",
